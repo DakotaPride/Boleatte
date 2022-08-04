@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "boleatte",
+  "version": "${version}",
+
+  "name": "Boleatte",
+  "description": "",
+  "authors": [
+    "DakotaPride"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/boleatte",
+    "sources": "https://github.com/DakotaPride/boleatte"
+  },
+
+  "license": "MIT",
+  "icon": "assets/boleatte/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.dakotapride.boleatte.common.BoleatteMain"
+    ],
+    "client": [
+      "net.dakotapride.boleatte.client.BoleatteClient"
+    ]
+  },
+  "mixins": [
+    "boleatte.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*",
+    "minecraft": "1.19.1",
+    "java": ">=17"
+  }
+}
