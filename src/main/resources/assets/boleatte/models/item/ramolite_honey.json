@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "boleatte:item/ramolite_honey_bottle"
+  }
+}

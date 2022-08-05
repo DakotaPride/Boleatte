@@ -1,11 +1,12 @@
 {
   "item.boleatte.quanalla": "Quanalla",
-  "item.boleatte.blasolote": "Blasolote",
+  "item.boleatte.basolote": "Blasolote",
   "item.boleatte.ramukai": "Ramukai",
   "item.boleatte.ramolite_honey": "Ramolite Honey Bottle",
   "item.boleatte.nikota_tu": "Nikota-Tu",
 
   "item.boleatte.protosterm_bark": "Protosterm Bark",
   "block.boleatte.protosterm_log": "Protosterm Log",
-  "block.boleatte.stripped_protosterm_log": "Stripped Protosterm Log"
+  "block.boleatte.stripped_protosterm_log": "Stripped Protosterm Log",
+  "block.boleatte.protosterm_leaves": "Protosterm Leaves"
 }
