@@ -4,9 +4,9 @@
   "package": "net.dakotapride.boleatte.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "LivingEntityMixin"
   ],
   "client": [
-
   ],
   "injectors": {
     "defaultRequire": 1
