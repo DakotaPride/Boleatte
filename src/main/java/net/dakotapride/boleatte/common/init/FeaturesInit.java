@@ -2,30 +2,46 @@ package net.dakotapride.boleatte.common.init;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.util.registry.RegistryEntryList;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.ConfiguredFeatures;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.TreeFeatureConfig;
+import net.minecraft.world.gen.YOffset;
+import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.RandomSpreadFoliagePlacer;
+import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 import net.minecraft.world.gen.root.AboveRootPlacement;
 import net.minecraft.world.gen.root.MangroveRootPlacement;
 import net.minecraft.world.gen.root.MangroveRootPlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.UpwardsBranchingTrunkPlacer;
 
+import java.util.List;
 import java.util.Optional;
 
 
 public class FeaturesInit {
+    private static final BlockMatchRuleTest protostermLeavesRuleTest = new BlockMatchRuleTest(BlockInit.PROTOSTERM_LEAVES);
 
     // Configured Features
+    public static final List<OreFeatureConfig.Target> PROTOSTERM_LEAVES_VARIANTS = List.of(
+            OreFeatureConfig.createTarget(protostermLeavesRuleTest,
+                    BlockInit.BASOLOTE_PROTOSTERM_LEAVES.getDefaultState()),
+            OreFeatureConfig.createTarget(protostermLeavesRuleTest,
+                    BlockInit.QUANALLA_PROTOSTERM_LEAVES.getDefaultState()),
+            OreFeatureConfig.createTarget(protostermLeavesRuleTest,
+                    BlockInit.MIERIRE_PROTOSTERM_LEAVES.getDefaultState()),
+            OreFeatureConfig.createTarget(protostermLeavesRuleTest,
+                    BlockInit.RAMUKAI_PROTOSTERM_LEAVES.getDefaultState()));
+
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> PROTOSTERM_LEAVES =
+            ConfiguredFeatures.register("protosterm_leaves",Feature.ORE,
+                    new OreFeatureConfig(PROTOSTERM_LEAVES_VARIANTS, 3));
+
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> PROTOSTERM_TREE =
             ConfiguredFeatures.register("protosterm", Feature.TREE, (new TreeFeatureConfig.Builder(
                     BlockStateProvider.of(BlockInit.PROTOSTERM_LOG),
@@ -61,6 +77,11 @@ public class FeaturesInit {
                     RegistryEntryList.of(Block::getRegistryEntry, BlockInit.PROTOSTERM_LOG),
                     BlockStateProvider.of(BlockInit.PROTOSTERM_LOG), 8, 15, 0.2F))),
                     new TwoLayersFeatureSize(3, 0, 2))).ignoreVines().build());
+
+    // Placed Features
+    public static final RegistryEntry<PlacedFeature> PROTOSTERM_LEAVES_PLACED = PlacedFeatures.register("protosterm_leaves_placed",
+            PROTOSTERM_LEAVES, GenerationInit.modifiersWithCount(4,
+                    HeightRangePlacementModifier.uniform(YOffset.aboveBottom(-80), YOffset.aboveBottom(216))));
 
 
     public static void init() {

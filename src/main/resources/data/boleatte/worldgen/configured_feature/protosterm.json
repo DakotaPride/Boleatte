@@ -2,7 +2,7 @@
   "type": "minecraft:tree",
   "config": {
     "ignore_vines": true,
-    "force_dirt": false,
+    "force_dirt": true,
     "minimum_size": {
       "type": "minecraft:two_layers_feature_size",
       "limit": 2,
@@ -60,7 +60,7 @@
             "Name": "minecraft:air"
           }
         },
-        "above_root_placement_chance": 0.0
+        "above_root_placement_chance": 0.5
       },
       "mangrove_root_placement": {
         "max_root_width": 8,
