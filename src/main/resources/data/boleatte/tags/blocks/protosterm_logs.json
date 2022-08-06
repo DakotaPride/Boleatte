@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "boleatte:protosterm_log",
-    "boleatte:stripped_protosterm_log"
+    "boleatte:stripped_protosterm_log",
+    "boleatte:protosterm_wood",
+    "boleatte:stripped_protosterm_wood"
   ]
 }
