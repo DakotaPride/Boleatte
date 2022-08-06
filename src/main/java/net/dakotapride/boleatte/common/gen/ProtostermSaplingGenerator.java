@@ -8,9 +8,18 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 import org.jetbrains.annotations.Nullable;
 
 public class ProtostermSaplingGenerator extends SaplingGenerator {
+    private final float tallChance;
+
+    public ProtostermSaplingGenerator(float tallChance) {
+        this.tallChance = tallChance;
+    }
+
+
     @Nullable
-    @Override
     protected RegistryEntry<? extends ConfiguredFeature<?, ?>> getTreeFeature(Random random, boolean bees) {
+        if (random.nextFloat() < this.tallChance) {
+            return FeaturesInit.TALL_PROTOSTERM_TREE;
+        }
         return FeaturesInit.PROTOSTERM_TREE;
     }
 }
