@@ -1,8 +1,6 @@
 package net.dakotapride.boleatte.common;
 
-import net.dakotapride.boleatte.common.init.BlockInit;
-import net.dakotapride.boleatte.common.init.FeaturesInit;
-import net.dakotapride.boleatte.common.init.ItemInit;
+import net.dakotapride.boleatte.common.init.*;
 import net.fabricmc.api.ModInitializer;
 
 public class BoleatteMain implements ModInitializer {
@@ -13,5 +11,7 @@ public class BoleatteMain implements ModInitializer {
 		ItemInit.init();
 		BlockInit.init();
 		FeaturesInit.init();
+		EffectInit.init();
+		StrippableInit.init();
 	}
 }
