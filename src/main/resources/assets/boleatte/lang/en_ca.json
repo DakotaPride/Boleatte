@@ -4,9 +4,21 @@
   "item.boleatte.ramukai": "Ramukai",
   "item.boleatte.ramolite_honey": "Ramolite Honey Bottle",
   "item.boleatte.nikota_tu": "Nikota-Tu",
+  "item.boleatte.mierire": "Mierire",
+  "item.boleatte.paiore": "Paiore",
+  "item.boleatte.paieux": "Paieux",
+  "item.boleatte.paieux_dough": "Paieux Dough",
+  "item.boleatte.de_featiante": "De Featiante",
 
   "item.boleatte.protosterm_bark": "Protosterm Bark",
   "block.boleatte.protosterm_log": "Protosterm Log",
   "block.boleatte.stripped_protosterm_log": "Stripped Protosterm Log",
-  "block.boleatte.protosterm_leaves": "Protosterm Leaves"
+  "block.boleatte.protosterm_wood": "Protosterm Wood",
+  "block.boleatte.stripped_protosterm_wood": "Stripped Protosterm Wood",
+  "block.boleatte.protosterm_leaves": "Protosterm Leaves",
+  "block.boleatte.protosterm_sapling": "Protosterm Sapling",
+  "block.boleatte.protosterm_planks": "Protosterm Planks",
+
+  "effect.boleatte.defiant": "Defiant",
+  "effect.boleatte.defiant.ii": "Defiant II"
 }
