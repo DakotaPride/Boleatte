@@ -4,7 +4,7 @@
     "type": "minecraft:noise",
     "fixed_time": false,
     "seed": 1399245182,
-    "settings": "minecraft:overworld",
+    "settings": "boleatte:boleatte_settings",
     "biome_source": {
       "type": "minecraft:multi_noise",
       "biomes": [

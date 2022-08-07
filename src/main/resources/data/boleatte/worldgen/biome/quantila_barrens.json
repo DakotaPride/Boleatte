@@ -1,6 +1,5 @@
 {
   "category": "desert",
-  "surface_builder": "boleatte:boleatte_settings",
   "temperature": 2,
   "downfall": 0,
   "precipitation": "rain",

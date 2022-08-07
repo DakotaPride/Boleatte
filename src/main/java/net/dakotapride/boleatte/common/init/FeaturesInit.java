@@ -90,8 +90,7 @@ public class FeaturesInit {
 
 
     public static void init() {
-        BiomeModifications.addFeature(BiomeSelectors.tag(TagInit.IS_QUANTILA_BARRENS),
-                GenerationStep.Feature.VEGETAL_DECORATION, QUANALLA_BUSH_PLACED.getKey().get());
+        // Load This Class
     }
 
 }

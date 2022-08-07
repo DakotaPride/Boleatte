@@ -1,9 +1,8 @@
 {
   "category": "forest",
-  "surface_builder": "boleatte:boleatte_settings",
   "temperature": 0.7,
   "downfall": 0.8,
-  "precipitation": "rain",
+  "precipitation": "snow",
   "effects": {
     "sky_color": 13238271,
     "fog_color": 14019320,

@@ -13,7 +13,7 @@
             "state": {
               "Name": "boleatte:quanalla_bush",
               "Properties": {
-                "age": "0"
+                "age": "3"
               }
             }
           }
@@ -36,7 +36,7 @@
                   -1,
                   0
                 ],
-                "blocks": "minecraft:red_sand"
+                "blocks": "minecraft:grass_block"
               }
             ]
           }

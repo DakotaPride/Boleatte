@@ -29,7 +29,7 @@ public class QuanallaBushBlock extends SweetBerryBushBlock {
 
     @Override
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
-        return (floor.isOf(Blocks.RED_SAND) || floor.isOf(Blocks.RED_SANDSTONE));
+        return (floor.isOf(Blocks.RED_SAND) || floor.isOf(Blocks.GRASS_BLOCK) || floor.isOf(Blocks.RED_SANDSTONE));
     }
 
     @Override
