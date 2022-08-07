@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+    "type": "minecraft:noise",
+    "fixed_time": false,
+    "seed": 1399245182,
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "parameters": {
+            "erosion": [-0.7799, -0.375],
+            "depth": 0.0,
+            "weirdness": [-1.0, -0.9333],
+            "offset": 0.0,
+            "temperature": [-0.45, -0.15],
+            "humidity": [-0.1, 0.1],
+            "continentalness": [-0.11, 0.3]
+          },
+          "biome": "boleatte:protosterm_forest"
+        },
+        {
+          "parameters": {
+            "erosion": [-0.375, -0.2225],
+            "depth": 0.0,
+            "weirdness": [-1.0, -0.9333],
+            "offset": 0.0,
+            "temperature": [0.55, 1.0],
+            "humidity": [-1.0, -0.35],
+            "continentalness": [-0.11, 0.03]
+          },
+          "biome": "boleatte:quantila_barrens"
+        }
+      ]
+    }
+  }
+}

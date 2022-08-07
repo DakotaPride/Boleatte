@@ -11,8 +11,8 @@ public class BoleatteMain implements ModInitializer {
 		ItemInit.init();
 		BlockInit.init();
 		FeaturesInit.init();
-		GenerationInit.init();
 		EffectInit.init();
 		StrippableInit.init();
+		DimensionInit.init();
 	}
 }

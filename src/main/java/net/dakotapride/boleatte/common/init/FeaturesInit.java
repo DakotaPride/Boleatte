@@ -1,19 +1,26 @@
 package net.dakotapride.boleatte.common.init;
 
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.structure.rule.BlockMatchRuleTest;
+import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.tag.BlockTags;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.util.registry.RegistryEntryList;
-import net.minecraft.world.gen.YOffset;
+import net.minecraft.world.biome.BiomeKeys;
+import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.RandomSpreadFoliagePlacer;
-import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
+import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
+import net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier;
+import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 import net.minecraft.world.gen.root.AboveRootPlacement;
 import net.minecraft.world.gen.root.MangroveRootPlacement;
 import net.minecraft.world.gen.root.MangroveRootPlacer;
@@ -25,22 +32,20 @@ import java.util.Optional;
 
 
 public class FeaturesInit {
-    private static final BlockMatchRuleTest protostermLeavesRuleTest = new BlockMatchRuleTest(BlockInit.PROTOSTERM_LEAVES);
 
     // Configured Features
-    public static final List<OreFeatureConfig.Target> PROTOSTERM_LEAVES_VARIANTS = List.of(
-            OreFeatureConfig.createTarget(protostermLeavesRuleTest,
-                    BlockInit.BASOLOTE_PROTOSTERM_LEAVES.getDefaultState()),
-            OreFeatureConfig.createTarget(protostermLeavesRuleTest,
-                    BlockInit.QUANALLA_PROTOSTERM_LEAVES.getDefaultState()),
-            OreFeatureConfig.createTarget(protostermLeavesRuleTest,
-                    BlockInit.MIERIRE_PROTOSTERM_LEAVES.getDefaultState()),
-            OreFeatureConfig.createTarget(protostermLeavesRuleTest,
-                    BlockInit.RAMUKAI_PROTOSTERM_LEAVES.getDefaultState()));
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> PATCH_QUANALLA_BUSH =
+            ConfiguredFeatures.register("patch_quanalla_bush", Feature.RANDOM_PATCH,
+                    ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(
+                    BlockStateProvider.of(BlockInit.QUANALLA_BUSH.getDefaultState()
+                            .with(SweetBerryBushBlock.AGE, 3))),
 
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> PROTOSTERM_LEAVES =
-            ConfiguredFeatures.register("protosterm_leaves",Feature.ORE,
-                    new OreFeatureConfig(PROTOSTERM_LEAVES_VARIANTS, 3));
+            List.of(Blocks.GRASS_BLOCK)));
+
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> QUANALLA_BUSH =
+            ConfiguredFeatures.register("quanalla_bush", Feature.FLOWER,
+                    new RandomPatchFeatureConfig(32, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockFeatureConfig(BlockStateProvider.of(BlockInit.QUANALLA_BUSH)))));
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> PROTOSTERM_TREE =
             ConfiguredFeatures.register("protosterm", Feature.TREE, (new TreeFeatureConfig.Builder(
@@ -79,13 +84,14 @@ public class FeaturesInit {
                     new TwoLayersFeatureSize(3, 0, 2))).ignoreVines().build());
 
     // Placed Features
-    public static final RegistryEntry<PlacedFeature> PROTOSTERM_LEAVES_PLACED = PlacedFeatures.register("protosterm_leaves_placed",
-            PROTOSTERM_LEAVES, GenerationInit.modifiersWithCount(4,
-                    HeightRangePlacementModifier.uniform(YOffset.aboveBottom(-80), YOffset.aboveBottom(216))));
+    public static final RegistryEntry<PlacedFeature> QUANALLA_BUSH_PLACED = PlacedFeatures.register("quanalla_bush_placed",
+            QUANALLA_BUSH, RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(),
+            PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
 
     public static void init() {
-        // Load This Class
+        BiomeModifications.addFeature(BiomeSelectors.tag(TagInit.IS_QUANTILA_BARRENS),
+                GenerationStep.Feature.VEGETAL_DECORATION, QUANALLA_BUSH_PLACED.getKey().get());
     }
 
 }
