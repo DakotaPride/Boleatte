@@ -1,6 +1,7 @@
 package net.dakotapride.boleatte.common.init;
 
 import net.dakotapride.boleatte.common.block.QuanallaBushBlock;
+import net.dakotapride.boleatte.common.gen.BotakoaSaplingGenerator;
 import net.dakotapride.boleatte.common.gen.ProtostermSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -21,6 +22,17 @@ public class BlockInit {
     public static PillarBlock STRIPPED_PROTOSTERM_WOOD = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD));
     public static Block PROTOSTERM_PLANKS = new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS));
     public static LeavesBlock PROTOSTERM_LEAVES = new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
+
+    public static SaplingBlock BOTAKOA_SAPLING = new SaplingBlock(new BotakoaSaplingGenerator(),
+            FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
+    public static PillarBlock BOTAKOA_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG));
+    public static PillarBlock STRIPPED_BOTAKOA_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG));
+    public static PillarBlock BOTAKOA_WOOD = new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_WOOD));
+    public static PillarBlock STRIPPED_BOTAKOA_WOOD = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD));
+    public static Block BOTAKOA_PLANKS = new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS));
+    public static LeavesBlock BOTAKOA_LEAVES = new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
+    public static BarrelBlock BOTAKOA_BARREL = new BarrelBlock(FabricBlockSettings.copy(Blocks.BARREL));
+
     public static QuanallaBushBlock QUANALLA_BUSH = new QuanallaBushBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH).ticksRandomly().nonOpaque());
 
 
@@ -39,6 +51,24 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "stripped_protosterm_wood"), new BlockItem(STRIPPED_PROTOSTERM_WOOD, new FabricItemSettings()));
         Registry.register(Registry.BLOCK, new Identifier(ID, "protosterm_planks"), PROTOSTERM_PLANKS);
         Registry.register(Registry.ITEM, new Identifier(ID, "protosterm_planks"), new BlockItem(PROTOSTERM_PLANKS, new FabricItemSettings()));
+
+        Registry.register(Registry.BLOCK, new Identifier(ID, "botakoa_sapling"), BOTAKOA_SAPLING);
+        Registry.register(Registry.ITEM, new Identifier(ID, "botakoa_sapling"), new BlockItem(BOTAKOA_SAPLING, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "botakoa_log"), BOTAKOA_LOG);
+        Registry.register(Registry.ITEM, new Identifier(ID, "botakoa_log"), new BlockItem(BOTAKOA_LOG, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "botakoa_leaves"), BOTAKOA_LEAVES);
+        Registry.register(Registry.ITEM, new Identifier(ID, "botakoa_leaves"), new BlockItem(BOTAKOA_LEAVES, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "stripped_botakoa_log"), STRIPPED_BOTAKOA_LOG);
+        Registry.register(Registry.ITEM, new Identifier(ID, "stripped_botakoa_log"), new BlockItem(STRIPPED_BOTAKOA_LOG, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "botakoa_wood"), BOTAKOA_WOOD);
+        Registry.register(Registry.ITEM, new Identifier(ID, "botakoa_wood"), new BlockItem(BOTAKOA_WOOD, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "stripped_botakoa_wood"), STRIPPED_BOTAKOA_WOOD);
+        Registry.register(Registry.ITEM, new Identifier(ID, "stripped_botakoa_wood"), new BlockItem(STRIPPED_BOTAKOA_WOOD, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "botakoa_planks"), BOTAKOA_PLANKS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "botakoa_planks"), new BlockItem(BOTAKOA_PLANKS, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "botakoa_barrel"), BOTAKOA_BARREL);
+        Registry.register(Registry.ITEM, new Identifier(ID, "botakoa_barrel"), new BlockItem(BOTAKOA_BARREL, new FabricItemSettings()));
+
         Registry.register(Registry.BLOCK, new Identifier(ID, "quanalla_bush"), QUANALLA_BUSH);
     }
 

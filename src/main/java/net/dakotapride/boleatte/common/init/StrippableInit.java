@@ -6,5 +6,8 @@ public class StrippableInit {
     public static void init() {
         StrippableBlockRegistry.register(BlockInit.PROTOSTERM_LOG, BlockInit.STRIPPED_PROTOSTERM_LOG);
         StrippableBlockRegistry.register(BlockInit.PROTOSTERM_WOOD, BlockInit.STRIPPED_PROTOSTERM_WOOD);
+
+        StrippableBlockRegistry.register(BlockInit.BOTAKOA_LOG, BlockInit.STRIPPED_BOTAKOA_LOG);
+        StrippableBlockRegistry.register(BlockInit.BOTAKOA_WOOD, BlockInit.STRIPPED_BOTAKOA_WOOD);
     }
 }

@@ -22,6 +22,15 @@
   "item.boleatte.protosterm_shield": "Protosterm Shield",
   "block.boleatte.quanalla_bush": "Quanalla Bush",
 
+  "block.boleatte.botakoa_log": "Botakoa Log",
+  "block.boleatte.stripped_botakoa_log": "Stripped Botakoa Log",
+  "block.boleatte.botakoa_wood": "Botakoa Wood",
+  "block.boleatte.stripped_botakoa_wood": "Stripped Botakoa Wood",
+  "block.boleatte.botakoa_leaves": "Botakoa Leaves",
+  "block.boleatte.botakoa_sapling": "Botakoa Sapling",
+  "block.boleatte.botakoa_planks": "Botakoa Planks",
+  "block.boleatte.botakoa_barrel": "Botakoa Barrel",
+
   "effect.boleatte.defiant": "Defiant",
   "effect.boleatte.defiant.ii": "Defiant II"
 }
