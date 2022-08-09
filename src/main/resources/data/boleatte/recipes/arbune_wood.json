@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "boleatte:arbune_log"
+    }
+  },
+  "result": {
+    "item": "boleatte:arbune_wood",
+    "count": 3
+  }
+}

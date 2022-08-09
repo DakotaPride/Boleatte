@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "boleatte:botakoa_log"
+    }
+  },
+  "result": {
+    "item": "boleatte:botakoa_wood",
+    "count": 3
+  }
+}

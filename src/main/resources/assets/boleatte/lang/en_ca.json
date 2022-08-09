@@ -1,4 +1,6 @@
 {
+  "itemGroup.boleatte.boleatte_group": "Boleatte",
+
   "item.boleatte.quanalla": "Quanalla",
   "item.boleatte.basolote": "Blasolote",
   "item.boleatte.ramukai": "Ramukai",
@@ -9,8 +11,10 @@
   "item.boleatte.paieux": "Paieux",
   "item.boleatte.paieux_dough": "Paieux Dough",
   "item.boleatte.de_featiante": "De Featiante",
+  "item.boleatte.alphiagou": "Alphiagou",
+  "item.boleatte.alphiagou_cider": "Alphiagou Cider",
+  "item.boleatte.mystical_alphiagou_cider": "Mystical Alphiagou Cider",
 
-  "item.boleatte.protosterm_bark": "Protosterm Bark",
   "block.boleatte.protosterm_log": "Protosterm Log",
   "block.boleatte.stripped_protosterm_log": "Stripped Protosterm Log",
   "block.boleatte.protosterm_wood": "Protosterm Wood",
@@ -36,7 +40,6 @@
   "block.boleatte.botakoa_leaves": "Botakoa Leaves",
   "block.boleatte.botakoa_sapling": "Botakoa Sapling",
   "block.boleatte.botakoa_planks": "Botakoa Planks",
-  "block.boleatte.botakoa_barrel": "Botakoa Barrel",
 
   "effect.boleatte.defiant": "Defiant",
   "effect.boleatte.defiant.ii": "Defiant II"

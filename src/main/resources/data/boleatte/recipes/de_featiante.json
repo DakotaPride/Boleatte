@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "boleatte:quanalla"
+    },
+    {
+      "item": "boleatte:basolote"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "boleatte:ramolite_honey"
+    },
+    {
+      "item": "boleatte:paiore"
+    },
+    {
+      "item": "boleatte:mierire"
+    }
+  ],
+  "result": {
+    "item": "boleatte:de_featiante"
+  }
+}

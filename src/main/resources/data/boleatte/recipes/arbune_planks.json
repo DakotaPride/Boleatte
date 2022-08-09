@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "boleatte:arbune_logs"
+    }
+  ],
+  "result": {
+    "item": "boleatte:arbune_planks",
+    "count": 4
+  }
+}

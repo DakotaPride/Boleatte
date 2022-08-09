@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "boleatte:item/protosterm_bark"
+    "layer0": "boleatte:item/mystical_alphiagou_cider"
   }
 }
