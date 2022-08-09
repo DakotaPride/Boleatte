@@ -3,9 +3,10 @@
   "config": {
     "features": [
       {
+        "chance": 0.33333334,
         "feature": "boleatte:arbune_checked"
       }
     ],
-    "default": "minecraft:arbune_checked"
+    "default": "boleatte:arbune_checked"
   }
 }

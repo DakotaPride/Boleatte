@@ -30,7 +30,7 @@
             "humidity": [-1.0, -0.35],
             "continentalness": [-0.11, 0.3]
           },
-          "biome": "boleatte:mielite_plains"
+          "biome": "boleatte:arbune_forest"
         },
         {
           "parameters": {

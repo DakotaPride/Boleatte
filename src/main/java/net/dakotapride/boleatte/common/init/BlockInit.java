@@ -79,6 +79,21 @@ public class BlockInit {
         Registry.register(Registry.BLOCK, new Identifier(ID, "botakoa_barrel"), BOTAKOA_BARREL);
         Registry.register(Registry.ITEM, new Identifier(ID, "botakoa_barrel"), new BlockItem(BOTAKOA_BARREL, new FabricItemSettings()));
 
+        Registry.register(Registry.BLOCK, new Identifier(ID, "arbune_sapling"), ARBUNE_SAPLING);
+        Registry.register(Registry.ITEM, new Identifier(ID, "arbune_sapling"), new BlockItem(ARBUNE_SAPLING, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "arbune_log"), ARBUNE_LOG);
+        Registry.register(Registry.ITEM, new Identifier(ID, "arbune_log"), new BlockItem(ARBUNE_LOG, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "arbune_leaves"), ARBUNE_LEAVES);
+        Registry.register(Registry.ITEM, new Identifier(ID, "arbune_leaves"), new BlockItem(ARBUNE_LEAVES, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "stripped_arbune_log"), STRIPPED_ARBUNE_LOG);
+        Registry.register(Registry.ITEM, new Identifier(ID, "stripped_arbune_log"), new BlockItem(STRIPPED_ARBUNE_LOG, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "arbune_wood"), ARBUNE_WOOD);
+        Registry.register(Registry.ITEM, new Identifier(ID, "arbune_wood"), new BlockItem(ARBUNE_WOOD, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "stripped_arbune_wood"), STRIPPED_ARBUNE_WOOD);
+        Registry.register(Registry.ITEM, new Identifier(ID, "stripped_arbune_wood"), new BlockItem(STRIPPED_ARBUNE_WOOD, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "arbune_planks"), ARBUNE_PLANKS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "arbune_planks"), new BlockItem(ARBUNE_PLANKS, new FabricItemSettings()));
+
         Registry.register(Registry.BLOCK, new Identifier(ID, "quanalla_bush"), QUANALLA_BUSH);
     }
 

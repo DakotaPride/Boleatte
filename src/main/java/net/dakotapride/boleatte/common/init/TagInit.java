@@ -12,6 +12,6 @@ public class TagInit {
     public static final TagKey<Biome> IS_PROTOSTERM_FOREST = TagKey.of(Registry.BIOME_KEY, new Identifier(ID, "is_protosterm_forest"));
     public static final TagKey<Biome> IS_QUANTILA_BARRENS = TagKey.of(Registry.BIOME_KEY, new Identifier(ID, "is_quantila_barrens"));
     public static final TagKey<Biome> IS_BOTAKOA_FOREST = TagKey.of(Registry.BIOME_KEY, new Identifier(ID, "is_botakoa_forest"));
-    public static final TagKey<Biome> IS_MIELITE_PLAINS = TagKey.of(Registry.BIOME_KEY, new Identifier(ID, "is_mielite_plains"));
+    public static final TagKey<Biome> IS_ARBUNE_FOREST = TagKey.of(Registry.BIOME_KEY, new Identifier(ID, "is_arbune_forest"));
 
 }
