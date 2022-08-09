@@ -6,11 +6,13 @@
   "name": "Boleatte",
   "description": "",
   "authors": [
-    "DakotaPride"
+    "DakotaPride (Author)",
+    "HoloScopeStudios (Mascot)"
   ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/boleatte",
-    "sources": "https://github.com/DakotaPride/boleatte"
+    "sources": "https://github.com/DakotaPride/boleatte",
+    "issues": "https://github.com/DakotaPride/boleatte/issues"
   },
 
   "license": "MIT",
