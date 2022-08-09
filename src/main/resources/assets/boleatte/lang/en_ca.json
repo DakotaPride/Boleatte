@@ -18,8 +18,15 @@
   "block.boleatte.protosterm_leaves": "Protosterm Leaves",
   "block.boleatte.protosterm_sapling": "Protosterm Sapling",
   "block.boleatte.protosterm_planks": "Protosterm Planks",
-  "item.boleatte.protosterm_shield_unfinished": "Broken Protosterm Shield",
-  "item.boleatte.protosterm_shield": "Protosterm Shield",
+
+  "block.boleatte.arbune_log": "Arbune Log",
+  "block.boleatte.stripped_arbune_log": "Stripped Arbune Log",
+  "block.boleatte.arbune_wood": "Arbune Wood",
+  "block.boleatte.stripped_arbune_wood": "Stripped Arbune Wood",
+  "block.boleatte.arbune_leaves": "Arbune Leaves",
+  "block.boleatte.arbune_sapling": "Arbune Sapling",
+  "block.boleatte.arbune_planks": "Arbune Planks",
+
   "block.boleatte.quanalla_bush": "Quanalla Bush",
 
   "block.boleatte.botakoa_log": "Botakoa Log",

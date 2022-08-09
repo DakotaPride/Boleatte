@@ -20,6 +20,7 @@ import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.foliage.RandomSpreadFoliagePlacer;
+import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
 import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier;
 import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
@@ -41,6 +42,14 @@ public class FeaturesInit {
     private static final BeehiveTreeDecorator BEES_002 = new BeehiveTreeDecorator(0.02F);
     private static final BeehiveTreeDecorator BEES_005 = new BeehiveTreeDecorator(0.05F);
     private static final BeehiveTreeDecorator BEES = new BeehiveTreeDecorator(1.0F);
+
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> ARBUNE =
+            ConfiguredFeatures.register("arbune", Feature.TREE,
+                    (new TreeFeatureConfig.Builder(BlockStateProvider.of(BlockInit.ARBUNE_LOG),
+                            new StraightTrunkPlacer(5, 2, 1), BlockStateProvider.of(BlockInit.ARBUNE_LEAVES),
+                            new SpruceFoliagePlacer(UniformIntProvider.create(2, 3), UniformIntProvider.create(0, 2),
+                                    UniformIntProvider.create(1, 2)),
+                            new TwoLayersFeatureSize(2, 0, 2))).ignoreVines().build());
 
     // Configured Features
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> PATCH_QUANALLA_BUSH =

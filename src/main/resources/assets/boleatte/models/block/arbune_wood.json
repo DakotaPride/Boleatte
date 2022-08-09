@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "boleatte:block/arbune_log",
+    "side": "boleatte:block/arbune_log"
+  }
+}

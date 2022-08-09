@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": "boleatte:arbune_checked"
+      }
+    ],
+    "default": "minecraft:arbune_checked"
+  }
+}

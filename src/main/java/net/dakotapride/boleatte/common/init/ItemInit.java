@@ -1,6 +1,5 @@
 package net.dakotapride.boleatte.common.init;
 
-import net.dakotapride.boleatte.common.item.ProtostermShieldItem;
 import net.dakotapride.boleatte.common.item.RamoliteHoneyBottleItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.BlockItem;
@@ -8,7 +7,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-import static net.dakotapride.boleatte.common.BoleatteMain.*;
+import static net.dakotapride.boleatte.common.BoleatteMain.ID;
 
 public class ItemInit {
     public static BlockItem QUANALLA = new BlockItem(BlockInit.QUANALLA_BUSH, new FabricItemSettings().food(FoodComponentInit.QUANALLA));
@@ -21,11 +20,12 @@ public class ItemInit {
     public static Item PAIEUX_DOUGH = new Item(new FabricItemSettings());
     public static Item DE_FEATIANTE = new Item(new FabricItemSettings().food(FoodComponentInit.DE_FEATIANTE));
     public static RamoliteHoneyBottleItem RAMOLITE_HONEY = new RamoliteHoneyBottleItem(new FabricItemSettings().food(FoodComponentInit.RAMOLITE_HONEY));
+    public static Item ALPHIAGOU = new Item(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU));
+    public static Item ALPHIAGOU_CIDER = new Item(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU_CIDER));
+    public static Item MYSTICAL_ALPHIAGOU_CIDER = new Item(new FabricItemSettings().food(FoodComponentInit.MYSTICAL_ALPHIAGOU_CIDER));
+
     public static Item PROTOSTERM_BARK = new Item(new FabricItemSettings());
-    public static ProtostermShieldItem PROTOSTERM_SHIELD_BASE = new ProtostermShieldItem(new FabricItemSettings().maxDamage(283),
-            15, 4);
-    public static ProtostermShieldItem PROTOSTERM_SHIELD = new ProtostermShieldItem(new FabricItemSettings().maxDamage(358),
-            10, 6);
+
 
 
     public static void init() {
@@ -39,9 +39,10 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "paieux"), PAIEUX);
         Registry.register(Registry.ITEM, new Identifier(ID, "paieux_dough"), PAIEUX_DOUGH);
         Registry.register(Registry.ITEM, new Identifier(ID, "de_featiante"), DE_FEATIANTE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "alphiagou"), ALPHIAGOU);
+        Registry.register(Registry.ITEM, new Identifier(ID, "alphiagou_cider"), ALPHIAGOU_CIDER);
+        Registry.register(Registry.ITEM, new Identifier(ID, "mystical_alphiagou_cider"), MYSTICAL_ALPHIAGOU_CIDER);
 
         Registry.register(Registry.ITEM, new Identifier(ID, "protosterm_bark"), PROTOSTERM_BARK);
-        Registry.register(Registry.ITEM, new Identifier(ID, "protosterm_shield_unfinished"), PROTOSTERM_SHIELD_BASE);
-        Registry.register(Registry.ITEM, new Identifier(ID, "protosterm_shield"), PROTOSTERM_SHIELD);
     }
 }

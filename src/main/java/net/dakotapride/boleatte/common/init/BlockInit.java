@@ -1,6 +1,7 @@
 package net.dakotapride.boleatte.common.init;
 
 import net.dakotapride.boleatte.common.block.QuanallaBushBlock;
+import net.dakotapride.boleatte.common.gen.ArbuneSaplingGenerator;
 import net.dakotapride.boleatte.common.gen.BotakoaSaplingGenerator;
 import net.dakotapride.boleatte.common.gen.ProtostermSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -32,6 +33,15 @@ public class BlockInit {
     public static Block BOTAKOA_PLANKS = new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS));
     public static LeavesBlock BOTAKOA_LEAVES = new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
     public static BarrelBlock BOTAKOA_BARREL = new BarrelBlock(FabricBlockSettings.copy(Blocks.BARREL));
+
+    public static SaplingBlock ARBUNE_SAPLING = new SaplingBlock(new ArbuneSaplingGenerator(),
+            FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
+    public static PillarBlock ARBUNE_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG));
+    public static PillarBlock STRIPPED_ARBUNE_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG));
+    public static PillarBlock ARBUNE_WOOD = new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_WOOD));
+    public static PillarBlock STRIPPED_ARBUNE_WOOD = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD));
+    public static Block ARBUNE_PLANKS = new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS));
+    public static LeavesBlock ARBUNE_LEAVES = new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
 
     public static QuanallaBushBlock QUANALLA_BUSH = new QuanallaBushBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH).ticksRandomly().nonOpaque());
 

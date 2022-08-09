@@ -18,5 +18,9 @@ public class FoodComponentInit {
     // PAIORE_DOUGH
     public static final FoodComponent PAIEUX = new FoodComponent.Builder().hunger(6).saturationModifier(0.6F).build();
     public static final FoodComponent DE_FEATIANTE = new FoodComponent.Builder().hunger(8).saturationModifier(0.9F).build();
+    public static final FoodComponent ALPHIAGOU = new FoodComponent.Builder().hunger(5).saturationModifier(0.5F).build();
+
+    public static final FoodComponent ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(7).saturationModifier(0.6F).build();
+    public static final FoodComponent MYSTICAL_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).saturationModifier(0.7F).build();
 
 }
