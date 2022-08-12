@@ -1,7 +1,6 @@
 package net.dakotapride.boleatte.common.init;
 
-import net.dakotapride.boleatte.common.block.QuanallaBushBlock;
-import net.dakotapride.boleatte.common.block.SakalouBushBlock;
+import net.dakotapride.boleatte.common.block.*;
 import net.dakotapride.boleatte.common.gen.ArbuneSaplingGenerator;
 import net.dakotapride.boleatte.common.gen.BotakoaSaplingGenerator;
 import net.dakotapride.boleatte.common.gen.ProtostermSaplingGenerator;
@@ -44,8 +43,6 @@ public class BlockInit {
     public static LeavesBlock ARBUNE_LEAVES = new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
 
     public static QuanallaBushBlock QUANALLA_BUSH = new QuanallaBushBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH).ticksRandomly().nonOpaque());
-    public static SakalouBushBlock SAKALOU_BUSH = new SakalouBushBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH).ticksRandomly().nonOpaque());
-
 
     public static void init() {
         Registry.register(Registry.BLOCK, new Identifier(ID, "protosterm_sapling"), PROTOSTERM_SAPLING);
@@ -94,7 +91,6 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "arbune_planks"), new BlockItem(ARBUNE_PLANKS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "quanalla_bush"), QUANALLA_BUSH);
-        Registry.register(Registry.BLOCK, new Identifier(ID, "sakalou_bush"), SAKALOU_BUSH);
     }
 
 }

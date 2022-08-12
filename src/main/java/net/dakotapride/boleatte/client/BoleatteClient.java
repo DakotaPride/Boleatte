@@ -19,6 +19,5 @@ public class BoleatteClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.ARBUNE_LEAVES, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.QUANALLA_BUSH, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.SAKALOU_BUSH, RenderLayer.getCutout());
     }
 }
