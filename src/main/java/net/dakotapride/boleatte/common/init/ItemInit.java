@@ -14,7 +14,7 @@ public class ItemInit {
     public static class BoleatteItemGroup {
         public static ItemGroup BOLEATTE = FabricItemGroupBuilder.create(
                         new Identifier(ID, "boleatte_group"))
-                .icon(() -> new ItemStack(Items.SPLASH_POTION))
+                .icon(() -> new ItemStack(BlockInit.PROTOSTERM_LOG.asItem()))
                 .appendItems(itemStacks -> {
                     itemStacks.add(new ItemStack(QUANALLA));
                     itemStacks.add(new ItemStack(BASOLOTE));
@@ -26,6 +26,7 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(PAIEUX_DOUGH));
                     itemStacks.add(new ItemStack(PAIEUX));
                     itemStacks.add(new ItemStack(ALPHIAGOU));
+                    itemStacks.add(new ItemStack(SAKALOU));
                     itemStacks.add(new ItemStack(DE_FEATIANTE));
                     itemStacks.add(new ItemStack(ALPHIAGOU_CIDER));
                     itemStacks.add(new ItemStack(MYSTICAL_ALPHIAGOU_CIDER));
@@ -53,6 +54,14 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_PLANKS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_LEAVES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_SAPLING.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.RASIORE_LOG.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.RASIORE_WOOD.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.STRIPPED_RASIORE_LOG.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.STRIPPED_RASIORE_WOOD.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.RASIORE_PLANKS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.RASIORE_LEAVES.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.RASIORE_SAPLING.asItem()));
                 }).build();
     }
 
@@ -66,7 +75,7 @@ public class ItemInit {
     public static Item PAIEUX_DOUGH = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item DE_FEATIANTE = new Item(new FabricItemSettings().food(FoodComponentInit.DE_FEATIANTE).group(BoleatteItemGroup.BOLEATTE));
     public static RamoliteHoneyBottleItem RAMOLITE_HONEY = new RamoliteHoneyBottleItem(new FabricItemSettings().food(FoodComponentInit.RAMOLITE_HONEY).group(BoleatteItemGroup.BOLEATTE));
-    public static BlockItem SAKALOU = new BlockItem(BlockInit.SAKALOU_BUSH, new FabricItemSettings().food(FoodComponentInit.SAKALOU));
+    public static Item SAKALOU = new Item(new FabricItemSettings().food(FoodComponentInit.SAKALOU));
     public static Item ALPHIAGOU = new Item(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
     public static Item ALPHIAGOU_CIDER = new Item(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
     public static Item MYSTICAL_ALPHIAGOU_CIDER = new Item(new FabricItemSettings().food(FoodComponentInit.MYSTICAL_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));

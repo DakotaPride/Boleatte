@@ -58,6 +58,10 @@ public class FeaturesInit {
         return builder(BlockInit.BOTAKOA_LOG, BlockInit.BOTAKOA_LEAVES, 5, 2, 0, 2).ignoreVines();
     }
 
+    private static TreeFeatureConfig.Builder rasiore() {
+        return builder(BlockInit.BOTAKOA_LOG, BlockInit.BOTAKOA_LEAVES, 5, 2, 0, 2).ignoreVines();
+    }
+
     private static TreeFeatureConfig.Builder superbotakoa() {
         return builder(BlockInit.BOTAKOA_LOG, BlockInit.BOTAKOA_LEAVES, 5, 2, 6, 2).ignoreVines();
     }
@@ -66,19 +70,23 @@ public class FeaturesInit {
             ConfiguredFeatures.register("botokoa", Feature.TREE,
             botakoa().build());
 
-    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> SUPER_BOTAKOA_BEES_0002 = 
-            ConfiguredFeatures.register("super_botakoa_bees_0002", Feature.TREE, 
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> RASIORE =
+            ConfiguredFeatures.register("rasiore", Feature.TREE,
+                    rasiore().build());
+
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> SUPER_BOTAKOA_BEES_0002 =
+            ConfiguredFeatures.register("super_botakoa_bees_0002", Feature.TREE,
                     superbotakoa().decorators(ImmutableList.of(BEES_0002)).build());
 
-    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> SUPER_BOTAKOA_BEES = 
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> SUPER_BOTAKOA_BEES =
             ConfiguredFeatures.register("super_botakoa_bees", Feature.TREE,
                     superbotakoa().decorators(ImmutableList.of(BEES)).build());
 
-    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> BOTAKOA_BEES_0002 = 
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> BOTAKOA_BEES_0002 =
             ConfiguredFeatures.register("botakoa_bees_0002", Feature.TREE,
             botakoa().decorators(List.of(BEES_0002)).build());
 
-    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> BOTAKOA_BEES_002 = 
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> BOTAKOA_BEES_002 =
             ConfiguredFeatures.register("botakoa_bees_002", Feature.TREE,
             botakoa().decorators(List.of(BEES_002)).build());
 

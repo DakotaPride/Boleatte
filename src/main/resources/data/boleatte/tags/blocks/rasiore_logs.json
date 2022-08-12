@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "boleatte:rasiore_log",
+    "boleatte:stripped_rasiore_log",
+    "boleatte:rasiore_wood",
+    "boleatte:stripped_rasiore_wood"
+  ]
+}

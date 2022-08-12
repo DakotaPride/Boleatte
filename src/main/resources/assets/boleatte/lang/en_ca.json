@@ -32,9 +32,6 @@
   "block.boleatte.arbune_sapling": "Arbune Sapling",
   "block.boleatte.arbune_planks": "Arbune Planks",
 
-  "block.boleatte.quanalla_bush": "Quanalla",
-  "block.boleatte.sakalou_bush": "Sakalou",
-
   "block.boleatte.botakoa_log": "Botakoa Log",
   "block.boleatte.stripped_botakoa_log": "Stripped Botakoa Log",
   "block.boleatte.botakoa_wood": "Botakoa Wood",
@@ -42,6 +39,17 @@
   "block.boleatte.botakoa_leaves": "Botakoa Leaves",
   "block.boleatte.botakoa_sapling": "Botakoa Sapling",
   "block.boleatte.botakoa_planks": "Botakoa Planks",
+
+  "block.boleatte.rasiore_log": "Rasiore Log",
+  "block.boleatte.stripped_rasiore_log": "Stripped Rasiore Log",
+  "block.boleatte.rasiore_wood": "Rasiore Wood",
+  "block.boleatte.stripped_rasiore_wood": "Stripped Rasiore Wood",
+  "block.boleatte.rasiore_leaves": "Rasiore Leaves",
+  "block.boleatte.rasiore_sapling": "Rasiore Sapling",
+  "block.boleatte.rasiore_planks": "Rasiore Planks",
+
+  "block.boleatte.quanalla_bush": "Quanalla",
+  "block.boleatte.dead_leaves": "Dead Leaves",
 
   "effect.boleatte.defiant": "Defiant",
   "effect.boleatte.defiant.ii": "Defiant II"

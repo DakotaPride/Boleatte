@@ -4,6 +4,7 @@ import net.dakotapride.boleatte.common.block.*;
 import net.dakotapride.boleatte.common.gen.ArbuneSaplingGenerator;
 import net.dakotapride.boleatte.common.gen.BotakoaSaplingGenerator;
 import net.dakotapride.boleatte.common.gen.ProtostermSaplingGenerator;
+import net.dakotapride.boleatte.common.gen.RasioreSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -41,6 +42,15 @@ public class BlockInit {
     public static PillarBlock STRIPPED_ARBUNE_WOOD = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD));
     public static Block ARBUNE_PLANKS = new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS));
     public static LeavesBlock ARBUNE_LEAVES = new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
+
+    public static SaplingBlock RASIORE_SAPLING = new SaplingBlock(new RasioreSaplingGenerator(),
+            FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
+    public static PillarBlock RASIORE_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG));
+    public static PillarBlock STRIPPED_RASIORE_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG));
+    public static PillarBlock RASIORE_WOOD = new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_WOOD));
+    public static PillarBlock STRIPPED_RASIORE_WOOD = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD));
+    public static Block RASIORE_PLANKS = new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS));
+    public static RasioreLeavesBlock RASIORE_LEAVES = new RasioreLeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
 
     public static QuanallaBushBlock QUANALLA_BUSH = new QuanallaBushBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH).ticksRandomly().nonOpaque());
 
@@ -89,6 +99,21 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "stripped_arbune_wood"), new BlockItem(STRIPPED_ARBUNE_WOOD, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "arbune_planks"), ARBUNE_PLANKS);
         Registry.register(Registry.ITEM, new Identifier(ID, "arbune_planks"), new BlockItem(ARBUNE_PLANKS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+
+        Registry.register(Registry.BLOCK, new Identifier(ID, "rasiore_sapling"), RASIORE_SAPLING);
+        Registry.register(Registry.ITEM, new Identifier(ID, "rasiore_sapling"), new BlockItem(RASIORE_SAPLING, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "rasiore_log"), RASIORE_LOG);
+        Registry.register(Registry.ITEM, new Identifier(ID, "rasiore_log"), new BlockItem(RASIORE_LOG, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "rasiore_leaves"), RASIORE_LEAVES);
+        Registry.register(Registry.ITEM, new Identifier(ID, "rasiore_leaves"), new BlockItem(RASIORE_LEAVES, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "stripped_rasiore_log"), STRIPPED_RASIORE_LOG);
+        Registry.register(Registry.ITEM, new Identifier(ID, "stripped_rasiore_log"), new BlockItem(STRIPPED_RASIORE_LOG, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "rasiore_wood"), RASIORE_WOOD);
+        Registry.register(Registry.ITEM, new Identifier(ID, "rasiore_wood"), new BlockItem(RASIORE_WOOD, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "stripped_rasiore_wood"), STRIPPED_RASIORE_WOOD);
+        Registry.register(Registry.ITEM, new Identifier(ID, "stripped_rasiore_wood"), new BlockItem(STRIPPED_RASIORE_WOOD, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "rasiore_planks"), RASIORE_PLANKS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "rasiore_planks"), new BlockItem(RASIORE_PLANKS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "quanalla_bush"), QUANALLA_BUSH);
     }

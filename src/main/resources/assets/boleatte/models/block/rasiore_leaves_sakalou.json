@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "boleatte:block/rasiore_leaves_sakalou"
+  }
+}
