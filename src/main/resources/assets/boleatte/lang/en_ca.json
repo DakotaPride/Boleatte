@@ -11,6 +11,7 @@
   "item.boleatte.paieux": "Paieux",
   "item.boleatte.paieux_dough": "Paieux Dough",
   "item.boleatte.de_featiante": "De Featiante",
+  "item.boleatte.sakalou": "Sakalou",
   "item.boleatte.alphiagou": "Alphiagou",
   "item.boleatte.alphiagou_cider": "Alphiagou Cider",
   "item.boleatte.mystical_alphiagou_cider": "Mystical Alphiagou Cider",
@@ -31,7 +32,8 @@
   "block.boleatte.arbune_sapling": "Arbune Sapling",
   "block.boleatte.arbune_planks": "Arbune Planks",
 
-  "block.boleatte.quanalla_bush": "Quanalla Bush",
+  "block.boleatte.quanalla_bush": "Quanalla",
+  "block.boleatte.sakalou_bush": "Sakalou",
 
   "block.boleatte.botakoa_log": "Botakoa Log",
   "block.boleatte.stripped_botakoa_log": "Stripped Botakoa Log",

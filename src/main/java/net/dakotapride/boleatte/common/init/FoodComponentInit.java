@@ -15,11 +15,10 @@ public class FoodComponentInit {
     public static final FoodComponent MIERIRE = new FoodComponent.Builder().hunger(2).saturationModifier(0.4F).build();
     public static final FoodComponent PAIORE = new FoodComponent.Builder().statusEffect(new StatusEffectInstance
             (StatusEffects.HUNGER, 200, 1), 40).hunger(3).saturationModifier(0.1F).build();
-    // PAIORE_DOUGH
     public static final FoodComponent PAIEUX = new FoodComponent.Builder().hunger(6).saturationModifier(0.6F).build();
     public static final FoodComponent DE_FEATIANTE = new FoodComponent.Builder().hunger(8).saturationModifier(0.9F).build();
+    public static final FoodComponent SAKALOU = new FoodComponent.Builder().hunger(3).saturationModifier(0.2F).build();
     public static final FoodComponent ALPHIAGOU = new FoodComponent.Builder().hunger(5).saturationModifier(0.5F).build();
-
     public static final FoodComponent ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(7).saturationModifier(0.6F).build();
     public static final FoodComponent MYSTICAL_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).saturationModifier(0.7F).build();
 

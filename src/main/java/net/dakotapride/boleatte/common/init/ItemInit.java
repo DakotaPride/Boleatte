@@ -66,6 +66,7 @@ public class ItemInit {
     public static Item PAIEUX_DOUGH = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item DE_FEATIANTE = new Item(new FabricItemSettings().food(FoodComponentInit.DE_FEATIANTE).group(BoleatteItemGroup.BOLEATTE));
     public static RamoliteHoneyBottleItem RAMOLITE_HONEY = new RamoliteHoneyBottleItem(new FabricItemSettings().food(FoodComponentInit.RAMOLITE_HONEY).group(BoleatteItemGroup.BOLEATTE));
+    public static BlockItem SAKALOU = new BlockItem(BlockInit.SAKALOU_BUSH, new FabricItemSettings().food(FoodComponentInit.SAKALOU));
     public static Item ALPHIAGOU = new Item(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
     public static Item ALPHIAGOU_CIDER = new Item(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
     public static Item MYSTICAL_ALPHIAGOU_CIDER = new Item(new FabricItemSettings().food(FoodComponentInit.MYSTICAL_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
@@ -81,6 +82,7 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "paieux"), PAIEUX);
         Registry.register(Registry.ITEM, new Identifier(ID, "paieux_dough"), PAIEUX_DOUGH);
         Registry.register(Registry.ITEM, new Identifier(ID, "de_featiante"), DE_FEATIANTE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "sakalou"), SAKALOU);
         Registry.register(Registry.ITEM, new Identifier(ID, "alphiagou"), ALPHIAGOU);
         Registry.register(Registry.ITEM, new Identifier(ID, "alphiagou_cider"), ALPHIAGOU_CIDER);
         Registry.register(Registry.ITEM, new Identifier(ID, "mystical_alphiagou_cider"), MYSTICAL_ALPHIAGOU_CIDER);
