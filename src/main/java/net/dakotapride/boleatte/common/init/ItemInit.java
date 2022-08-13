@@ -64,6 +64,9 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.RASIORE_PLANKS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.RASIORE_LEAVES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.RASIORE_SAPLING.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.VIOLES.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.VETICOADE.asItem()));
                 }).build();
     }
 

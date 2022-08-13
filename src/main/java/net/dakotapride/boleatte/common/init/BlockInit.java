@@ -55,6 +55,9 @@ public class BlockInit {
     public static QuanallaBushBlock QUANALLA_BUSH = new QuanallaBushBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH).ticksRandomly().nonOpaque());
     public static LeavesBlock DEAD_LEAVES = new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES));
 
+    public static Block VIOLES = new Block(FabricBlockSettings.copy(Blocks.SAND));
+    public static Block VETICOADE = new Block(FabricBlockSettings.copy(Blocks.SANDSTONE));
+
     public static void init() {
         Registry.register(Registry.BLOCK, new Identifier(ID, "protosterm_sapling"), PROTOSTERM_SAPLING);
         Registry.register(Registry.ITEM, new Identifier(ID, "protosterm_sapling"), new BlockItem(PROTOSTERM_SAPLING, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
@@ -119,6 +122,12 @@ public class BlockInit {
         Registry.register(Registry.BLOCK, new Identifier(ID, "quanalla_bush"), QUANALLA_BUSH);
         Registry.register(Registry.BLOCK, new Identifier(ID, "dead_leaves"), DEAD_LEAVES);
         Registry.register(Registry.ITEM, new Identifier(ID, "dead_leaves"), new BlockItem(DEAD_LEAVES, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+
+        Registry.register(Registry.BLOCK, new Identifier(ID, "violes"), VIOLES);
+        Registry.register(Registry.ITEM, new Identifier(ID, "violes"), new BlockItem(VIOLES, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "veticoade"), VETICOADE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "veticoade"), new BlockItem(VETICOADE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+
     }
 
 }
