@@ -10,7 +10,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "boleatte:arbune_leaves",
+              "name": "boleatte:protosterm_leaves",
               "conditions": [
                 {
                   "condition": "minecraft:alternative",
@@ -42,7 +42,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "boleatte:arbune_sapling",
+              "name": "boleatte:protosterm_sapling",
               "conditions": [
                 {
                   "condition": "minecraft:survives_explosion"

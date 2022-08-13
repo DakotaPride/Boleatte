@@ -13,9 +13,11 @@ import net.minecraft.util.registry.RegistryEntryList;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.foliage.BushFoliagePlacer;
 import net.minecraft.world.gen.foliage.RandomSpreadFoliagePlacer;
 import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
 import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
+import net.minecraft.world.gen.placementmodifier.PlacementModifier;
 import net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier;
 import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 import net.minecraft.world.gen.root.AboveRootPlacement;
@@ -36,6 +38,15 @@ public class FeaturesInit {
     private static final BeehiveTreeDecorator BEES_002 = new BeehiveTreeDecorator(0.02F);
     private static final BeehiveTreeDecorator BEES_005 = new BeehiveTreeDecorator(0.05F);
     private static final BeehiveTreeDecorator BEES = new BeehiveTreeDecorator(1.0F);
+
+
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> QUANTILA_DEAD_BUSH =
+            ConfiguredFeatures.register("quantila_dead_bush", Feature.TREE, (new TreeFeatureConfig.Builder(
+            BlockStateProvider.of(Blocks.OAK_LOG), new StraightTrunkPlacer(1, 0, 0),
+            BlockStateProvider.of(BlockInit.DEAD_LEAVES), new BushFoliagePlacer(
+            ConstantIntProvider.create(2), ConstantIntProvider.create(1), 2),
+                    new TwoLayersFeatureSize(0, 0, 0))).build());
+
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> ARBUNE =
             ConfiguredFeatures.register("arbune", Feature.TREE,
@@ -139,6 +150,8 @@ public class FeaturesInit {
     public static final RegistryEntry<PlacedFeature> QUANALLA_BUSH_PLACED = PlacedFeatures.register("quanalla_bush_placed",
             QUANALLA_BUSH, RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(),
             PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+    public static final RegistryEntry<PlacedFeature> QUANTILA_DEAD_BUSH_PLACED = PlacedFeatures.register
+            ("quantila_dead_bush", QUANTILA_DEAD_BUSH, PlacedFeatures.wouldSurvive(Blocks.OAK_SAPLING));
 
 
     private static TreeFeatureConfig.Builder builder(Block log, Block leaves, int baseHeight, int firstRandomHeight, int secondRandomHeight, int radius) {

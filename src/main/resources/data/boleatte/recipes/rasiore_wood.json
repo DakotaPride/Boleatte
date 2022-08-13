@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "boleatte:rasiore_log"
+    }
+  },
+  "result": {
+    "item": "boleatte:rasiore_wood",
+    "count": 3
+  }
+}

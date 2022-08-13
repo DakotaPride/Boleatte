@@ -31,6 +31,8 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(ALPHIAGOU_CIDER));
                     itemStacks.add(new ItemStack(MYSTICAL_ALPHIAGOU_CIDER));
 
+                    itemStacks.add(new ItemStack(BlockInit.DEAD_LEAVES.asItem()));
+
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_LOG.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_WOOD.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.STRIPPED_PROTOSTERM_LOG.asItem()));
