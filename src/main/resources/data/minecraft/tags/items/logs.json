@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#boleatte:protosterm_logs",
+    "#boleatte:botakoa_logs",
+    "#boleatte:arbune_logs",
+    "#boleatte:rasiore_logs"
+  ]
+}

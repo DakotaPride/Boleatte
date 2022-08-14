@@ -2,7 +2,7 @@
   "itemGroup.boleatte.boleatte_group": "Boleatte",
 
   "item.boleatte.quanalla": "Quanalla",
-  "item.boleatte.basolote": "Blasolote",
+  "item.boleatte.basolote": "Basolote",
   "item.boleatte.ramukai": "Ramukai",
   "item.boleatte.ramolite_honey": "Ramolite Honey Bottle",
   "item.boleatte.nikota_tu": "Nikota-Tu",
@@ -12,6 +12,10 @@
   "item.boleatte.paieux_dough": "Paieux Dough",
   "item.boleatte.de_featiante": "De Featiante",
   "item.boleatte.sakalou": "Sakalou",
+  "item.boleatte.rasiore": "Rasiore",
+  "item.boleatte.roasted_rasiore": "Roasted Rasiore",
+  "item.boleatte.baburben": "Baburben",
+  "item.boleatte.roasted_baburben": "Roasted Baburben",
   "item.boleatte.alphiagou": "Alphiagou",
   "item.boleatte.alphiagou_cider": "Alphiagou Cider",
   "item.boleatte.mystical_alphiagou_cider": "Mystical Alphiagou Cider",
@@ -50,6 +54,8 @@
 
   "block.boleatte.quanalla_bush": "Quanalla",
   "block.boleatte.dead_leaves": "Dead Leaves",
+  "block.boleatte.oretesse": "Oretesse",
+  "item.boleatte.dimatis": "Dimatis",
 
   "block.boleatte.violes": "Violes",
   "block.boleatte.veticoade": "Veticoade",

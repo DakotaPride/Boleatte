@@ -1,5 +1,6 @@
 package net.dakotapride.boleatte.common.init;
 
+import net.dakotapride.boleatte.common.item.GlintItem;
 import net.dakotapride.boleatte.common.item.RamoliteHoneyBottleItem;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -27,10 +28,16 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(PAIEUX));
                     itemStacks.add(new ItemStack(ALPHIAGOU));
                     itemStacks.add(new ItemStack(SAKALOU));
+                    itemStacks.add(new ItemStack(RASIORE));
+                    itemStacks.add(new ItemStack(ROASTED_RASIORE));
+                    itemStacks.add(new ItemStack(BABURBEN));
+                    itemStacks.add(new ItemStack(ROASTED_BABURBEN));
                     itemStacks.add(new ItemStack(DE_FEATIANTE));
                     itemStacks.add(new ItemStack(ALPHIAGOU_CIDER));
                     itemStacks.add(new ItemStack(MYSTICAL_ALPHIAGOU_CIDER));
 
+                    itemStacks.add(new ItemStack(DIMATIS));
+                    itemStacks.add(new ItemStack(BlockInit.ORETESSE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.DEAD_LEAVES.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_LOG.asItem()));
@@ -70,6 +77,7 @@ public class ItemInit {
                 }).build();
     }
 
+    public static GlintItem DIMATIS = new GlintItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
     public static BlockItem QUANALLA = new BlockItem(BlockInit.QUANALLA_BUSH, new FabricItemSettings().food(FoodComponentInit.QUANALLA).group(BoleatteItemGroup.BOLEATTE));
     public static Item BASOLOTE = new Item(new FabricItemSettings().food(FoodComponentInit.BASOLOTE).group(BoleatteItemGroup.BOLEATTE));
     public static Item RAMUKAI = new Item(new FabricItemSettings().food(FoodComponentInit.RAMUKAI).group(BoleatteItemGroup.BOLEATTE));
@@ -80,7 +88,11 @@ public class ItemInit {
     public static Item PAIEUX_DOUGH = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item DE_FEATIANTE = new Item(new FabricItemSettings().food(FoodComponentInit.DE_FEATIANTE).group(BoleatteItemGroup.BOLEATTE));
     public static RamoliteHoneyBottleItem RAMOLITE_HONEY = new RamoliteHoneyBottleItem(new FabricItemSettings().food(FoodComponentInit.RAMOLITE_HONEY).group(BoleatteItemGroup.BOLEATTE));
-    public static Item SAKALOU = new Item(new FabricItemSettings().food(FoodComponentInit.SAKALOU));
+    public static Item SAKALOU = new Item(new FabricItemSettings().food(FoodComponentInit.SAKALOU).group(BoleatteItemGroup.BOLEATTE));
+    public static Item RASIORE = new Item(new FabricItemSettings().food(FoodComponentInit.RASIORE).group(BoleatteItemGroup.BOLEATTE));
+    public static Item ROASTED_RASIORE = new Item(new FabricItemSettings().food(FoodComponentInit.ROASTED_RASIORE).group(BoleatteItemGroup.BOLEATTE));
+    public static Item BABURBEN = new Item(new FabricItemSettings().food(FoodComponentInit.BABURBEN).group(BoleatteItemGroup.BOLEATTE));
+    public static Item ROASTED_BABURBEN = new Item(new FabricItemSettings().food(FoodComponentInit.ROASTED_BABURBEN).group(BoleatteItemGroup.BOLEATTE));
     public static Item ALPHIAGOU = new Item(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
     public static Item ALPHIAGOU_CIDER = new Item(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
     public static Item MYSTICAL_ALPHIAGOU_CIDER = new Item(new FabricItemSettings().food(FoodComponentInit.MYSTICAL_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
@@ -97,8 +109,14 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "paieux_dough"), PAIEUX_DOUGH);
         Registry.register(Registry.ITEM, new Identifier(ID, "de_featiante"), DE_FEATIANTE);
         Registry.register(Registry.ITEM, new Identifier(ID, "sakalou"), SAKALOU);
+        Registry.register(Registry.ITEM, new Identifier(ID, "rasiore"), RASIORE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "roasted_rasiore"), ROASTED_RASIORE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "baburben"), BABURBEN);
+        Registry.register(Registry.ITEM, new Identifier(ID, "roasted_baburben"), ROASTED_BABURBEN);
         Registry.register(Registry.ITEM, new Identifier(ID, "alphiagou"), ALPHIAGOU);
         Registry.register(Registry.ITEM, new Identifier(ID, "alphiagou_cider"), ALPHIAGOU_CIDER);
         Registry.register(Registry.ITEM, new Identifier(ID, "mystical_alphiagou_cider"), MYSTICAL_ALPHIAGOU_CIDER);
+
+        Registry.register(Registry.ITEM, new Identifier(ID, "dimatis"), DIMATIS);
     }
 }

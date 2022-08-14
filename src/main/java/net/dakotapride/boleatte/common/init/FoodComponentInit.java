@@ -18,6 +18,10 @@ public class FoodComponentInit {
     public static final FoodComponent PAIEUX = new FoodComponent.Builder().hunger(6).saturationModifier(0.6F).build();
     public static final FoodComponent DE_FEATIANTE = new FoodComponent.Builder().hunger(8).saturationModifier(0.9F).build();
     public static final FoodComponent SAKALOU = new FoodComponent.Builder().hunger(3).saturationModifier(0.2F).build();
+    public static final FoodComponent RASIORE = new FoodComponent.Builder().hunger(4).saturationModifier(0.5F).build();
+    public static final FoodComponent ROASTED_RASIORE = new FoodComponent.Builder().hunger(5).saturationModifier(0.7F).build();
+    public static final FoodComponent BABURBEN = new FoodComponent.Builder().hunger(6).saturationModifier(0.7F).build();
+    public static final FoodComponent ROASTED_BABURBEN = new FoodComponent.Builder().hunger(7).saturationModifier(0.9F).build();
     public static final FoodComponent ALPHIAGOU = new FoodComponent.Builder().hunger(5).saturationModifier(0.5F).build();
     public static final FoodComponent ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(7).saturationModifier(0.6F).build();
     public static final FoodComponent MYSTICAL_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).saturationModifier(0.7F).build();

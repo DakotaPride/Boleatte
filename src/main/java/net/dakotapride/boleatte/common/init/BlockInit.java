@@ -16,6 +16,8 @@ import static net.dakotapride.boleatte.common.BoleatteMain.*;
 
 public class BlockInit {
 
+    public static Block ORETESSE = new Block(FabricBlockSettings.copy(Blocks.STRIPPED_WARPED_HYPHAE));
+
     public static SaplingBlock PROTOSTERM_SAPLING = new SaplingBlock(new ProtostermSaplingGenerator(15),
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
     public static PillarBlock PROTOSTERM_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG));
@@ -122,6 +124,8 @@ public class BlockInit {
         Registry.register(Registry.BLOCK, new Identifier(ID, "quanalla_bush"), QUANALLA_BUSH);
         Registry.register(Registry.BLOCK, new Identifier(ID, "dead_leaves"), DEAD_LEAVES);
         Registry.register(Registry.ITEM, new Identifier(ID, "dead_leaves"), new BlockItem(DEAD_LEAVES, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "oretesse"), ORETESSE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "oretesse"), new BlockItem(ORETESSE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "violes"), VIOLES);
         Registry.register(Registry.ITEM, new Identifier(ID, "violes"), new BlockItem(VIOLES, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
