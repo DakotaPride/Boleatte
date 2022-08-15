@@ -108,12 +108,14 @@
       "minecraft:ore_diamond_buried",
       "minecraft:ore_lapis",
       "minecraft:ore_lapis_buried",
-      "minecraft:ore_copper"
+      "minecraft:ore_copper",
+      "boleatte:disk_lephelusa_violes"
     ],
     [],
     [],
     [
-      "minecraft:glow_lichen"
+      "minecraft:glow_lichen",
+      "boleatte:baburben_roots"
     ],
     [
       "minecraft:freeze_top_layer"

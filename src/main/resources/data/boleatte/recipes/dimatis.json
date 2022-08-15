@@ -1,24 +1,19 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:flint_and_steel"
-    },
-    {
-      "item": "boleatte:oretesse"
-    },
-    {
-      "item": "boleatte:oretesse"
-    },
-    {
-      "item": "boleatte:oretesse"
-    },
-    {
-      "item": "boleatte:oretesse"
-    }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
   ],
+  "key": {
+    "#": {
+      "item": "boleatte:oretesse"
+    },
+    "X": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
   "result": {
-    "item": "boleatte:dimatis",
-    "count": 1
+    "item": "boleatte:dimatis"
   }
 }

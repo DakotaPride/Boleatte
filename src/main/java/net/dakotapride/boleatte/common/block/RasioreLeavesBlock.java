@@ -71,7 +71,7 @@ public class RasioreLeavesBlock extends LeavesBlock implements Fertilizable {
 
         if (i > 1) {
             int j = 1 + world.random.nextInt(2);
-            dropStack(world, pos, new ItemStack(ItemInit.SAKALOU, j + (bl ? 1 : 0)));
+            dropStack(world, pos, new ItemStack(ItemInit.RASIORE, j + (bl ? 1 : 0)));
             world.playSound((PlayerEntity)null, pos, SoundEvents.BLOCK_SWEET_BERRY_BUSH_PICK_BERRIES, SoundCategory.BLOCKS, 1.0F, 0.8F + world.random.nextFloat() * 0.4F);
             BlockState blockState = state.with(AGE, Integer.valueOf(1));
             world.setBlockState(pos, blockState, 2);

@@ -38,6 +38,7 @@ public class ItemInit {
 
                     itemStacks.add(new ItemStack(DIMATIS));
                     itemStacks.add(new ItemStack(BlockInit.ORETESSE.asItem()));
+
                     itemStacks.add(new ItemStack(BlockInit.DEAD_LEAVES.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_LOG.asItem()));
@@ -74,6 +75,7 @@ public class ItemInit {
 
                     itemStacks.add(new ItemStack(BlockInit.VIOLES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.VETICOADE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.LEPHELUSA_VIOLES.asItem()));
                 }).build();
     }
 
@@ -88,10 +90,10 @@ public class ItemInit {
     public static Item PAIEUX_DOUGH = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item DE_FEATIANTE = new Item(new FabricItemSettings().food(FoodComponentInit.DE_FEATIANTE).group(BoleatteItemGroup.BOLEATTE));
     public static RamoliteHoneyBottleItem RAMOLITE_HONEY = new RamoliteHoneyBottleItem(new FabricItemSettings().food(FoodComponentInit.RAMOLITE_HONEY).group(BoleatteItemGroup.BOLEATTE));
-    public static Item SAKALOU = new Item(new FabricItemSettings().food(FoodComponentInit.SAKALOU).group(BoleatteItemGroup.BOLEATTE));
+    public static BlockItem SAKALOU = new BlockItem(BlockInit.SAKALOU_ROOTS, new FabricItemSettings().food(FoodComponentInit.SAKALOU).group(BoleatteItemGroup.BOLEATTE));
     public static Item RASIORE = new Item(new FabricItemSettings().food(FoodComponentInit.RASIORE).group(BoleatteItemGroup.BOLEATTE));
     public static Item ROASTED_RASIORE = new Item(new FabricItemSettings().food(FoodComponentInit.ROASTED_RASIORE).group(BoleatteItemGroup.BOLEATTE));
-    public static Item BABURBEN = new Item(new FabricItemSettings().food(FoodComponentInit.BABURBEN).group(BoleatteItemGroup.BOLEATTE));
+    public static BlockItem BABURBEN = new BlockItem(BlockInit.BABURBEN_ROOTS, new FabricItemSettings().food(FoodComponentInit.BABURBEN).group(BoleatteItemGroup.BOLEATTE));
     public static Item ROASTED_BABURBEN = new Item(new FabricItemSettings().food(FoodComponentInit.ROASTED_BABURBEN).group(BoleatteItemGroup.BOLEATTE));
     public static Item ALPHIAGOU = new Item(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
     public static Item ALPHIAGOU_CIDER = new Item(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));

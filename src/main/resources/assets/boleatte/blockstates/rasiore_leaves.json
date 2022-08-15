@@ -10,7 +10,7 @@
       "model": "boleatte:block/rasiore_leaves"
     },
     "age=3": {
-      "model": "boleatte:block/rasiore_leaves_sakalou"
+      "model": "boleatte:block/rasiore_leaves_rasiore"
     }
   }
 }

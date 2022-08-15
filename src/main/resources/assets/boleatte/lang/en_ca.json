@@ -54,11 +54,15 @@
 
   "block.boleatte.quanalla_bush": "Quanalla",
   "block.boleatte.dead_leaves": "Dead Leaves",
+  "block.boleatte.sakalou_roots": "Sakalou",
+
   "block.boleatte.oretesse": "Oretesse",
   "item.boleatte.dimatis": "Dimatis",
 
   "block.boleatte.violes": "Violes",
   "block.boleatte.veticoade": "Veticoade",
+  "block.boleatte.lephelusa_violes": "Lephelusa Violes",
+  "block.boleatte.baburben_roots": "Baburben",
 
   "effect.boleatte.defiant": "Defiant",
   "effect.boleatte.defiant.ii": "Defiant II"
