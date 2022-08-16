@@ -1,6 +1,6 @@
 package net.dakotapride.boleatte.common.init;
 
-import net.dakotapride.boleatte.common.item.GlintItem;
+import net.dakotapride.boleatte.common.item.DimatisItem;
 import net.dakotapride.boleatte.common.item.RamoliteHoneyBottleItem;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -37,6 +37,12 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(MYSTICAL_ALPHIAGOU_CIDER));
 
                     itemStacks.add(new ItemStack(DIMATIS));
+                    itemStacks.add(new ItemStack(ARBUNE_DIMATIS));
+                    itemStacks.add(new ItemStack(BABURBEN_DIMATIS));
+                    itemStacks.add(new ItemStack(BOTAKOA_DIMATIS));
+                    itemStacks.add(new ItemStack(PROTOSTERM_DIMATIS));
+                    itemStacks.add(new ItemStack(QUANTILA_DIMATIS));
+                    itemStacks.add(new ItemStack(RASIORE_DIMATIS));
                     itemStacks.add(new ItemStack(BlockInit.ORETESSE.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.DEAD_LEAVES.asItem()));
@@ -64,6 +70,8 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_PLANKS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_LEAVES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_SAPLING.asItem()));
+                    itemStacks.add(new ItemStack(MELKIRSCH_SEEDS));
+                    itemStacks.add(new ItemStack(BlockInit.MELKIRSCH.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.RASIORE_LOG.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.RASIORE_WOOD.asItem()));
@@ -79,7 +87,20 @@ public class ItemInit {
                 }).build();
     }
 
-    public static GlintItem DIMATIS = new GlintItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
+    public static Item KUTUNITE_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
+    public static Item LATZECK_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
+    public static Item NEMORAL_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
+    public static Item OPAFEU_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
+    public static Item KUTUNITE_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
+    public static Item KUTUNITE_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
+    public static Item DIMATIS = new Item(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
+    public static DimatisItem ARBUNE_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
+    public static DimatisItem BABURBEN_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
+    public static DimatisItem BOTAKOA_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
+    public static DimatisItem PROTOSTERM_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
+    public static DimatisItem RASIORE_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
+    public static DimatisItem QUANTILA_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
+    public static AliasedBlockItem MELKIRSCH_SEEDS = new AliasedBlockItem(BlockInit.MELKIRSCH_STEM, new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static BlockItem QUANALLA = new BlockItem(BlockInit.QUANALLA_BUSH, new FabricItemSettings().food(FoodComponentInit.QUANALLA).group(BoleatteItemGroup.BOLEATTE));
     public static Item BASOLOTE = new Item(new FabricItemSettings().food(FoodComponentInit.BASOLOTE).group(BoleatteItemGroup.BOLEATTE));
     public static Item RAMUKAI = new Item(new FabricItemSettings().food(FoodComponentInit.RAMUKAI).group(BoleatteItemGroup.BOLEATTE));
@@ -115,10 +136,17 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "roasted_rasiore"), ROASTED_RASIORE);
         Registry.register(Registry.ITEM, new Identifier(ID, "baburben"), BABURBEN);
         Registry.register(Registry.ITEM, new Identifier(ID, "roasted_baburben"), ROASTED_BABURBEN);
+        Registry.register(Registry.ITEM, new Identifier(ID, "melkirsch_seeds"), MELKIRSCH_SEEDS);
         Registry.register(Registry.ITEM, new Identifier(ID, "alphiagou"), ALPHIAGOU);
         Registry.register(Registry.ITEM, new Identifier(ID, "alphiagou_cider"), ALPHIAGOU_CIDER);
         Registry.register(Registry.ITEM, new Identifier(ID, "mystical_alphiagou_cider"), MYSTICAL_ALPHIAGOU_CIDER);
 
         Registry.register(Registry.ITEM, new Identifier(ID, "dimatis"), DIMATIS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "dimatis_arbune"), ARBUNE_DIMATIS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "dimatis_baburben"), BABURBEN_DIMATIS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "dimatis_botakoa"), BOTAKOA_DIMATIS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "dimatis_protosterm"), PROTOSTERM_DIMATIS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "dimatis_quantila"), QUANTILA_DIMATIS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "dimatis_rasiore"), RASIORE_DIMATIS);
     }
 }

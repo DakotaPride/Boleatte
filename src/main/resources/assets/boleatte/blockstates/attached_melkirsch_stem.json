@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "boleatte:block/attached_melkirsch_stem",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "boleatte:block/attached_melkirsch_stem",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "boleatte:block/attached_melkirsch_stem",
+      "y": 270
+    },
+    "facing=west": {
+      "model": "boleatte:block/attached_melkirsch_stem"
+    }
+  }
+}

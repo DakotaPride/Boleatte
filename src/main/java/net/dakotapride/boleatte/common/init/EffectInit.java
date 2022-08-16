@@ -15,9 +15,21 @@ public class EffectInit {
     public static StatusEffect DEFIANT = new EmptyStatusEffect(StatusEffectCategory.NEUTRAL, 0xA7C9C9)
             .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "7107DE5E-7CE8-4030-940E-514C1F160890",
                     -0.15000000596046448D, EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
+    public static StatusEffect VERET_FAVOUR = new EmptyStatusEffect(StatusEffectCategory.BENEFICIAL, 0xA7C9C9);
+    public static StatusEffect LAIDE_BLESSING = new EmptyStatusEffect(StatusEffectCategory.BENEFICIAL, 0xA7C9C9);
+    public static StatusEffect BEUSERE_VIRTUE = new EmptyStatusEffect(StatusEffectCategory.BENEFICIAL, 0xA7C9C9);
+    public static StatusEffect ORITEM_PROFIT = new EmptyStatusEffect(StatusEffectCategory.BENEFICIAL, 0xA7C9C9);
+    public static StatusEffect STERRES_GIFT = new EmptyStatusEffect(StatusEffectCategory.BENEFICIAL, 0xA7C9C9);
+    public static StatusEffect GELA_BENEFIT = new EmptyStatusEffect(StatusEffectCategory.BENEFICIAL, 0xA7C9C9);
 
     public static void init() {
         Registry.register(Registry.STATUS_EFFECT, new Identifier(ID, "defiant"), DEFIANT);
+        Registry.register(Registry.STATUS_EFFECT, new Identifier(ID, "veret_favour"), VERET_FAVOUR);
+        Registry.register(Registry.STATUS_EFFECT, new Identifier(ID, "laide_blessing"), LAIDE_BLESSING);
+        Registry.register(Registry.STATUS_EFFECT, new Identifier(ID, "beusere_virtue"), BEUSERE_VIRTUE);
+        Registry.register(Registry.STATUS_EFFECT, new Identifier(ID, "oritem_profit"), ORITEM_PROFIT);
+        Registry.register(Registry.STATUS_EFFECT, new Identifier(ID, "sterres_gift"), STERRES_GIFT);
+        Registry.register(Registry.STATUS_EFFECT, new Identifier(ID, "gela_benefit"), GELA_BENEFIT);
     }
 
 }

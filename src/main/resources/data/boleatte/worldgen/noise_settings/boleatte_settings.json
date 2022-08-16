@@ -396,6 +396,25 @@
                 "type": "minecraft:sequence",
                 "sequence": [
                   {
+                    "type": "minecraft:condition",
+                    "if_true": {
+                      "type": "minecraft:vertical_gradient",
+                      "random_name": "minecraft:bedrock_floor",
+                      "true_at_and_below": {
+                        "above_bottom": 0
+                      },
+                      "false_at_and_above": {
+                        "above_bottom": 5
+                      }
+                    },
+                    "then_run": {
+                      "type": "minecraft:block",
+                      "result_state": {
+                        "Name": "minecraft:bedrock"
+                      }
+                    }
+                  },
+                  {
                     "type": "minecraft:sequence",
                     "sequence": [
                       {
@@ -446,14 +465,14 @@
                               "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "boleatte:veticoate"
+                                  "Name": "boleatte:veticoade"
                                 }
                               }
                             },
                             {
                               "type": "minecraft:block",
                               "result_state": {
-                                "Name": "boleatte:veticoate"
+                                "Name": "boleatte:veticoade"
                               }
                             }
                           ]
@@ -482,14 +501,14 @@
                               "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "boleatte:veticoate"
+                                  "Name": "boleatte:veticoade"
                                 }
                               }
                             },
                             {
                               "type": "minecraft:block",
                               "result_state": {
-                                "Name": "boleatte:veticoate"
+                                "Name": "boleatte:veticoade"
                               }
                             }
                           ]
@@ -502,6 +521,25 @@
               {
                 "type": "minecraft:sequence",
                 "sequence": [
+                  {
+                    "type": "minecraft:condition",
+                    "if_true": {
+                      "type": "minecraft:vertical_gradient",
+                      "random_name": "minecraft:bedrock_floor",
+                      "true_at_and_below": {
+                        "above_bottom": 0
+                      },
+                      "false_at_and_above": {
+                        "above_bottom": 5
+                      }
+                    },
+                    "then_run": {
+                      "type": "minecraft:block",
+                      "result_state": {
+                        "Name": "minecraft:bedrock"
+                      }
+                    }
+                  },
                   {
                     "type": "minecraft:sequence",
                     "sequence": [

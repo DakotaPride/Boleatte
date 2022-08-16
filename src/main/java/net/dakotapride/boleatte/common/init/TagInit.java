@@ -1,5 +1,6 @@
 package net.dakotapride.boleatte.common.init;
 
+import net.minecraft.item.Item;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -15,5 +16,7 @@ public class TagInit {
     public static final TagKey<Biome> IS_ARBUNE_FOREST = TagKey.of(Registry.BIOME_KEY, new Identifier(ID, "is_arbune_forest"));
     public static final TagKey<Biome> IS_RASIORE_FOREST = TagKey.of(Registry.BIOME_KEY, new Identifier(ID, "is_rasiore_forest"));
     public static final TagKey<Biome> IS_BABURBEN_WASTES = TagKey.of(Registry.BIOME_KEY, new Identifier(ID, "is_baburben_wastes"));
+
+    public static final TagKey<Item> ACCEPTABLE_DIMATIS = TagKey.of(Registry.ITEM_KEY, new Identifier(ID, "acceptable_dimatis"));
 
 }

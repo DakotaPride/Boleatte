@@ -35,6 +35,10 @@
   "block.boleatte.arbune_leaves": "Arbune Leaves",
   "block.boleatte.arbune_sapling": "Arbune Sapling",
   "block.boleatte.arbune_planks": "Arbune Planks",
+  "block.boleatte.melkirsch": "Melkirsch",
+  "block.boleatte.melkirsch_stem": "Melkirsch Stem",
+  "block.boleatte.attached_melkirsch_stem": "Attached Melkirsch Stem",
+  "item.boleatte.melkirsch_seeds": "Melkirsch Seeds",
 
   "block.boleatte.botakoa_log": "Botakoa Log",
   "block.boleatte.stripped_botakoa_log": "Stripped Botakoa Log",
@@ -58,6 +62,19 @@
 
   "block.boleatte.oretesse": "Oretesse",
   "item.boleatte.dimatis": "Dimatis",
+  "item.boleatte.dimatis_arbune": "Dimatis",
+  "item.boleatte.dimatis_botakoa": "Dimatis",
+  "item.boleatte.dimatis_baburben": "Dimatis",
+  "item.boleatte.dimatis_protosterm": "Dimatis",
+  "item.boleatte.dimatis_quantila": "Dimatis",
+  "item.boleatte.dimatis_rasiore": "Dimatis",
+
+  "text.dimatis.veret_trusting": "You have the Colourant Goddess' Favour",
+  "text.dimatis.laide_trusting": "You have the Boreal God's Blessing",
+  "text.dimatis.beusere_trusting": "You have the Blossoming God's Virtue",
+  "text.dimatis.oritem_trusting": "You have the Carving Goddess' Profit",
+  "text.dimatis.sterres_trusting": "You have the Scorch God's Gift",
+  "text.dimatis.gela_trusting": "You have the Blistering God's Benefit",
 
   "block.boleatte.violes": "Violes",
   "block.boleatte.veticoade": "Veticoade",
@@ -65,5 +82,11 @@
   "block.boleatte.baburben_roots": "Baburben",
 
   "effect.boleatte.defiant": "Defiant",
+  "effect.boleatte.veret_favour": "Verêt's Favour",
+  "effect.boleatte.laide_blessing": "Laide's Blessing",
+  "effect.boleatte.beusere_virtue": "Beusère's Virtue",
+  "effect.boleatte.oritem_profit": "Oritem's Profit",
+  "effect.boleatte.sterres_gift": "Stérres's Gift",
+  "effect.boleatte.gela_convenience": "Gelà's Benefit",
   "effect.boleatte.defiant.ii": "Defiant II"
 }

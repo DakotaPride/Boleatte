@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/stem_fruit",
+  "textures": {
+    "stem": "boleatte:block/melkirsch_stem",
+    "upperstem": "boleatte:block/attached_melkirsch_stem"
+  }
+}
