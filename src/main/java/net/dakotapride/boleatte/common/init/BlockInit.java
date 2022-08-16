@@ -18,9 +18,14 @@ import static net.dakotapride.boleatte.common.BoleatteMain.*;
 
 public class BlockInit {
 
+    public static Block REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE));
+    public static RementioBlock ARBUNE_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE));
+    public static RementioBlock BOTAKOA_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE));
+    public static RementioBlock RASIORE_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE));
+    public static RementioBlock PROTOSTERM_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE));
     public static Block ORETESSE = new Block(FabricBlockSettings.copy(Blocks.STRIPPED_WARPED_HYPHAE));
 
-    public static SaplingBlock PROTOSTERM_SAPLING = new SaplingBlock(new ProtostermSaplingGenerator(15),
+    public static ProtostermSaplingBlock PROTOSTERM_SAPLING = new ProtostermSaplingBlock(new ProtostermSaplingGenerator(15),
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
     public static PillarBlock PROTOSTERM_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG));
     public static PillarBlock STRIPPED_PROTOSTERM_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG));
@@ -29,7 +34,7 @@ public class BlockInit {
     public static Block PROTOSTERM_PLANKS = new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS));
     public static LeavesBlock PROTOSTERM_LEAVES = new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
 
-    public static SaplingBlock BOTAKOA_SAPLING = new SaplingBlock(new BotakoaSaplingGenerator(),
+    public static BotakoaSaplingBlock BOTAKOA_SAPLING = new BotakoaSaplingBlock(new BotakoaSaplingGenerator(),
             FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
     public static PillarBlock BOTAKOA_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG));
     public static PillarBlock STRIPPED_BOTAKOA_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG));
@@ -43,7 +48,7 @@ public class BlockInit {
             FabricBlockSettings.copy(Blocks.ATTACHED_PUMPKIN_STEM));
     public static StemBlock MELKIRSCH_STEM = new StemBlock(MELKIRSCH, () -> ItemInit.MELKIRSCH_SEEDS,
             FabricBlockSettings.copy(Blocks.PUMPKIN_STEM));
-    public static SaplingBlock ARBUNE_SAPLING = new SaplingBlock(new ArbuneSaplingGenerator(),
+    public static ArbuneSaplingBlock ARBUNE_SAPLING = new ArbuneSaplingBlock(new ArbuneSaplingGenerator(),
             FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
     public static PillarBlock ARBUNE_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG));
     public static PillarBlock STRIPPED_ARBUNE_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG));
@@ -52,7 +57,7 @@ public class BlockInit {
     public static Block ARBUNE_PLANKS = new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS));
     public static LeavesBlock ARBUNE_LEAVES = new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
 
-    public static SaplingBlock RASIORE_SAPLING = new SaplingBlock(new RasioreSaplingGenerator(),
+    public static RasioreSaplingBlock RASIORE_SAPLING = new RasioreSaplingBlock(new RasioreSaplingGenerator(),
             FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
     public static PillarBlock RASIORE_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG));
     public static PillarBlock STRIPPED_RASIORE_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG));
@@ -140,6 +145,16 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "dead_leaves"), new BlockItem(DEAD_LEAVES, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "oretesse"), ORETESSE);
         Registry.register(Registry.ITEM, new Identifier(ID, "oretesse"), new BlockItem(ORETESSE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "rementio"), REMENTIO);
+        Registry.register(Registry.ITEM, new Identifier(ID, "rementio"), new BlockItem(REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "arbune_rementio"), ARBUNE_REMENTIO);
+        Registry.register(Registry.ITEM, new Identifier(ID, "arbune_rementio"), new BlockItem(ARBUNE_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "rasiore_rementio"), RASIORE_REMENTIO);
+        Registry.register(Registry.ITEM, new Identifier(ID, "rasiore_rementio"), new BlockItem(RASIORE_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "botakoa_rementio"), BOTAKOA_REMENTIO);
+        Registry.register(Registry.ITEM, new Identifier(ID, "botakoa_rementio"), new BlockItem(BOTAKOA_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "protosterm_rementio"), PROTOSTERM_REMENTIO);
+        Registry.register(Registry.ITEM, new Identifier(ID, "protosterm_rementio"), new BlockItem(PROTOSTERM_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "violes"), VIOLES);
         Registry.register(Registry.ITEM, new Identifier(ID, "violes"), new BlockItem(VIOLES, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));

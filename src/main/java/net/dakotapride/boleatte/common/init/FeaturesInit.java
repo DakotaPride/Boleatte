@@ -1,6 +1,7 @@
 package net.dakotapride.boleatte.common.init;
 
 import com.google.common.collect.ImmutableList;
+import net.dakotapride.boleatte.common.block.RementioBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SweetBerryBushBlock;
@@ -53,7 +54,8 @@ public class FeaturesInit {
                             new StraightTrunkPlacer(5, 2, 1), BlockStateProvider.of(BlockInit.ARBUNE_LEAVES),
                             new SpruceFoliagePlacer(UniformIntProvider.create(2, 3), UniformIntProvider.create(0, 2),
                                     UniformIntProvider.create(1, 2)),
-                            new TwoLayersFeatureSize(2, 0, 2))).ignoreVines().build());
+                            new TwoLayersFeatureSize(2, 0, 2)))
+                            .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).ignoreVines().build());
 
     // Configured Features
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> PATCH_QUANALLA_BUSH =
@@ -65,15 +67,18 @@ public class FeaturesInit {
             List.of(Blocks.RED_SAND)));
 
     private static TreeFeatureConfig.Builder botakoa() {
-        return builder(BlockInit.BOTAKOA_LOG, BlockInit.BOTAKOA_LEAVES, 5, 2, 0, 2).ignoreVines();
+        return builder(BlockInit.BOTAKOA_LOG, BlockInit.BOTAKOA_LEAVES, 5, 2, 0, 2)
+                .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).ignoreVines();
     }
 
     private static TreeFeatureConfig.Builder rasiore() {
-        return builder(BlockInit.BOTAKOA_LOG, BlockInit.BOTAKOA_LEAVES, 5, 2, 0, 2).ignoreVines();
+        return builder(BlockInit.BOTAKOA_LOG, BlockInit.BOTAKOA_LEAVES, 5, 2, 0, 2)
+                .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).ignoreVines();
     }
 
     private static TreeFeatureConfig.Builder superbotakoa() {
-        return builder(BlockInit.BOTAKOA_LOG, BlockInit.BOTAKOA_LEAVES, 5, 2, 6, 2).ignoreVines();
+        return builder(BlockInit.BOTAKOA_LOG, BlockInit.BOTAKOA_LEAVES, 5, 2, 6, 2)
+                .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).ignoreVines();
     }
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> BOTAKOA = 
@@ -86,23 +91,28 @@ public class FeaturesInit {
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> SUPER_BOTAKOA_BEES_0002 =
             ConfiguredFeatures.register("super_botakoa_bees_0002", Feature.TREE,
-                    superbotakoa().decorators(ImmutableList.of(BEES_0002)).build());
+                    superbotakoa().decorators(ImmutableList.of(BEES_0002))
+                            .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).build());
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> SUPER_BOTAKOA_BEES =
             ConfiguredFeatures.register("super_botakoa_bees", Feature.TREE,
-                    superbotakoa().decorators(ImmutableList.of(BEES)).build());
+                    superbotakoa().decorators(ImmutableList.of(BEES))
+                            .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).build());
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> BOTAKOA_BEES_0002 =
             ConfiguredFeatures.register("botakoa_bees_0002", Feature.TREE,
-            botakoa().decorators(List.of(BEES_0002)).build());
+            botakoa().decorators(List.of(BEES_0002))
+                    .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).build());
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> BOTAKOA_BEES_002 =
             ConfiguredFeatures.register("botakoa_bees_002", Feature.TREE,
-            botakoa().decorators(List.of(BEES_002)).build());
+            botakoa().decorators(List.of(BEES_002))
+                    .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).build());
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> BOTAKOA_BEES_005 = 
             ConfiguredFeatures.register("botakoa_bees_005", Feature.TREE,
-            botakoa().decorators(List.of(BEES_005)).build());
+            botakoa().decorators(List.of(BEES_005))
+                    .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).build());
 
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> QUANALLA_BUSH =
             ConfiguredFeatures.register("quanalla_bush", Feature.FLOWER,
@@ -125,7 +135,8 @@ public class FeaturesInit {
                             .getOrCreateEntryList(BlockTags.MANGROVE_ROOTS_CAN_GROW_THROUGH),
                             RegistryEntryList.of(Block::getRegistryEntry, BlockInit.PROTOSTERM_LOG),
                             BlockStateProvider.of(BlockInit.PROTOSTERM_LOG), 8, 15, 0.2F))),
-                    new TwoLayersFeatureSize(2, 0, 2))).ignoreVines().build());
+                    new TwoLayersFeatureSize(2, 0, 2)))
+                    .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).ignoreVines().build());
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> TALL_PROTOSTERM_TREE =
             ConfiguredFeatures.register("tall_protosterm", Feature.TREE, (new TreeFeatureConfig.Builder(
@@ -143,7 +154,8 @@ public class FeaturesInit {
                     .getOrCreateEntryList(BlockTags.MANGROVE_ROOTS_CAN_GROW_THROUGH),
                     RegistryEntryList.of(Block::getRegistryEntry, BlockInit.PROTOSTERM_LOG),
                     BlockStateProvider.of(BlockInit.PROTOSTERM_LOG), 8, 15, 0.2F))),
-                    new TwoLayersFeatureSize(3, 0, 2))).ignoreVines().build());
+                    new TwoLayersFeatureSize(3, 0, 2)))
+                    .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).ignoreVines().build());
 
     // Placed Features
     public static final RegistryEntry<PlacedFeature> QUANALLA_BUSH_PLACED = PlacedFeatures.register("quanalla_bush_placed",

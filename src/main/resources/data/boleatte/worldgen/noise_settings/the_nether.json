@@ -5,7 +5,7 @@
   "ore_veins_enabled": true,
   "legacy_random_source": false,
   "default_block": {
-    "Name": "boleatte:rementio"
+    "Name": "minecraft:stone"
   },
   "default_fluid": {
     "Name": "minecraft:water",
@@ -387,405 +387,6 @@
     "type": "minecraft:sequence",
     "sequence": [
       {
-        "type": "minecraft:sequence",
-        "sequence": [
-          {
-            "type": "minecraft:sequence",
-            "sequence": [
-              {
-                "type": "minecraft:sequence",
-                "sequence": [
-                  {
-                    "type": "minecraft:condition",
-                    "if_true": {
-                      "type": "minecraft:vertical_gradient",
-                      "random_name": "minecraft:bedrock_floor",
-                      "true_at_and_below": {
-                        "above_bottom": 0
-                      },
-                      "false_at_and_above": {
-                        "above_bottom": 5
-                      }
-                    },
-                    "then_run": {
-                      "type": "minecraft:block",
-                      "result_state": {
-                        "Name": "minecraft:bedrock"
-                      }
-                    }
-                  },
-                  {
-                    "type": "minecraft:sequence",
-                    "sequence": [
-                      {
-                        "type": "minecraft:condition",
-                        "if_true": {
-                          "type": "minecraft:biome",
-                          "biome_is": [
-                            "boleatte:baburben_wastes"
-                          ]
-                        },
-                        "then_run": {
-                          "type": "minecraft:condition",
-                          "if_true": {
-                            "type": "minecraft:stone_depth",
-                            "offset": 0,
-                            "surface_type": "floor",
-                            "add_surface_depth": true,
-                            "secondary_depth_range": 30
-                          },
-                          "then_run": {
-                            "type": "minecraft:block",
-                            "result_state": {
-                              "Name": "boleatte:violes"
-                            }
-                          }
-                        }
-                      },
-                      {
-                        "type": "minecraft:condition",
-                        "if_true": {
-                          "type": "minecraft:biome",
-                          "biome_is": [
-                            "boleatte:baburben_wastes"
-                          ]
-                        },
-                        "then_run": {
-                          "type": "minecraft:sequence",
-                          "sequence": [
-                            {
-                              "type": "minecraft:condition",
-                              "if_true": {
-                                "type": "minecraft:stone_depth",
-                                "offset": 0,
-                                "surface_type": "ceiling",
-                                "add_surface_depth": false,
-                                "secondary_depth_range": 0
-                              },
-                              "then_run": {
-                                "type": "minecraft:block",
-                                "result_state": {
-                                  "Name": "boleatte:veticoade"
-                                }
-                              }
-                            },
-                            {
-                              "type": "minecraft:block",
-                              "result_state": {
-                                "Name": "boleatte:veticoade"
-                              }
-                            }
-                          ]
-                        }
-                      },
-                      {
-                        "type": "minecraft:condition",
-                        "if_true": {
-                          "type": "minecraft:biome",
-                          "biome_is": [
-                            "boleatte:baburben_wastes"
-                          ]
-                        },
-                        "then_run": {
-                          "type": "minecraft:sequence",
-                          "sequence": [
-                            {
-                              "type": "minecraft:condition",
-                              "if_true": {
-                                "type": "minecraft:stone_depth",
-                                "offset": 0,
-                                "surface_type": "ceiling",
-                                "add_surface_depth": false,
-                                "secondary_depth_range": 0
-                              },
-                              "then_run": {
-                                "type": "minecraft:block",
-                                "result_state": {
-                                  "Name": "boleatte:veticoade"
-                                }
-                              }
-                            },
-                            {
-                              "type": "minecraft:block",
-                              "result_state": {
-                                "Name": "boleatte:veticoade"
-                              }
-                            }
-                          ]
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "minecraft:sequence",
-                "sequence": [
-                  {
-                    "type": "minecraft:condition",
-                    "if_true": {
-                      "type": "minecraft:vertical_gradient",
-                      "random_name": "minecraft:bedrock_floor",
-                      "true_at_and_below": {
-                        "above_bottom": 0
-                      },
-                      "false_at_and_above": {
-                        "above_bottom": 5
-                      }
-                    },
-                    "then_run": {
-                      "type": "minecraft:block",
-                      "result_state": {
-                        "Name": "minecraft:bedrock"
-                      }
-                    }
-                  },
-                  {
-                    "type": "minecraft:sequence",
-                    "sequence": [
-                      {
-                        "type": "minecraft:condition",
-                        "if_true": {
-                          "type": "minecraft:biome",
-                          "biome_is": [
-                            "boleatte:quantila_barrens"
-                          ]
-                        },
-                        "then_run": {
-                          "type": "minecraft:condition",
-                          "if_true": {
-                            "type": "minecraft:stone_depth",
-                            "offset": 0,
-                            "surface_type": "floor",
-                            "add_surface_depth": true,
-                            "secondary_depth_range": 30
-                          },
-                          "then_run": {
-                            "type": "minecraft:block",
-                            "result_state": {
-                              "Name": "minecraft:red_sand"
-                            }
-                          }
-                        }
-                      },
-                      {
-                        "type": "minecraft:condition",
-                        "if_true": {
-                          "type": "minecraft:biome",
-                          "biome_is": [
-                            "boleatte:quantila_barrens"
-                          ]
-                        },
-                        "then_run": {
-                          "type": "minecraft:sequence",
-                          "sequence": [
-                            {
-                              "type": "minecraft:condition",
-                              "if_true": {
-                                "type": "minecraft:stone_depth",
-                                "offset": 0,
-                                "surface_type": "ceiling",
-                                "add_surface_depth": false,
-                                "secondary_depth_range": 0
-                              },
-                              "then_run": {
-                                "type": "minecraft:block",
-                                "result_state": {
-                                  "Name": "minecraft:red_sandstone"
-                                }
-                              }
-                            },
-                            {
-                              "type": "minecraft:block",
-                              "result_state": {
-                                "Name": "minecraft:red_sandstone"
-                              }
-                            }
-                          ]
-                        }
-                      },
-                      {
-                        "type": "minecraft:condition",
-                        "if_true": {
-                          "type": "minecraft:biome",
-                          "biome_is": [
-                            "boleatte:quantila_barrens"
-                          ]
-                        },
-                        "then_run": {
-                          "type": "minecraft:sequence",
-                          "sequence": [
-                            {
-                              "type": "minecraft:condition",
-                              "if_true": {
-                                "type": "minecraft:stone_depth",
-                                "offset": 0,
-                                "surface_type": "ceiling",
-                                "add_surface_depth": false,
-                                "secondary_depth_range": 0
-                              },
-                              "then_run": {
-                                "type": "minecraft:block",
-                                "result_state": {
-                                  "Name": "minecraft:red_sandstone"
-                                }
-                              }
-                            },
-                            {
-                              "type": "minecraft:block",
-                              "result_state": {
-                                "Name": "minecraft:red_sandstone"
-                              }
-                            }
-                          ]
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "minecraft:condition",
-                "if_true": {
-                  "type": "minecraft:biome",
-                  "biome_is": [
-                    "boleatte:quantila_barrens"
-                  ]
-                },
-                "then_run": {
-                  "type": "minecraft:block",
-                  "result_state": {
-                    "Name": "minecraft:red_sandstone"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:sequence",
-            "sequence": [
-              {
-                "type": "minecraft:sequence",
-                "sequence": [
-                  {
-                    "type": "minecraft:condition",
-                    "if_true": {
-                      "type": "minecraft:biome",
-                      "biome_is": [
-                        "boleatte:quantila_barrens"
-                      ]
-                    },
-                    "then_run": {
-                      "type": "minecraft:condition",
-                      "if_true": {
-                        "type": "minecraft:stone_depth",
-                        "offset": 0,
-                        "surface_type": "floor",
-                        "add_surface_depth": true,
-                        "secondary_depth_range": 30
-                      },
-                      "then_run": {
-                        "type": "minecraft:block",
-                        "result_state": {
-                          "Name": "minecraft:red_sand"
-                        }
-                      }
-                    }
-                  },
-                  {
-                    "type": "minecraft:condition",
-                    "if_true": {
-                      "type": "minecraft:biome",
-                      "biome_is": [
-                        "boleatte:quantila_barrens"
-                      ]
-                    },
-                    "then_run": {
-                      "type": "minecraft:sequence",
-                      "sequence": [
-                        {
-                          "type": "minecraft:condition",
-                          "if_true": {
-                            "type": "minecraft:stone_depth",
-                            "offset": 0,
-                            "surface_type": "ceiling",
-                            "add_surface_depth": false,
-                            "secondary_depth_range": 0
-                          },
-                          "then_run": {
-                            "type": "minecraft:block",
-                            "result_state": {
-                              "Name": "minecraft:red_sandstone"
-                            }
-                          }
-                        },
-                        {
-                          "type": "minecraft:block",
-                          "result_state": {
-                            "Name": "minecraft:red_sandstone"
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "type": "minecraft:condition",
-                    "if_true": {
-                      "type": "minecraft:biome",
-                      "biome_is": [
-                        "boleatte:quantila_barrens"
-                      ]
-                    },
-                    "then_run": {
-                      "type": "minecraft:sequence",
-                      "sequence": [
-                        {
-                          "type": "minecraft:condition",
-                          "if_true": {
-                            "type": "minecraft:stone_depth",
-                            "offset": 0,
-                            "surface_type": "ceiling",
-                            "add_surface_depth": false,
-                            "secondary_depth_range": 0
-                          },
-                          "then_run": {
-                            "type": "minecraft:block",
-                            "result_state": {
-                              "Name": "minecraft:red_sandstone"
-                            }
-                          }
-                        },
-                        {
-                          "type": "minecraft:block",
-                          "result_state": {
-                            "Name": "minecraft:red_sandstone"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "minecraft:condition",
-            "if_true": {
-              "type": "minecraft:biome",
-              "biome_is": [
-                "boleatte:quantila_barrens"
-              ]
-            },
-            "then_run": {
-              "type": "minecraft:block",
-              "result_state": {
-                "Name": "minecraft:red_sandstone"
-              }
-            }
-          }
-        ]
-      },
-      {
         "type": "minecraft:condition",
         "if_true": {
           "type": "minecraft:vertical_gradient",
@@ -914,7 +515,7 @@
                               {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "boleatte:rementio"
+                                  "Name": "minecraft:dirt"
                                 }
                               }
                             ]
@@ -1159,7 +760,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "minecraft:red_sand"
+                                    "Name": "minecraft:red_sandstone"
                                   }
                                 }
                               },
@@ -1217,7 +818,7 @@
                               "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "boleatte:rementio"
+                                  "Name": "minecraft:stone"
                                 }
                               }
                             },
@@ -1480,7 +1081,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "boleatte:rementio"
+                                    "Name": "minecraft:stone"
                                   }
                                 }
                               },
@@ -1545,7 +1146,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "boleatte:rementio"
+                                    "Name": "minecraft:stone"
                                   }
                                 }
                               },
@@ -1652,7 +1253,7 @@
                                   {
                                     "type": "minecraft:block",
                                     "result_state": {
-                                      "Name": "boleatte:rementio"
+                                      "Name": "minecraft:stone"
                                     }
                                   }
                                 ]
@@ -1692,7 +1293,7 @@
                                           "then_run": {
                                             "type": "minecraft:block",
                                             "result_state": {
-                                              "Name": "boleatte:rementio"
+                                              "Name": "minecraft:stone"
                                             }
                                           }
                                         },
@@ -1708,7 +1309,7 @@
                                   {
                                     "type": "minecraft:block",
                                     "result_state": {
-                                      "Name": "boleatte:rementio"
+                                      "Name": "minecraft:stone"
                                     }
                                   }
                                 ]
@@ -1733,7 +1334,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "boleatte:rementio"
+                                    "Name": "minecraft:stone"
                                   }
                                 }
                               }
@@ -1823,7 +1424,7 @@
                               "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "boleatte:rementio"
+                                  "Name": "minecraft:stone"
                                 }
                               }
                             }
@@ -1851,7 +1452,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "boleatte:rementio"
+                                    "Name": "minecraft:stone"
                                   }
                                 }
                               },
@@ -1907,7 +1508,7 @@
                                       "then_run": {
                                         "type": "minecraft:block",
                                         "result_state": {
-                                          "Name": "boleatte:rementio"
+                                          "Name": "minecraft:stone"
                                         }
                                       }
                                     },
@@ -1931,7 +1532,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "boleatte:rementio"
+                                    "Name": "minecraft:stone"
                                   }
                                 }
                               },
@@ -1967,7 +1568,7 @@
                                     {
                                       "type": "minecraft:block",
                                       "result_state": {
-                                        "Name": "boleatte:rementio"
+                                        "Name": "minecraft:dirt"
                                       }
                                     }
                                   ]
@@ -1988,7 +1589,7 @@
                                     "then_run": {
                                       "type": "minecraft:block",
                                       "result_state": {
-                                        "Name": "boleatte:rementio"
+                                        "Name": "minecraft:stone"
                                       }
                                     }
                                   },
@@ -2132,7 +1733,7 @@
                             {
                               "type": "minecraft:block",
                               "result_state": {
-                                "Name": "boleatte:rementio"
+                                "Name": "minecraft:dirt"
                               }
                             }
                           ]
@@ -2291,7 +1892,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "boleatte:rementio"
+                                    "Name": "minecraft:stone"
                                   }
                                 }
                               },
@@ -2348,7 +1949,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "boleatte:rementio"
+                              "Name": "minecraft:stone"
                             }
                           }
                         },
@@ -2390,7 +1991,7 @@
                               {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "boleatte:rementio"
+                                  "Name": "minecraft:dirt"
                                 }
                               }
                             ]
@@ -2428,7 +2029,7 @@
                                   {
                                     "type": "minecraft:block",
                                     "result_state": {
-                                      "Name": "boleatte:rementio"
+                                      "Name": "minecraft:stone"
                                     }
                                   }
                                 ]
@@ -2468,7 +2069,7 @@
                                           "then_run": {
                                             "type": "minecraft:block",
                                             "result_state": {
-                                              "Name": "boleatte:rementio"
+                                              "Name": "minecraft:stone"
                                             }
                                           }
                                         },
@@ -2484,7 +2085,7 @@
                                   {
                                     "type": "minecraft:block",
                                     "result_state": {
-                                      "Name": "boleatte:rementio"
+                                      "Name": "minecraft:stone"
                                     }
                                   }
                                 ]
@@ -2509,7 +2110,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "boleatte:rementio"
+                                    "Name": "minecraft:stone"
                                   }
                                 }
                               }
@@ -2599,7 +2200,7 @@
                               "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "boleatte:rementio"
+                                  "Name": "minecraft:stone"
                                 }
                               }
                             }
@@ -2624,7 +2225,7 @@
                             "then_run": {
                               "type": "minecraft:block",
                               "result_state": {
-                                "Name": "boleatte:rementio"
+                                "Name": "minecraft:stone"
                               }
                             }
                           }
@@ -2663,7 +2264,7 @@
                                       "then_run": {
                                         "type": "minecraft:block",
                                         "result_state": {
-                                          "Name": "boleatte:rementio"
+                                          "Name": "minecraft:stone"
                                         }
                                       }
                                     },
@@ -2687,7 +2288,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "boleatte:rementio"
+                                    "Name": "minecraft:stone"
                                   }
                                 }
                               },
@@ -2702,7 +2303,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "boleatte:rementio"
+                                    "Name": "minecraft:dirt"
                                   }
                                 }
                               },
@@ -2721,7 +2322,7 @@
                                     "then_run": {
                                       "type": "minecraft:block",
                                       "result_state": {
-                                        "Name": "boleatte:rementio"
+                                        "Name": "minecraft:stone"
                                       }
                                     }
                                   },
@@ -2754,7 +2355,7 @@
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "boleatte:rementio"
+                            "Name": "minecraft:dirt"
                           }
                         }
                       ]
@@ -2839,7 +2440,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "boleatte:rementio"
+                        "Name": "minecraft:stone"
                       }
                     }
                   },
@@ -2896,7 +2497,7 @@
                         "then_run": {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "boleatte:rementio"
+                            "Name": "minecraft:stone"
                           }
                         }
                       },
@@ -2918,7 +2519,7 @@
         "type": "minecraft:condition",
         "if_true": {
           "type": "minecraft:vertical_gradient",
-          "random_name": "boleatte:rementio",
+          "random_name": "minecraft:deepslate",
           "true_at_and_below": {
             "absolute": 0
           },
@@ -2929,404 +2530,12 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "boleatte:rementio",
+            "Name": "minecraft:deepslate",
             "Properties": {
               "axis": "y"
             }
           }
         }
-      },
-      {
-        "type": "minecraft:sequence",
-        "sequence": [
-          {
-            "type": "minecraft:condition",
-            "if_true": {
-              "type": "minecraft:biome",
-              "biome_is": [
-                "boleatte:botakoa_forest"
-              ]
-            },
-            "then_run": {
-              "type": "minecraft:sequence",
-              "sequence": [
-                {
-                  "type": "minecraft:condition",
-                  "if_true": {
-                    "type": "minecraft:water",
-                    "offset": 0,
-                    "surface_depth_multiplier": 0,
-                    "add_stone_depth": false
-                  },
-                  "then_run": {
-                    "type": "minecraft:block",
-                    "result_state": {
-                      "Name": "boleatte:botakoa_rementio"
-                    }
-                  }
-                },
-                {
-                  "type": "minecraft:block",
-                  "result_state": {
-                    "Name": "boleatte:rementio"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "type": "minecraft:condition",
-            "if_true": {
-              "type": "minecraft:biome",
-              "biome_is": [
-                "boleatte:botakoa_forest"
-              ]
-            },
-            "then_run": {
-              "type": "minecraft:condition",
-              "if_true": {
-                "type": "minecraft:not",
-                "invert": {
-                  "type": "minecraft:noise_threshold",
-                  "noise": "boleatte:rementio_1",
-                  "min_threshold": 0.54,
-                  "max_threshold": 1.7976931348623157e+308
-                    }
-                  },
-                  "then_run": {
-                    "type": "minecraft:condition",
-                    "if_true": {
-                      "type": "minecraft:y_above",
-                      "anchor": {
-                        "absolute": 31
-                      },
-                      "surface_depth_multiplier": 0,
-                      "add_stone_depth": false
-                    },
-                    "then_run": {
-                      "type": "minecraft:sequence",
-                      "sequence": [
-                        {
-                          "type": "minecraft:condition",
-                          "if_true": {
-                            "type": "minecraft:noise_threshold",
-                            "noise": "boleatte:rementio",
-                            "min_threshold": 1.17,
-                            "max_threshold": 1.7976931348623157e+308
-                          },
-                          "then_run": {
-                            "type": "minecraft:block",
-                            "result_state": {
-                              "Name": "boleatte:rementio"
-                            }
-                          }
-                        },
-                        {
-                          "type": "minecraft:block",
-                          "result_state": {
-                            "Name": "boleatte:rementio"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-          }
-        ]
-      },
-      {
-        "type": "minecraft:sequence",
-        "sequence": [
-          {
-            "type": "minecraft:condition",
-            "if_true": {
-              "type": "minecraft:biome",
-              "biome_is": [
-                "boleatte:protosterm_forest"
-              ]
-            },
-            "then_run": {
-              "type": "minecraft:sequence",
-              "sequence": [
-                {
-                  "type": "minecraft:condition",
-                  "if_true": {
-                    "type": "minecraft:water",
-                    "offset": 0,
-                    "surface_depth_multiplier": 0,
-                    "add_stone_depth": false
-                  },
-                  "then_run": {
-                    "type": "minecraft:block",
-                    "result_state": {
-                      "Name": "boleatte:protosterm_rementio"
-                    }
-                  }
-                },
-                {
-                  "type": "minecraft:block",
-                  "result_state": {
-                    "Name": "boleatte:rementio"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "type": "minecraft:condition",
-            "if_true": {
-              "type": "minecraft:biome",
-              "biome_is": [
-                "boleatte:protosterm_forest"
-              ]
-            },
-            "then_run": {
-              "type": "minecraft:condition",
-              "if_true": {
-                "type": "minecraft:not",
-                "invert": {
-                  "type": "minecraft:noise_threshold",
-                  "noise": "boleatte:rementio_1",
-                  "min_threshold": 0.54,
-                  "max_threshold": 1.7976931348623157e+308
-                }
-              },
-              "then_run": {
-                "type": "minecraft:condition",
-                "if_true": {
-                  "type": "minecraft:y_above",
-                  "anchor": {
-                    "absolute": 31
-                  },
-                  "surface_depth_multiplier": 0,
-                  "add_stone_depth": false
-                },
-                "then_run": {
-                  "type": "minecraft:sequence",
-                  "sequence": [
-                    {
-                      "type": "minecraft:condition",
-                      "if_true": {
-                        "type": "minecraft:noise_threshold",
-                        "noise": "boleatte:rementio",
-                        "min_threshold": 1.17,
-                        "max_threshold": 1.7976931348623157e+308
-                      },
-                      "then_run": {
-                        "type": "minecraft:block",
-                        "result_state": {
-                          "Name": "boleatte:rementio"
-                        }
-                      }
-                    },
-                    {
-                      "type": "minecraft:block",
-                      "result_state": {
-                        "Name": "boleatte:rementio"
-                      }
-                    }
-                  ]
-                }
-              }
-            }
-          }
-        ]
-      },
-      {
-        "type": "minecraft:sequence",
-        "sequence": [
-          {
-            "type": "minecraft:condition",
-            "if_true": {
-              "type": "minecraft:biome",
-              "biome_is": [
-                "boleatte:arbune_forest"
-              ]
-            },
-            "then_run": {
-              "type": "minecraft:sequence",
-              "sequence": [
-                {
-                  "type": "minecraft:condition",
-                  "if_true": {
-                    "type": "minecraft:water",
-                    "offset": 0,
-                    "surface_depth_multiplier": 0,
-                    "add_stone_depth": false
-                  },
-                  "then_run": {
-                    "type": "minecraft:block",
-                    "result_state": {
-                      "Name": "boleatte:arbune_rementio"
-                    }
-                  }
-                },
-                {
-                  "type": "minecraft:block",
-                  "result_state": {
-                    "Name": "boleatte:rementio"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "type": "minecraft:condition",
-            "if_true": {
-              "type": "minecraft:biome",
-              "biome_is": [
-                "boleatte:arbune_forest"
-              ]
-            },
-            "then_run": {
-              "type": "minecraft:condition",
-              "if_true": {
-                "type": "minecraft:not",
-                "invert": {
-                  "type": "minecraft:noise_threshold",
-                  "noise": "boleatte:rementio_1",
-                  "min_threshold": 0.54,
-                  "max_threshold": 1.7976931348623157e+308
-                }
-              },
-              "then_run": {
-                "type": "minecraft:condition",
-                "if_true": {
-                  "type": "minecraft:y_above",
-                  "anchor": {
-                    "absolute": 31
-                  },
-                  "surface_depth_multiplier": 0,
-                  "add_stone_depth": false
-                },
-                "then_run": {
-                  "type": "minecraft:sequence",
-                  "sequence": [
-                    {
-                      "type": "minecraft:condition",
-                      "if_true": {
-                        "type": "minecraft:noise_threshold",
-                        "noise": "boleatte:rementio",
-                        "min_threshold": 1.17,
-                        "max_threshold": 1.7976931348623157e+308
-                      },
-                      "then_run": {
-                        "type": "minecraft:block",
-                        "result_state": {
-                          "Name": "boleatte:rementio"
-                        }
-                      }
-                    },
-                    {
-                      "type": "minecraft:block",
-                      "result_state": {
-                        "Name": "boleatte:rementio"
-                      }
-                    }
-                  ]
-                }
-              }
-            }
-          }
-        ]
-      },
-      {
-        "type": "minecraft:sequence",
-        "sequence": [
-          {
-            "type": "minecraft:condition",
-            "if_true": {
-              "type": "minecraft:biome",
-              "biome_is": [
-                "boleatte:rasiore_forest"
-              ]
-            },
-            "then_run": {
-              "type": "minecraft:sequence",
-              "sequence": [
-                {
-                  "type": "minecraft:condition",
-                  "if_true": {
-                    "type": "minecraft:water",
-                    "offset": 0,
-                    "surface_depth_multiplier": 0,
-                    "add_stone_depth": false
-                  },
-                  "then_run": {
-                    "type": "minecraft:block",
-                    "result_state": {
-                      "Name": "boleatte:rasiore_rementio"
-                    }
-                  }
-                },
-                {
-                  "type": "minecraft:block",
-                  "result_state": {
-                    "Name": "boleatte:rementio"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "type": "minecraft:condition",
-            "if_true": {
-              "type": "minecraft:biome",
-              "biome_is": [
-                "boleatte:rasiore_forest"
-              ]
-            },
-            "then_run": {
-              "type": "minecraft:condition",
-              "if_true": {
-                "type": "minecraft:not",
-                "invert": {
-                  "type": "minecraft:noise_threshold",
-                  "noise": "boleatte:rementio_1",
-                  "min_threshold": 0.54,
-                  "max_threshold": 1.7976931348623157e+308
-                }
-              },
-              "then_run": {
-                "type": "minecraft:condition",
-                "if_true": {
-                  "type": "minecraft:y_above",
-                  "anchor": {
-                    "absolute": 31
-                  },
-                  "surface_depth_multiplier": 0,
-                  "add_stone_depth": false
-                },
-                "then_run": {
-                  "type": "minecraft:sequence",
-                  "sequence": [
-                    {
-                      "type": "minecraft:condition",
-                      "if_true": {
-                        "type": "minecraft:noise_threshold",
-                        "noise": "boleatte:rementio",
-                        "min_threshold": 1.17,
-                        "max_threshold": 1.7976931348623157e+308
-                      },
-                      "then_run": {
-                        "type": "minecraft:block",
-                        "result_state": {
-                          "Name": "boleatte:rementio"
-                        }
-                      }
-                    },
-                    {
-                      "type": "minecraft:block",
-                      "result_state": {
-                        "Name": "boleatte:rementio"
-                      }
-                    }
-                  ]
-                }
-              }
-            }
-          }
-        ]
       }
     ]
   }

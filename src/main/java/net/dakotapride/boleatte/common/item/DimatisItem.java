@@ -59,19 +59,19 @@ public class DimatisItem extends Item {
                 return new StatusEffectInstance(EffectInit.VERET_FAVOUR, 600, 0);
             }
             case BABURBEN -> {
-                return new StatusEffectInstance(EffectInit.LAIDE_BLESSING, 400, 0);
+                return new StatusEffectInstance(EffectInit.LAIDE_BLESSING, 600, 0);
             }
             case BOTAKOA -> {
-                return new StatusEffectInstance(EffectInit.BEUSERE_VIRTUE, 500, 0);
+                return new StatusEffectInstance(EffectInit.BEUSERE_VIRTUE, 600, 0);
             }
             case PROTOSTERM -> {
-                return new StatusEffectInstance(EffectInit.ORITEM_PROFIT, 800, 0);
+                return new StatusEffectInstance(EffectInit.ORITEM_PROFIT, 600, 0);
             }
             case QUANTILA -> {
-                return new StatusEffectInstance(EffectInit.STERRES_GIFT, 500, 0);
+                return new StatusEffectInstance(EffectInit.STERRES_GIFT, 600, 0);
             }
             case RASIORE -> {
-                return new StatusEffectInstance(EffectInit.GELA_BENEFIT, 400, 0);
+                return new StatusEffectInstance(EffectInit.GELA_BENEFIT, 600, 0);
             }
         }
 

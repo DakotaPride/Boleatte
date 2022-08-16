@@ -154,5 +154,11 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "dimatis_protosterm"), PROTOSTERM_DIMATIS);
         Registry.register(Registry.ITEM, new Identifier(ID, "dimatis_quantila"), QUANTILA_DIMATIS);
         Registry.register(Registry.ITEM, new Identifier(ID, "dimatis_rasiore"), RASIORE_DIMATIS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "opafeu"), OPAFEU_GEM);
+        Registry.register(Registry.ITEM, new Identifier(ID, "kutunite"), KUTUNITE_GEM);
+        Registry.register(Registry.ITEM, new Identifier(ID, "latzeck"), LATZECK_GEM);
+        Registry.register(Registry.ITEM, new Identifier(ID, "nemoral"), NEMORAL_GEM);
+        Registry.register(Registry.ITEM, new Identifier(ID, "cintonium"), CINTONIUM_GEM);
+        Registry.register(Registry.ITEM, new Identifier(ID, "leposiate"), LEPOSIATE_GEM);
     }
 }

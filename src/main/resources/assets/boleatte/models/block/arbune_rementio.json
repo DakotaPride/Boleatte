@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "boleatte:block/rementio",
+    "side": "boleatte:block/arbune_rementio",
+    "top": "boleatte:block/arbune_rementio_top"
+  }
+}
