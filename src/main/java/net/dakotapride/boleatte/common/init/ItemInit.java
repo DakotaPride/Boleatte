@@ -36,6 +36,12 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(ALPHIAGOU_CIDER));
                     itemStacks.add(new ItemStack(MYSTICAL_ALPHIAGOU_CIDER));
 
+                    itemStacks.add(new ItemStack(OPAFEU_GEM));
+                    itemStacks.add(new ItemStack(KUTUNITE_GEM));
+                    itemStacks.add(new ItemStack(LATZECK_GEM));
+                    itemStacks.add(new ItemStack(NEMORAL_GEM));
+                    itemStacks.add(new ItemStack(CINTONIUM_GEM));
+                    itemStacks.add(new ItemStack(LEPOSIATE_GEM));
                     itemStacks.add(new ItemStack(DIMATIS));
                     itemStacks.add(new ItemStack(ARBUNE_DIMATIS));
                     itemStacks.add(new ItemStack(BABURBEN_DIMATIS));
@@ -91,8 +97,8 @@ public class ItemInit {
     public static Item LATZECK_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item NEMORAL_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item OPAFEU_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
-    public static Item KUTUNITE_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
-    public static Item KUTUNITE_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
+    public static Item CINTONIUM_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
+    public static Item LEPOSIATE_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item DIMATIS = new Item(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
     public static DimatisItem ARBUNE_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
     public static DimatisItem BABURBEN_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
