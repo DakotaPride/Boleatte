@@ -19,7 +19,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class RamoliteHoneyBottleItem extends HoneyBottleItem {
+public class RamoliteHoneyBottleItem extends AscunauticItem {
     private static final int MAX_USE_TIME = 40;
 
     public RamoliteHoneyBottleItem(Item.Settings settings) {

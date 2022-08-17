@@ -14,6 +14,6 @@ public class RasioreSaplingBlock extends SaplingBlock {
 
     @Override
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
-        return floor.isOf(BlockInit.RASIORE_REMENTIO);
+        return (floor.isOf(BlockInit.RASIORE_REMENTIO) || floor.isOf(BlockInit.REMENTIO));
     }
 }

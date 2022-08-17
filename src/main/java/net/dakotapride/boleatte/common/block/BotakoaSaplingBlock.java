@@ -14,6 +14,6 @@ public class BotakoaSaplingBlock extends SaplingBlock {
 
     @Override
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
-        return floor.isOf(BlockInit.BOTAKOA_REMENTIO);
+        return (floor.isOf(BlockInit.BOTAKOA_REMENTIO) || floor.isOf(BlockInit.REMENTIO));
     }
 }

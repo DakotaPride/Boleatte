@@ -16,7 +16,9 @@ public class EffectInit {
             .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "7107DE5E-7CE8-4030-940E-514C1F160890",
                     -0.15000000596046448D, EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
     public static StatusEffect VERET_FAVOUR = new EmptyStatusEffect(StatusEffectCategory.BENEFICIAL, 0xA7C9C9);
-    public static StatusEffect LAIDE_BLESSING = new EmptyStatusEffect(StatusEffectCategory.BENEFICIAL, 0xA7C9C9);
+    public static StatusEffect LAIDE_BLESSING = new EmptyStatusEffect(StatusEffectCategory.BENEFICIAL, 0xA7C9C9)
+            .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "91AEAA56-376B-4498-935B-2F7F68070635",
+                    0.31777778789994D, EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
     public static StatusEffect BEUSERE_VIRTUE = new EmptyStatusEffect(StatusEffectCategory.BENEFICIAL, 0xA7C9C9);
     public static StatusEffect ORITEM_PROFIT = new EmptyStatusEffect(StatusEffectCategory.BENEFICIAL, 0xA7C9C9);
     public static StatusEffect STERRES_GIFT = new EmptyStatusEffect(StatusEffectCategory.BENEFICIAL, 0xA7C9C9);

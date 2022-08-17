@@ -14,6 +14,6 @@ public class ProtostermSaplingBlock extends SaplingBlock {
 
     @Override
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
-        return floor.isOf(BlockInit.PROTOSTERM_REMENTIO);
+        return (floor.isOf(BlockInit.PROTOSTERM_REMENTIO) || floor.isOf(BlockInit.REMENTIO));
     }
 }

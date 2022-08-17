@@ -1,6 +1,9 @@
 {
   "itemGroup.boleatte.boleatte_group": "Boleatte",
 
+  "death.attack.virulent": "%1$s was seen as a threat to the Ascunautic",
+  "death.attack.virulent.player": "%1$s was seen as a threat to the Ascunautic",
+
   "item.boleatte.quanalla": "Quanalla",
   "item.boleatte.basolote": "Basolote",
   "item.boleatte.ramukai": "Ramukai",
@@ -81,11 +84,17 @@
   "item.boleatte.laposiate": "Laposiate",
 
   "text.dimatis.veret_trusting": "You have the Colourant Goddess' Favour",
-  "text.dimatis.laide_trusting": "You have the Boreal God's Blessing",
+  "text.veret_favour.hunted_wild": "Verêt has favoured you today!",
+  "text.dimatis.laide_trusting": "You have the Gelidity God's Blessing",
+  "text.laide_blessing.gelidity_shadow": "Laide has blessed you today!",
   "text.dimatis.beusere_trusting": "You have the Blossoming God's Virtue",
+  "text.beusere_virtue.prickly_rose": "Beusère has shown virtues to you today!",
   "text.dimatis.oritem_trusting": "You have the Carving Goddess' Profit",
+  "text.oritem_profit.magical_beginnings": "Oritem has provided profits to you today!",
   "text.dimatis.sterres_trusting": "You have the Scorch God's Gift",
+  "text.sterres_gift.heated_bitterness": "Stérres has gifted you today!",
   "text.dimatis.gela_trusting": "You have the Blistering God's Benefit",
+  "text.gela_benefit.decaying_shame": "Gelà has provided you benefits today!",
 
   "block.boleatte.violes": "Violes",
   "block.boleatte.veticoade": "Veticoade",
@@ -98,6 +107,6 @@
   "effect.boleatte.beusere_virtue": "Beusère's Virtue",
   "effect.boleatte.oritem_profit": "Oritem's Profit",
   "effect.boleatte.sterres_gift": "Stérres's Gift",
-  "effect.boleatte.gela_convenience": "Gelà's Benefit",
+  "effect.boleatte.gela_benefit": "Gelà's Benefit",
   "effect.boleatte.defiant.ii": "Defiant II"
 }
