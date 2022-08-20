@@ -24,6 +24,8 @@ public class BlockInit {
     public static RementioBlock PROTOSTERM_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE));
     public static Block ORETESSE = new Block(FabricBlockSettings.copy(Blocks.STRIPPED_WARPED_HYPHAE));
 
+    public static Block BOLEATTE_ACCESSOR = new Block(FabricBlockSettings.copy(REMENTIO));
+
     public static OreBlock REMENTIO_OPAFEU_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
             UniformIntProvider.create(3, 7));
     public static OreBlock REMENTIO_KUTUNITE_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
