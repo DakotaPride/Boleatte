@@ -4,6 +4,14 @@
   "death.attack.virulent": "%1$s was seen as a threat to the Ascunautic",
   "death.attack.virulent.player": "%1$s was seen as a threat to the Ascunautic",
 
+  "text.boleatte.is_skill.skill": "Skill",
+  "text.boleatte.is_skill.veret": "Hunted",
+  "text.boleatte.is_skill.laide": "Shadow Of Gelidity",
+  "text.boleatte.is_skill.gela": "Decaying Shame",
+  "text.boleatte.is_skill.oritem": "Magical Origins",
+  "text.boleatte.is_skill.beusere": "Prickly Rose",
+  "text.boleatte.is_skill.sterres": "Heated Bitterness",
+
   "item.boleatte.quanalla": "Quanalla",
   "item.boleatte.basolote": "Basolote",
   "item.boleatte.ramukai": "Ramukai",

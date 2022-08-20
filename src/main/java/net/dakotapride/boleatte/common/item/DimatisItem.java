@@ -40,29 +40,32 @@ public class DimatisItem extends Item implements AscunauticDimatis {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        user.addStatusEffect(AscunauticDimatis.getDimatisEffect(AscunauticDimatis.getDimatisType(user.getStackInHand(hand).getItem())));
-        if (user.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.ARBUNE_DIMATIS)) {
-            user.sendMessage(Text.translatable("text.veret_favour.hunted_wild")
-                    .formatted(Formatting.BOLD).setStyle(Style.EMPTY.withColor(0xF9A357)), true);
-        } else if (user.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.BOTAKOA_DIMATIS)) {
-            user.sendMessage(Text.translatable("text.beusere_virtue.prickly_rose")
-                    .formatted(Formatting.BOLD).setStyle(Style.EMPTY.withColor(0x686DA5)), true);
-        } else if (user.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.RASIORE_DIMATIS)) {
-            user.sendMessage(Text.translatable("text.gela_benefit.decaying_shame")
-                    .formatted(Formatting.BOLD).setStyle(Style.EMPTY.withColor(0x393D72)), true);
-        } else if (user.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.BABURBEN_DIMATIS)) {
-            user.sendMessage(Text.translatable("text.laide_blessing.gelidity_shadow")
-                    .formatted(Formatting.BOLD).setStyle(Style.EMPTY.withColor(0xDA9FB0)), true);
-        } else if (user.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.QUANTILA_DIMATIS)) {
-            user.sendMessage(Text.translatable("text.sterres_gift.heated_bitterness")
-                    .formatted(Formatting.BOLD).setStyle(Style.EMPTY.withColor(0xCC4818)), true);
-        } else if (user.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.PROTOSTERM_DIMATIS)) {
-            user.sendMessage(Text.translatable("text.oritem_profit.magical_beginnings")
-                    .formatted(Formatting.BOLD).setStyle(Style.EMPTY.withColor(0xD0E3ED)), true);
+        if (!user.isSneaking()) {
+            user.addStatusEffect(AscunauticDimatis.getDimatisEffect(AscunauticDimatis.getDimatisType(user.getStackInHand(hand).getItem())));
+            if (user.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.ARBUNE_DIMATIS)) {
+                user.sendMessage(Text.translatable("text.veret_favour.hunted_wild")
+                        .formatted(Formatting.BOLD).setStyle(Style.EMPTY.withColor(0xF9A357)), true);
+            } else if (user.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.BOTAKOA_DIMATIS)) {
+                user.sendMessage(Text.translatable("text.beusere_virtue.prickly_rose")
+                        .formatted(Formatting.BOLD).setStyle(Style.EMPTY.withColor(0x686DA5)), true);
+            } else if (user.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.RASIORE_DIMATIS)) {
+                user.sendMessage(Text.translatable("text.gela_benefit.decaying_shame")
+                        .formatted(Formatting.BOLD).setStyle(Style.EMPTY.withColor(0x393D72)), true);
+            } else if (user.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.BABURBEN_DIMATIS)) {
+                user.sendMessage(Text.translatable("text.laide_blessing.gelidity_shadow")
+                        .formatted(Formatting.BOLD).setStyle(Style.EMPTY.withColor(0xDA9FB0)), true);
+            } else if (user.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.QUANTILA_DIMATIS)) {
+                user.sendMessage(Text.translatable("text.sterres_gift.heated_bitterness")
+                        .formatted(Formatting.BOLD).setStyle(Style.EMPTY.withColor(0xCC4818)), true);
+            } else if (user.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.PROTOSTERM_DIMATIS)) {
+                user.sendMessage(Text.translatable("text.oritem_profit.magical_beginnings")
+                        .formatted(Formatting.BOLD).setStyle(Style.EMPTY.withColor(0xD0E3ED)), true);
+            }
+            user.getItemCooldownManager().set(this, 800);
+            user.getStackInHand(hand).damage(1, user, (player) -> player.sendToolBreakStatus(player.getActiveHand()));
+            return super.use(world, user, hand);
         }
-        user.getItemCooldownManager().set(this, 800);
-        user.getStackInHand(hand).damage(1, user, (player) -> player.sendToolBreakStatus(player.getActiveHand()));
-        return super.use(world, user, hand);
+        return null;
     }
 
 }
