@@ -9,9 +9,8 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Items;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 
 import static net.dakotapride.boleatte.common.BoleatteMain.*;
@@ -24,6 +23,26 @@ public class BlockInit {
     public static RementioBlock RASIORE_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE));
     public static RementioBlock PROTOSTERM_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE));
     public static Block ORETESSE = new Block(FabricBlockSettings.copy(Blocks.STRIPPED_WARPED_HYPHAE));
+
+    public static OreBlock REMENTIO_OPAFEU_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
+            UniformIntProvider.create(3, 7));
+    public static OreBlock REMENTIO_KUTUNITE_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
+            UniformIntProvider.create(3, 7));
+    public static OreBlock REMENTIO_LATZECK_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
+            UniformIntProvider.create(3, 7));
+    public static OreBlock REMENTIO_NEMORAL_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
+            UniformIntProvider.create(3, 7));
+    public static OreBlock REMENTIO_CINTONIUM_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
+            UniformIntProvider.create(3, 7));
+    public static OreBlock REMENTIO_LEPOSIATE_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
+            UniformIntProvider.create(3, 7));
+
+    public static Block REMENTIO_IRON_ORE = new Block(FabricBlockSettings.copy(Blocks.IRON_ORE));
+    public static Block REMENTIO_GOLD_ORE = new Block(FabricBlockSettings.copy(Blocks.GOLD_ORE));
+    public static OreBlock REMENTIO_DIAMOND_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
+            UniformIntProvider.create(3, 7));
+    public static OreBlock REMENTIO_EMERALD_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.EMERALD_ORE),
+            UniformIntProvider.create(3, 7));
 
     public static ProtostermSaplingBlock PROTOSTERM_SAPLING = new ProtostermSaplingBlock(new ProtostermSaplingGenerator(15),
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
@@ -155,6 +174,28 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "botakoa_rementio"), new BlockItem(BOTAKOA_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "protosterm_rementio"), PROTOSTERM_REMENTIO);
         Registry.register(Registry.ITEM, new Identifier(ID, "protosterm_rementio"), new BlockItem(PROTOSTERM_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+
+        Registry.register(Registry.BLOCK, new Identifier(ID, "opafeu_ore"), REMENTIO_OPAFEU_ORE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "opafeu_ore"), new BlockItem(REMENTIO_OPAFEU_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "leposiate_ore"), REMENTIO_LEPOSIATE_ORE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "leposiate_ore"), new BlockItem(REMENTIO_LEPOSIATE_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "cintonium_ore"), REMENTIO_CINTONIUM_ORE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "cintonium_ore"), new BlockItem(REMENTIO_CINTONIUM_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "kutunite_ore"), REMENTIO_KUTUNITE_ORE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "kutunite_ore"), new BlockItem(REMENTIO_KUTUNITE_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "latzeck_ore"), REMENTIO_LATZECK_ORE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "latzeck_ore"), new BlockItem(REMENTIO_LATZECK_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "nemoral_ore"), REMENTIO_NEMORAL_ORE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "nemoral_ore"), new BlockItem(REMENTIO_NEMORAL_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+
+        Registry.register(Registry.BLOCK, new Identifier(ID, "rementio_iron_ore"), REMENTIO_IRON_ORE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "rementio_iron_ore"), new BlockItem(REMENTIO_IRON_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "rementio_gold_ore"), REMENTIO_GOLD_ORE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "rementio_gold_ore"), new BlockItem(REMENTIO_GOLD_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "rementio_diamond_ore"), REMENTIO_DIAMOND_ORE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "rementio_diamond_ore"), new BlockItem(REMENTIO_DIAMOND_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "rementio_emerald_ore"), REMENTIO_EMERALD_ORE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "rementio_emerald_ore"), new BlockItem(REMENTIO_EMERALD_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "violes"), VIOLES);
         Registry.register(Registry.ITEM, new Identifier(ID, "violes"), new BlockItem(VIOLES, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));

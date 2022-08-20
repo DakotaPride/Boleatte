@@ -56,7 +56,21 @@
     [],
     [],
     [],
-    [],
+    [
+      "boleatte:ore_latzeck",
+      "boleatte:ore_latzeck_large",
+      "boleatte:ore_latzeck_buried",
+      "boleatte:ore_rementio_diamond",
+      "boleatte:ore_rementio_diamond_large",
+      "boleatte:ore_rementio_diamond_buried",
+      "boleatte:ore_rementio_emerald",
+      "boleatte:ore_rementio_gold",
+      "boleatte:ore_rementio_gold_extra",
+      "boleatte:ore_rementio_gold_lower",
+      "boleatte:ore_rementio_iron_middle",
+      "boleatte:ore_rementio_iron_small",
+      "boleatte:ore_rementio_iron_upper"
+    ],
     [],
     [
       "minecraft:spring_water",
@@ -64,10 +78,7 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:flower_forest_flowers",
-      "boleatte:trees_botakoa",
-      "minecraft:flower_flower_forest",
-      "minecraft:patch_grass_badlands"
+      "boleatte:trees_botakoa"
     ],
     [
       "minecraft:freeze_top_layer"

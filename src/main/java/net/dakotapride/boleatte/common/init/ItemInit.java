@@ -1,9 +1,6 @@
 package net.dakotapride.boleatte.common.init;
 
-import net.dakotapride.boleatte.common.item.AscunauticBlockItem;
-import net.dakotapride.boleatte.common.item.AscunauticItem;
-import net.dakotapride.boleatte.common.item.DimatisItem;
-import net.dakotapride.boleatte.common.item.RamoliteHoneyBottleItem;
+import net.dakotapride.boleatte.common.item.*;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
@@ -51,6 +48,16 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(PROTOSTERM_DIMATIS));
                     itemStacks.add(new ItemStack(QUANTILA_DIMATIS));
                     itemStacks.add(new ItemStack(RASIORE_DIMATIS));
+                    itemStacks.add(new ItemStack(BlockInit.REMENTIO_OPAFEU_ORE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.REMENTIO_KUTUNITE_ORE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.REMENTIO_LATZECK_ORE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.REMENTIO_NEMORAL_ORE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.REMENTIO_CINTONIUM_ORE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.REMENTIO_LEPOSIATE_ORE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.REMENTIO_IRON_ORE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.REMENTIO_GOLD_ORE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.REMENTIO_DIAMOND_ORE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.REMENTIO_EMERALD_ORE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.ORETESSE.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.DEAD_LEAVES.asItem()));
@@ -101,7 +108,7 @@ public class ItemInit {
     public static Item OPAFEU_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item CINTONIUM_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item LEPOSIATE_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
-    public static Item DIMATIS = new Item(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
+    public static BaseDimatisItem DIMATIS = new BaseDimatisItem(new FabricItemSettings().maxCount(1).group(BoleatteItemGroup.BOLEATTE));
     public static DimatisItem ARBUNE_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
     public static DimatisItem BABURBEN_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
     public static DimatisItem BOTAKOA_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));

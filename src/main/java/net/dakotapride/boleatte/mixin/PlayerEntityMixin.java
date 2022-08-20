@@ -1,7 +1,6 @@
 package net.dakotapride.boleatte.mixin;
 
 import net.dakotapride.boleatte.common.init.DamageSourcesInit;
-import net.dakotapride.boleatte.common.init.ItemInit;
 import net.dakotapride.boleatte.common.init.TagInit;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -17,6 +16,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class PlayerEntityMixin extends LivingEntity {
     private final PlayerEntity playerEntity = (PlayerEntity) (Object) this;
     private static final Identifier BOLEATTE = new Identifier("boleatte:boleatte");
+
     public PlayerEntityMixin(EntityType<? extends LivingEntity> entityType, World world) {
         super(entityType, world);
     }
@@ -28,6 +28,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
                 && (playerEntity.world.getRegistryKey().getValue().equals(BOLEATTE))) {
                 playerEntity.damage(DamageSourcesInit.VIRULENT, 1.0F);
         }
+
     }
 
 }

@@ -4,9 +4,11 @@
   "package": "net.dakotapride.boleatte.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "BlockMixin",
     "ItemStackMixin",
     "LivingEntityMixin",
-    "PlayerEntityMixin"
+    "PlayerEntityMixin",
+    "StatusEffectMixin"
   ],
   "client": [
   ],

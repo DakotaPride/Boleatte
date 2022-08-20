@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "boleatte:rementio_iron_ore",
+    "boleatte:rementio_gold_ore",
+    "boleatte:rementio_diamond_ore",
+    "boleatte:rementio_emerald_ore",
+
+    "boleatte:opafeu_ore",
+    "boleatte:nemoral_ore",
+    "boleatte:kutunite_ore",
+    "boleatte:latzeck_ore",
+    "boleatte:leposiate_ore",
+    "boleatte:cintonium_ore"
+  ]
+}

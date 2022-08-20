@@ -80,7 +80,20 @@
     [],
     [],
     [
-      "boleatte:disk_lephelusa_violes"
+      "boleatte:ore_kutunite",
+      "boleatte:ore_kutunite_large",
+      "boleatte:ore_kutunite_buried",
+      "boleatte:disk_lephelusa_violes",
+      "boleatte:ore_rementio_diamond",
+      "boleatte:ore_rementio_diamond_large",
+      "boleatte:ore_rementio_diamond_buried",
+      "boleatte:ore_rementio_emerald",
+      "boleatte:ore_rementio_gold",
+      "boleatte:ore_rementio_gold_extra",
+      "boleatte:ore_rementio_gold_lower",
+      "boleatte:ore_rementio_iron_middle",
+      "boleatte:ore_rementio_iron_small",
+      "boleatte:ore_rementio_iron_upper"
     ],
     [],
     [],
