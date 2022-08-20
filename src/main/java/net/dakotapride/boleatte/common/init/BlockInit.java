@@ -24,7 +24,7 @@ public class BlockInit {
     public static RementioBlock PROTOSTERM_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE));
     public static Block ORETESSE = new Block(FabricBlockSettings.copy(Blocks.STRIPPED_WARPED_HYPHAE));
 
-    public static Block BOLEATTE_ACCESSOR = new Block(FabricBlockSettings.copy(REMENTIO));
+    public static BoleatteAccessorBlock BOLEATTE_ACCESSOR = new BoleatteAccessorBlock(FabricBlockSettings.copy(REMENTIO));
 
     public static OreBlock REMENTIO_OPAFEU_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
             UniformIntProvider.create(3, 7));
@@ -207,6 +207,8 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "lephelusa_violes"), new BlockItem(LEPHELUSA_VIOLES, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "baburben_roots"), BABURBEN_ROOTS);
         Registry.register(Registry.BLOCK, new Identifier(ID, "sakalou_roots"), SAKALOU_ROOTS);
+        Registry.register(Registry.BLOCK, new Identifier(ID, "boleatte_accessor"), BOLEATTE_ACCESSOR);
+        Registry.register(Registry.ITEM, new Identifier(ID, "boleatte_accessor"), new BlockItem(BOLEATTE_ACCESSOR, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
     }
 

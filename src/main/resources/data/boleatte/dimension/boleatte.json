@@ -2,7 +2,6 @@
   "type": "minecraft:overworld",
   "generator": {
     "type": "minecraft:noise",
-    "fixed_time": false,
     "settings": "boleatte:boleatte_settings",
     "biome_source": {
       "type": "minecraft:multi_noise",

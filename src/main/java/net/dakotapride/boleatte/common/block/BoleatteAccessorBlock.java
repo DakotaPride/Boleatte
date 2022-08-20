@@ -21,6 +21,12 @@ public class BoleatteAccessorBlock extends Block {
     public static final BooleanProperty IS_RASIORE = BooleanProperty.of("is_rasiore");
     public BoleatteAccessorBlock(Settings settings) {
         super(settings);
+        setDefaultState(getDefaultState().with(IS_ARBUNE, Boolean.FALSE));
+        setDefaultState(getDefaultState().with(IS_BABURBEN, Boolean.FALSE));
+        setDefaultState(getDefaultState().with(IS_BOTAKOA, Boolean.FALSE));
+        setDefaultState(getDefaultState().with(IS_QUANTILA, Boolean.FALSE));
+        setDefaultState(getDefaultState().with(IS_PROTOSTERM, Boolean.FALSE));
+        setDefaultState(getDefaultState().with(IS_RASIORE, Boolean.FALSE));
     }
 
     @Override
