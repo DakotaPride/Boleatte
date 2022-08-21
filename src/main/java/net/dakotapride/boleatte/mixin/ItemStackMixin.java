@@ -4,7 +4,9 @@ import net.dakotapride.boleatte.common.init.EffectInit;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.*;
+import net.minecraft.item.AxeItem;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.SwordItem;
 import net.minecraft.util.Hand;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -15,7 +17,7 @@ import java.util.Objects;
 
 @Mixin(ItemStack.class)
 public class ItemStackMixin {
-
+    
     @Inject(method = "postHit", at = @At("TAIL"))
     private void attackWithAGodsMight(LivingEntity target, PlayerEntity attacker, CallbackInfo ci) {
         int gelaAmplifier = Objects.requireNonNull(target.getStatusEffect(EffectInit.GELA_BENEFIT)).getAmplifier();

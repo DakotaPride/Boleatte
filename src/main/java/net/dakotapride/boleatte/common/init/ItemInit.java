@@ -1,6 +1,9 @@
 package net.dakotapride.boleatte.common.init;
 
 import net.dakotapride.boleatte.common.item.*;
+import net.dakotapride.boleatte.common.item.alphiagou.BlossomingAlphiagouItem;
+import net.dakotapride.boleatte.common.item.alphiagou.GhostAlphiagouItem;
+import net.dakotapride.boleatte.common.item.alphiagou.PerfervidAlphiagouItem;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
@@ -34,7 +37,7 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(MELKIRSCH_SEEDS));
                     itemStacks.add(new ItemStack(MELKIRSCH_PIE));
                     itemStacks.add(new ItemStack(ALPHIAGOU));
-                    itemStacks.add(new ItemStack(BLISTERED_ALPHIAGOU));
+                    itemStacks.add(new ItemStack(PERFERVID_ALPHIAGOU));
                     itemStacks.add(new ItemStack(GHOST_ALPHIAGOU));
                     itemStacks.add(new ItemStack(BLOSSOMING_ALPHIAGOU));
                     itemStacks.add(new ItemStack(ALPHIAGOU_SUBSTANCE));
@@ -153,9 +156,9 @@ public class ItemInit {
     public static AscunauticBlockItem BABURBEN = new AscunauticBlockItem(BlockInit.BABURBEN_ROOTS, new FabricItemSettings().food(FoodComponentInit.BABURBEN).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem ROASTED_BABURBEN = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.ROASTED_BABURBEN).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem ALPHIAGOU = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem BLISTERED_ALPHIAGOU = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.BLISTED_ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem GHOST_ALPHIAGOU = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.GHOST_ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem BLOSSOMING_ALPHIAGOU = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.BLOSSOMING_ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
+    public static PerfervidAlphiagouItem PERFERVID_ALPHIAGOU = new PerfervidAlphiagouItem(new FabricItemSettings().food(FoodComponentInit.PERFERVID_ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
+    public static GhostAlphiagouItem GHOST_ALPHIAGOU = new GhostAlphiagouItem(new FabricItemSettings().food(FoodComponentInit.GHOST_ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
+    public static BlossomingAlphiagouItem BLOSSOMING_ALPHIAGOU = new BlossomingAlphiagouItem(new FabricItemSettings().food(FoodComponentInit.BLOSSOMING_ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
     public static FilledBottleItem ALPHIAGOU_SUBSTANCE = new FilledBottleItem(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU_SUBSTANCE).group(BoleatteItemGroup.BOLEATTE));
     public static FilledBottleItem LEMENTRIO_SUBSTANCE = new FilledBottleItem(new FabricItemSettings().food(FoodComponentInit.LEMENTRIO_SUBSTANCE).group(BoleatteItemGroup.BOLEATTE));
     public static FilledBottleItem PYETSIT_SUBSTANCE = new FilledBottleItem(new FabricItemSettings().food(FoodComponentInit.PYETSIT_SUBSTANCE).group(BoleatteItemGroup.BOLEATTE));
@@ -185,7 +188,7 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "lephelusa_coral_shard"), LEPHELUSA_CORAL_SHARD);
         Registry.register(Registry.ITEM, new Identifier(ID, "melkirsch_pie"), MELKIRSCH_PIE);
         Registry.register(Registry.ITEM, new Identifier(ID, "alphiagou"), ALPHIAGOU);
-        Registry.register(Registry.ITEM, new Identifier(ID, "blistered_alphiagou"), BLISTERED_ALPHIAGOU);
+        Registry.register(Registry.ITEM, new Identifier(ID, "perfervid_alphiagou"), PERFERVID_ALPHIAGOU);
         Registry.register(Registry.ITEM, new Identifier(ID, "ghost_alphiagou"), GHOST_ALPHIAGOU);
         Registry.register(Registry.ITEM, new Identifier(ID, "blossoming_alphiagou"), BLOSSOMING_ALPHIAGOU);
         Registry.register(Registry.ITEM, new Identifier(ID, "alphiagou_substance"), ALPHIAGOU_SUBSTANCE);

@@ -21,7 +21,7 @@
   "item.boleatte.roasted_baburben": "Roasted Baburben",
   "item.boleatte.melkirsch_pie": "Melkirsch Pie",
   "item.boleatte.alphiagou": "Alphiagou",
-  "item.boleatte.blistered_alphiagou": "Blistered Alphiagou",
+  "item.boleatte.perfervid_alphiagou": "Perfervid Alphiagou",
   "item.boleatte.ghost_alphiagou": "Ghost Alphiagou",
   "item.boleatte.blossoming_alphiagou": "Blossoming Alphiagou",
   "item.boleatte.alphiagou_substance": "Bottle Of Alphiagou Substance",
@@ -116,6 +116,13 @@
   "text.sterres_gift.heated_bitterness": "Stérres has gifted you today!",
   "text.dimatis.gela_trusting": "You have the Blistering God's Benefit",
   "text.gela_benefit.decaying_shame": "Gelà has provided you benefits today!",
+
+  "text.alphiagou.signalling.sterres": "Sterres has blessed you in this dungeon",
+  "text.sterres.denial": "You are not in a dungeon, Sterres cannot be of assistance!",
+  "text.alphiagou.signalling.laide": "Laide has blessed you in this dungeon",
+  "text.laide.denial": "You are not in a dungeon, Laide cannot be of assistance!",
+  "text.alphiagou.signalling.beusere": "Beusere has blessed you in this dungeon",
+  "text.beusere.denial": "You are not in a dungeon, Beusere cannot be of assistance!",
 
   "block.boleatte.violes": "Violes",
   "block.boleatte.veticoade": "Veticoade",

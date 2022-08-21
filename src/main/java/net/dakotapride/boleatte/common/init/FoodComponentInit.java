@@ -23,7 +23,7 @@ public class FoodComponentInit {
     public static final FoodComponent BABURBEN = new FoodComponent.Builder().hunger(6).saturationModifier(0.7F).build();
     public static final FoodComponent ROASTED_BABURBEN = new FoodComponent.Builder().hunger(7).saturationModifier(0.9F).build();
     public static final FoodComponent ALPHIAGOU = new FoodComponent.Builder().hunger(5).saturationModifier(0.5F).build();
-    public static final FoodComponent BLISTED_ALPHIAGOU = new FoodComponent.Builder().statusEffect(new StatusEffectInstance
+    public static final FoodComponent PERFERVID_ALPHIAGOU = new FoodComponent.Builder().statusEffect(new StatusEffectInstance
                     (EffectInit.STERRES_GIFT, 240, 1), 1.0F).statusEffect(new StatusEffectInstance
             (StatusEffects.FIRE_RESISTANCE, 360, 0), 0.5f).hunger(5).saturationModifier(0.5F).build();
     public static final FoodComponent GHOST_ALPHIAGOU = new FoodComponent.Builder().statusEffect(new StatusEffectInstance
