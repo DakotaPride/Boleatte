@@ -130,9 +130,9 @@ public class VillagerInit {
         TradeOfferHelper.registerVillagerOffers(ORITEM_MESSENGER, 4,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 5),
-                            new ItemStack(Items.ENCHANTED_BOOK, 1),
-                            1,11,0.03f));
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(BlockInit.PROTOSTERM_REMENTIO.asItem(), 4),
+                            12,7,0.03f));
                 });
         TradeOfferHelper.registerVillagerOffers(ORITEM_MESSENGER, 4,
                 factories -> {
@@ -177,13 +177,6 @@ public class VillagerInit {
                             new ItemStack(Items.EMERALD, 27),
                             new ItemStack(ItemInit.BABURBEN_DIMATIS, 1),
                             1,7,0.03f));
-                });
-        TradeOfferHelper.registerVillagerOffers(ORITEM_MESSENGER, 5,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 1),
-                            new ItemStack(BlockInit.PROTOSTERM_REMENTIO.asItem(), 4),
-                            12,7,0.03f));
                 });
     }
 
@@ -253,9 +246,9 @@ public class VillagerInit {
         TradeOfferHelper.registerVillagerOffers(BEUSERE_MESSENGER, 4,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 5),
-                            new ItemStack(Items.ENCHANTED_BOOK, 1),
-                            1,11,0.03f));
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(BlockInit.BOTAKOA_REMENTIO.asItem(), 4),
+                            12,7,0.03f));
                 });
         TradeOfferHelper.registerVillagerOffers(BEUSERE_MESSENGER, 4,
                 factories -> {
@@ -300,13 +293,6 @@ public class VillagerInit {
                             new ItemStack(Items.EMERALD, 27),
                             new ItemStack(ItemInit.BABURBEN_DIMATIS, 1),
                             1,7,0.03f));
-                });
-        TradeOfferHelper.registerVillagerOffers(BEUSERE_MESSENGER, 5,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 1),
-                            new ItemStack(BlockInit.BOTAKOA_REMENTIO.asItem(), 4),
-                            12,7,0.03f));
                 });
     }
 
@@ -376,9 +362,9 @@ public class VillagerInit {
         TradeOfferHelper.registerVillagerOffers(GELA_MESSENGER, 4,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 5),
-                            new ItemStack(Items.ENCHANTED_BOOK, 1),
-                            1,11,0.03f));
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(BlockInit.RASIORE_REMENTIO.asItem(), 4),
+                            12,7,0.03f));
                 });
         TradeOfferHelper.registerVillagerOffers(GELA_MESSENGER, 4,
                 factories -> {
@@ -423,13 +409,6 @@ public class VillagerInit {
                             new ItemStack(Items.EMERALD, 27),
                             new ItemStack(ItemInit.BABURBEN_DIMATIS, 1),
                             1,7,0.03f));
-                });
-        TradeOfferHelper.registerVillagerOffers(GELA_MESSENGER, 5,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 1),
-                            new ItemStack(BlockInit.RASIORE_REMENTIO.asItem(), 4),
-                            12,7,0.03f));
                 });
     }
 
@@ -499,9 +478,9 @@ public class VillagerInit {
         TradeOfferHelper.registerVillagerOffers(STERRES_MESSENGER, 4,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 5),
-                            new ItemStack(Items.ENCHANTED_BOOK, 1),
-                            1,11,0.03f));
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(Blocks.RED_SAND.asItem(), 4),
+                            12,7,0.03f));
                 });
         TradeOfferHelper.registerVillagerOffers(LAIDE_MESSENGER, 4,
                 factories -> {
@@ -542,13 +521,6 @@ public class VillagerInit {
                             new ItemStack(Items.EMERALD, 27),
                             new ItemStack(ItemInit.ARBUNE_DIMATIS, 1),
                             1,7,0.03f));
-                });
-        TradeOfferHelper.registerVillagerOffers(STERRES_MESSENGER, 5,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 1),
-                            new ItemStack(Blocks.RED_SAND.asItem(), 4),
-                            12,7,0.03f));
                 });
     }
 
@@ -674,13 +646,6 @@ public class VillagerInit {
                             new ItemStack(ItemInit.ARBUNE_DIMATIS, 1),
                             1,7,0.03f));
                 });
-        TradeOfferHelper.registerVillagerOffers(LAIDE_MESSENGER, 5,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 1),
-                            new ItemStack(BlockInit.LEPHELUSA_VIOLES.asItem(), 4),
-                            12,7,0.03f));
-                });
     }
 
 
@@ -749,9 +714,9 @@ public class VillagerInit {
         TradeOfferHelper.registerVillagerOffers(VERET_MESSENGER, 4,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 5),
-                            new ItemStack(Items.ENCHANTED_BOOK, 1),
-                            1,11,0.03f));
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(BlockInit.ARBUNE_REMENTIO.asItem(), 4),
+                            12,7,0.03f));
                 });
         TradeOfferHelper.registerVillagerOffers(VERET_MESSENGER, 4,
                 factories -> {
@@ -792,13 +757,6 @@ public class VillagerInit {
                             new ItemStack(Items.EMERALD, 27),
                             new ItemStack(ItemInit.BABURBEN_DIMATIS, 1),
                             1,7,0.03f));
-                });
-        TradeOfferHelper.registerVillagerOffers(VERET_MESSENGER, 5,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 1),
-                            new ItemStack(BlockInit.ARBUNE_REMENTIO.asItem(), 4),
-                            12,7,0.03f));
                 });
     }
 }
