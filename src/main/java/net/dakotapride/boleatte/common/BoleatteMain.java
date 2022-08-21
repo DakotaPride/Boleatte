@@ -14,6 +14,5 @@ public class BoleatteMain implements ModInitializer {
 		EffectInit.init();
 		StrippableInit.init();
 		DimensionInit.init();
-		VillagerInit.init();
 	}
 }

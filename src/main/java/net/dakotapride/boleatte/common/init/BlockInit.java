@@ -24,15 +24,6 @@ public class BlockInit {
     public static RementioBlock PROTOSTERM_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE));
     public static Block ORETESSE = new Block(FabricBlockSettings.copy(Blocks.STRIPPED_WARPED_HYPHAE));
 
-    public static BoleatteAccessorBlock BOLEATTE_ACCESSOR = new BoleatteAccessorBlock(FabricBlockSettings.copy(REMENTIO));
-
-    public static BoleatteAccessorBlock RASIORE_ACCESSOR = new BoleatteAccessorBlock(FabricBlockSettings.copy(REMENTIO));
-    public static BoleatteAccessorBlock ARBUNE_ACCESSOR = new BoleatteAccessorBlock(FabricBlockSettings.copy(REMENTIO));
-    public static BoleatteAccessorBlock BOTAKOA_ACCESSOR = new BoleatteAccessorBlock(FabricBlockSettings.copy(REMENTIO));
-    public static BoleatteAccessorBlock BABURBEN_ACCESSOR = new BoleatteAccessorBlock(FabricBlockSettings.copy(REMENTIO));
-    public static BoleatteAccessorBlock QUANTILA_ACCESSOR = new BoleatteAccessorBlock(FabricBlockSettings.copy(REMENTIO));
-    public static BoleatteAccessorBlock PROTOSTERM_ACCESSOR = new BoleatteAccessorBlock(FabricBlockSettings.copy(REMENTIO));
-
     public static OreBlock REMENTIO_OPAFEU_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
             UniformIntProvider.create(3, 7));
     public static OreBlock REMENTIO_KUTUNITE_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
@@ -214,22 +205,6 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "lephelusa_violes"), new BlockItem(LEPHELUSA_VIOLES, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "baburben_roots"), BABURBEN_ROOTS);
         Registry.register(Registry.BLOCK, new Identifier(ID, "sakalou_roots"), SAKALOU_ROOTS);
-
-        Registry.register(Registry.BLOCK, new Identifier(ID, "boleatte_accessor"), BOLEATTE_ACCESSOR);
-        Registry.register(Registry.ITEM, new Identifier(ID, "boleatte_accessor"), new BlockItem(BOLEATTE_ACCESSOR, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
-        Registry.register(Registry.BLOCK, new Identifier(ID, "arbune_accessor"), ARBUNE_ACCESSOR);
-        Registry.register(Registry.ITEM, new Identifier(ID, "arbune_accessor"), new BlockItem(ARBUNE_ACCESSOR, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
-        Registry.register(Registry.BLOCK, new Identifier(ID, "botakoa_accessor"), BOTAKOA_ACCESSOR);
-        Registry.register(Registry.ITEM, new Identifier(ID, "botakoa_accessor"), new BlockItem(BOTAKOA_ACCESSOR, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
-        Registry.register(Registry.BLOCK, new Identifier(ID, "protosterm_accessor"), PROTOSTERM_ACCESSOR);
-        Registry.register(Registry.ITEM, new Identifier(ID, "protosterm_accessor"), new BlockItem(PROTOSTERM_ACCESSOR, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
-        Registry.register(Registry.BLOCK, new Identifier(ID, "baburben_accessor"), BABURBEN_ACCESSOR);
-        Registry.register(Registry.ITEM, new Identifier(ID, "baburben_accessor"), new BlockItem(BABURBEN_ACCESSOR, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
-        Registry.register(Registry.BLOCK, new Identifier(ID, "quantila_accessor"), QUANTILA_ACCESSOR);
-        Registry.register(Registry.ITEM, new Identifier(ID, "quantila_accessor"), new BlockItem(QUANTILA_ACCESSOR, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
-        Registry.register(Registry.BLOCK, new Identifier(ID, "rasiore_accessor"), RASIORE_ACCESSOR);
-        Registry.register(Registry.ITEM, new Identifier(ID, "rasiore_accessor"), new BlockItem(RASIORE_ACCESSOR, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
-
     }
 
 }

@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "boleatte:block/etched_rasiore_log_top",
-    "side": "boleatte:block/rasiore_log"
-  }
-}

@@ -4,21 +4,6 @@
   "death.attack.virulent": "%1$s was seen as a threat to the Ascunautic",
   "death.attack.virulent.player": "%1$s was seen as a threat to the Ascunautic and was reported by %2$s",
 
-  "entity.minecraft.villager.veret_messenger": "Verêt's Messenger",
-  "entity.minecraft.villager.laide_messenger": "Laide's Messenger",
-  "entity.minecraft.villager.gela_messenger": "Gelà's Messenger",
-  "entity.minecraft.villager.beusere_messenger": "Beusère's Messenger",
-  "entity.minecraft.villager.sterres_messenger": "Stérres's Messenger",
-  "entity.minecraft.villager.oritem_messenger": "Oritem's Messenger",
-
-  "block.boleatte.boleatte_accessor": "Accessor",
-  "block.boleatte.arbune_accessor": "Arbune Accessor",
-  "block.boleatte.botakoa_accessor": "Botakoa Accessor",
-  "block.boleatte.baburben_accessor": "Baburben Accessor",
-  "block.boleatte.quantila_accessor": "Quantila Accessor",
-  "block.boleatte.protosterm_accessor": "Protosterm Accessor",
-  "block.boleatte.rasiore_accessor": "Rasiore Accessor",
-
   "item.boleatte.quanalla": "Quanalla",
   "item.boleatte.basolote": "Basolote",
   "item.boleatte.ramukai": "Ramukai",
