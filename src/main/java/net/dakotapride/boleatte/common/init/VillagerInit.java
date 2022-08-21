@@ -19,9 +19,30 @@ import static net.dakotapride.boleatte.common.BoleatteMain.ID;
 
 public class VillagerInit {
     public static final PointOfInterestType VERET_MESSENGER_POI = registerPOI("veret_messenger_poi",
-            BlockInit.BOLEATTE_ACCESSOR);
+            BlockInit.ARBUNE_ACCESSOR);
+    public static final PointOfInterestType LAIDE_MESSENGER_POI = registerPOI("laide_messenger_poi",
+            BlockInit.BABURBEN_ACCESSOR);
+    public static final PointOfInterestType STERRES_MESSENGER_POI = registerPOI("sterres_messenger_poi",
+            BlockInit.QUANTILA_ACCESSOR);
+    public static final PointOfInterestType GELA_MESSENGER_POI = registerPOI("gela_messenger_poi",
+            BlockInit.RASIORE_ACCESSOR);
+    public static final PointOfInterestType BEUSERE_MESSENGER_POI = registerPOI("beusere_messenger_poi",
+            BlockInit.BOTAKOA_ACCESSOR);
+    public static final PointOfInterestType ORITEM_MESSENGER_POI = registerPOI("oritem_messenger_poi",
+            BlockInit.PROTOSTERM_ACCESSOR);
+
     public static final VillagerProfession VERET_MESSENGER = registerProfession("veret_messenger",
             RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(ID, "veret_messenger_poi")));
+    public static final VillagerProfession LAIDE_MESSENGER = registerProfession("laide_messenger",
+            RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(ID, "laide_messenger_poi")));
+    public static final VillagerProfession STERRES_MESSENGER = registerProfession("sterres_messenger",
+            RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(ID, "sterres_messenger_poi")));
+    public static final VillagerProfession GELA_MESSENGER = registerProfession("gela_messenger",
+            RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(ID, "gela_messenger_poi")));
+    public static final VillagerProfession BEUSERE_MESSENGER = registerProfession("beusere_messenger",
+            RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(ID, "beusere_messenger_poi")));
+    public static final VillagerProfession ORITEM_MESSENGER = registerProfession("oritem_messenger",
+            RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(ID, "oritem_messenger_poi")));
 
     public static VillagerProfession registerProfession(String name, RegistryKey<PointOfInterestType> type) {
         return Registry.register(Registry.VILLAGER_PROFESSION, new Identifier(ID, name),
@@ -35,6 +56,17 @@ public class VillagerInit {
     }
 
     public static void init() {
+        checkVeretMessengerTrades();
+    }
+
+
+    private static void checkLaideMessengerTrades() {
+
+    }
+
+
+
+    private static void checkVeretMessengerTrades() {
         TradeOfferHelper.registerVillagerOffers(VERET_MESSENGER, 1,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
@@ -42,43 +74,113 @@ public class VillagerInit {
                             new ItemStack(BlockInit.REMENTIO.asItem(), 4),
                             16,4,0.04f));
                 });
-
         TradeOfferHelper.registerVillagerOffers(VERET_MESSENGER, 1,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 2),
                             new ItemStack(BlockInit.ARBUNE_LOG, 8),
-                            6,6,0.08f));
+                            6,6,0.02f));
                 });
-
         TradeOfferHelper.registerVillagerOffers(VERET_MESSENGER, 2,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 17),
                             new ItemStack(ItemInit.OPAFEU_GEM, 1),
-                            3,8,1.08f));
+                            3,8,0.02f));
                 });
         TradeOfferHelper.registerVillagerOffers(VERET_MESSENGER, 2,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 19),
                             new ItemStack(ItemInit.NEMORAL_GEM, 1),
-                            1,7,1.12f));
+                            2,7,0.06f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 19),
+                            new ItemStack(ItemInit.LEPOSIATE_GEM, 1),
+                            1,7,0.06f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 19),
+                            new ItemStack(ItemInit.LATZECK_GEM, 1),
+                            2,7,0.06f));
                 });
         TradeOfferHelper.registerVillagerOffers(VERET_MESSENGER, 2,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 19),
                             new ItemStack(ItemInit.KUTUNITE_GEM, 1),
-                            2,7,1.12f));
+                            2,7,0.06f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 19),
+                            new ItemStack(ItemInit.CINTONIUM_GEM, 1),
+                            2,7,0.06f));
                 });
-
         TradeOfferHelper.registerVillagerOffers(VERET_MESSENGER, 3,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 33),
                             new ItemStack(ItemInit.ARBUNE_DIMATIS, 1),
-                            1,11,2.08f));
+                            1,11,0.04f));
+                });
+        TradeOfferHelper.registerVillagerOffers(VERET_MESSENGER, 3,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(ItemInit.ARBUNE_DIMATIS, 1),
+                            new ItemStack(ItemInit.DIMATIS, 1),
+                            1,11,0.01f));
+                });
+        TradeOfferHelper.registerVillagerOffers(VERET_MESSENGER, 4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 5),
+                            new ItemStack(Items.ENCHANTED_BOOK, 1),
+                            1,11,0.03f));
+                });
+        TradeOfferHelper.registerVillagerOffers(VERET_MESSENGER, 4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(ItemInit.BASOLOTE, 8),
+                            8,6,0.04f));
+                });
+        TradeOfferHelper.registerVillagerOffers(VERET_MESSENGER, 4,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(ItemInit.MIERIRE, 8),
+                            8,6,0.04f));
+                });
+        TradeOfferHelper.registerVillagerOffers(VERET_MESSENGER, 5,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 27),
+                            new ItemStack(ItemInit.QUANTILA_DIMATIS, 1),
+                            1,7,0.03f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 27),
+                            new ItemStack(ItemInit.PROTOSTERM_DIMATIS, 1),
+                            1,7,0.03f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 27),
+                            new ItemStack(ItemInit.RASIORE_DIMATIS, 1),
+                            1,7,0.03f));
+                });
+        TradeOfferHelper.registerVillagerOffers(VERET_MESSENGER, 5,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 27),
+                            new ItemStack(ItemInit.BOTAKOA_DIMATIS, 1),
+                            1,7,0.03f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 27),
+                            new ItemStack(ItemInit.BABURBEN_DIMATIS, 1),
+                            1,7,0.03f));
+                });
+        TradeOfferHelper.registerVillagerOffers(VERET_MESSENGER, 5,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(BlockInit.ARBUNE_REMENTIO.asItem(), 4),
+                            12,7,0.03f));
                 });
     }
 }

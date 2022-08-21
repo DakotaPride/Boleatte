@@ -1,5 +1,10 @@
 {
   "values": [
-    "boleatte:veret_messenger_poi"
+    "boleatte:veret_messenger_poi",
+    "boleatte:laide_messenger_poi",
+    "boleatte:sterres_messenger_poi",
+    "boleatte:gela_messenger_poi",
+    "boleatte:oritem_messenger_poi",
+    "boleatte:beusere_messenger_poi"
   ]
 }

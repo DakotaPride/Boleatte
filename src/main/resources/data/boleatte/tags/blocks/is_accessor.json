@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "boleatte:arbune_accessor",
+    "boleatte:botakoa_accessor",
+    "boleatte:baburben_accessor",
+    "boleatte:protosterm_accessor",
+    "boleatte:quantila_accessor",
+    "boleatte:rasiore_accessor"
+  ]
+}
