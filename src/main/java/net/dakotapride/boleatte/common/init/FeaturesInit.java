@@ -1,7 +1,6 @@
 package net.dakotapride.boleatte.common.init;
 
 import com.google.common.collect.ImmutableList;
-import net.dakotapride.boleatte.common.block.RementioBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SweetBerryBushBlock;

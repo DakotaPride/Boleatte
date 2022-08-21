@@ -20,6 +20,6 @@ public class TagInit {
 
     public static final TagKey<Item> ACCEPTABLE_DIMATIS = TagKey.of(Registry.ITEM_KEY, new Identifier(ID, "acceptable_dimatis"));
 
-    public static final TagKey<Block> IS_ACCESSOR = TagKey.of(Registry.BLOCK_KEY, new Identifier(ID, "is_accessor"));
+    public static final TagKey<Block> MOSSY_REMENTIO = TagKey.of(Registry.BLOCK_KEY, new Identifier(ID, "rementio_moss_blocks"));
 
 }

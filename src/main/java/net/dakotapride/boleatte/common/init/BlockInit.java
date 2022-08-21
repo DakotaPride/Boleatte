@@ -17,31 +17,31 @@ import static net.dakotapride.boleatte.common.BoleatteMain.*;
 
 public class BlockInit {
 
-    public static Block REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE));
-    public static RementioBlock ARBUNE_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE));
-    public static RementioBlock BOTAKOA_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE));
-    public static RementioBlock RASIORE_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE));
-    public static RementioBlock PROTOSTERM_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE));
-    public static Block ORETESSE = new Block(FabricBlockSettings.copy(Blocks.STRIPPED_WARPED_HYPHAE));
+    public static RementioBlock REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static Block ARBUNE_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static Block BOTAKOA_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static Block RASIORE_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static Block PROTOSTERM_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static Block ORETESSE = new Block(FabricBlockSettings.copy(Blocks.STRIPPED_WARPED_HYPHAE).requiresTool());
 
-    public static OreBlock REMENTIO_OPAFEU_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
+    public static OreBlock REMENTIO_OPAFEU_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE).requiresTool(),
             UniformIntProvider.create(3, 7));
-    public static OreBlock REMENTIO_KUTUNITE_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
+    public static OreBlock REMENTIO_KUTUNITE_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE).requiresTool(),
             UniformIntProvider.create(3, 7));
-    public static OreBlock REMENTIO_LATZECK_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
+    public static OreBlock REMENTIO_LATZECK_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE).requiresTool(),
             UniformIntProvider.create(3, 7));
-    public static OreBlock REMENTIO_NEMORAL_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
+    public static OreBlock REMENTIO_NEMORAL_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE).requiresTool(),
             UniformIntProvider.create(3, 7));
-    public static OreBlock REMENTIO_CINTONIUM_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
+    public static OreBlock REMENTIO_CINTONIUM_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE).requiresTool(),
             UniformIntProvider.create(3, 7));
-    public static OreBlock REMENTIO_LEPOSIATE_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
+    public static OreBlock REMENTIO_LEPOSIATE_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE).requiresTool(),
             UniformIntProvider.create(3, 7));
 
-    public static Block REMENTIO_IRON_ORE = new Block(FabricBlockSettings.copy(Blocks.IRON_ORE));
-    public static Block REMENTIO_GOLD_ORE = new Block(FabricBlockSettings.copy(Blocks.GOLD_ORE));
-    public static OreBlock REMENTIO_DIAMOND_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
+    public static Block REMENTIO_IRON_ORE = new Block(FabricBlockSettings.copy(Blocks.IRON_ORE).requiresTool());
+    public static Block REMENTIO_GOLD_ORE = new Block(FabricBlockSettings.copy(Blocks.GOLD_ORE).requiresTool());
+    public static OreBlock REMENTIO_DIAMOND_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE).requiresTool(),
             UniformIntProvider.create(3, 7));
-    public static OreBlock REMENTIO_EMERALD_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.EMERALD_ORE),
+    public static OreBlock REMENTIO_EMERALD_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.EMERALD_ORE).requiresTool(),
             UniformIntProvider.create(3, 7));
 
     public static ProtostermSaplingBlock PROTOSTERM_SAPLING = new ProtostermSaplingBlock(new ProtostermSaplingGenerator(15),
@@ -90,7 +90,7 @@ public class BlockInit {
     public static SakalouRootsBlock SAKALOU_ROOTS = new SakalouRootsBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH).ticksRandomly().nonOpaque());
 
     public static Block VIOLES = new Block(FabricBlockSettings.copy(Blocks.SAND));
-    public static Block VETICOADE = new Block(FabricBlockSettings.copy(Blocks.SANDSTONE));
+    public static Block VETICOADE = new Block(FabricBlockSettings.copy(Blocks.SANDSTONE).requiresTool());
     public static Block LEPHELUSA_VIOLES = new Block(FabricBlockSettings.copy(Blocks.GRAVEL));
     public static BaburbenRootsBlock BABURBEN_ROOTS = new BaburbenRootsBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH).ticksRandomly().nonOpaque());
 
