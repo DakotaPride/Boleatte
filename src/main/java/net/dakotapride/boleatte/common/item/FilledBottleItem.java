@@ -1,5 +1,6 @@
 package net.dakotapride.boleatte.common.item;
 
+import net.dakotapride.boleatte.common.init.ItemInit;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
@@ -11,6 +12,7 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
 import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
@@ -19,16 +21,18 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class RamoliteHoneyBottleItem extends AscunauticItem {
+public class FilledBottleItem extends AscunauticItem {
     private static final int MAX_USE_TIME = 40;
 
-    public RamoliteHoneyBottleItem(Item.Settings settings) {
+    public FilledBottleItem(Item.Settings settings) {
         super(settings);
     }
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("effect.boleatte.defiant.ii"));
+        if (stack.isOf(ItemInit.RAMOLITE_HONEY)) {
+            tooltip.add(Text.translatable("effect.boleatte.defiant.ii").formatted(Formatting.BLUE));
+        }
     }
 
     @Override

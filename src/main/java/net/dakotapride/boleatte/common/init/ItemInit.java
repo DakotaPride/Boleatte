@@ -25,12 +25,22 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(PAIORE));
                     itemStacks.add(new ItemStack(PAIEUX_DOUGH));
                     itemStacks.add(new ItemStack(PAIEUX));
-                    itemStacks.add(new ItemStack(ALPHIAGOU));
                     itemStacks.add(new ItemStack(SAKALOU));
                     itemStacks.add(new ItemStack(RASIORE));
                     itemStacks.add(new ItemStack(ROASTED_RASIORE));
                     itemStacks.add(new ItemStack(BABURBEN));
                     itemStacks.add(new ItemStack(ROASTED_BABURBEN));
+                    itemStacks.add(new ItemStack(LEPHELUSA_CORAL_SHARD));
+                    itemStacks.add(new ItemStack(MELKIRSCH_SEEDS));
+                    itemStacks.add(new ItemStack(MELKIRSCH_PIE));
+                    itemStacks.add(new ItemStack(ALPHIAGOU));
+                    itemStacks.add(new ItemStack(BLISTERED_ALPHIAGOU));
+                    itemStacks.add(new ItemStack(GHOST_ALPHIAGOU));
+                    itemStacks.add(new ItemStack(BLOSSOMING_ALPHIAGOU));
+                    itemStacks.add(new ItemStack(ALPHIAGOU_SUBSTANCE));
+                    itemStacks.add(new ItemStack(LEMENTRIO_SUBSTANCE));
+                    itemStacks.add(new ItemStack(PYETSIT_SUBSTANCE));
+                    itemStacks.add(new ItemStack(SATALUK_SUBSTANCE));
                     itemStacks.add(new ItemStack(DE_FEATIANTE));
                     itemStacks.add(new ItemStack(ALPHIAGOU_CIDER));
                     itemStacks.add(new ItemStack(MYSTICAL_ALPHIAGOU_CIDER));
@@ -41,6 +51,7 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(NEMORAL_GEM));
                     itemStacks.add(new ItemStack(CINTONIUM_GEM));
                     itemStacks.add(new ItemStack(LEPOSIATE_GEM));
+
                     itemStacks.add(new ItemStack(DIMATIS));
                     itemStacks.add(new ItemStack(ARBUNE_DIMATIS));
                     itemStacks.add(new ItemStack(BABURBEN_DIMATIS));
@@ -48,6 +59,13 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(PROTOSTERM_DIMATIS));
                     itemStacks.add(new ItemStack(QUANTILA_DIMATIS));
                     itemStacks.add(new ItemStack(RASIORE_DIMATIS));
+
+                    itemStacks.add(new ItemStack(BlockInit.ORETESSE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.REMENTIO.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.REMENTIO_BRICKS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.DARK_REMENTIO.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.DARK_REMENTIO_BRICKS.asItem()));
+
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_OPAFEU_ORE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_KUTUNITE_ORE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_LATZECK_ORE.asItem()));
@@ -58,50 +76,53 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_GOLD_ORE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_DIAMOND_ORE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_EMERALD_ORE.asItem()));
-                    itemStacks.add(new ItemStack(BlockInit.ORETESSE.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.MELKIRSCH.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.DEAD_LEAVES.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_LEAVES.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.BOTAKOA_LEAVES.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.ARBUNE_LEAVES.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.RASIORE_LEAVES.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_SAPLING.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.BOTAKOA_SAPLING.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.ARBUNE_SAPLING.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.RASIORE_SAPLING.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_PLANKS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.BOTAKOA_PLANKS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.ARBUNE_PLANKS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.RASIORE_PLANKS.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_LOG.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_WOOD.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.STRIPPED_PROTOSTERM_LOG.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.STRIPPED_PROTOSTERM_WOOD.asItem()));
-                    itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_PLANKS.asItem()));
-                    itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_LEAVES.asItem()));
-                    itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_SAPLING.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.BOTAKOA_LOG.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.BOTAKOA_WOOD.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.STRIPPED_BOTAKOA_LOG.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.STRIPPED_BOTAKOA_WOOD.asItem()));
-                    itemStacks.add(new ItemStack(BlockInit.BOTAKOA_PLANKS.asItem()));
-                    itemStacks.add(new ItemStack(BlockInit.BOTAKOA_LEAVES.asItem()));
-                    itemStacks.add(new ItemStack(BlockInit.BOTAKOA_SAPLING.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_LOG.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_WOOD.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.STRIPPED_ARBUNE_LOG.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.STRIPPED_ARBUNE_WOOD.asItem()));
-                    itemStacks.add(new ItemStack(BlockInit.ARBUNE_PLANKS.asItem()));
-                    itemStacks.add(new ItemStack(BlockInit.ARBUNE_LEAVES.asItem()));
-                    itemStacks.add(new ItemStack(BlockInit.ARBUNE_SAPLING.asItem()));
-                    itemStacks.add(new ItemStack(MELKIRSCH_SEEDS));
-                    itemStacks.add(new ItemStack(BlockInit.MELKIRSCH.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.RASIORE_LOG.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.RASIORE_WOOD.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.STRIPPED_RASIORE_LOG.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.STRIPPED_RASIORE_WOOD.asItem()));
-                    itemStacks.add(new ItemStack(BlockInit.RASIORE_PLANKS.asItem()));
-                    itemStacks.add(new ItemStack(BlockInit.RASIORE_LEAVES.asItem()));
-                    itemStacks.add(new ItemStack(BlockInit.RASIORE_SAPLING.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.VIOLES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.VETICOADE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.LEPHELUSA_VIOLES.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.LEPHELUSA_CORAL_BLOCK.asItem()));
                 }).build();
     }
 
+    public static Item LEPHELUSA_CORAL_SHARD = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item KUTUNITE_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item LATZECK_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item NEMORAL_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
@@ -125,13 +146,22 @@ public class ItemInit {
     public static AscunauticItem PAIEUX = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.PAIEUX).group(BoleatteItemGroup.BOLEATTE));
     public static Item PAIEUX_DOUGH = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem DE_FEATIANTE = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.DE_FEATIANTE).group(BoleatteItemGroup.BOLEATTE));
-    public static RamoliteHoneyBottleItem RAMOLITE_HONEY = new RamoliteHoneyBottleItem(new FabricItemSettings().food(FoodComponentInit.RAMOLITE_HONEY).group(BoleatteItemGroup.BOLEATTE));
+    public static FilledBottleItem RAMOLITE_HONEY = new FilledBottleItem(new FabricItemSettings().food(FoodComponentInit.RAMOLITE_HONEY).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticBlockItem SAKALOU = new AscunauticBlockItem(BlockInit.SAKALOU_ROOTS, new FabricItemSettings().food(FoodComponentInit.SAKALOU).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem RASIORE = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.RASIORE).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem ROASTED_RASIORE = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.ROASTED_RASIORE).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticBlockItem BABURBEN = new AscunauticBlockItem(BlockInit.BABURBEN_ROOTS, new FabricItemSettings().food(FoodComponentInit.BABURBEN).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem ROASTED_BABURBEN = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.ROASTED_BABURBEN).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem ALPHIAGOU = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
+    public static AscunauticItem BLISTERED_ALPHIAGOU = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.BLISTED_ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
+    public static AscunauticItem GHOST_ALPHIAGOU = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.GHOST_ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
+    public static AscunauticItem BLOSSOMING_ALPHIAGOU = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.BLOSSOMING_ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
+    public static FilledBottleItem ALPHIAGOU_SUBSTANCE = new FilledBottleItem(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU_SUBSTANCE).group(BoleatteItemGroup.BOLEATTE));
+    public static FilledBottleItem LEMENTRIO_SUBSTANCE = new FilledBottleItem(new FabricItemSettings().food(FoodComponentInit.LEMENTRIO_SUBSTANCE).group(BoleatteItemGroup.BOLEATTE));
+    public static FilledBottleItem PYETSIT_SUBSTANCE = new FilledBottleItem(new FabricItemSettings().food(FoodComponentInit.PYETSIT_SUBSTANCE).group(BoleatteItemGroup.BOLEATTE));
+    public static FilledBottleItem SATALUK_SUBSTANCE = new FilledBottleItem(new FabricItemSettings().food(FoodComponentInit.SATALUK_SUBSTANCE).group(BoleatteItemGroup.BOLEATTE));
+    public static AscunauticItem MELKIRSCH_PIE = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.MELKIRSCH_PIE).group(BoleatteItemGroup.BOLEATTE));
+    public static AscunauticItem LEPHELUSA_STEW = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.LEPHELUSA_STEW).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem MYSTICAL_ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.MYSTICAL_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
 
@@ -152,7 +182,17 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "baburben"), BABURBEN);
         Registry.register(Registry.ITEM, new Identifier(ID, "roasted_baburben"), ROASTED_BABURBEN);
         Registry.register(Registry.ITEM, new Identifier(ID, "melkirsch_seeds"), MELKIRSCH_SEEDS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "lephelusa_coral_shard"), LEPHELUSA_CORAL_SHARD);
+        Registry.register(Registry.ITEM, new Identifier(ID, "melkirsch_pie"), MELKIRSCH_PIE);
         Registry.register(Registry.ITEM, new Identifier(ID, "alphiagou"), ALPHIAGOU);
+        Registry.register(Registry.ITEM, new Identifier(ID, "blistered_alphiagou"), BLISTERED_ALPHIAGOU);
+        Registry.register(Registry.ITEM, new Identifier(ID, "ghost_alphiagou"), GHOST_ALPHIAGOU);
+        Registry.register(Registry.ITEM, new Identifier(ID, "blossoming_alphiagou"), BLOSSOMING_ALPHIAGOU);
+        Registry.register(Registry.ITEM, new Identifier(ID, "alphiagou_substance"), ALPHIAGOU_SUBSTANCE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "lementrio_substance"), LEMENTRIO_SUBSTANCE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "pyetsit_substance"), PYETSIT_SUBSTANCE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "sataluk_substance"), SATALUK_SUBSTANCE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "lephelusa_stew"), LEPHELUSA_STEW);
         Registry.register(Registry.ITEM, new Identifier(ID, "alphiagou_cider"), ALPHIAGOU_CIDER);
         Registry.register(Registry.ITEM, new Identifier(ID, "mystical_alphiagou_cider"), MYSTICAL_ALPHIAGOU_CIDER);
 

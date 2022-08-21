@@ -19,7 +19,15 @@
   "item.boleatte.roasted_rasiore": "Roasted Rasiore",
   "item.boleatte.baburben": "Baburben",
   "item.boleatte.roasted_baburben": "Roasted Baburben",
+  "item.boleatte.melkirsch_pie": "Melkirsch Pie",
   "item.boleatte.alphiagou": "Alphiagou",
+  "item.boleatte.blistered_alphiagou": "Blistered Alphiagou",
+  "item.boleatte.ghost_alphiagou": "Ghost Alphiagou",
+  "item.boleatte.blossoming_alphiagou": "Blossoming Alphiagou",
+  "item.boleatte.alphiagou_substance": "Bottle Of Alphiagou Substance",
+  "item.boleatte.lementrio_substance": "Bottle Of Lementrio Substance",
+  "item.boleatte.pyetsit_substance": "Bottle Of Pyetsit Substance",
+  "item.boleatte.sataluk_substance": "Bottle Of Sataluk Substance",
   "item.boleatte.alphiagou_cider": "Alphiagou Cider",
   "item.boleatte.mystical_alphiagou_cider": "Mystical Alphiagou Cider",
 
@@ -65,6 +73,9 @@
 
   "block.boleatte.oretesse": "Oretesse",
   "block.boleatte.rementio": "Rementio",
+  "block.boleatte.rementio_bricks": "Rementio Bricks",
+  "block.boleatte.dark_rementio": "Dark Rementio",
+  "block.boleatte.dark_rementio_bricks": "Dark Rementio Bricks",
   "block.boleatte.arbune_rementio": "Arbune Rementio",
   "block.boleatte.rasiore_rementio": "Rasiore Rementio",
   "block.boleatte.botakoa_rementio": "Botakoa Rementio",
@@ -91,7 +102,7 @@
   "item.boleatte.latzeck": "Latzeck",
   "item.boleatte.nemoral": "Nemoral",
   "item.boleatte.cintonium": "Cintonium",
-  "item.boleatte.laposiate": "Laposiate",
+  "item.boleatte.leposiate": "Leposiate",
 
   "text.dimatis.veret_trusting": "You have the Colourant Goddess' Favour",
   "text.veret_favour.hunted_wild": "Verêt has favoured you today!",
@@ -110,6 +121,8 @@
   "block.boleatte.veticoade": "Veticoade",
   "block.boleatte.lephelusa_violes": "Lephelusa Violes",
   "block.boleatte.baburben_roots": "Baburben",
+  "block.boleatte.lephelusa_block": "Lephelusa Coral Block",
+  "item.boleatte.lephelusa_coral_shard": "Lephelusa Coral Shard",
 
   "effect.boleatte.defiant": "Defiant",
   "effect.boleatte.veret_favour": "Verêt's Favour",

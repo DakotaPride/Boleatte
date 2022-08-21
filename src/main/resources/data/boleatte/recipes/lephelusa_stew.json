@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "alphiagou_cider",
+  "ingredients": [
+    {
+      "item": "boleatte:ramukai"
+    },
+    {
+      "item": "boleatte:alphiagou"
+    },
+    {
+      "item": "boleatte:alphiagou"
+    },
+    {
+      "item": "boleatte:alphiagou"
+    },
+    {
+      "item": "boleatte:lephelusa_coral_shard"
+    },
+    {
+      "item": "boleatte:lephelusa_coral_shard"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "boleatte:lephelusa_stew",
+    "count": 1
+  }
+}

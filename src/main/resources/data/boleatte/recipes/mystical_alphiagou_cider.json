@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "alphiagou_cider",
+  "ingredients": [
+    {
+      "item": "boleatte:alphiagou_cider"
+    },
+    {
+      "item": "boleatte:baburben"
+    },
+    {
+      "item": "boleatte:sakalou"
+    },
+    {
+      "item": "boleatte:sakalou"
+    }
+  ],
+  "result": {
+    "item": "boleatte:mystical_alphiagou_cider",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "boleatte:melkirsch"
+    },
+    {
+      "item": "boleatte:ramolite_honey"
+    },
+    {
+      "item": "boleatte:alphiagou_substance"
+    }
+  ],
+  "result": {
+    "item": "boleatte:melkirsch_pie"
+  }
+}

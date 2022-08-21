@@ -8,10 +8,13 @@ import net.dakotapride.boleatte.common.gen.RasioreSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.world.BlockView;
 
 import static net.dakotapride.boleatte.common.BoleatteMain.*;
 
@@ -91,8 +94,13 @@ public class BlockInit {
 
     public static Block VIOLES = new Block(FabricBlockSettings.copy(Blocks.SAND));
     public static Block VETICOADE = new Block(FabricBlockSettings.copy(Blocks.SANDSTONE).requiresTool());
-    public static Block LEPHELUSA_VIOLES = new Block(FabricBlockSettings.copy(Blocks.GRAVEL));
+    public static Block LEPHELUSA_VIOLES = new Block(FabricBlockSettings.copy(Blocks.SAND));
+    public static Block LEPHELUSA_CORAL_BLOCK = new Block(FabricBlockSettings.copy(Blocks.BUBBLE_CORAL_BLOCK));
     public static BaburbenRootsBlock BABURBEN_ROOTS = new BaburbenRootsBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH).ticksRandomly().nonOpaque());
+
+    public static Block DARK_REMENTIO = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing().allowsSpawning(BlockInit::never));
+    public static Block REMENTIO_BRICKS = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing().allowsSpawning(BlockInit::never));
+    public static Block DARK_REMENTIO_BRICKS = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing().allowsSpawning(BlockInit::never));
 
     public static void init() {
         Registry.register(Registry.BLOCK, new Identifier(ID, "protosterm_sapling"), PROTOSTERM_SAPLING);
@@ -203,8 +211,22 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "veticoade"), new BlockItem(VETICOADE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "lephelusa_violes"), LEPHELUSA_VIOLES);
         Registry.register(Registry.ITEM, new Identifier(ID, "lephelusa_violes"), new BlockItem(LEPHELUSA_VIOLES, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "lephelusa_block"), LEPHELUSA_CORAL_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(ID, "lephelusa_block"), new BlockItem(LEPHELUSA_CORAL_BLOCK, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "baburben_roots"), BABURBEN_ROOTS);
         Registry.register(Registry.BLOCK, new Identifier(ID, "sakalou_roots"), SAKALOU_ROOTS);
+
+        Registry.register(Registry.BLOCK, new Identifier(ID, "dark_rementio"), DARK_REMENTIO);
+        Registry.register(Registry.ITEM, new Identifier(ID, "dark_rementio"), new BlockItem(DARK_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "dark_rementio_bricks"), DARK_REMENTIO_BRICKS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "dark_rementio_bricks"), new BlockItem(DARK_REMENTIO_BRICKS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "rementio_bricks"), REMENTIO_BRICKS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "rementio_bricks"), new BlockItem(REMENTIO_BRICKS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+    }
+
+
+    private static Boolean never(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {
+        return Boolean.FALSE;
     }
 
 }

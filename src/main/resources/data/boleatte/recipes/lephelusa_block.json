@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "boleatte:lephelusa_coral_shard"
+    }
+  ],
+  "result": {
+    "item": "boleatte:lephelusa_block",
+    "count": 1
+  }
+}

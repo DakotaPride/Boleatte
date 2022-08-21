@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "alphiagou_cider",
+  "ingredients": [
+    {
+      "item": "boleatte:ramukai"
+    },
+    {
+      "item": "boleatte:alphiagou"
+    },
+    {
+      "item": "boleatte:alphiagou"
+    },
+    {
+      "item": "boleatte:alphiagou"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "boleatte:alphiagou_cider",
+    "count": 1
+  }
+}
