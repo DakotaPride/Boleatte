@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "boleatte:block/veticoade_bottom",
+    "side": "boleatte:block/veticoade",
+    "top": "boleatte:block/etched_veticoade_top"
+  }
+}

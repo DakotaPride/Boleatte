@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "boleatte:block/etched_botakoa_log_top",
+    "side": "boleatte:block/botakoa_log"
+  }
+}
