@@ -40,7 +40,7 @@ public class DimatisItem extends Item implements AscunauticDimatis {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        if (!user.isSneaking()) {
+        if (user.isSneaking()) {
             user.addStatusEffect(AscunauticDimatis.getDimatisEffect(AscunauticDimatis.getDimatisType(user.getStackInHand(hand).getItem())));
             if (user.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.ARBUNE_DIMATIS)) {
                 user.sendMessage(Text.translatable("text.veret_favour.hunted_wild")
