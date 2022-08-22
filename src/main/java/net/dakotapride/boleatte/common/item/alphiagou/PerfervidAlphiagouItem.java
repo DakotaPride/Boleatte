@@ -3,6 +3,7 @@ package net.dakotapride.boleatte.common.item.alphiagou;
 import com.google.common.collect.Maps;
 import net.dakotapride.boleatte.common.init.TagInit;
 import net.dakotapride.boleatte.common.item.AscunauticItem;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.advancement.Advancement;
 import net.minecraft.advancement.AdvancementCriterion;
 import net.minecraft.advancement.criterion.CriterionConditions;
@@ -13,18 +14,24 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsage;
 import net.minecraft.predicate.entity.EntityPredicate;
 import net.minecraft.predicate.entity.LocationPredicate;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
+import net.minecraft.world.gen.structure.Structure;
 import net.minecraft.world.gen.structure.StructureKeys;
+import net.minecraft.world.gen.structure.Structures;
+import org.apache.logging.log4j.core.jmx.Server;
 
 import java.util.Map;
 
 public class PerfervidAlphiagouItem extends AscunauticItem {
+    private static final Identifier STERRES_DUNGEON = new Identifier("minecraft:worldgen/structure/desert_pyramid");
     public PerfervidAlphiagouItem(Settings settings) {
         super(settings);
     }
@@ -42,18 +49,18 @@ public class PerfervidAlphiagouItem extends AscunauticItem {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         if (!user.getWorld().isClient()) {
-            if (!user.getSteppingBlockState().isIn(TagInit.IS_STERRES_DUNGEON_BLOCKS)
-                    && Advancement.Builder.criterion("ancient_city", TickCriterion.Conditions.createLocation
-                    (LocationPredicate.feature(StructureKeys.ANCIENT_CITY)))) {
-                user.sendMessage(Text.translatable("text.sterres.denial"), false);
-                user.getItemCooldownManager().set(this, 100);
-                return TypedActionResult.fail(user.getStackInHand(hand));
-            } else {
-                return ItemUsage.consumeHeldItem(world, user, hand);
+            if (world instanceof ServerWorld serverWorld) {
+                if (!serverWorld.getStructureAccessor().getStructureAt(user.getBlockPos(), StructureKeys.ANCIENT_CITY)) {
+                    user.sendMessage(Text.translatable("text.sterres.denial"), false);
+                    user.getItemCooldownManager().set(this, 100);
+                    return TypedActionResult.fail(user.getStackInHand(hand));
+                } else {
+                    return ItemUsage.consumeHeldItem(world, user, hand);
+                }
             }
         }
 
-        return super.use(world, user, hand);
+            return super.use(world, user, hand);
     }
 
     @Override
