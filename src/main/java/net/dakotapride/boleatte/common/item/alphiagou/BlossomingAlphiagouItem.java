@@ -36,7 +36,7 @@ public class BlossomingAlphiagouItem extends AscunauticItem {
                 user.sendMessage(Text.translatable("text.beusere.denial"), false);
                 user.getItemCooldownManager().set(this, 100);
                 return TypedActionResult.fail(user.getStackInHand(hand));
-            } else if (user.canConsume(getFoodComponent().isAlwaysEdible())) {
+            } else {
                 return ItemUsage.consumeHeldItem(world, user, hand);
             }
         }

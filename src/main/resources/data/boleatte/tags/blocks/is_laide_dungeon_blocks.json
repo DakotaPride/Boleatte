@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:wool",
-    "minecraft:deepslate",
-    "boleatte:violes"
+
   ]
 }
