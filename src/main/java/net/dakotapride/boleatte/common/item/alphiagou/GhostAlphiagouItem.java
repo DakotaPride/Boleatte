@@ -1,11 +1,12 @@
 package net.dakotapride.boleatte.common.item.alphiagou;
 
-import net.dakotapride.boleatte.common.init.TagInit;
+import net.dakotapride.boleatte.common.init.StructureKeyInit;
 import net.dakotapride.boleatte.common.item.AscunauticItem;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsage;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
@@ -32,12 +33,15 @@ public class GhostAlphiagouItem extends AscunauticItem {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         if (!user.getWorld().isClient()) {
-            if (!user.getSteppingBlockState().isIn(TagInit.IS_LAIDE_DUNGEON_BLOCKS)) {
-                user.sendMessage(Text.translatable("text.laide.denial"), false);
-                user.getItemCooldownManager().set(this, 100);
-                return TypedActionResult.fail(user.getStackInHand(hand));
-            } else {
-                return ItemUsage.consumeHeldItem(world, user, hand);
+            if (world instanceof ServerWorld serverWorld) {
+                if (!(serverWorld.getStructureAccessor().getStructureAt
+                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.FRIGID_PUNISHMENT)).hasChildren())) {
+                    user.sendMessage(Text.translatable("text.laide.denial"), false);
+                    user.getItemCooldownManager().set(this, 100);
+                    return TypedActionResult.fail(user.getStackInHand(hand));
+                } else {
+                    return ItemUsage.consumeHeldItem(world, user, hand);
+                }
             }
         }
 
