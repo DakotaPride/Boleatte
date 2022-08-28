@@ -21,8 +21,5 @@ public class TagInit {
     public static final TagKey<Item> ACCEPTABLE_DIMATIS = TagKey.of(Registry.ITEM_KEY, new Identifier(ID, "acceptable_dimatis"));
 
     public static final TagKey<Block> MOSSY_REMENTIO = TagKey.of(Registry.BLOCK_KEY, new Identifier(ID, "rementio_moss_blocks"));
-    public static final TagKey<Block> IS_STERRES_DUNGEON_BLOCKS = TagKey.of(Registry.BLOCK_KEY, new Identifier(ID, "is_sterres_dungeon_blocks"));
-    public static final TagKey<Block> IS_LAIDE_DUNGEON_BLOCKS = TagKey.of(Registry.BLOCK_KEY, new Identifier(ID, "is_laide_dungeon_blocks"));
-    public static final TagKey<Block> IS_BEUSERE_DUNGEON_BLOCKS = TagKey.of(Registry.BLOCK_KEY, new Identifier(ID, "is_beusere_dungeon_blocks"));
 
 }

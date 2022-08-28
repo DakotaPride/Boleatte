@@ -13,7 +13,9 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
+import net.minecraft.world.gen.structure.Structure;
 
 public class BlossomingAlphiagouItem extends AscunauticItem {
     public BlossomingAlphiagouItem(Settings settings) {
@@ -34,6 +36,9 @@ public class BlossomingAlphiagouItem extends AscunauticItem {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         if (!user.getWorld().isClient()) {
             if (world instanceof ServerWorld serverWorld) {
+                Registry<Structure> getStructureKey = serverWorld.getStructureAccessor()
+                        .getRegistryManager().get(Registry.STRUCTURE_KEY);
+
                 if (!(serverWorld.getStructureAccessor().getStructureAt
                         (user.getBlockPos(), getStructureKey.get(StructureKeyInit.OVERGROWN_RAGE)).hasChildren())) {
                     user.sendMessage(Text.translatable("text.beusere.denial"), false);
@@ -51,7 +56,15 @@ public class BlossomingAlphiagouItem extends AscunauticItem {
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
         if (!user.getWorld().isClient()) {
-            user.sendMessage(Text.translatable("text.alphiagou.signalling.beusere"));
+            if (world instanceof ServerWorld serverWorld) {
+                Registry<Structure> getStructureKey = serverWorld.getStructureAccessor()
+                        .getRegistryManager().get(Registry.STRUCTURE_KEY);
+
+                if (serverWorld.getStructureAccessor().getStructureAt
+                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.OVERGROWN_RAGE)).hasChildren()) {
+                    user.sendMessage(Text.translatable("text.alphiagou.signalling.beusere"));
+                }
+            }
         }
 
         return super.finishUsing(stack, world, user);

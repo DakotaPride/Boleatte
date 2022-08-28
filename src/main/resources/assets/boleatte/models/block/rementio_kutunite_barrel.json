@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "boleatte:block/rementio_barrel_bottom",
+    "side": "boleatte:block/rementio_kutunite_barrel_side",
+    "top": "boleatte:block/rementio_kutunite_barrel_top"
+  }
+}

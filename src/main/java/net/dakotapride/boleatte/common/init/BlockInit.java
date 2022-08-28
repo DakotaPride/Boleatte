@@ -8,7 +8,6 @@ import net.dakotapride.boleatte.common.gen.RasioreSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.util.Identifier;
@@ -48,7 +47,8 @@ public class BlockInit {
     public static OreBlock REMENTIO_EMERALD_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.EMERALD_ORE).requiresTool(),
             UniformIntProvider.create(3, 7));
 
-    public static ChestBlock BURNED_CHEST = new ChestBlock(FabricBlockSettings.copy(Blocks.CHEST), () -> BlockEntityType.CHEST);
+    public static BarrelBlock BURNED_BARREL = new BarrelBlock(FabricBlockSettings.copy(Blocks.BARREL).requiresTool());
+    public static RementioBarrelBlock REMENTIO_BARREL = new RementioBarrelBlock(FabricBlockSettings.copy(Blocks.BARREL).requiresTool());
 
     public static ProtostermSaplingBlock PROTOSTERM_SAPLING = new ProtostermSaplingBlock(new ProtostermSaplingGenerator(15),
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
@@ -225,8 +225,10 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "dark_rementio_bricks"), new BlockItem(DARK_REMENTIO_BRICKS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "rementio_bricks"), REMENTIO_BRICKS);
         Registry.register(Registry.ITEM, new Identifier(ID, "rementio_bricks"), new BlockItem(REMENTIO_BRICKS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
-        Registry.register(Registry.BLOCK, new Identifier(ID, "burned_chest"), BURNED_CHEST);
-        Registry.register(Registry.ITEM, new Identifier(ID, "burned_chest"), new BlockItem(BURNED_CHEST, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "burned_rementio_barrel"), BURNED_BARREL);
+        Registry.register(Registry.ITEM, new Identifier(ID, "burned_rementio_barrel"), new BlockItem(BURNED_BARREL, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "rementio_barrel"), REMENTIO_BARREL);
+        Registry.register(Registry.ITEM, new Identifier(ID, "rementio_barrel"), new BlockItem(REMENTIO_BARREL, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
     }
 
 

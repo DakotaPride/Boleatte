@@ -1,0 +1,302 @@
+{
+  "variants": {
+    "facing=down,open=false,is_cintonium=true": {
+      "model": "boleatte:block/rementio_cintonium_barrel",
+      "x": 180
+    },
+    "facing=east,open=false,is_cintonium=true": {
+      "model": "boleatte:block/rementio_cintonium_barrel",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north,open=false,is_cintonium=true": {
+      "model": "boleatte:block/rementio_cintonium_barrel",
+      "x": 90
+    },
+    "facing=south,open=false,is_cintonium=true": {
+      "model": "boleatte:block/rementio_cintonium_barrel",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up,open=false,is_cintonium=true": {
+      "model": "boleatte:block/rementio_cintonium_barrel"
+    },
+    "facing=west,open=false,is_cintonium=true": {
+      "model": "boleatte:block/rementio_cintonium_barrel",
+      "x": 90,
+      "y": 270
+    },
+
+    "facing=down,open=false,is_nemoral=true": {
+      "model": "boleatte:block/rementio_nemoral_barrel",
+      "x": 180
+    },
+    "facing=east,open=false,is_nemoral=true": {
+      "model": "boleatte:block/rementio_nemoral_barrel",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north,open=false,is_nemoral=true": {
+      "model": "boleatte:block/rementio_nemoral_barrel",
+      "x": 90
+    },
+    "facing=south,open=false,is_nemoral=true": {
+      "model": "boleatte:block/rementio_nemoral_barrel",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up,open=false,is_nemoral=true": {
+      "model": "boleatte:block/rementio_nemoral_barrel"
+    },
+    "facing=west,open=false,is_nemoral=true": {
+      "model": "boleatte:block/rementio_nemoral_barrel",
+      "x": 90,
+      "y": 270
+    },
+
+    "facing=down,open=false,is_latzeck=true": {
+      "model": "boleatte:block/rementio_latzeck_barrel",
+      "x": 180
+    },
+    "facing=east,open=false,is_latzeck=true": {
+      "model": "boleatte:block/rementio_latzeck_barrel",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north,open=false,is_latzeck=true": {
+      "model": "boleatte:block/rementio_latzeck_barrel",
+      "x": 90
+    },
+    "facing=south,open=false,is_latzeck=true": {
+      "model": "boleatte:block/rementio_latzeck_barrel",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up,open=false,is_latzeck=true": {
+      "model": "boleatte:block/rementio_latzeck_barrel"
+    },
+    "facing=west,open=false,is_latzeck=true": {
+      "model": "boleatte:block/rementio_latzeck_barrel",
+      "x": 90,
+      "y": 270
+    },
+
+    "facing=down,open=false,is_leposiate=true": {
+      "model": "boleatte:block/rementio_leposiate_barrel",
+      "x": 180
+    },
+    "facing=east,open=false,is_leposiate=true": {
+      "model": "boleatte:block/rementio_leposiate_barrel",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north,open=false,is_leposiate=true": {
+      "model": "boleatte:block/rementio_leposiate_barrel",
+      "x": 90
+    },
+    "facing=south,open=false,is_leposiate=true": {
+      "model": "boleatte:block/rementio_leposiate_barrel",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up,open=false,is_leposiate=true": {
+      "model": "boleatte:block/rementio_leposiate_barrel"
+    },
+    "facing=west,open=false,is_leposiate=true": {
+      "model": "boleatte:block/rementio_leposiate_barrel",
+      "x": 90,
+      "y": 270
+    },
+
+    "facing=down,open=false,is_opafeu=true": {
+      "model": "boleatte:block/rementio_opafeu_barrel",
+      "x": 180
+    },
+    "facing=east,open=false,is_opafeu=true": {
+      "model": "boleatte:block/rementio_opafeu_barrel",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north,open=false,is_opafeu=true": {
+      "model": "boleatte:block/rementio_opafeu_barrel",
+      "x": 90
+    },
+    "facing=south,open=false,is_opafeu=true": {
+      "model": "boleatte:block/rementio_opafeu_barrel",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up,open=false,is_opafeu=true": {
+      "model": "boleatte:block/rementio_opafeu_barrel"
+    },
+    "facing=west,open=false,is_opafeu=true": {
+      "model": "boleatte:block/rementio_opafeu_barrel",
+      "x": 90,
+      "y": 270
+    },
+
+    "facing=down,open=false,is_kutunite=true": {
+      "model": "boleatte:block/rementio_kutunite_barrel",
+      "x": 180
+    },
+    "facing=east,open=false,is_kutunite=true": {
+      "model": "boleatte:block/rementio_kutunite_barrel",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north,open=false,is_kutunite=true": {
+      "model": "boleatte:block/rementio_kutunite_barrel",
+      "x": 90
+    },
+    "facing=south,open=false,is_kutunite=true": {
+      "model": "boleatte:block/rementio_kutunite_barrel",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up,open=false,is_kutunite=true": {
+      "model": "boleatte:block/rementio_kutunite_barrel"
+    },
+    "facing=west,open=false,is_kutunite=true": {
+      "model": "boleatte:block/rementio_kutunite_barrel",
+      "x": 90,
+      "y": 270
+    },
+
+
+
+    "facing=down,open=true,is_cintonium=true": {
+      "model": "boleatte:block/rementio_cintonium_barrel_open",
+      "x": 180
+    },
+    "facing=east,open=true,is_cintonium=true": {
+      "model": "boleatte:block/rementio_cintonium_barrel_open",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north,open=true,is_cintonium=true": {
+      "model": "boleatte:block/rementio_cintonium_barrel_open",
+      "x": 90
+    },
+    "facing=south,open=true,is_cintonium=true": {
+      "model": "boleatte:block/rementio_cintonium_barrel_open",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up,open=true,is_cintonium=true": {
+      "model": "boleatte:block/rementio_cintonium_barrel_open"
+    },
+    "facing=west,open=true,is_cintonium=true": {
+      "model": "boleatte:block/rementio_cintonium_barrel_open",
+      "x": 90,
+      "y": 270
+    },
+
+    "facing=down,open=true,is_nemoral=true": {
+      "model": "boleatte:block/rementio_nemoral_barrel_open",
+      "x": 180
+    },
+    "facing=east,open=true,is_nemoral=true": {
+      "model": "boleatte:block/rementio_nemoral_barrel_open",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north,open=true,is_nemoral=true": {
+      "model": "boleatte:block/rementio_nemoral_barrel_open",
+      "x": 90
+    },
+    "facing=south,open=true,is_nemoral=true": {
+      "model": "boleatte:block/rementio_nemoral_barrel_open",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up,open=true,is_nemoral=true": {
+      "model": "boleatte:block/rementio_nemoral_barrel_open"
+    },
+    "facing=west,open=true,is_nemoral=true": {
+      "model": "boleatte:block/rementio_nemoral_barrel_open",
+      "x": 90,
+      "y": 270
+    },
+
+    "facing=down,open=true,is_latzeck=true": {
+      "model": "boleatte:block/rementio_latzeck_barrel_open",
+      "x": 180
+    },
+    "facing=east,open=true,is_latzeck=true": {
+      "model": "boleatte:block/rementio_latzeck_barrel_open",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north,open=true,is_latzeck=true": {
+      "model": "boleatte:block/rementio_latzeck_barrel_open",
+      "x": 90
+    },
+    "facing=south,open=true,is_latzeck=true": {
+      "model": "boleatte:block/rementio_latzeck_barrel_open",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up,open=true,is_latzeck=true": {
+      "model": "boleatte:block/rementio_latzeck_barrel_open"
+    },
+    "facing=west,open=true,is_latzeck=true": {
+      "model": "boleatte:block/rementio_latzeck_barrel_open",
+      "x": 90,
+      "y": 270
+    },
+
+    "facing=down,open=true,is_leposiate=true": {
+      "model": "boleatte:block/rementio_leposiate_barrel_open",
+      "x": 180
+    },
+    "facing=east,open=true,is_leposiate=true": {
+      "model": "boleatte:block/rementio_leposiate_barrel_open",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north,open=true,is_leposiate=true": {
+      "model": "boleatte:block/rementio_leposiate_barrel_open",
+      "x": 90
+    },
+    "facing=south,open=true,is_leposiate=true": {
+      "model": "boleatte:block/rementio_leposiate_barrel_open",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up,open=true,is_leposiate=true": {
+      "model": "boleatte:block/rementio_leposiate_barrel_open"
+    },
+    "facing=west,open=true,is_leposiate=true": {
+      "model": "boleatte:block/rementio_leposiate_barrel_open",
+      "x": 90,
+      "y": 270
+    },
+
+    "facing=down,open=true,is_kutunite=true": {
+      "model": "boleatte:block/rementio_kutunite_barrel_open",
+      "x": 180
+    },
+    "facing=east,open=true,is_kutunite=true": {
+      "model": "boleatte:block/rementio_kutunite_barrel_open",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north,open=true,is_kutunite=true": {
+      "model": "boleatte:block/rementio_kutunite_barrel_open",
+      "x": 90
+    },
+    "facing=south,open=true,is_kutunite=true": {
+      "model": "boleatte:block/rementio_kutunite_barrel_open",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up,open=true,is_kutunite=true": {
+      "model": "boleatte:block/rementio_kutunite_barrel_open"
+    },
+    "facing=west,open=true,is_kutunite=true": {
+      "model": "boleatte:block/rementio_kutunite_barrel_open",
+      "x": 90,
+      "y": 270
+    }
+  }
+}
