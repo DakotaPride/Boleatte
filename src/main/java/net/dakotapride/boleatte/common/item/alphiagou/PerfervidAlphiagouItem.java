@@ -41,7 +41,7 @@ public class PerfervidAlphiagouItem extends AscunauticItem {
 
                 if (!(serverWorld.getStructureAccessor().getStructureAt
                         (user.getBlockPos(), getStructureKey.get(StructureKeyInit.BARREN_LANDS)).hasChildren())) {
-                    user.sendMessage(Text.translatable("text.sterres.denial"), false);
+                    user.sendMessage(Text.translatable("text.boleatte.sterres.denial"), false);
                     user.getItemCooldownManager().set(this, 100);
                     return TypedActionResult.fail(user.getStackInHand(hand));
                 } else {
@@ -62,7 +62,7 @@ public class PerfervidAlphiagouItem extends AscunauticItem {
 
                 if (serverWorld.getStructureAccessor().getStructureAt
                         (user.getBlockPos(), getStructureKey.get(StructureKeyInit.BARREN_LANDS)).hasChildren()) {
-                    user.sendMessage(Text.translatable("text.alphiagou.signalling.sterres"));
+                    user.sendMessage(Text.translatable("text.boleatte.alphiagou.signalling.sterres"));
                 }
             }
         }

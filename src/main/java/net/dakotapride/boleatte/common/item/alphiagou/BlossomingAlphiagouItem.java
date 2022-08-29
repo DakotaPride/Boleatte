@@ -41,7 +41,7 @@ public class BlossomingAlphiagouItem extends AscunauticItem {
 
                 if (!(serverWorld.getStructureAccessor().getStructureAt
                         (user.getBlockPos(), getStructureKey.get(StructureKeyInit.OVERGROWN_RAGE)).hasChildren())) {
-                    user.sendMessage(Text.translatable("text.beusere.denial"), false);
+                    user.sendMessage(Text.translatable("text.boleatte.beusere.denial"), false);
                     user.getItemCooldownManager().set(this, 100);
                     return TypedActionResult.fail(user.getStackInHand(hand));
                 } else {
@@ -62,7 +62,7 @@ public class BlossomingAlphiagouItem extends AscunauticItem {
 
                 if (serverWorld.getStructureAccessor().getStructureAt
                         (user.getBlockPos(), getStructureKey.get(StructureKeyInit.OVERGROWN_RAGE)).hasChildren()) {
-                    user.sendMessage(Text.translatable("text.alphiagou.signalling.beusere"));
+                    user.sendMessage(Text.translatable("text.boleatte.alphiagou.signalling.beusere"));
                 }
             }
         }

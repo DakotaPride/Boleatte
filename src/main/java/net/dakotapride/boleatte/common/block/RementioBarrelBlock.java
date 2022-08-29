@@ -30,43 +30,6 @@ public class RementioBarrelBlock extends BarrelBlock {
         this.setDefaultState(this.getDefaultState().with(IS_KUTUNITE, false));
         this.setDefaultState(this.getDefaultState().with(IS_LEPOSIATE, false));
         this.setDefaultState(this.getDefaultState().with(IS_CINTONIUM, false));
-        if (this.getDefaultState().get(IS_CINTONIUM)) {
-            this.setDefaultState(this.getDefaultState().with(IS_NEMORAL, false));
-            this.setDefaultState(this.getDefaultState().with(IS_OPAFEU, false));
-            this.setDefaultState(this.getDefaultState().with(IS_LATZECK, false));
-            this.setDefaultState(this.getDefaultState().with(IS_KUTUNITE, false));
-            this.setDefaultState(this.getDefaultState().with(IS_LEPOSIATE, false));
-        } else if (this.getDefaultState().get(IS_NEMORAL)) {
-            this.setDefaultState(this.getDefaultState().with(IS_CINTONIUM, false));
-            this.setDefaultState(this.getDefaultState().with(IS_OPAFEU, false));
-            this.setDefaultState(this.getDefaultState().with(IS_LATZECK, false));
-            this.setDefaultState(this.getDefaultState().with(IS_KUTUNITE, false));
-            this.setDefaultState(this.getDefaultState().with(IS_LEPOSIATE, false));
-        } else if (this.getDefaultState().get(IS_OPAFEU)) {
-            this.setDefaultState(this.getDefaultState().with(IS_NEMORAL, false));
-            this.setDefaultState(this.getDefaultState().with(IS_CINTONIUM, false));
-            this.setDefaultState(this.getDefaultState().with(IS_LATZECK, false));
-            this.setDefaultState(this.getDefaultState().with(IS_KUTUNITE, false));
-            this.setDefaultState(this.getDefaultState().with(IS_LEPOSIATE, false));
-        } else if (this.getDefaultState().get(IS_LATZECK)) {
-            this.setDefaultState(this.getDefaultState().with(IS_NEMORAL, false));
-            this.setDefaultState(this.getDefaultState().with(IS_OPAFEU, false));
-            this.setDefaultState(this.getDefaultState().with(IS_CINTONIUM, false));
-            this.setDefaultState(this.getDefaultState().with(IS_KUTUNITE, false));
-            this.setDefaultState(this.getDefaultState().with(IS_LEPOSIATE, false));
-        } else if (this.getDefaultState().get(IS_KUTUNITE)) {
-            this.setDefaultState(this.getDefaultState().with(IS_NEMORAL, false));
-            this.setDefaultState(this.getDefaultState().with(IS_OPAFEU, false));
-            this.setDefaultState(this.getDefaultState().with(IS_LATZECK, false));
-            this.setDefaultState(this.getDefaultState().with(IS_CINTONIUM, false));
-            this.setDefaultState(this.getDefaultState().with(IS_LEPOSIATE, false));
-        } else if (this.getDefaultState().get(IS_LEPOSIATE)) {
-            this.setDefaultState(this.getDefaultState().with(IS_NEMORAL, false));
-            this.setDefaultState(this.getDefaultState().with(IS_OPAFEU, false));
-            this.setDefaultState(this.getDefaultState().with(IS_LATZECK, false));
-            this.setDefaultState(this.getDefaultState().with(IS_KUTUNITE, false));
-            this.setDefaultState(this.getDefaultState().with(IS_CINTONIUM, false));
-        }
     }
 
     @Override

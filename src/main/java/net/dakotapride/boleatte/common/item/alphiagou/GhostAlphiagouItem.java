@@ -41,7 +41,7 @@ public class GhostAlphiagouItem extends AscunauticItem {
 
                 if (!(serverWorld.getStructureAccessor().getStructureAt
                         (user.getBlockPos(), getStructureKey.get(StructureKeyInit.FRIGID_PUNISHMENT)).hasChildren())) {
-                    user.sendMessage(Text.translatable("text.laide.denial"), false);
+                    user.sendMessage(Text.translatable("text.boleatte.laide.denial"), false);
                     user.getItemCooldownManager().set(this, 100);
                     return TypedActionResult.fail(user.getStackInHand(hand));
                 } else {
@@ -62,7 +62,7 @@ public class GhostAlphiagouItem extends AscunauticItem {
 
                 if (serverWorld.getStructureAccessor().getStructureAt
                         (user.getBlockPos(), getStructureKey.get(StructureKeyInit.FRIGID_PUNISHMENT)).hasChildren()) {
-                    user.sendMessage(Text.translatable("text.alphiagou.signalling.laide"));
+                    user.sendMessage(Text.translatable("text.boleatte.alphiagou.signalling.laide"));
                 }
             }
         }
