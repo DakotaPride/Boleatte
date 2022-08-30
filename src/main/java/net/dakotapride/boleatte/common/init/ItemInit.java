@@ -44,6 +44,7 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(LEMENTRIO_SUBSTANCE));
                     itemStacks.add(new ItemStack(PYETSIT_SUBSTANCE));
                     itemStacks.add(new ItemStack(SATALUK_SUBSTANCE));
+                    itemStacks.add(new ItemStack(LEPHELUSA_STEW));
                     itemStacks.add(new ItemStack(DE_FEATIANTE));
                     itemStacks.add(new ItemStack(ALPHIAGOU_CIDER));
                     itemStacks.add(new ItemStack(MYSTICAL_ALPHIAGOU_CIDER));

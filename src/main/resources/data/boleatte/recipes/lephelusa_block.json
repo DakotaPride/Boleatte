@@ -1,10 +1,14 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
       "item": "boleatte:lephelusa_coral_shard"
     }
-  ],
+  },
   "result": {
     "item": "boleatte:lephelusa_block",
     "count": 1

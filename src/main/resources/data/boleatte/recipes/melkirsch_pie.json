@@ -9,9 +9,13 @@
     },
     {
       "item": "boleatte:alphiagou_substance"
+    },
+    {
+      "item": "boleatte:alphiagou_substance"
     }
   ],
   "result": {
-    "item": "boleatte:melkirsch_pie"
+    "item": "boleatte:melkirsch_pie",
+    "count": 3
   }
 }

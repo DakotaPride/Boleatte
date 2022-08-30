@@ -28,6 +28,7 @@
   "item.boleatte.lementrio_substance": "Bottle Of Lementrio Substance",
   "item.boleatte.pyetsit_substance": "Bottle Of Pyetsit Substance",
   "item.boleatte.sataluk_substance": "Bottle Of Sataluk Substance",
+  "item.boleatte.lephelusa_stew": "Lephelusa Stew",
   "item.boleatte.alphiagou_cider": "Alphiagou Cider",
   "item.boleatte.mystical_alphiagou_cider": "Mystical Alphiagou Cider",
 
@@ -77,6 +78,8 @@
   "block.boleatte.dark_rementio": "Dark Rementio",
   "block.boleatte.dark_rementio_bricks": "Dark Rementio Bricks",
   "block.boleatte.rementio_barrel": "Rementio Barrel",
+  "block.boleatte.scorched_rementio": "Scorched Rementio",
+  "block.boleatte.scorched_rementio_bricks": "Scorched Rementio Bricks",
   "block.boleatte.arbune_rementio": "Arbune Rementio",
   "block.boleatte.rasiore_rementio": "Rasiore Rementio",
   "block.boleatte.botakoa_rementio": "Botakoa Rementio",

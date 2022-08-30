@@ -18,6 +18,7 @@ import static net.dakotapride.boleatte.common.BoleatteMain.ID;
 public class BlockInit {
 
     public static RementioBlock REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static Block REMENTIO_BRICKS = new Block(FabricBlockSettings.copy(Blocks.STONE_BRICKS));
     public static Block ARBUNE_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
     public static Block BOTAKOA_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
     public static Block RASIORE_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
@@ -98,7 +99,6 @@ public class BlockInit {
     public static BaburbenRootsBlock BABURBEN_ROOTS = new BaburbenRootsBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH).ticksRandomly().nonOpaque());
 
     public static Block DARK_REMENTIO = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing());
-    public static Block REMENTIO_BRICKS = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing());
     public static Block DARK_REMENTIO_BRICKS = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing());
     public static Block SCORCHED_REMENTIO_BRICKS = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing());
     public static Block SCORCHED_REMENTIO = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing());

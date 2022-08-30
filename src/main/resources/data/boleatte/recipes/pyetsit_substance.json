@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "alphiagou_substance",
+  "pattern": [
+    "#A",
+    "X "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glass_bottle"
+    },
+    "A": {
+      "item": "boleatte:blossoming_alphiagou"
+    },
+    "X": {
+      "item": "boleatte:nikota_tu"
+    }
+  },
+  "result": {
+    "item": "boleatte:pyetsit_substance",
+    "count": 1
+  }
+}

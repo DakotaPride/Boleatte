@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "boleatte:paiore"
+    },
+    {
+      "item": "boleatte:paiore"
+    },
+    {
+      "item": "boleatte:paiore"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "result": {
+    "item": "boleatte:paieux_dough",
+    "count": 3
+  }
+}
