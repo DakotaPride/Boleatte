@@ -17,8 +17,8 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.structure.Structure;
 
-public class PerfervidAlphiagouItem extends AscunauticItem {
-    public PerfervidAlphiagouItem(Settings settings) {
+public class ConstructiveAlphiagouItem extends AscunauticItem {
+    public ConstructiveAlphiagouItem(Settings settings) {
         super(settings);
     }
 
@@ -40,8 +40,8 @@ public class PerfervidAlphiagouItem extends AscunauticItem {
                         .getRegistryManager().get(Registry.STRUCTURE_KEY);
 
                 if (!(serverWorld.getStructureAccessor().getStructureAt
-                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.STERRES_DUNGEON)).hasChildren()) && !user.isCreative()) {
-                    user.sendMessage(Text.translatable("text.boleatte.sterres.denial"), false);
+                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.ORITEM_DUNGEON)).hasChildren()) && !user.isCreative()) {
+                    user.sendMessage(Text.translatable("text.boleatte.oritem.denial"), false);
                     user.getItemCooldownManager().set(this, 100);
                     return TypedActionResult.fail(user.getStackInHand(hand));
                 } else {
@@ -50,7 +50,7 @@ public class PerfervidAlphiagouItem extends AscunauticItem {
             }
         }
 
-            return super.use(world, user, hand);
+        return super.use(world, user, hand);
     }
 
     @Override
@@ -61,8 +61,8 @@ public class PerfervidAlphiagouItem extends AscunauticItem {
                         .getRegistryManager().get(Registry.STRUCTURE_KEY);
 
                 if (serverWorld.getStructureAccessor().getStructureAt
-                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.STERRES_DUNGEON)).hasChildren()) {
-                    user.sendMessage(Text.translatable("text.boleatte.alphiagou.signalling.sterres"));
+                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.ORITEM_DUNGEON)).hasChildren()) {
+                    user.sendMessage(Text.translatable("text.boleatte.alphiagou.signalling.oritem"));
                 }
             }
         }

@@ -32,11 +32,21 @@ public class FoodComponentInit {
     public static final FoodComponent BLOSSOMING_ALPHIAGOU = new FoodComponent.Builder().statusEffect(new StatusEffectInstance
             (EffectInit.BEUSERE_VIRTUE, 240, 1), 1.0F).statusEffect(new StatusEffectInstance
             (StatusEffects.LUCK, 360, 1), 0.5f).hunger(5).saturationModifier(0.5F).build();
+    public static final FoodComponent PHANTASMAL_ALPHIAGOU = new FoodComponent.Builder().statusEffect(new StatusEffectInstance
+            (EffectInit.GELA_BENEFIT, 240, 1), 1.0F).statusEffect(new StatusEffectInstance
+            (StatusEffects.INVISIBILITY, 360, 0), 0.5f).hunger(5).saturationModifier(0.5F).build();
+    public static final FoodComponent CONSTRUCTIVE_ALPHIAGOU = new FoodComponent.Builder().statusEffect(new StatusEffectInstance
+            (EffectInit.ORITEM_PROFIT, 240, 1), 1.0F).statusEffect(new StatusEffectInstance
+            (StatusEffects.HASTE, 360, 1), 0.5f).hunger(5).saturationModifier(0.5F).build();
+    public static final FoodComponent PLENTIFUL_ALPHIAGOU = new FoodComponent.Builder().statusEffect(new StatusEffectInstance
+            (EffectInit.VERET_FAVOUR, 240, 1), 1.0F).statusEffect(new StatusEffectInstance
+            (StatusEffects.REGENERATION, 360, 1), 0.5f).hunger(5).saturationModifier(0.5F).build();
     public static final FoodComponent LEPHELUSA_STEW = new FoodComponent.Builder().hunger(6).saturationModifier(0.6F).build();
     public static final FoodComponent ALPHIAGOU_SUBSTANCE = new FoodComponent.Builder().hunger(6).saturationModifier(0.8F).build();
     public static final FoodComponent LEMENTRIO_SUBSTANCE = new FoodComponent.Builder().hunger(6).saturationModifier(0.8F).build();
     public static final FoodComponent PYETSIT_SUBSTANCE = new FoodComponent.Builder().hunger(6).saturationModifier(0.8F).build();
     public static final FoodComponent SATALUK_SUBSTANCE = new FoodComponent.Builder().hunger(6).saturationModifier(0.8F).build();
+    public static final FoodComponent QUESTEAR = new FoodComponent.Builder().hunger(4).saturationModifier(0.6F).build();
     public static final FoodComponent MELKIRSCH_PIE = new FoodComponent.Builder().hunger(8).saturationModifier(0.6F).build();
     public static final FoodComponent ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(7).saturationModifier(0.8F).build();
     public static final FoodComponent MYSTICAL_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).saturationModifier(0.7F).build();

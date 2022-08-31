@@ -40,7 +40,7 @@ public class GhostAlphiagouItem extends AscunauticItem {
                         .getRegistryManager().get(Registry.STRUCTURE_KEY);
 
                 if (!(serverWorld.getStructureAccessor().getStructureAt
-                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.FRIGID_PUNISHMENT)).hasChildren())) {
+                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.LAIDE_DUNGEON)).hasChildren()) && !user.isCreative()) {
                     user.sendMessage(Text.translatable("text.boleatte.laide.denial"), false);
                     user.getItemCooldownManager().set(this, 100);
                     return TypedActionResult.fail(user.getStackInHand(hand));
@@ -61,7 +61,7 @@ public class GhostAlphiagouItem extends AscunauticItem {
                         .getRegistryManager().get(Registry.STRUCTURE_KEY);
 
                 if (serverWorld.getStructureAccessor().getStructureAt
-                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.FRIGID_PUNISHMENT)).hasChildren()) {
+                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.LAIDE_DUNGEON)).hasChildren()) {
                     user.sendMessage(Text.translatable("text.boleatte.alphiagou.signalling.laide"));
                 }
             }
