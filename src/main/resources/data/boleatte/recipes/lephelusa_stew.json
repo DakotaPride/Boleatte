@@ -3,19 +3,16 @@
   "group": "alphiagou_cider",
   "ingredients": [
     {
-      "item": "boleatte:ramukai"
+      "item": "boleatte:lephelusa_coral_shard"
+    },
+    {
+      "item": "boleatte:lephelusa_coral_shard"
     },
     {
       "item": "boleatte:alphiagou_cider"
     },
     {
-      "item": "boleatte:lephelusa_coral_shard"
-    },
-    {
-      "item": "boleatte:lephelusa_coral_shard"
-    },
-    {
-      "item": "minecraft:bowl"
+      "item": "boleatte:ramukai"
     }
   ],
   "result": {
