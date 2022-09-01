@@ -39,6 +39,7 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(LEPHELUSA_CORAL_SHARD));
                     itemStacks.add(new ItemStack(MELKIRSCH_SEEDS));
                     itemStacks.add(new ItemStack(MELKIRSCH_PIE));
+                    itemStacks.add(new ItemStack(ETTERAVE_BAMBOO));
                     itemStacks.add(new ItemStack(QUESTEAR));
                     itemStacks.add(new ItemStack(ALPHIAGOU));
                     itemStacks.add(new ItemStack(PERFERVID_ALPHIAGOU));
@@ -175,6 +176,7 @@ public class ItemInit {
     public static FilledBottleItem PYETSIT_SUBSTANCE = new FilledBottleItem(new FabricItemSettings().food(FoodComponentInit.PYETSIT_SUBSTANCE).group(BoleatteItemGroup.BOLEATTE));
     public static FilledBottleItem SATALUK_SUBSTANCE = new FilledBottleItem(new FabricItemSettings().food(FoodComponentInit.SATALUK_SUBSTANCE).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem MELKIRSCH_PIE = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.MELKIRSCH_PIE).group(BoleatteItemGroup.BOLEATTE));
+    public static AscunauticBlockItem ETTERAVE_BAMBOO = new AscunauticBlockItem(BlockInit.ETTERAVE_BAMBOO, new FabricItemSettings().food(FoodComponentInit.ETTERAVE_BAMBOO).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem QUESTEAR = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.QUESTEAR).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem LEPHELUSA_STEW = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.LEPHELUSA_STEW).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
@@ -199,6 +201,7 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "melkirsch_seeds"), MELKIRSCH_SEEDS);
         Registry.register(Registry.ITEM, new Identifier(ID, "lephelusa_coral_shard"), LEPHELUSA_CORAL_SHARD);
         Registry.register(Registry.ITEM, new Identifier(ID, "melkirsch_pie"), MELKIRSCH_PIE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "etterave_bamboo"), ETTERAVE_BAMBOO);
         Registry.register(Registry.ITEM, new Identifier(ID, "questear"), QUESTEAR);
         Registry.register(Registry.ITEM, new Identifier(ID, "alphiagou"), ALPHIAGOU);
         Registry.register(Registry.ITEM, new Identifier(ID, "perfervid_alphiagou"), PERFERVID_ALPHIAGOU);

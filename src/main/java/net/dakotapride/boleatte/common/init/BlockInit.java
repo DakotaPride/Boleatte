@@ -23,7 +23,10 @@ public class BlockInit {
     public static Block BOTAKOA_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
     public static Block RASIORE_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
     public static Block PROTOSTERM_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static Block ETTERAVE_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
     public static Block ORETESSE = new Block(FabricBlockSettings.copy(Blocks.STRIPPED_WARPED_HYPHAE).requiresTool());
+
+    public static EtteraveBambooBlock ETTERAVE_BAMBOO = new EtteraveBambooBlock(FabricBlockSettings.copy(Blocks.BAMBOO).nonOpaque().ticksRandomly());
 
     public static OreBlock REMENTIO_OPAFEU_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE).requiresTool(),
             UniformIntProvider.create(3, 7));
@@ -216,6 +219,10 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "lephelusa_block"), new BlockItem(LEPHELUSA_CORAL_BLOCK, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "baburben_roots"), BABURBEN_ROOTS);
         Registry.register(Registry.BLOCK, new Identifier(ID, "sakalou_roots"), SAKALOU_ROOTS);
+
+        Registry.register(Registry.BLOCK, new Identifier(ID, "etterave_rementio"), ETTERAVE_REMENTIO);
+        Registry.register(Registry.ITEM, new Identifier(ID, "etterave_rementio"), new BlockItem(ETTERAVE_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "etterave_bamboo"), ETTERAVE_BAMBOO);
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "dark_rementio"), DARK_REMENTIO);
         Registry.register(Registry.ITEM, new Identifier(ID, "dark_rementio"), new BlockItem(DARK_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));

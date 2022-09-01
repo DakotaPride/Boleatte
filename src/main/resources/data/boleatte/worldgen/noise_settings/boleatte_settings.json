@@ -672,6 +672,37 @@
         "if_true": {
           "type": "minecraft:biome",
           "biome_is": [
+            "boleatte:etterave_hills"
+          ]
+        },
+        "then_run": {
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "offset": 40,
+                "surface_type": "floor",
+                "add_surface_depth": true,
+                "secondary_depth_range": 60
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "boleatte:etterave_rementio"
+                }
+              }
+            }
+          ]
+        }
+      },
+
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": [
             "boleatte:botakoa_forest"
           ]
         },

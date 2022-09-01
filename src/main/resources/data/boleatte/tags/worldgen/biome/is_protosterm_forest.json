@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "boleatte:protosterm_forest"
+    "boleatte:protosterm_forest",
+    "boleatte:colossal_protosterm_forest",
+    "boleatte:compact_protosterm_forest"
   ]
 }
