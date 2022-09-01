@@ -16,7 +16,7 @@
   },
 
   "license": "MIT",
-  "icon": "assets/boleatte/icon.png",
+  "icon": "assets/boleatte/mod_icon.gif",
 
   "environment": "*",
   "entrypoints": {
