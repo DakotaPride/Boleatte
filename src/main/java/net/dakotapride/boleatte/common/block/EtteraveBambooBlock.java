@@ -7,7 +7,6 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
-import net.minecraft.tag.FluidTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
@@ -16,8 +15,6 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
-
-import java.util.Iterator;
 
 public class EtteraveBambooBlock extends Block implements Fertilizable {
     public static final IntProperty AGE;
@@ -76,27 +73,16 @@ public class EtteraveBambooBlock extends Block implements Fertilizable {
             world.createAndScheduleBlockTick(pos, this, 1);
         }
 
+        if (direction == Direction.UP && neighborState.isOf(BlockInit.ETTERAVE_BAMBOO) && (Integer)neighborState.get(AGE) > (Integer)state.get(AGE)) {
+            world.setBlockState(pos, (BlockState)state.cycle(AGE), 2);
+        }
+
         return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
     }
 
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-        Iterator<Direction> var4 = Direction.Type.HORIZONTAL.iterator();
-
-        Direction direction;
-        Material material;
-        do {
-            if (!var4.hasNext()) {
-                BlockState blockState2 = world.getBlockState(pos.down());
-                return (blockState2.isOf(BlockInit.ETTERAVE_BAMBOO) || blockState2.isOf(BlockInit.ETTERAVE_REMENTIO)) && !world.getBlockState(pos.up()).getMaterial().isLiquid();
-            }
-
-            direction = var4.next();
-            BlockState blockState = world.getBlockState(pos.offset(direction));
-            material = blockState.getMaterial();
-        } while(!material.isSolid() && !world.getFluidState(pos.offset(direction)).isIn(FluidTags.LAVA));
-
-        return false;
+        return world.getBlockState(pos.down()).isOf(BlockInit.ETTERAVE_REMENTIO) || world.getBlockState(pos.down()).isOf(BlockInit.ETTERAVE_BAMBOO);
     }
 
     @Override
@@ -117,7 +103,9 @@ public class EtteraveBambooBlock extends Block implements Fertilizable {
 
     @Override
     public boolean isFertilizable(BlockView world, BlockPos pos, BlockState state, boolean isClient) {
-        return true;
+        int i = this.countBambooAbove(world, pos);
+        int j = this.countBambooBelow(world, pos);
+        return i + j + 1 < 16 && (Integer)world.getBlockState(pos.up(i)).get(AGE) != 1;
     }
 
     @Override
@@ -127,6 +115,37 @@ public class EtteraveBambooBlock extends Block implements Fertilizable {
 
     @Override
     public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
-        this.canGrow(world, random, pos, state);
+        int i = this.countBambooAbove(world, pos);
+        int j = this.countBambooBelow(world, pos);
+        int k = i + j + 1;
+        int l = 1 + random.nextInt(2);
+
+        for(int m = 0; m < l; ++m) {
+            BlockPos blockPos = pos.up(i);
+            BlockState blockState = world.getBlockState(blockPos);
+            if (k >= 16 || (Integer)blockState.get(AGE) == 1 || !world.isAir(blockPos.up())) {
+                return;
+            }
+
+            ++i;
+            ++k;
+        }
+
+    }
+
+    protected int countBambooAbove(BlockView world, BlockPos pos) {
+        int i;
+        for(i = 0; i < 16 && world.getBlockState(pos.up(i + 1)).isOf(Blocks.BAMBOO); ++i) {
+        }
+
+        return i;
+    }
+
+    protected int countBambooBelow(BlockView world, BlockPos pos) {
+        int i;
+        for(i = 0; i < 16 && world.getBlockState(pos.down(i + 1)).isOf(Blocks.BAMBOO); ++i) {
+        }
+
+        return i;
     }
 }
