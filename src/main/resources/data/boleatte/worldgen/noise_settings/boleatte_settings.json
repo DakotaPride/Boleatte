@@ -521,7 +521,8 @@
         "if_true": {
           "type": "minecraft:biome",
           "biome_is": [
-            "boleatte:arbune_forest"
+            "boleatte:arbune_forest",
+            "boleatte:arbune_plains"
           ]
         },
         "then_run": {
@@ -707,8 +708,10 @@
             "boleatte:botakoa_forest",
             "boleatte:protosterm_forest",
             "boleatte:arbune_forest",
+            "boleatte:arbune_plains",
             "boleatte:rasiore_forest",
-            "boleatte:etterave_hills"
+            "boleatte:etterave_hills",
+            "boleatte:etterave_forest"
           ]
         },
         "then_run": {

@@ -9,47 +9,59 @@
 
         {
           "parameters": {
-            "erosion": [-0.7799, -0.375],
+            "erosion": [0.55, 1],
             "depth": 0.0,
-            "weirdness": [-1.0, -0.9333],
+            "weirdness": [-0.4, -0.2666],
             "offset": 0.0,
-            "temperature": [-0.45, -0.15],
-            "humidity": [-0.1, 0.1],
-            "continentalness": [-0.11, 0.3]
+            "temperature": [0.2, 1],
+            "humidity": [-1, 1],
+            "continentalness": [-0.11, 1]
           },
           "biome": "boleatte:protosterm_forest"
         },
         {
           "parameters": {
-            "erosion": [0.2, 0.55],
+            "erosion": [-0.375, -0.2225],
             "depth": 0.0,
-            "weirdness": [-1.0, -0.9333],
+            "weirdness": [-0.4, -0.2666],
             "offset": 0.0,
-            "temperature": [0.25, 1.0],
-            "humidity": [-0.1, 0.1],
+            "temperature": [-1, -0.55],
+            "humidity": [-1, -0.35],
             "continentalness": [-0.11, 0.03]
           },
           "biome": "boleatte:baburben_wastes"
         },
         {
           "parameters": {
-            "erosion": [-0.7799, -0.375],
+            "erosion": [-1, -0.375],
             "depth": 0.0,
-            "weirdness": [-1.0, -0.9333],
+            "weirdness": [-0.9333, -0.7666],
             "offset": 0.0,
-            "temperature": [-0.45, -0.15],
-            "humidity": [-1.0, -0.35],
-            "continentalness": [-0.11, 0.3]
+            "temperature": [-1, -0.45],
+            "humidity": [0.3, 1],
+            "continentalness": [-0.19, -0.11]
           },
           "biome": "boleatte:arbune_forest"
         },
         {
           "parameters": {
-            "temperature": [-0.7799, -0.375],
-            "humidity": [-1.0, -0.35],
+            "temperature": [-0.45, -0.15],
+            "humidity": [-1, -0.35],
+            "continentalness": [-0.9, 0.3],
+            "erosion": [-0.8, -0.375],
+            "weirdness": [-1, -0.9],
+            "depth": 0,
+            "offset": 0
+          },
+          "biome": "boleatte:arbune_plains"
+        },
+        {
+          "parameters": {
+            "temperature": [-1, -0.45],
+            "humidity": [-0.1, 0.1],
             "continentalness": [0.03, 1],
             "erosion": [0.45, 0.55],
-            "weirdness": [-1.0, -0.9333],
+            "weirdness": [0.2666, 0.4],
             "depth": 0,
             "offset": 0
           },
@@ -57,11 +69,11 @@
         },
         {
           "parameters": {
-            "temperature": [-0.7799, -0.375],
-            "humidity": [-1.0, -0.35],
-            "continentalness": [0.01, 0.85],
-            "erosion": [0.05, 0.25],
-            "weirdness": [-1.0, -0.9333],
+            "temperature": [0.2, 0.55],
+            "humidity": [0.3, 1],
+            "continentalness": [-0.11, 0.3],
+            "erosion": [-0.7799, -0.375],
+            "weirdness": [0.2666, 0.4],
             "depth": 0,
             "offset": 0
           },
@@ -85,21 +97,21 @@
             "depth": 0.0,
             "weirdness": [-1.0, -0.9333],
             "offset": 0.0,
-            "temperature": [-0.45, -0.15],
-            "humidity": [-0.1, 0.2],
+            "temperature": [-0.15, 0.2],
+            "humidity": [0.3, 1],
             "continentalness": [-0.11, 0.3]
           },
           "biome": "boleatte:rasiore_forest"
         },
         {
           "parameters": {
-            "erosion": [-0.375, -0.2225],
-            "depth": 0.0,
-            "weirdness": [-1.0, -0.9333],
+            "erosion": [0.55, 1],
+            "depth": 1.0,
+            "weirdness": [0.9333, 1],
             "offset": 0.0,
             "temperature": [0.55, 1.0],
-            "humidity": [-1.0, -0.35],
-            "continentalness": [-0.11, 0.03]
+            "humidity": [0.3, 1],
+            "continentalness": [-0.19, -0.11]
           },
           "biome": "boleatte:quantila_barrens"
         },
@@ -110,7 +122,7 @@
             "weirdness": [-1.0, -0.9333],
             "offset": 0.0,
             "temperature": [-0.15, 0.2],
-            "humidity": [-1.0, -0.35],
+            "humidity": [0.1, 0.3],
             "continentalness": [-0.11, 0.3]
           },
           "biome": "boleatte:botakoa_forest"
