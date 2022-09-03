@@ -64,6 +64,7 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(CINTONIUM_GEM));
                     itemStacks.add(new ItemStack(LEPOSIATE_GEM));
                     itemStacks.add(new ItemStack(GEURINE_GEM));
+                    itemStacks.add(new ItemStack(PAROMULINE_GEM));
 
                     itemStacks.add(new ItemStack(DIMATIS));
                     itemStacks.add(new ItemStack(ARBUNE_DIMATIS));
@@ -86,6 +87,7 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_CINTONIUM_ORE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_LEPOSIATE_ORE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_GEURINE_ORE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.REMENTIO_PAROMULINE_ORE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_IRON_ORE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_GOLD_ORE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_DIAMOND_ORE.asItem()));
@@ -150,6 +152,7 @@ public class ItemInit {
     public static Item CINTONIUM_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item LEPOSIATE_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item GEURINE_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
+    public static Item PAROMULINE_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static BaseDimatisItem DIMATIS = new BaseDimatisItem(new FabricItemSettings().maxCount(1).group(BoleatteItemGroup.BOLEATTE));
     public static DimatisItem ARBUNE_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
     public static DimatisItem BABURBEN_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
@@ -241,5 +244,6 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "cintonium"), CINTONIUM_GEM);
         Registry.register(Registry.ITEM, new Identifier(ID, "leposiate"), LEPOSIATE_GEM);
         Registry.register(Registry.ITEM, new Identifier(ID, "geurine"), GEURINE_GEM);
+        Registry.register(Registry.ITEM, new Identifier(ID, "paromuline"), PAROMULINE_GEM);
     }
 }
