@@ -1,25 +1,19 @@
 {
-  "category": "forest",
-  "temperature": 0.7,
-  "downfall": 0.8,
-  "precipitation": "none",
+  "category": "beach",
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "precipitation": "rain",
   "effects": {
     "sky_color": 6186120,
     "fog_color": 9796239,
     "water_color": 12229837,
     "water_fog_color": 10720723,
-    "grass_color": 8022981,
+    "grass_color": 12159945,
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
       "block_search_extent": 8,
       "offset": 2
-    },
-    "music": {
-      "sound": "minecraft:music.overworld.jungle_and_forest",
-      "min_delay": 12000,
-      "max_delay": 24000,
-      "replace_current_music": false
     }
   },
   "spawners": {
@@ -34,7 +28,38 @@
     "axolotls": [],
     "creature": [],
     "misc": [],
-    "monster": [],
+    "monster": [
+      {
+        "type": "minecraft:spider",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:skeleton",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:creeper",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:witch",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "minecraft:husk",
+        "weight": 80,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ],
     "underground_water_creature": [],
     "water_ambient": [],
     "water_creature": []
@@ -49,17 +74,16 @@
   },
   "features": [
     [],
-    [
-      "minecraft:lake_lava_underground"
-    ],
+    [],
     [],
     [],
     [],
     [],
     [
-      "boleatte:ore_latzeck",
-      "boleatte:ore_latzeck_large",
-      "boleatte:ore_latzeck_buried",
+      "boleatte:ore_kutunite",
+      "boleatte:ore_kutunite_large",
+      "boleatte:ore_kutunite_buried",
+      "boleatte:disk_lephelusa_violes",
       "boleatte:ore_rementio_diamond",
       "boleatte:ore_rementio_diamond_large",
       "boleatte:ore_rementio_diamond_buried",
@@ -72,14 +96,10 @@
       "boleatte:ore_rementio_iron_upper"
     ],
     [],
-    [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
-    ],
+    [],
     [
       "minecraft:glow_lichen",
-      "boleatte:trees_botakoa",
-      "boleatte:botakoa_forest_flowers"
+      "boleatte:baburben_roots"
     ],
     [
       "minecraft:freeze_top_layer"

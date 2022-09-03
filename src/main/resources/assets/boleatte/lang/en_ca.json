@@ -63,6 +63,10 @@
   "block.boleatte.botakoa_leaves": "Botakoa Leaves",
   "block.boleatte.botakoa_sapling": "Botakoa Sapling",
   "block.boleatte.botakoa_planks": "Botakoa Planks",
+  "block.boleatte.violet_sethiol": "Violet Sethiol",
+  "block.boleatte.crimson_botakoa_lily": "Crimson Botakoa Lily",
+  "block.boleatte.botakoa_lily": "Botakoa Lily",
+  "block.boleatte.flaming_sethiol": "Flaming Sethiol",
 
   "block.boleatte.rasiore_log": "Rasiore Log",
   "block.boleatte.stripped_rasiore_log": "Stripped Rasiore Log",
@@ -88,6 +92,7 @@
   "block.boleatte.rasiore_rementio": "Rasiore Rementio",
   "block.boleatte.botakoa_rementio": "Botakoa Rementio",
   "block.boleatte.protosterm_rementio": "Protosterm Rementio",
+  "block.boleatte.etterave_rementio": "Etterave Rementio",
   "block.boleatte.opafeu_ore": "Opafeu Ore",
   "block.boleatte.kutunite_ore": "Kutunite Ore",
   "block.boleatte.nemoral_ore": "Nemoral Ore",
@@ -144,6 +149,8 @@
   "block.boleatte.baburben_roots": "Baburben",
   "block.boleatte.lephelusa_block": "Lephelusa Coral Block",
   "item.boleatte.lephelusa_coral_shard": "Lephelusa Coral Shard",
+
+  "block.boleatte.etterave_bamboo": "Etterave Bamboo",
 
   "effect.boleatte.defiant": "Defiant",
   "effect.boleatte.veret_favour": "Verêt's Favour",

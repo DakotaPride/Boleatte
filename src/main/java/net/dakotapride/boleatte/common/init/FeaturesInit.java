@@ -40,7 +40,6 @@ public class FeaturesInit {
     private static final BeehiveTreeDecorator BEES_005 = new BeehiveTreeDecorator(0.05F);
     private static final BeehiveTreeDecorator BEES = new BeehiveTreeDecorator(1.0F);
 
-
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> QUANTILA_DEAD_BUSH =
             ConfiguredFeatures.register(ID + "quantila_dead_bush", Feature.TREE, (new TreeFeatureConfig.Builder(
             BlockStateProvider.of(Blocks.OAK_LOG), new StraightTrunkPlacer(1, 0, 0),
@@ -172,6 +171,10 @@ public class FeaturesInit {
 
                 BlockStateProvider.of(leaves), new BlobFoliagePlacer(
                 ConstantIntProvider.create(radius), ConstantIntProvider.create(0), 3), new TwoLayersFeatureSize(1, 0, 1));
+    }
+
+    private static <C extends FeatureConfig, F extends Feature<C>> F register(String name, F feature) {
+        return (F) Registry.register(Registry.FEATURE, name, feature);
     }
 
 

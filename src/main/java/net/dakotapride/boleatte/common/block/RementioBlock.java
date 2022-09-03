@@ -2,9 +2,11 @@ package net.dakotapride.boleatte.common.block;
 
 import net.dakotapride.boleatte.common.init.BlockInit;
 import net.dakotapride.boleatte.common.init.TagInit;
-import net.minecraft.block.*;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Fertilizable;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.tag.BlockTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
@@ -41,6 +43,7 @@ public class RementioBlock extends Block
         boolean bl2 = false;
         boolean bl3 = false;
         boolean bl4 = false;
+        boolean bl5 = false;
         for (BlockPos blockPos : BlockPos.iterate(pos.add(-1, -1, -1), pos.add(1, 1, 1))) {
             BlockState blockState = world.getBlockState(blockPos);
             if (blockState.isOf(BlockInit.ARBUNE_REMENTIO)) {
@@ -59,22 +62,28 @@ public class RementioBlock extends Block
                 bl4 = true;
             }
 
-            if (bl && bl2 && bl3 && bl4) {
+            if (blockState.isOf(BlockInit.ETTERAVE_REMENTIO)) {
+                bl5 = true;
+            }
+
+            if (bl && bl2 && bl3 && bl4 && bl5) {
                 break;
             }
         }
 
-        if (bl && bl2 && bl3 && bl4) {
-            float randomValue = random.nextFloat() * 40;
+        if (bl && bl2 && bl3 && bl4 && bl5) {
+            float randomValue = random.nextFloat() * 50;
 
             if (randomValue <= 10) {
                 world.setBlockState(pos, BlockInit.ARBUNE_REMENTIO.getDefaultState());
-            } else if (randomValue > 10 && randomValue <=20) {
+            } else if (randomValue > 10 && randomValue <= 20) {
                 world.setBlockState(pos, BlockInit.BOTAKOA_REMENTIO.getDefaultState());
-            } else if (randomValue > 20 && randomValue <=30) {
+            } else if (randomValue > 20 && randomValue <= 30) {
                 world.setBlockState(pos, BlockInit.PROTOSTERM_REMENTIO.getDefaultState());
-            } else if (randomValue > 30 && randomValue <=40) {
+            } else if (randomValue > 30 && randomValue <= 40) {
                 world.setBlockState(pos, BlockInit.RASIORE_REMENTIO.getDefaultState());
+            } else if (randomValue > 40 && randomValue <= 50) {
+                world.setBlockState(pos, BlockInit.ETTERAVE_REMENTIO.getDefaultState());
             }
         } else if (bl) {
             world.setBlockState(pos, BlockInit.ARBUNE_REMENTIO.getDefaultState(), 3);
@@ -84,6 +93,8 @@ public class RementioBlock extends Block
             world.setBlockState(pos, BlockInit.PROTOSTERM_REMENTIO.getDefaultState(), 3);
         } else if (bl4) {
             world.setBlockState(pos, BlockInit.RASIORE_REMENTIO.getDefaultState(), 3);
+        } else if (bl5) {
+            world.setBlockState(pos, BlockInit.ETTERAVE_REMENTIO.getDefaultState(), 3);
         }
     }
 }

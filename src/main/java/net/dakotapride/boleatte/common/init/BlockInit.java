@@ -8,6 +8,7 @@ import net.dakotapride.boleatte.common.gen.RasioreSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
@@ -69,6 +70,10 @@ public class BlockInit {
     public static PillarBlock STRIPPED_BOTAKOA_WOOD = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD));
     public static Block BOTAKOA_PLANKS = new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS));
     public static LeavesBlock BOTAKOA_LEAVES = new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
+    public static BoleatteFlowerBlock VIOLET_SETHIOL = new BoleatteFlowerBlock(StatusEffects.ABSORPTION, 120, FabricBlockSettings.copy(Blocks.POPPY));
+    public static BoleatteFlowerBlock CRIMSON_BOTAKOA_LILY = new BoleatteFlowerBlock(StatusEffects.FIRE_RESISTANCE, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock BOTAKOA_LILY = new BoleatteFlowerBlock(StatusEffects.RESISTANCE, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static TallBoleatteFlowerBlock FLAMING_SETHIOL = new TallBoleatteFlowerBlock(FabricBlockSettings.copy(Blocks.LILAC));
 
     public static MelkirschBlock MELKIRSCH = new MelkirschBlock(FabricBlockSettings.copy(Blocks.PUMPKIN));
     public static AttachedStemBlock ATTACHED_MELKIRSCH_STEM = new AttachedStemBlock(MELKIRSCH, () -> ItemInit.MELKIRSCH_SEEDS,
@@ -138,6 +143,14 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "stripped_botakoa_wood"), new BlockItem(STRIPPED_BOTAKOA_WOOD, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "botakoa_planks"), BOTAKOA_PLANKS);
         Registry.register(Registry.ITEM, new Identifier(ID, "botakoa_planks"), new BlockItem(BOTAKOA_PLANKS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "violet_sethiol"), VIOLET_SETHIOL);
+        Registry.register(Registry.ITEM, new Identifier(ID, "violet_sethiol"), new BlockItem(VIOLET_SETHIOL, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "crimson_botakoa_lily"), CRIMSON_BOTAKOA_LILY);
+        Registry.register(Registry.ITEM, new Identifier(ID, "crimson_botakoa_lily"), new BlockItem(CRIMSON_BOTAKOA_LILY, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "botakoa_lily"), BOTAKOA_LILY);
+        Registry.register(Registry.ITEM, new Identifier(ID, "botakoa_lily"), new BlockItem(BOTAKOA_LILY, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "flaming_sethiol"), FLAMING_SETHIOL);
+        Registry.register(Registry.ITEM, new Identifier(ID, "flaming_sethiol"), new BlockItem(FLAMING_SETHIOL, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "arbune_sapling"), ARBUNE_SAPLING);
         Registry.register(Registry.ITEM, new Identifier(ID, "arbune_sapling"), new BlockItem(ARBUNE_SAPLING, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));

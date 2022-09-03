@@ -91,6 +91,12 @@ public class ItemInit {
 
                     itemStacks.add(new ItemStack(BlockInit.MELKIRSCH.asItem()));
 
+                    itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_REMENTIO.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.BOTAKOA_REMENTIO.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.ARBUNE_REMENTIO.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.RASIORE_REMENTIO.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.ETTERAVE_REMENTIO.asItem()));
+
                     itemStacks.add(new ItemStack(BlockInit.DEAD_LEAVES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_LEAVES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.BOTAKOA_LEAVES.asItem()));
