@@ -1,5 +1,5 @@
 {
-  "category": "beach",
+  "category": "plains",
   "temperature": 0.8,
   "downfall": 0.4,
   "precipitation": "none",
@@ -8,7 +8,7 @@
     "fog_color": 9796239,
     "water_color": 12229837,
     "water_fog_color": 10720723,
-    "grass_color": 12159945,
+    "grass_color": 16771267,
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
@@ -52,12 +52,6 @@
         "weight": 5,
         "minCount": 1,
         "maxCount": 1
-      },
-      {
-        "type": "minecraft:husk",
-        "weight": 80,
-        "minCount": 4,
-        "maxCount": 4
       }
     ],
     "underground_water_creature": [],
@@ -74,17 +68,17 @@
   },
   "features": [
     [],
-    [],
+    [
+      "minecraft:lake_lava_underground"
+    ],
     [],
     [],
     [],
     [],
     [
-      "boleatte:ore_kutunite",
-      "boleatte:ore_kutunite_large",
-      "boleatte:ore_kutunite_buried",
-      "boleatte:disk_lephelusa_violes_coast",
-      "boleatte:disk_lephelusa_violes",
+      "boleatte:ore_opafeu",
+      "boleatte:ore_opafeu_large",
+      "boleatte:ore_opafeu_buried",
       "boleatte:ore_rementio_diamond",
       "boleatte:ore_rementio_diamond_large",
       "boleatte:ore_rementio_diamond_buried",
@@ -100,7 +94,7 @@
     [],
     [
       "minecraft:glow_lichen",
-      "boleatte:baburben_roots"
+      "boleatte:trees_arbune_plains"
     ],
     [
       "minecraft:freeze_top_layer"

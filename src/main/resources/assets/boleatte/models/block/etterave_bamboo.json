@@ -3,7 +3,7 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "boleatte:block/etterave_bamboo",
-		"particle": "boleatte:block/etterave_bamboo"
+		"particle": "boleatte:item/etterave_bamboo"
 	},
 	"elements": [
 		{
