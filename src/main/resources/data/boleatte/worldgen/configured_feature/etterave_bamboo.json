@@ -1,27 +1,6 @@
 {
-  "type": "minecraft:block_column",
+  "type": "boleatte:etterave_bamboo",
   "config": {
-    "direction": "up",
-    "allowed_placement": {
-      "type": "minecraft:true"
-    },
-    "prioritize_tip": false,
-    "layers": [
-      {
-        "height": {
-          "type": "minecraft:uniform",
-          "value": {
-            "min_inclusive": 4,
-            "max_inclusive": 16
-          }
-        },
-        "provider": {
-          "type": "minecraft:simple_state_provider",
-          "state": {
-            "Name": "boleatte:etterave_bamboo"
-          }
-        }
-      }
-    ]
+    "probability": 0
   }
 }

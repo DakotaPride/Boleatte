@@ -99,6 +99,7 @@
   "block.boleatte.leposiate_ore": "Leposiate Ore",
   "block.boleatte.cintonium_ore": "Cintonium Ore",
   "block.boleatte.latzeck_ore": "Latzeck Ore",
+  "block.boleatte.geurine_ore": "Geurine Ore",
   "block.boleatte.rementio_iron_ore": "Rementio Iron Ore",
   "block.boleatte.rementio_gold_ore": "Rementio Gold Ore",
   "block.boleatte.rementio_diamond_ore": "Rementio Diamond Ore",
@@ -116,6 +117,7 @@
   "item.boleatte.nemoral": "Nemoral",
   "item.boleatte.cintonium": "Cintonium",
   "item.boleatte.leposiate": "Leposiate",
+  "item.boleatte.geurine": "Geurine",
 
   "text.boleatte.dimatis.veret_trusting": "You have the Colourant Goddess' Favour",
   "text.boleatte.veret_favour.hunted_wild": "Verêt has favoured you today!",

@@ -43,6 +43,8 @@ public class BlockInit {
             UniformIntProvider.create(3, 7));
     public static OreBlock REMENTIO_LEPOSIATE_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE).requiresTool(),
             UniformIntProvider.create(3, 7));
+    public static OreBlock REMENTIO_GEURINE_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE).requiresTool(),
+            UniformIntProvider.create(3, 7));
 
     public static Block REMENTIO_IRON_ORE = new Block(FabricBlockSettings.copy(Blocks.IRON_ORE).requiresTool());
     public static Block REMENTIO_GOLD_ORE = new Block(FabricBlockSettings.copy(Blocks.GOLD_ORE).requiresTool());
@@ -214,6 +216,8 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "latzeck_ore"), new BlockItem(REMENTIO_LATZECK_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "nemoral_ore"), REMENTIO_NEMORAL_ORE);
         Registry.register(Registry.ITEM, new Identifier(ID, "nemoral_ore"), new BlockItem(REMENTIO_NEMORAL_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "geurine_ore"), REMENTIO_GEURINE_ORE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "geurine_ore"), new BlockItem(REMENTIO_GEURINE_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "rementio_iron_ore"), REMENTIO_IRON_ORE);
         Registry.register(Registry.ITEM, new Identifier(ID, "rementio_iron_ore"), new BlockItem(REMENTIO_IRON_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));

@@ -1,0 +1,121 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "ignore_vines": true,
+    "force_dirt": false,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 1,
+      "lower_size": 0,
+      "upper_size": 1
+    },
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "boleatte:rementio"
+      }
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "boleatte:protosterm_log",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "boleatte:protosterm_leaves",
+        "Properties": {
+          "distance": "7",
+          "persistent": "false",
+          "waterlogged": "false"
+        }
+      }
+    },
+    "root_placer": {
+      "type": "minecraft:mangrove_root_placer",
+      "root_provider": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "boleatte:protosterm_log",
+          "Properties": {
+            "waterlogged": "false"
+          }
+        }
+      },
+      "trunk_offset_y": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 1,
+          "max_inclusive": 2
+        }
+      },
+      "above_root_placement": {
+        "above_root_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:air"
+          }
+        },
+        "above_root_placement_chance": 0.3
+      },
+      "mangrove_root_placement": {
+        "max_root_width": 5,
+        "max_root_length": 8,
+        "random_skew_chance": 0.1,
+        "can_grow_through": "#minecraft:mangrove_roots_can_grow_through",
+        "muddy_roots_in": [
+          "boleatte:protosterm_log",
+          "boleatte:protosterm_log"
+        ],
+        "muddy_roots_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "boleatte:protosterm_log",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        }
+      }
+    },
+    "trunk_placer": {
+      "type": "minecraft:upwards_branching_trunk_placer",
+      "base_height": 1,
+      "height_rand_a": 1,
+      "height_rand_b": 2,
+      "extra_branch_steps": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 1,
+          "max_inclusive": 2
+        }
+      },
+      "extra_branch_length": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 0,
+          "max_inclusive": 1
+        }
+      },
+      "place_branch_per_log_probability": 0.3,
+      "can_grow_through": "#minecraft:mangrove_logs_can_grow_through"
+    },
+    "foliage_placer": {
+      "type": "minecraft:random_spread_foliage_placer",
+      "radius": 3,
+      "offset": 0,
+      "foliage_height": 2,
+      "leaf_placement_attempts": 70
+    },
+    "decorators": [
+      {
+        "type": "minecraft:beehive",
+        "probability": 0.01
+      }
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "category": "forest",
+  "category": "plains",
   "temperature": 0.8,
   "downfall": 0.4,
   "precipitation": "none",
@@ -76,6 +76,9 @@
     [],
     [],
     [
+      "boleatte:ore_geurine",
+      "boleatte:ore_geurine_large",
+      "boleatte:ore_geurine_buried",
       "boleatte:ore_opafeu",
       "boleatte:ore_opafeu_large",
       "boleatte:ore_opafeu_buried",
@@ -94,7 +97,7 @@
     [],
     [
       "minecraft:glow_lichen",
-      "boleatte:trees_arbune",
+      "boleatte:trees_arbune_plains",
       "boleatte:patch_melkirsch"
     ],
     [

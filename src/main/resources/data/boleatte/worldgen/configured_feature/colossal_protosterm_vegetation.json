@@ -3,7 +3,7 @@
   "config": {
     "features": [
       {
-        "chance": 0.45,
+        "chance": 0.95,
         "feature": "boleatte:tall_protosterm_checked"
       }
     ],

@@ -1,19 +1,25 @@
 {
   "category": "forest",
-  "temperature": 0.8,
-  "downfall": 0.4,
+  "temperature": 0.7,
+  "downfall": 0.8,
   "precipitation": "none",
   "effects": {
-    "sky_color": 6186120,
-    "fog_color": 9796239,
+    "sky_color": 13238271,
+    "fog_color": 14019320,
     "water_color": 12229837,
     "water_fog_color": 10720723,
-    "grass_color": 16771267,
+    "grass_color": 11715576,
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
       "block_search_extent": 8,
       "offset": 2
+    },
+    "music": {
+      "sound": "minecraft:music.overworld.jungle_and_forest",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
     }
   },
   "spawners": {
@@ -76,9 +82,9 @@
     [],
     [],
     [
-      "boleatte:ore_opafeu",
-      "boleatte:ore_opafeu_large",
-      "boleatte:ore_opafeu_buried",
+      "boleatte:ore_nemoral",
+      "boleatte:ore_nemoral_large",
+      "boleatte:ore_nemoral_buried",
       "boleatte:ore_rementio_diamond",
       "boleatte:ore_rementio_diamond_large",
       "boleatte:ore_rementio_diamond_buried",
@@ -91,11 +97,12 @@
       "boleatte:ore_rementio_iron_upper"
     ],
     [],
-    [],
+    [
+      "minecraft:spring_water"
+    ],
     [
       "minecraft:glow_lichen",
-      "boleatte:trees_arbune",
-      "boleatte:patch_melkirsch"
+      "boleatte:trees_colossal_protosterm"
     ],
     [
       "minecraft:freeze_top_layer"
