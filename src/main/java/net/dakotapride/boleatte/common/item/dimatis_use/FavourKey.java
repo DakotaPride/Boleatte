@@ -11,10 +11,10 @@ public interface FavourKey {
         PROTOSTERM, // ORITEM
         QUANTILA, // STÉRRES
         RASIORE, // GELÀ
-        CITADEL
+        CITADEL // Ascunautic
     }
 
-    static KeyType getDimatisType(Item item) {
+    static KeyType getFavourType(Item item) {
         KeyType type = null;
 
         if (item == ItemInit.VERET_FAVOUR) {
@@ -30,7 +30,7 @@ public interface FavourKey {
         } else if (item == ItemInit.GELA_FAVOUR) {
             type = KeyType.RASIORE;
         } else if (item == ItemInit.CITADEL_FAVOUR) {
-            type = KeyType.ARBUNE;
+            type = KeyType.CITADEL;
         }
 
         return type;

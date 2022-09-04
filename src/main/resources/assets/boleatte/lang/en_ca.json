@@ -4,6 +4,15 @@
   "death.attack.virulent": "%1$s was seen as a threat to the Ascunautic",
   "death.attack.virulent.player": "%1$s was seen as a threat to the Ascunautic and was reported by %2$s",
 
+  "item.boleatte.citadel_favour": "§6Favour Key",
+  "item.boleatte.veret_favour": "§cFavour Key",
+  "item.boleatte.sterres_favour": "§4Favour Key",
+  "item.boleatte.oritem_favour": "§3Favour Key",
+  "item.boleatte.gela_favour": "§8Favour Key",
+  "item.boleatte.beusere_favour": "§9Favour Key",
+  "item.boleatte.laide_favour": "§dFavour Key",
+  "item.boleatte.geurine_favour_mold": "§2Favour Mold",
+
   "item.boleatte.quanalla": "Quanalla",
   "item.boleatte.basolote": "Basolote",
   "item.boleatte.ramukai": "Ramukai",

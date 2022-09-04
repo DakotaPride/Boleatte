@@ -17,10 +17,9 @@ public class FavourKeyItem extends AscunauticItem implements FavourKey {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        float randomValue = world.random.nextFloat() * 70;
         BlockPos pos = user.getBlockPos();
         if (user.isSneaking()) {
-            if (randomValue <= 10 && user.getStackInHand(hand).isOf(ItemInit.CITADEL_FAVOUR)) {
+            if (user.getStackInHand(hand).isOf(ItemInit.CITADEL_FAVOUR)) {
                 float randomValue2 = world.random.nextFloat() * 60;
                 if (randomValue2 < 60 && randomValue2 > 50) {
                     user.dropStack(ItemInit.STERRES_FAVOUR.getDefaultStack());
@@ -35,6 +34,18 @@ public class FavourKeyItem extends AscunauticItem implements FavourKey {
                 } else if (randomValue2 < 10) {
                     user.dropStack(ItemInit.LAIDE_FAVOUR.getDefaultStack());
                 }
+            } else if (user.getStackInHand(hand).isOf(ItemInit.STERRES_FAVOUR)) {
+                user.dropStack(ItemInit.CINTONIUM_GEM.getDefaultStack());
+            } else if (user.getStackInHand(hand).isOf(ItemInit.VERET_FAVOUR)) {
+                user.dropStack(ItemInit.OPAFEU_GEM.getDefaultStack());
+            } else if (user.getStackInHand(hand).isOf(ItemInit.ORITEM_FAVOUR)) {
+                user.dropStack(ItemInit.NEMORAL_GEM.getDefaultStack());
+            } else if (user.getStackInHand(hand).isOf(ItemInit.GELA_FAVOUR)) {
+                user.dropStack(ItemInit.LEPOSIATE_GEM.getDefaultStack());
+            } else if (user.getStackInHand(hand).isOf(ItemInit.BEUSERE_FAVOUR)) {
+                user.dropStack(ItemInit.LATZECK_GEM.getDefaultStack());
+            } else if (user.getStackInHand(hand).isOf(ItemInit.LAIDE_FAVOUR)) {
+                user.dropStack(ItemInit.KUTUNITE_GEM.getDefaultStack());
             }
 
             for(int i = 0; i < 360; i++) {
@@ -43,8 +54,8 @@ public class FavourKeyItem extends AscunauticItem implements FavourKey {
                             pos.getX() + 0.5d, pos.getY() + 1, pos.getZ() + 0.5d,
                             Math.cos(i) * 0.25d, 0.15d, Math.sin(i) * 0.25d);
                     world.addParticle(ParticleTypes.DRAGON_BREATH,
-                            pos.getX() + 0.5d, pos.getY() + 1, pos.getZ() + 0.5d,
-                            Math.cos(i) * 0.25d, 0.15d, Math.sin(i) * 0.25d);
+                            pos.getX() + 1.5d, pos.getY() + 1, pos.getZ() + 1.5d,
+                            Math.cos(i) * 1.25d, 1.15d, Math.sin(i) * 1.25d);
                 }
             }
 

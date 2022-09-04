@@ -163,6 +163,7 @@ public class ItemInit {
     public static FavourKeyItem LAIDE_FAVOUR = new FavourKeyItem(new FabricItemSettings());
     public static FavourKeyItem STERRES_FAVOUR = new FavourKeyItem(new FabricItemSettings());
     public static FavourKeyItem GELA_FAVOUR = new FavourKeyItem(new FabricItemSettings());
+    public static Item GEURINE_FAVOUR_MOLD = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static BaseDimatisItem DIMATIS = new BaseDimatisItem(new FabricItemSettings().maxCount(1).group(BoleatteItemGroup.BOLEATTE));
     public static DimatisItem ARBUNE_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
     public static DimatisItem BABURBEN_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
@@ -264,5 +265,6 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "laide_favour"), LAIDE_FAVOUR);
         Registry.register(Registry.ITEM, new Identifier(ID, "sterres_favour"), STERRES_FAVOUR);
         Registry.register(Registry.ITEM, new Identifier(ID, "gela_favour"), GELA_FAVOUR);
+        Registry.register(Registry.ITEM, new Identifier(ID, "geurine_favour_mold"), GEURINE_FAVOUR_MOLD);
     }
 }
