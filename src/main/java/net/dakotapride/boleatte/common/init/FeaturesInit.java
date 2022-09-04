@@ -77,7 +77,12 @@ public class FeaturesInit {
     }
 
     private static TreeFeatureConfig.Builder rasiore() {
-        return builder(BlockInit.BOTAKOA_LOG, BlockInit.BOTAKOA_LEAVES, 5, 2, 0, 2)
+        return builder(BlockInit.RASIORE_LOG, BlockInit.RASIORE_LEAVES, 5, 2, 0, 2)
+                .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).ignoreVines();
+    }
+
+    private static TreeFeatureConfig.Builder denticius() {
+        return builder(BlockInit.DENTICIUS_LOG, BlockInit.DENTICIUS_LEAVES, 7, 4, 0, 2)
                 .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).ignoreVines();
     }
 
@@ -93,6 +98,10 @@ public class FeaturesInit {
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> RASIORE =
             ConfiguredFeatures.register(ID + ":rasiore", Feature.TREE,
                     rasiore().build());
+
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> DENTICIUS =
+            ConfiguredFeatures.register(ID + ":denticius", Feature.TREE,
+                    denticius().build());
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> SUPER_BOTAKOA_BEES_0002 =
             ConfiguredFeatures.register(ID + ":super_botakoa_bees_0002", Feature.TREE,

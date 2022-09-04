@@ -15,5 +15,8 @@ public class StrippableInit {
 
         StrippableBlockRegistry.register(BlockInit.RASIORE_LOG, BlockInit.STRIPPED_RASIORE_LOG);
         StrippableBlockRegistry.register(BlockInit.RASIORE_WOOD, BlockInit.STRIPPED_RASIORE_WOOD);
+
+        StrippableBlockRegistry.register(BlockInit.DENTICIUS_LOG, BlockInit.STRIPPED_DENTICIUS_LOG);
+        StrippableBlockRegistry.register(BlockInit.DENTICIUS_WOOD, BlockInit.STRIPPED_DENTICIUS_WOOD);
     }
 }

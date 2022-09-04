@@ -1,10 +1,7 @@
 package net.dakotapride.boleatte.common.init;
 
 import net.dakotapride.boleatte.common.block.*;
-import net.dakotapride.boleatte.common.gen.ArbuneSaplingGenerator;
-import net.dakotapride.boleatte.common.gen.BotakoaSaplingGenerator;
-import net.dakotapride.boleatte.common.gen.ProtostermSaplingGenerator;
-import net.dakotapride.boleatte.common.gen.RasioreSaplingGenerator;
+import net.dakotapride.boleatte.common.gen.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -26,6 +23,7 @@ public class BlockInit {
     public static Block RASIORE_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
     public static Block PROTOSTERM_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
     public static Block ETTERAVE_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static Block DENTICIUS_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
     public static Block ORETESSE = new Block(FabricBlockSettings.copy(Blocks.STRIPPED_WARPED_HYPHAE).requiresTool());
 
     public static EtteraveBambooBlock ETTERAVE_BAMBOO = new EtteraveBambooBlock(FabricBlockSettings.of(Material.BAMBOO, MapColor.LAPIS_BLUE)
@@ -48,6 +46,8 @@ public class BlockInit {
     public static OreBlock REMENTIO_PAROMULINE_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE).requiresTool(),
             UniformIntProvider.create(3, 7));
     public static OreBlock REMENTIO_POUHGRIOD_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE).requiresTool(),
+            UniformIntProvider.create(3, 7));
+    public static OreBlock REMENTIO_GENGERODE_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE).requiresTool(),
             UniformIntProvider.create(3, 7));
 
     public static Block REMENTIO_IRON_ORE = new Block(FabricBlockSettings.copy(Blocks.IRON_ORE).requiresTool());
@@ -103,6 +103,15 @@ public class BlockInit {
     public static PillarBlock STRIPPED_RASIORE_WOOD = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD));
     public static Block RASIORE_PLANKS = new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS));
     public static RasioreLeavesBlock RASIORE_LEAVES = new RasioreLeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
+
+    public static DenticiusSaplingBlock DENTICIUS_SAPLING = new DenticiusSaplingBlock(new DenticiusSaplingGenerator(),
+            FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
+    public static PillarBlock DENTICIUS_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG));
+    public static PillarBlock STRIPPED_DENTICIUS_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG));
+    public static PillarBlock DENTICIUS_WOOD = new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_WOOD));
+    public static PillarBlock STRIPPED_DENTICIUS_WOOD = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD));
+    public static Block DENTICIUS_PLANKS = new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS));
+    public static LeavesBlock DENTICIUS_LEAVES = new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
 
     public static QuanallaBushBlock QUANALLA_BUSH = new QuanallaBushBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH).ticksRandomly().nonOpaque());
     public static LeavesBlock DEAD_LEAVES = new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES));
@@ -192,6 +201,21 @@ public class BlockInit {
         Registry.register(Registry.BLOCK, new Identifier(ID, "rasiore_planks"), RASIORE_PLANKS);
         Registry.register(Registry.ITEM, new Identifier(ID, "rasiore_planks"), new BlockItem(RASIORE_PLANKS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
+        Registry.register(Registry.BLOCK, new Identifier(ID, "denticius_sapling"), DENTICIUS_SAPLING);
+        Registry.register(Registry.ITEM, new Identifier(ID, "denticius_sapling"), new BlockItem(DENTICIUS_SAPLING, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "denticius_log"), DENTICIUS_LOG);
+        Registry.register(Registry.ITEM, new Identifier(ID, "denticius_log"), new BlockItem(DENTICIUS_LOG, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "denticius_leaves"), DENTICIUS_LEAVES);
+        Registry.register(Registry.ITEM, new Identifier(ID, "denticius_leaves"), new BlockItem(DENTICIUS_LEAVES, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "stripped_denticius_log"), STRIPPED_DENTICIUS_LOG);
+        Registry.register(Registry.ITEM, new Identifier(ID, "stripped_denticius_log"), new BlockItem(STRIPPED_DENTICIUS_LOG, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "denticius_wood"), DENTICIUS_WOOD);
+        Registry.register(Registry.ITEM, new Identifier(ID, "denticius_wood"), new BlockItem(DENTICIUS_WOOD, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "stripped_denticius_wood"), STRIPPED_DENTICIUS_WOOD);
+        Registry.register(Registry.ITEM, new Identifier(ID, "stripped_denticius_wood"), new BlockItem(STRIPPED_DENTICIUS_WOOD, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "denticius_planks"), DENTICIUS_PLANKS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "denticius_planks"), new BlockItem(DENTICIUS_PLANKS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+
         Registry.register(Registry.BLOCK, new Identifier(ID, "quanalla_bush"), QUANALLA_BUSH);
         Registry.register(Registry.BLOCK, new Identifier(ID, "dead_leaves"), DEAD_LEAVES);
         Registry.register(Registry.ITEM, new Identifier(ID, "dead_leaves"), new BlockItem(DEAD_LEAVES, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
@@ -207,6 +231,8 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "botakoa_rementio"), new BlockItem(BOTAKOA_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "protosterm_rementio"), PROTOSTERM_REMENTIO);
         Registry.register(Registry.ITEM, new Identifier(ID, "protosterm_rementio"), new BlockItem(PROTOSTERM_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "denticius_rementio"), DENTICIUS_REMENTIO);
+        Registry.register(Registry.ITEM, new Identifier(ID, "denticius_rementio"), new BlockItem(DENTICIUS_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "opafeu_ore"), REMENTIO_OPAFEU_ORE);
         Registry.register(Registry.ITEM, new Identifier(ID, "opafeu_ore"), new BlockItem(REMENTIO_OPAFEU_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
@@ -226,6 +252,8 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "paromuline_ore"), new BlockItem(REMENTIO_PAROMULINE_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "pouhgriod_ore"), REMENTIO_POUHGRIOD_ORE);
         Registry.register(Registry.ITEM, new Identifier(ID, "pouhgriod_ore"), new BlockItem(REMENTIO_POUHGRIOD_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "gengerode_ore"), REMENTIO_GENGERODE_ORE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "gengerode_ore"), new BlockItem(REMENTIO_GENGERODE_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "rementio_iron_ore"), REMENTIO_IRON_ORE);
         Registry.register(Registry.ITEM, new Identifier(ID, "rementio_iron_ore"), new BlockItem(REMENTIO_IRON_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));

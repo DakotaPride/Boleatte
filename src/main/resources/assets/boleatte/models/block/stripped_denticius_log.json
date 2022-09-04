@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "boleatte:block/stripped_denticius_log_top",
+    "side": "boleatte:block/stripped_denticius_log"
+  }
+}

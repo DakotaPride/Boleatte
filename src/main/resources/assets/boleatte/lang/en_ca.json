@@ -85,6 +85,14 @@
   "block.boleatte.rasiore_sapling": "Rasiore Sapling",
   "block.boleatte.rasiore_planks": "Rasiore Planks",
 
+  "block.boleatte.denticius_log": "Denticius Log",
+  "block.boleatte.stripped_denticius_log": "Stripped Denticius Log",
+  "block.boleatte.denticius_wood": "Denticius Wood",
+  "block.boleatte.stripped_denticius_wood": "Stripped Denticius Wood",
+  "block.boleatte.denticius_leaves": "Denticius Leaves",
+  "block.boleatte.denticius_sapling": "Denticius Sapling",
+  "block.boleatte.denticius_planks": "Denticius Planks",
+
   "block.boleatte.quanalla_bush": "Quanalla",
   "block.boleatte.dead_leaves": "Dead Leaves",
   "block.boleatte.sakalou_roots": "Sakalou",
@@ -102,6 +110,7 @@
   "block.boleatte.botakoa_rementio": "Botakoa Rementio",
   "block.boleatte.protosterm_rementio": "Protosterm Rementio",
   "block.boleatte.etterave_rementio": "Etterave Rementio",
+  "block.boleatte.denticius_rementio": "Denticius Rementio",
   "block.boleatte.opafeu_ore": "Opafeu Ore",
   "block.boleatte.kutunite_ore": "Kutunite Ore",
   "block.boleatte.nemoral_ore": "Nemoral Ore",
@@ -111,6 +120,7 @@
   "block.boleatte.geurine_ore": "Geurine Ore",
   "block.boleatte.paromuline_ore": "Paromuline Ore",
   "block.boleatte.pouhgriod_ore": "Pouhgriod Ore",
+  "block.boleatte.gengerode_ore": "Gengerode Ore",
   "block.boleatte.rementio_iron_ore": "Rementio Iron Ore",
   "block.boleatte.rementio_gold_ore": "Rementio Gold Ore",
   "block.boleatte.rementio_diamond_ore": "Rementio Diamond Ore",
@@ -131,6 +141,7 @@
   "item.boleatte.geurine": "Geurine",
   "item.boleatte.paromuline": "Paromuline",
   "item.boleatte.pouhgriod": "Pouhgriod",
+  "item.boleatte.gengerode": "Gengerode",
 
   "text.boleatte.dimatis.veret_trusting": "You have the Colourant Goddess' Favour",
   "text.boleatte.veret_favour.hunted_wild": "Verêt has favoured you today!",

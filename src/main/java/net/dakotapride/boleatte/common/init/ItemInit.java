@@ -66,6 +66,7 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(GEURINE_GEM));
                     itemStacks.add(new ItemStack(PAROMULINE_GEM));
                     itemStacks.add(new ItemStack(POUHGRIOD_GEM));
+                    itemStacks.add(new ItemStack(GENGERODE_GEM));
 
                     itemStacks.add(new ItemStack(DIMATIS));
                     itemStacks.add(new ItemStack(ARBUNE_DIMATIS));
@@ -90,6 +91,7 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_GEURINE_ORE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_PAROMULINE_ORE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_POUHGRIOD_ORE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.REMENTIO_GENGERODE_ORE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_IRON_ORE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_GOLD_ORE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_DIAMOND_ORE.asItem()));
@@ -102,22 +104,26 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_REMENTIO.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.RASIORE_REMENTIO.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.ETTERAVE_REMENTIO.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.DENTICIUS_REMENTIO.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.DEAD_LEAVES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_LEAVES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.BOTAKOA_LEAVES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_LEAVES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.RASIORE_LEAVES.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.DENTICIUS_LEAVES.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_SAPLING.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.BOTAKOA_SAPLING.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_SAPLING.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.RASIORE_SAPLING.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.DENTICIUS_SAPLING.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_PLANKS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.BOTAKOA_PLANKS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_PLANKS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.RASIORE_PLANKS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.DENTICIUS_PLANKS.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_LOG.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_WOOD.asItem()));
@@ -139,6 +145,11 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.STRIPPED_RASIORE_LOG.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.STRIPPED_RASIORE_WOOD.asItem()));
 
+                    itemStacks.add(new ItemStack(BlockInit.DENTICIUS_LOG.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.DENTICIUS_WOOD.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.STRIPPED_DENTICIUS_LOG.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.STRIPPED_DENTICIUS_WOOD.asItem()));
+
                     itemStacks.add(new ItemStack(BlockInit.VIOLES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.VETICOADE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.LEPHELUSA_VIOLES.asItem()));
@@ -156,6 +167,7 @@ public class ItemInit {
     public static Item GEURINE_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item PAROMULINE_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item POUHGRIOD_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
+    public static Item GENGERODE_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static FavourKeyItem CITADEL_FAVOUR = new FavourKeyItem(new FabricItemSettings());
     public static FavourKeyItem VERET_FAVOUR = new FavourKeyItem(new FabricItemSettings());
     public static FavourKeyItem ORITEM_FAVOUR = new FavourKeyItem(new FabricItemSettings());
@@ -257,6 +269,7 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "geurine"), GEURINE_GEM);
         Registry.register(Registry.ITEM, new Identifier(ID, "paromuline"), PAROMULINE_GEM);
         Registry.register(Registry.ITEM, new Identifier(ID, "pouhgriod"), POUHGRIOD_GEM);
+        Registry.register(Registry.ITEM, new Identifier(ID, "gengerode"), GENGERODE_GEM);
 
         Registry.register(Registry.ITEM, new Identifier(ID, "citadel_favour"), CITADEL_FAVOUR);
         Registry.register(Registry.ITEM, new Identifier(ID, "veret_favour"), VERET_FAVOUR);

@@ -18,14 +18,14 @@ public class DamageSourcesInit extends DamageSource {
         return this;
     }
 
-    protected DamageSourcesInit setUnblockable() {
+    public DamageSourcesInit setUnblockable() {
         this.unblockable = true;
 
         this.exhaustion = 0.0F;
         return this;
     }
 
-    protected DamageSourcesInit setBypassesArmor() {
+    public DamageSourcesInit setBypassesArmor() {
         this.bypassesArmor = true;
         float exhaustion = 0.0F;
         return this;

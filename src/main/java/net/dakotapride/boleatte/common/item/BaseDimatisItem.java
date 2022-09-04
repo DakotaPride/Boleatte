@@ -15,32 +15,32 @@ public class BaseDimatisItem extends Item {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        if (user.getMainHandStack().isOf(ItemInit.DIMATIS) && user.getOffHandStack().isOf(ItemInit.OPAFEU_GEM)) {
+        if (user.getOffHandStack().isOf(ItemInit.DIMATIS) && user.getMainHandStack().isOf(ItemInit.OPAFEU_GEM)) {
             user.getMainHandStack().decrement(1);
             user.getOffHandStack().decrement(1);
 
             user.giveItemStack(new ItemStack(ItemInit.ARBUNE_DIMATIS));
-        } else if (user.getMainHandStack().isOf(ItemInit.DIMATIS) && user.getOffHandStack().isOf(ItemInit.LATZECK_GEM)) {
+        } else if (user.getOffHandStack().isOf(ItemInit.DIMATIS) && user.getMainHandStack().isOf(ItemInit.LATZECK_GEM)) {
             user.getMainHandStack().decrement(1);
             user.getOffHandStack().decrement(1);
 
             user.giveItemStack(new ItemStack(ItemInit.BOTAKOA_DIMATIS));
-        } else if (user.getMainHandStack().isOf(ItemInit.DIMATIS) && user.getOffHandStack().isOf(ItemInit.KUTUNITE_GEM)) {
+        } else if (user.getOffHandStack().isOf(ItemInit.DIMATIS) && user.getMainHandStack().isOf(ItemInit.KUTUNITE_GEM)) {
             user.getMainHandStack().decrement(1);
             user.getOffHandStack().decrement(1);
 
             user.giveItemStack(new ItemStack(ItemInit.BABURBEN_DIMATIS));
-        } else if (user.getMainHandStack().isOf(ItemInit.DIMATIS) && user.getOffHandStack().isOf(ItemInit.NEMORAL_GEM)) {
+        } else if (user.getOffHandStack().isOf(ItemInit.DIMATIS) && user.getMainHandStack().isOf(ItemInit.NEMORAL_GEM)) {
             user.getMainHandStack().decrement(1);
             user.getOffHandStack().decrement(1);
 
             user.giveItemStack(new ItemStack(ItemInit.PROTOSTERM_DIMATIS));
-        } else if (user.getMainHandStack().isOf(ItemInit.DIMATIS) && user.getOffHandStack().isOf(ItemInit.CINTONIUM_GEM)) {
+        } else if (user.getOffHandStack().isOf(ItemInit.DIMATIS) && user.getMainHandStack().isOf(ItemInit.CINTONIUM_GEM)) {
             user.getMainHandStack().decrement(1);
             user.getOffHandStack().decrement(1);
 
             user.giveItemStack(new ItemStack(ItemInit.QUANTILA_DIMATIS));
-        } else if (user.getMainHandStack().isOf(ItemInit.DIMATIS) && user.getOffHandStack().isOf(ItemInit.LEPOSIATE_GEM)) {
+        } else if (user.getOffHandStack().isOf(ItemInit.DIMATIS) && user.getMainHandStack().isOf(ItemInit.LEPOSIATE_GEM)) {
             user.getMainHandStack().decrement(1);
             user.getOffHandStack().decrement(1);
 

@@ -1,8 +1,6 @@
 package net.dakotapride.boleatte.common.init;
 
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
@@ -17,9 +15,9 @@ public class DimensionInit {
     public static void init() {
         CustomPortalBuilder.beginPortal()
                 .frameBlock(BlockInit.ORETESSE)
-                .destDimID(BOLEATTE_DIMENSION_KEY.getValue())
-                .tintColor(45, 79, 195)
                 .lightWithItem(ItemInit.DIMATIS)
+                .destDimID(BOLEATTE_DIMENSION_KEY.getValue())
+                .tintColor(211, 255, 239)
                 .onlyLightInOverworld()
                 .registerPortal();
     }
