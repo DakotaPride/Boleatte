@@ -47,6 +47,7 @@ public class FoodComponentInit {
     public static final FoodComponent PYETSIT_SUBSTANCE = new FoodComponent.Builder().hunger(6).saturationModifier(0.8F).build();
     public static final FoodComponent SATALUK_SUBSTANCE = new FoodComponent.Builder().hunger(6).saturationModifier(0.8F).build();
     public static final FoodComponent ETTERAVE_BAMBOO = new FoodComponent.Builder().hunger(3).saturationModifier(0.4F).build();
+    public static final FoodComponent CENTILOPIK = new FoodComponent.Builder().hunger(5).saturationModifier(0.6F).build();
     public static final FoodComponent QUESTEAR = new FoodComponent.Builder().hunger(4).saturationModifier(0.6F).build();
     public static final FoodComponent MELKIRSCH_PIE = new FoodComponent.Builder().hunger(8).saturationModifier(0.6F).build();
     public static final FoodComponent ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(7).saturationModifier(0.8F).build();

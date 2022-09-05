@@ -58,13 +58,13 @@
           "parameters": {
             "temperature": [-1, 1],
             "humidity": [-1, 1],
-            "continentalness": [-1.2, -1.05],
+            "continentalness": [-0.55, 0.06],
             "erosion": [-1, 1],
             "weirdness": [-1, 1],
             "depth": 0,
             "offset": 0
           },
-          "biome": "boleatte:denticius_islands"
+          "biome": "boleatte:open_denticius_forest"
         },
         {
           "parameters": {

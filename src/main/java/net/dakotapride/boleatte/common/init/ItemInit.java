@@ -41,6 +41,7 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(MELKIRSCH_PIE));
                     itemStacks.add(new ItemStack(ETTERAVE_BAMBOO));
                     itemStacks.add(new ItemStack(QUESTEAR));
+                    itemStacks.add(new ItemStack(CENTILOPIK));
                     itemStacks.add(new ItemStack(ALPHIAGOU));
                     itemStacks.add(new ItemStack(PERFERVID_ALPHIAGOU));
                     itemStacks.add(new ItemStack(GHOST_ALPHIAGOU));
@@ -112,6 +113,7 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_LEAVES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.RASIORE_LEAVES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.DENTICIUS_LEAVES.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.BLOOMING_DENTICIUS_LEAVES.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_SAPLING.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.BOTAKOA_SAPLING.asItem()));
@@ -212,6 +214,7 @@ public class ItemInit {
     public static FilledBottleItem SATALUK_SUBSTANCE = new FilledBottleItem(new FabricItemSettings().food(FoodComponentInit.SATALUK_SUBSTANCE).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem MELKIRSCH_PIE = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.MELKIRSCH_PIE).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticBlockItem ETTERAVE_BAMBOO = new AscunauticBlockItem(BlockInit.ETTERAVE_BAMBOO, new FabricItemSettings().food(FoodComponentInit.ETTERAVE_BAMBOO).group(BoleatteItemGroup.BOLEATTE));
+    public static AscunauticItem CENTILOPIK = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.CENTILOPIK).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem QUESTEAR = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.QUESTEAR).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem LEPHELUSA_STEW = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.LEPHELUSA_STEW).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
@@ -238,6 +241,7 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "melkirsch_pie"), MELKIRSCH_PIE);
         Registry.register(Registry.ITEM, new Identifier(ID, "etterave_bamboo"), ETTERAVE_BAMBOO);
         Registry.register(Registry.ITEM, new Identifier(ID, "questear"), QUESTEAR);
+        Registry.register(Registry.ITEM, new Identifier(ID, "centilopik"), CENTILOPIK);
         Registry.register(Registry.ITEM, new Identifier(ID, "alphiagou"), ALPHIAGOU);
         Registry.register(Registry.ITEM, new Identifier(ID, "perfervid_alphiagou"), PERFERVID_ALPHIAGOU);
         Registry.register(Registry.ITEM, new Identifier(ID, "ghost_alphiagou"), GHOST_ALPHIAGOU);

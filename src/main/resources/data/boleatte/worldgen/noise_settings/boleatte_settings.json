@@ -647,7 +647,7 @@
           "type": "minecraft:biome",
           "biome_is": [
             "boleatte:denticius_forest",
-            "boleatte:denticius_islands"
+            "boleatte:open_denticius_forest"
           ]
         },
         "then_run": {
@@ -750,7 +750,7 @@
             "boleatte:etterave_hills",
             "boleatte:etterave_forest",
             "boleatte:denticius_forest",
-            "boleatte:denticius_islands"
+            "boleatte:open_denticius_forest"
           ]
         },
         "then_run": {
@@ -847,7 +847,7 @@
                     "type": "minecraft:biome",
                     "biome_is": [
                       "boleatte:denticius_forest",
-                      "boleatte:denticius_islands"
+                      "boleatte:open_denticius_forest"
                     ]
                   },
                   "then_run": {

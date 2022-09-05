@@ -112,6 +112,7 @@ public class BlockInit {
     public static PillarBlock STRIPPED_DENTICIUS_WOOD = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD));
     public static Block DENTICIUS_PLANKS = new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS));
     public static LeavesBlock DENTICIUS_LEAVES = new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
+    public static Block BLOOMING_DENTICIUS_LEAVES = new Block(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
 
     public static QuanallaBushBlock QUANALLA_BUSH = new QuanallaBushBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH).ticksRandomly().nonOpaque());
     public static LeavesBlock DEAD_LEAVES = new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES));
@@ -215,6 +216,8 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "stripped_denticius_wood"), new BlockItem(STRIPPED_DENTICIUS_WOOD, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "denticius_planks"), DENTICIUS_PLANKS);
         Registry.register(Registry.ITEM, new Identifier(ID, "denticius_planks"), new BlockItem(DENTICIUS_PLANKS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "blooming_denticius_leaves"), BLOOMING_DENTICIUS_LEAVES);
+        Registry.register(Registry.ITEM, new Identifier(ID, "blooming_denticius_leaves"), new BlockItem(BLOOMING_DENTICIUS_LEAVES, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "quanalla_bush"), QUANALLA_BUSH);
         Registry.register(Registry.BLOCK, new Identifier(ID, "dead_leaves"), DEAD_LEAVES);
