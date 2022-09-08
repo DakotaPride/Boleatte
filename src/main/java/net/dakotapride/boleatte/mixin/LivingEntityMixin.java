@@ -1,26 +1,24 @@
 package net.dakotapride.boleatte.mixin;
 
 import net.dakotapride.boleatte.common.init.EffectInit;
+import net.dakotapride.boleatte.common.init.TagInit;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.potion.PotionUtil;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import java.util.Collection;
-import java.util.Map;
 import java.util.Objects;
-
-import static net.minecraft.entity.LivingEntity.containsOnlyAmbientEffects;
 
 @Mixin(LivingEntity.class)
 public abstract class LivingEntityMixin extends Entity {
@@ -29,6 +27,38 @@ public abstract class LivingEntityMixin extends Entity {
     public LivingEntityMixin(EntityType<?> type, World world) {
         super(type, world);
     }
+
+    @Inject(method = "tryUseTotem", at = @At("HEAD"), cancellable = true)
+    private void tryUseTotem(DamageSource source, CallbackInfoReturnable<Boolean> cir) {
+        if (source.isOutOfWorld()) {
+            cir.setReturnValue(false);
+        } else {
+            ItemStack itemStack = null;
+            Hand[] var4 = Hand.values();
+
+            for (Hand hand : var4) {
+                ItemStack itemStack2 = livingEntity.getStackInHand(hand);
+                if (itemStack2.isIn(TagInit.IS_EIDOLON)) {
+                    itemStack = itemStack2.copy();
+                    itemStack2.decrement(1);
+                    break;
+                }
+            }
+
+            if (itemStack != null) {
+
+                livingEntity.setHealth(1.0F);
+                livingEntity.clearStatusEffects();
+                livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 900, 1));
+                livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 100, 1));
+                livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 800, 0));
+                this.world.sendEntityStatus(this, (byte)35);
+            }
+
+            cir.setReturnValue(itemStack != null);
+        }
+    }
+
 
     @Inject(method = "updatePotionVisibility", at = @At("TAIL"))
     protected void activateShadowOfGelidity(CallbackInfo ci) {

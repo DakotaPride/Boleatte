@@ -1,11 +1,8 @@
 {
-  "type": "block_pile",
+  "type": "minecraft:forest_rock",
   "config": {
-    "state_provider": {
-      "type": "simple_state_provider",
-      "state": {
-        "Name": "boleatte:blooming_denticius_leaves"
-      }
+    "state": {
+      "Name": "boleatte:blooming_denticius_leaves"
     }
   }
 }

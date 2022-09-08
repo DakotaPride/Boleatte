@@ -170,14 +170,13 @@ public class ItemInit {
     public static Item PAROMULINE_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item POUHGRIOD_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item GENGERODE_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
-    public static FavourKeyItem CITADEL_FAVOUR = new FavourKeyItem(new FabricItemSettings());
-    public static FavourKeyItem VERET_FAVOUR = new FavourKeyItem(new FabricItemSettings());
-    public static FavourKeyItem ORITEM_FAVOUR = new FavourKeyItem(new FabricItemSettings());
-    public static FavourKeyItem BEUSERE_FAVOUR = new FavourKeyItem(new FabricItemSettings());
-    public static FavourKeyItem LAIDE_FAVOUR = new FavourKeyItem(new FabricItemSettings());
-    public static FavourKeyItem STERRES_FAVOUR = new FavourKeyItem(new FabricItemSettings());
-    public static FavourKeyItem GELA_FAVOUR = new FavourKeyItem(new FabricItemSettings());
-    public static Item GEURINE_FAVOUR_MOLD = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
+    public static EidolonItem CITADEL_EIDOLON = new EidolonItem(new FabricItemSettings());
+    public static EidolonItem VERET_EIDOLON = new EidolonItem(new FabricItemSettings());
+    public static EidolonItem ORITEM_EIDOLON = new EidolonItem(new FabricItemSettings());
+    public static EidolonItem BEUSERE_EIDOLON = new EidolonItem(new FabricItemSettings());
+    public static EidolonItem LAIDE_EIDOLON = new EidolonItem(new FabricItemSettings());
+    public static EidolonItem STERRES_EIDOLON = new EidolonItem(new FabricItemSettings());
+    public static EidolonItem GELA_EIDOLON = new EidolonItem(new FabricItemSettings());
     public static BaseDimatisItem DIMATIS = new BaseDimatisItem(new FabricItemSettings().maxCount(1).group(BoleatteItemGroup.BOLEATTE));
     public static DimatisItem ARBUNE_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
     public static DimatisItem BABURBEN_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
@@ -275,13 +274,12 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "pouhgriod"), POUHGRIOD_GEM);
         Registry.register(Registry.ITEM, new Identifier(ID, "gengerode"), GENGERODE_GEM);
 
-        Registry.register(Registry.ITEM, new Identifier(ID, "citadel_favour"), CITADEL_FAVOUR);
-        Registry.register(Registry.ITEM, new Identifier(ID, "veret_favour"), VERET_FAVOUR);
-        Registry.register(Registry.ITEM, new Identifier(ID, "oritem_favour"), ORITEM_FAVOUR);
-        Registry.register(Registry.ITEM, new Identifier(ID, "beusere_favour"), BEUSERE_FAVOUR);
-        Registry.register(Registry.ITEM, new Identifier(ID, "laide_favour"), LAIDE_FAVOUR);
-        Registry.register(Registry.ITEM, new Identifier(ID, "sterres_favour"), STERRES_FAVOUR);
-        Registry.register(Registry.ITEM, new Identifier(ID, "gela_favour"), GELA_FAVOUR);
-        Registry.register(Registry.ITEM, new Identifier(ID, "geurine_favour_mold"), GEURINE_FAVOUR_MOLD);
+        Registry.register(Registry.ITEM, new Identifier(ID, "citadel_eidolon"), CITADEL_EIDOLON);
+        Registry.register(Registry.ITEM, new Identifier(ID, "veret_eidolon"), VERET_EIDOLON);
+        Registry.register(Registry.ITEM, new Identifier(ID, "oritem_eidolon"), ORITEM_EIDOLON);
+        Registry.register(Registry.ITEM, new Identifier(ID, "beusere_eidolon"), BEUSERE_EIDOLON);
+        Registry.register(Registry.ITEM, new Identifier(ID, "laide_eidolon"), LAIDE_EIDOLON);
+        Registry.register(Registry.ITEM, new Identifier(ID, "sterres_eidolon"), STERRES_EIDOLON);
+        Registry.register(Registry.ITEM, new Identifier(ID, "gela_eidolon"), GELA_EIDOLON);
     }
 }

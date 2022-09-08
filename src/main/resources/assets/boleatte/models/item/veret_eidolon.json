@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "boleatte:item/oritem_favour"
+    "layer0": "boleatte:item/veret_eidolon"
   }
 }
