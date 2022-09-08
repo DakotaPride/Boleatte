@@ -24,7 +24,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 
     @Inject(method = "tick", at = @At("TAIL"))
     private void tick(CallbackInfo ci) {
-        if (!(playerEntity.getOffHandStack().isIn(TagInit.ACCEPTABLE_DIMATIS))
+        if (!(playerEntity.getOffHandStack().isIn(TagInit.SAFE_BOLEATTE))
                 && (playerEntity.world.getRegistryKey().getValue().equals(BOLEATTE))) {
                 playerEntity.damage(DamageSourcesInit.VIRULENT, 1.0F);
         }

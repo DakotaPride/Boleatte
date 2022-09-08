@@ -52,7 +52,7 @@ public abstract class LivingEntityMixin extends Entity {
                 livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 900, 1));
                 livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 100, 1));
                 livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 800, 0));
-                this.world.sendEntityStatus(this, (byte)35);
+                this.world.sendEntityStatus(this, (byte)105);
             }
 
             cir.setReturnValue(itemStack != null);
