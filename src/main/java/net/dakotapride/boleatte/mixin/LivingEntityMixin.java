@@ -40,12 +40,10 @@ public abstract class LivingEntityMixin extends Entity {
                 ItemStack itemStack2 = livingEntity.getStackInHand(hand);
                 if (itemStack2.isIn(TagInit.IS_EIDOLON)) {
                     itemStack = itemStack2.copy();
-                    itemStack2.decrement(1);
+                    itemStack2.damage(1, livingEntity, p -> p.sendToolBreakStatus(hand));
                     break;
                 }
             }
-
-            if (itemStack != null) {
 
                 livingEntity.setHealth(1.0F);
                 livingEntity.clearStatusEffects();
@@ -53,7 +51,6 @@ public abstract class LivingEntityMixin extends Entity {
                 livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 100, 1));
                 livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 800, 0));
                 this.world.sendEntityStatus(this, (byte)105);
-            }
 
             cir.setReturnValue(itemStack != null);
         }

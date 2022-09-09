@@ -12,6 +12,14 @@
   "item.boleatte.beusere_eidolon": "Beusère Eidolon",
   "item.boleatte.laide_eidolon": "Laide Eidolon",
 
+  "item.boleatte.veret_staff": "Verêt's Staff",
+  "item.boleatte.sterres_axe": "Stérres's Axe",
+  "item.boleatte.oritem_axe": "Oritem's Axe",
+  "item.boleatte.gela_staff": "Gelà's Staff",
+  "item.boleatte.beusere_sword": "Beusère's Sword",
+  "item.boleatte.laide_sword": "Laide's Sword",
+  "text.boleatte.eidolon_usage": "Be careful there, you are messing with powers that are beyond your comprehension...",
+
   "item.boleatte.quanalla": "Quanalla",
   "item.boleatte.basolote": "Basolote",
   "item.boleatte.ramukai": "Ramukai",
@@ -143,6 +151,7 @@
   "item.boleatte.paromuline": "Paromuline",
   "item.boleatte.pouhgriod": "Pouhgriod",
   "item.boleatte.gengerode": "Gengerode",
+  "item.boleatte.cogemmes": "Cogemmes",
 
   "text.boleatte.dimatis.veret_trusting": "You have the Colourant Goddess' Favour",
   "text.boleatte.veret_favour.hunted_wild": "Verêt has favoured you today!",

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "boleatte_god_weapons",
+  "pattern": [
+    " XA",
+    " #X",
+    "#  "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "boleatte:leposiate"
+    },
+    "A": {
+      "item": "boleatte:cogemmes"
+    }
+  },
+  "result": {
+    "item": "boleatte:gela_staff"
+  }
+}

@@ -6,10 +6,7 @@ import net.dakotapride.boleatte.common.item.alphiagou.GhostAlphiagouItem;
 import net.dakotapride.boleatte.common.item.alphiagou.PerfervidAlphiagouItem;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -68,6 +65,22 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(PAROMULINE_GEM));
                     itemStacks.add(new ItemStack(POUHGRIOD_GEM));
                     itemStacks.add(new ItemStack(GENGERODE_GEM));
+                    itemStacks.add(new ItemStack(COGEMMES));
+
+                    itemStacks.add(new ItemStack(VERET_EIDOLON));
+                    itemStacks.add(new ItemStack(LAIDE_EIDOLON));
+                    itemStacks.add(new ItemStack(BEUSERE_EIDOLON));
+                    itemStacks.add(new ItemStack(ORITEM_EIDOLON));
+                    itemStacks.add(new ItemStack(STERRES_EIDOLON));
+                    itemStacks.add(new ItemStack(GELA_EIDOLON));
+                    itemStacks.add(new ItemStack(CITADEL_EIDOLON));
+
+                    itemStacks.add(new ItemStack(STAFF_VERET));
+                    itemStacks.add(new ItemStack(SWORD_LAIDE));
+                    itemStacks.add(new ItemStack(SWORD_BEUSERE));
+                    itemStacks.add(new ItemStack(AXE_ORITEM));
+                    itemStacks.add(new ItemStack(AXE_STERRES));
+                    itemStacks.add(new ItemStack(STAFF_GELA));
 
                     itemStacks.add(new ItemStack(DIMATIS));
                     itemStacks.add(new ItemStack(ARBUNE_DIMATIS));
@@ -170,13 +183,20 @@ public class ItemInit {
     public static Item PAROMULINE_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item POUHGRIOD_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
     public static Item GENGERODE_GEM = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
-    public static EidolonItem CITADEL_EIDOLON = new EidolonItem(new FabricItemSettings());
-    public static EidolonItem VERET_EIDOLON = new EidolonItem(new FabricItemSettings());
-    public static EidolonItem ORITEM_EIDOLON = new EidolonItem(new FabricItemSettings());
-    public static EidolonItem BEUSERE_EIDOLON = new EidolonItem(new FabricItemSettings());
-    public static EidolonItem LAIDE_EIDOLON = new EidolonItem(new FabricItemSettings());
-    public static EidolonItem STERRES_EIDOLON = new EidolonItem(new FabricItemSettings());
-    public static EidolonItem GELA_EIDOLON = new EidolonItem(new FabricItemSettings());
+    public static Item COGEMMES = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
+    public static EidolonItem CITADEL_EIDOLON = new EidolonItem(new FabricItemSettings().maxDamage(105).group(BoleatteItemGroup.BOLEATTE));
+    public static Item VERET_EIDOLON = new Item(new FabricItemSettings().maxDamage(65).group(BoleatteItemGroup.BOLEATTE));
+    public static Item ORITEM_EIDOLON = new Item(new FabricItemSettings().maxDamage(65).group(BoleatteItemGroup.BOLEATTE));
+    public static Item BEUSERE_EIDOLON = new Item(new FabricItemSettings().maxDamage(65).group(BoleatteItemGroup.BOLEATTE));
+    public static Item LAIDE_EIDOLON = new Item(new FabricItemSettings().maxDamage(65).group(BoleatteItemGroup.BOLEATTE));
+    public static Item STERRES_EIDOLON = new Item(new FabricItemSettings().maxDamage(65).group(BoleatteItemGroup.BOLEATTE));
+    public static Item GELA_EIDOLON = new Item(new FabricItemSettings().maxDamage(65).group(BoleatteItemGroup.BOLEATTE));
+    public static StaffItem STAFF_VERET = new StaffItem(ToolMaterials.NETHERITE, 6, -2.4F, new FabricItemSettings().maxDamage(786).group(BoleatteItemGroup.BOLEATTE));
+    public static AxeItem AXE_ORITEM = new AxeItem(ToolMaterials.NETHERITE, 7, -3.2F, new FabricItemSettings().maxDamage(814).group(BoleatteItemGroup.BOLEATTE));
+    public static SwordItem SWORD_BEUSERE = new SwordItem(ToolMaterials.NETHERITE, 7, -2.7F, new FabricItemSettings().maxDamage(803).group(BoleatteItemGroup.BOLEATTE));
+    public static SwordItem SWORD_LAIDE = new SwordItem(ToolMaterials.NETHERITE, 7, -2.7F, new FabricItemSettings().maxDamage(803).group(BoleatteItemGroup.BOLEATTE));
+    public static AxeItem AXE_STERRES = new AxeItem(ToolMaterials.NETHERITE, 7, -3.2F, new FabricItemSettings().maxDamage(814).group(BoleatteItemGroup.BOLEATTE));
+    public static StaffItem STAFF_GELA = new StaffItem(ToolMaterials.NETHERITE, 6, -2.4F, new FabricItemSettings().maxDamage(786).group(BoleatteItemGroup.BOLEATTE));
     public static BaseDimatisItem DIMATIS = new BaseDimatisItem(new FabricItemSettings().maxCount(1).group(BoleatteItemGroup.BOLEATTE));
     public static DimatisItem ARBUNE_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
     public static DimatisItem BABURBEN_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
@@ -273,6 +293,7 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "paromuline"), PAROMULINE_GEM);
         Registry.register(Registry.ITEM, new Identifier(ID, "pouhgriod"), POUHGRIOD_GEM);
         Registry.register(Registry.ITEM, new Identifier(ID, "gengerode"), GENGERODE_GEM);
+        Registry.register(Registry.ITEM, new Identifier(ID, "cogemmes"), COGEMMES);
 
         Registry.register(Registry.ITEM, new Identifier(ID, "citadel_eidolon"), CITADEL_EIDOLON);
         Registry.register(Registry.ITEM, new Identifier(ID, "veret_eidolon"), VERET_EIDOLON);
@@ -281,5 +302,12 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "laide_eidolon"), LAIDE_EIDOLON);
         Registry.register(Registry.ITEM, new Identifier(ID, "sterres_eidolon"), STERRES_EIDOLON);
         Registry.register(Registry.ITEM, new Identifier(ID, "gela_eidolon"), GELA_EIDOLON);
+
+        Registry.register(Registry.ITEM, new Identifier(ID, "veret_staff"), STAFF_VERET);
+        Registry.register(Registry.ITEM, new Identifier(ID, "oritem_axe"), AXE_ORITEM);
+        Registry.register(Registry.ITEM, new Identifier(ID, "beusere_sword"), SWORD_BEUSERE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "laide_sword"), SWORD_LAIDE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "sterres_axe"), AXE_STERRES);
+        Registry.register(Registry.ITEM, new Identifier(ID, "gela_staff"), STAFF_GELA);
     }
 }

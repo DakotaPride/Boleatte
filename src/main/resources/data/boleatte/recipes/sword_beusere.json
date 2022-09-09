@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "boleatte_god_weapons",
+  "pattern": [
+    "X",
+    "A",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "boleatte:latzeck"
+    },
+    "A": {
+      "item": "boleatte:cogemmes"
+    }
+  },
+  "result": {
+    "item": "boleatte:beusere_sword"
+  }
+}

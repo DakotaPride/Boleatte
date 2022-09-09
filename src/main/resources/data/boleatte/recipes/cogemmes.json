@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A#F",
+    "R#T",
+    "X#Z"
+  ],
+  "key": {
+    "#": {
+      "item": "boleatte:gengerode"
+    },
+    "A": {
+      "item": "boleatte:cintonium"
+    },
+    "F": {
+      "item": "boleatte:latzeck"
+    },
+    "R": {
+      "item": "boleatte:leposiate"
+    },
+    "T": {
+      "item": "boleatte:opafeu"
+    },
+    "X": {
+      "item": "boleatte:nemoral"
+    },
+    "Z": {
+      "item": "boleatte:kutunite"
+    }
+  },
+  "result": {
+    "item": "boleatte:cogemmes"
+  }
+}

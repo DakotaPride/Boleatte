@@ -5,7 +5,6 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayNetworkHandler;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.NetworkThreadUtils;
@@ -104,44 +103,23 @@ public class ClientPlayNetworkHandlerMixin {
     private void onEntityStatus(EntityStatusS2CPacket packet, CallbackInfo ci) {
         NetworkThreadUtils.forceMainThread(packet, clientPlayNetworkHandler, this.client);
         Entity entity = packet.getEntity(this.world);
-        if (entity instanceof LivingEntity livingEntity) {
-            Hand hand = livingEntity.getActiveHand();
+        if (entity != null) {
             if (packet.getStatus() == 105) {
-                if (livingEntity.getStackInHand(hand).isOf(ItemInit.VERET_EIDOLON)) {
-                    this.world.playSound(entity.getX(), entity.getY(), entity.getZ(), SoundEvents.ITEM_TOTEM_USE, entity.getSoundCategory(), 3.0F, 1.5F, false);
-                    if (entity == this.client.player) {
-                        this.client.gameRenderer.showFloatingItem(isActiveVeretEidolon(this.client.player));
-                    }
-                } else if (livingEntity.getStackInHand(hand).isOf(ItemInit.ORITEM_EIDOLON)) {
-                    this.world.playSound(entity.getX(), entity.getY(), entity.getZ(), SoundEvents.ITEM_TOTEM_USE, entity.getSoundCategory(), 3.0F, 1.5F, false);
-                    if (entity == this.client.player) {
-                        this.client.gameRenderer.showFloatingItem(isActiveOritemEidolon(this.client.player));
-                    }
-                } else if (livingEntity.getStackInHand(hand).isOf(ItemInit.GELA_EIDOLON)) {
-                    this.world.playSound(entity.getX(), entity.getY(), entity.getZ(), SoundEvents.ITEM_TOTEM_USE, entity.getSoundCategory(), 3.0F, 1.5F, false);
-                    if (entity == this.client.player) {
-                        this.client.gameRenderer.showFloatingItem(isActiveGelaEidolon(this.client.player));
-                    }
-                } else if (livingEntity.getStackInHand(hand).isOf(ItemInit.BEUSERE_EIDOLON)) {
-                    this.world.playSound(entity.getX(), entity.getY(), entity.getZ(), SoundEvents.ITEM_TOTEM_USE, entity.getSoundCategory(), 3.0F, 1.5F, false);
-                    if (entity == this.client.player) {
-                        this.client.gameRenderer.showFloatingItem(isActiveBeusereEidolon(this.client.player));
-                    }
-                } else if (livingEntity.getStackInHand(hand).isOf(ItemInit.STERRES_EIDOLON)) {
-                    this.world.playSound(entity.getX(), entity.getY(), entity.getZ(), SoundEvents.ITEM_TOTEM_USE, entity.getSoundCategory(), 3.0F, 1.5F, false);
-                    if (entity == this.client.player) {
-                        this.client.gameRenderer.showFloatingItem(isActiveSterresEidolon(this.client.player));
-                    }
-                } else if (livingEntity.getStackInHand(hand).isOf(ItemInit.LAIDE_EIDOLON)) {
-                    this.world.playSound(entity.getX(), entity.getY(), entity.getZ(), SoundEvents.ITEM_TOTEM_USE, entity.getSoundCategory(), 3.0F, 1.5F, false);
-                    if (entity == this.client.player) {
-                        this.client.gameRenderer.showFloatingItem(isActiveLaideEidolon(this.client.player));
-                    }
-                } else if (livingEntity.getStackInHand(hand).isOf(ItemInit.CITADEL_EIDOLON)) {
-                    this.world.playSound(entity.getX(), entity.getY(), entity.getZ(), SoundEvents.ITEM_TOTEM_USE, entity.getSoundCategory(), 3.0F, 1.5F, false);
-                    if (entity == this.client.player) {
-                        this.client.gameRenderer.showFloatingItem(isActiveCitadelEidolon(this.client.player));
-                    }
+                this.world.playSound(entity.getX(), entity.getY(), entity.getZ(), SoundEvents.ITEM_TOTEM_USE, entity.getSoundCategory(), 3.0F, 1.5F, false);
+                if (entity == this.client.player && this.client.player.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.VERET_EIDOLON)) {
+                    this.client.gameRenderer.showFloatingItem(isActiveVeretEidolon(this.client.player));
+                } else if (entity == this.client.player && this.client.player.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.ORITEM_EIDOLON)) {
+                    this.client.gameRenderer.showFloatingItem(isActiveOritemEidolon(this.client.player));
+                } else if (entity == this.client.player && this.client.player.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.LAIDE_EIDOLON)) {
+                    this.client.gameRenderer.showFloatingItem(isActiveLaideEidolon(this.client.player));
+                } else if (entity == this.client.player && this.client.player.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.GELA_EIDOLON)) {
+                    this.client.gameRenderer.showFloatingItem(isActiveGelaEidolon(this.client.player));
+                } else if (entity == this.client.player && this.client.player.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.BEUSERE_EIDOLON)) {
+                    this.client.gameRenderer.showFloatingItem(isActiveBeusereEidolon(this.client.player));
+                } else if (entity == this.client.player && this.client.player.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.STERRES_EIDOLON)) {
+                    this.client.gameRenderer.showFloatingItem(isActiveSterresEidolon(this.client.player));
+                } else if (entity == this.client.player && this.client.player.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.CITADEL_EIDOLON)) {
+                    this.client.gameRenderer.showFloatingItem(isActiveCitadelEidolon(this.client.player));
                 }
             }
         }

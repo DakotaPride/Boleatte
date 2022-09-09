@@ -34,26 +34,14 @@ public class EidolonItem extends AscunauticItem implements Eidolon {
                 } else if (randomValue < 10) {
                     user.dropStack(ItemInit.LAIDE_EIDOLON.getDefaultStack());
                 }
-            } else if (user.getStackInHand(Hand.MAIN_HAND).isOf(ItemInit.STERRES_EIDOLON)) {
-                user.dropStack(ItemInit.CINTONIUM_GEM.getDefaultStack());
-            } else if (user.getStackInHand(Hand.MAIN_HAND).isOf(ItemInit.VERET_EIDOLON)) {
-                user.dropStack(ItemInit.OPAFEU_GEM.getDefaultStack());
-            } else if (user.getStackInHand(Hand.MAIN_HAND).isOf(ItemInit.ORITEM_EIDOLON)) {
-                user.dropStack(ItemInit.NEMORAL_GEM.getDefaultStack());
-            } else if (user.getStackInHand(Hand.MAIN_HAND).isOf(ItemInit.GELA_EIDOLON)) {
-                user.dropStack(ItemInit.LEPOSIATE_GEM.getDefaultStack());
-            } else if (user.getStackInHand(Hand.MAIN_HAND).isOf(ItemInit.BEUSERE_EIDOLON)) {
-                user.dropStack(ItemInit.LATZECK_GEM.getDefaultStack());
-            } else if (user.getStackInHand(Hand.MAIN_HAND).isOf(ItemInit.LAIDE_EIDOLON)) {
-                user.dropStack(ItemInit.KUTUNITE_GEM.getDefaultStack());
-            }
 
-            user.getStackInHand(Hand.MAIN_HAND).decrement(1);
-            for(int i = 0; i < 360; i++) {
-                if (i % 20 == 0) {
-                    world.addParticle(ParticleTypes.SOUL,
-                            pos.getX() + 0.5d, pos.getY() + 1, pos.getZ() + 0.5d,
-                            Math.cos(i) * 0.25d, 0.15d, Math.sin(i) * 0.25d);
+                user.getStackInHand(hand).damage(1, user, p -> p.sendToolBreakStatus(hand));
+                for(int i = 0; i < 360; i++) {
+                    if (i % 20 == 0) {
+                        world.addParticle(ParticleTypes.SOUL,
+                                pos.getX() + 0.5d, pos.getY() + 1, pos.getZ() + 0.5d,
+                                Math.cos(i) * 0.25d, 0.15d, Math.sin(i) * 0.25d);
+                    }
                 }
             }
 
