@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "boleatte:denticius_logs"
+    }
+  ],
+  "result": {
+    "item": "boleatte:denticius_planks",
+    "count": 4
+  }
+}

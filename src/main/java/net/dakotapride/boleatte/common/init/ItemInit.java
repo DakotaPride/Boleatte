@@ -39,6 +39,7 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(ETTERAVE_BAMBOO));
                     itemStacks.add(new ItemStack(QUESTEAR));
                     itemStacks.add(new ItemStack(CENTILOPIK));
+                    itemStacks.add(new ItemStack(POLECEA));
                     itemStacks.add(new ItemStack(ALPHIAGOU));
                     itemStacks.add(new ItemStack(PERFERVID_ALPHIAGOU));
                     itemStacks.add(new ItemStack(GHOST_ALPHIAGOU));
@@ -235,6 +236,7 @@ public class ItemInit {
     public static AscunauticBlockItem ETTERAVE_BAMBOO = new AscunauticBlockItem(BlockInit.ETTERAVE_BAMBOO, new FabricItemSettings().food(FoodComponentInit.ETTERAVE_BAMBOO).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem CENTILOPIK = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.CENTILOPIK).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem QUESTEAR = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.QUESTEAR).group(BoleatteItemGroup.BOLEATTE));
+    public static AscunauticItem POLECEA = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.POLECEA).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem LEPHELUSA_STEW = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.LEPHELUSA_STEW).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem MYSTICAL_ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.MYSTICAL_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
@@ -261,6 +263,7 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "etterave_bamboo"), ETTERAVE_BAMBOO);
         Registry.register(Registry.ITEM, new Identifier(ID, "questear"), QUESTEAR);
         Registry.register(Registry.ITEM, new Identifier(ID, "centilopik"), CENTILOPIK);
+        Registry.register(Registry.ITEM, new Identifier(ID, "polecea"), POLECEA);
         Registry.register(Registry.ITEM, new Identifier(ID, "alphiagou"), ALPHIAGOU);
         Registry.register(Registry.ITEM, new Identifier(ID, "perfervid_alphiagou"), PERFERVID_ALPHIAGOU);
         Registry.register(Registry.ITEM, new Identifier(ID, "ghost_alphiagou"), GHOST_ALPHIAGOU);

@@ -61,25 +61,6 @@
             },
             {
               "type": "minecraft:item",
-              "name": "boleatte:poleacea",
-              "conditions": [
-                {
-                  "condition": "minecraft:survives_explosion"
-                },
-                {
-                  "condition": "minecraft:table_bonus",
-                  "enchantment": "minecraft:fortune",
-                  "chances": [
-                    0.05,
-                    0.0625,
-                    0.083333336,
-                    0.1
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
               "name": "boleatte:centilopik",
               "conditions": [
                 {
@@ -89,10 +70,10 @@
                   "condition": "minecraft:table_bonus",
                   "enchantment": "minecraft:fortune",
                   "chances": [
-                    0.05,
-                    0.0625,
-                    0.083333336,
-                    0.1
+                    0.08,
+                    0.0925,
+                    0.113333336,
+                    0.13
                   ]
                 }
               ]

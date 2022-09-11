@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "boleatte:stripped_denticius_log"
+    }
+  },
+  "result": {
+    "item": "boleatte:stripped_denticius_wood",
+    "count": 3
+  }
+}

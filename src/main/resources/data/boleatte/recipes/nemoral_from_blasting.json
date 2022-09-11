@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "nemoral",
+  "ingredient": {
+    "item": "boleatte:nemoral_ore"
+  },
+  "result": "boleatte:nemoral"
+}

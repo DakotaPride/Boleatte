@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "opafeu",
+  "ingredient": {
+    "item": "boleatte:opafeu_ore"
+  },
+  "result": "boleatte:opafeu"
+}
