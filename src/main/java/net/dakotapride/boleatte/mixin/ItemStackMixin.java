@@ -1,6 +1,7 @@
 package net.dakotapride.boleatte.mixin;
 
 import net.dakotapride.boleatte.common.init.EffectInit;
+import net.dakotapride.boleatte.common.init.ItemInit;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
@@ -22,16 +23,19 @@ public class ItemStackMixin {
     private void attackWithAGodsMight(LivingEntity target, PlayerEntity attacker, CallbackInfo ci) {
         int gelaAmplifier = Objects.requireNonNull(target.getStatusEffect(EffectInit.GELA_BENEFIT)).getAmplifier();
         int beusereAmplifier = Objects.requireNonNull(target.getStatusEffect(EffectInit.BEUSERE_VIRTUE)).getAmplifier();
-        if (target.hasStatusEffect(EffectInit.BEUSERE_VIRTUE)) {
+        if (target.hasStatusEffect(EffectInit.BEUSERE_VIRTUE)
+                || attacker.getStackInHand(Hand.MAIN_HAND).isOf(ItemInit.SWORD_BEUSERE) && attacker.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.BEUSERE_EIDOLON)) {
             attacker.damage(DamageSource.thorns(target), 5.0F * (beusereAmplifier + 1));
         }
 
-        if (target.hasStatusEffect(EffectInit.GELA_BENEFIT)) {
+        if (target.hasStatusEffect(EffectInit.GELA_BENEFIT)
+                || attacker.getStackInHand(Hand.MAIN_HAND).isOf(ItemInit.STAFF_GELA) && attacker.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.GELA_EIDOLON)) {
             attacker.damage(DamageSource.WITHER, 0.5F * (gelaAmplifier + 1));
         }
 
-        if (attacker.getStackInHand(Hand.MAIN_HAND).getItem() instanceof SwordItem && attacker.hasStatusEffect(EffectInit.STERRES_GIFT)
-                || attacker.getStackInHand(Hand.MAIN_HAND).getItem() instanceof AxeItem && attacker.hasStatusEffect(EffectInit.STERRES_GIFT)) {
+        if (attacker.getStackInHand(Hand.MAIN_HAND).getItem() instanceof SwordItem && attacker.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.STERRES_EIDOLON) && attacker.hasStatusEffect(EffectInit.STERRES_GIFT)
+                || attacker.getStackInHand(Hand.MAIN_HAND).getItem() instanceof AxeItem && attacker.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.STERRES_EIDOLON) && attacker.hasStatusEffect(EffectInit.STERRES_GIFT)
+                || attacker.getStackInHand(Hand.MAIN_HAND).isOf(ItemInit.AXE_STERRES) && attacker.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.STERRES_EIDOLON)) {
             target.setOnFire(true);
             target.setFireTicks(100);
         }

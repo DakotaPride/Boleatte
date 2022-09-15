@@ -1,6 +1,7 @@
 package net.dakotapride.boleatte.mixin;
 
 import net.dakotapride.boleatte.common.init.EffectInit;
+import net.dakotapride.boleatte.common.init.ItemInit;
 import net.dakotapride.boleatte.common.init.TagInit;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -60,6 +61,7 @@ public abstract class LivingEntityMixin extends Entity {
     @Inject(method = "updatePotionVisibility", at = @At("TAIL"))
     protected void activateShadowOfGelidity(CallbackInfo ci) {
         this.setInvisible(livingEntity.hasStatusEffect(EffectInit.LAIDE_BLESSING));
+        this.setInvisible(livingEntity.getStackInHand(Hand.MAIN_HAND).isOf(ItemInit.SWORD_LAIDE) && livingEntity.getStackInHand(Hand.OFF_HAND).isOf(ItemInit.LAIDE_EIDOLON));
     }
 
     @ModifyVariable(method = "damage", at = @At("HEAD"), argsOnly = true)
