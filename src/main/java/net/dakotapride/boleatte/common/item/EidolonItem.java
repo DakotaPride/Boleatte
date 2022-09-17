@@ -1,7 +1,10 @@
 package net.dakotapride.boleatte.common.item;
 
+import net.dakotapride.boleatte.common.init.EffectInit;
 import net.dakotapride.boleatte.common.init.ItemInit;
 import net.dakotapride.boleatte.common.item.dimatis_use.Eidolon;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
@@ -39,6 +42,37 @@ public class EidolonItem extends AscunauticItem implements Eidolon {
                 for(int i = 0; i < 360; i++) {
                     if (i % 20 == 0) {
                         world.addParticle(ParticleTypes.SOUL,
+                                pos.getX() + 0.5d, pos.getY() + 1, pos.getZ() + 0.5d,
+                                Math.cos(i) * 0.25d, 0.15d, Math.sin(i) * 0.25d);
+                    }
+                }
+            }
+
+            if (!user.getStackInHand(Hand.MAIN_HAND).isOf(ItemInit.CITADEL_EIDOLON)) {
+                if (user.getStackInHand(hand).isOf(ItemInit.VERET_EIDOLON)) {
+                    user.addStatusEffect(new StatusEffectInstance(EffectInit.VERET_FAVOUR, 120, 0));
+                    user.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 180, 1));
+                } else if (user.getStackInHand(hand).isOf(ItemInit.ORITEM_EIDOLON)) {
+                    user.addStatusEffect(new StatusEffectInstance(EffectInit.ORITEM_PROFIT, 120, 0));
+                    user.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 180, 1));
+                } else if (user.getStackInHand(hand).isOf(ItemInit.LAIDE_EIDOLON)) {
+                    user.addStatusEffect(new StatusEffectInstance(EffectInit.LAIDE_BLESSING, 120, 0));
+                    user.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 180, 1));
+                } else if (user.getStackInHand(hand).isOf(ItemInit.BEUSERE_EIDOLON)) {
+                    user.addStatusEffect(new StatusEffectInstance(EffectInit.BEUSERE_VIRTUE, 120, 0));
+                    user.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 180, 1));
+                } else if (user.getStackInHand(hand).isOf(ItemInit.GELA_EIDOLON)) {
+                    user.addStatusEffect(new StatusEffectInstance(EffectInit.GELA_BENEFIT, 120, 0));
+                    user.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 180, 1));
+                } else if (user.getStackInHand(hand).isOf(ItemInit.STERRES_EIDOLON)) {
+                    user.addStatusEffect(new StatusEffectInstance(EffectInit.STERRES_GIFT, 120, 0));
+                    user.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 180, 1));
+                }
+
+                user.getStackInHand(hand).damage(1, user, p -> p.sendToolBreakStatus(hand));
+                for(int i = 0; i < 360; i++) {
+                    if (i % 20 == 0) {
+                        world.addParticle(ParticleTypes.DRAGON_BREATH,
                                 pos.getX() + 0.5d, pos.getY() + 1, pos.getZ() + 0.5d,
                                 Math.cos(i) * 0.25d, 0.15d, Math.sin(i) * 0.25d);
                     }

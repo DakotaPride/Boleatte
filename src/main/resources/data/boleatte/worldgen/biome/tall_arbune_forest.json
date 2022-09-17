@@ -10,8 +10,8 @@
     "water_fog_color": 10720723,
     "grass_color": 16771267,
     "mood_sound": {
-      "sound": "boleatte:ambient.boleatte.hoot_hoot",
-      "tick_delay": 6000,
+      "sound": "boleatte:hoot_hoot",
+      "tick_delay": 12000,
       "block_search_extent": 8,
       "offset": 2
     }
@@ -94,7 +94,7 @@
     [],
     [
       "minecraft:glow_lichen",
-      "boleatte:trees_arbune",
+      "boleatte:trees_tall_arbune",
       "boleatte:patch_melkirsch"
     ],
     [

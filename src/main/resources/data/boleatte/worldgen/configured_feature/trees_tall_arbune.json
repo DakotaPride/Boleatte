@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.133333367,
+        "feature": "boleatte:arbune_checked"
+      }
+    ],
+    "default": "boleatte:tall_arbune_checked"
+  }
+}

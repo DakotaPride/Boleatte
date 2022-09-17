@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:veticoade"
+          "name": "boleatte:veticoade"
         }
       ],
       "conditions": [

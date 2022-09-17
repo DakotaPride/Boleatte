@@ -523,7 +523,8 @@
           "biome_is": [
             "boleatte:arbune_forest",
             "boleatte:arbune_plains",
-            "boleatte:plentiful_arbune_plains"
+            "boleatte:plentiful_arbune_plains",
+            "boleatte:tall_arbune_forest"
           ]
         },
         "then_run": {
@@ -746,6 +747,7 @@
             "boleatte:arbune_forest",
             "boleatte:arbune_plains",
             "boleatte:plentiful_arbune_plains",
+            "boleatte:tall_arbune_forest",
             "boleatte:rasiore_forest",
             "boleatte:etterave_hills",
             "boleatte:etterave_forest",
@@ -930,7 +932,8 @@
                     "biome_is": [
                       "boleatte:arbune_forest",
                       "boleatte:arbune_plains",
-                      "boleatte:plentiful_arbune_plains"
+                      "boleatte:plentiful_arbune_plains",
+                      "boleatte:tall_arbune_forest"
                     ]
                   },
                   "then_run": {

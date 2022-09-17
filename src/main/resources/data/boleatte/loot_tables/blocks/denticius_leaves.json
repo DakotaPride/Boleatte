@@ -61,7 +61,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "boleatte:poleacea",
+              "name": "boleatte:polecea",
               "conditions": [
                 {
                   "condition": "minecraft:survives_explosion"
