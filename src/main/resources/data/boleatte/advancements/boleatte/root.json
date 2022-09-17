@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "entered_boleatte": {
+      "conditions": {
+        "to": "boleatte:boleatte"
+      },
+      "trigger": "minecraft:changed_dimension"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "boleatte:textures/block/arbune_rementio_top.png",
+    "description": {
+      "translate": "advancements.boleatte.root.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "boleatte:dimatis"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.boleatte.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "entered_boleatte"
+    ]
+  ]
+}

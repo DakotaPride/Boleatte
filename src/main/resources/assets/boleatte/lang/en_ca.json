@@ -196,5 +196,12 @@
   "effect.boleatte.oritem_profit": "Oritem's Profit",
   "effect.boleatte.sterres_gift": "Stérres's Gift",
   "effect.boleatte.gela_benefit": "Gelà's Benefit",
-  "effect.boleatte.defiant.ii": "Defiant II"
+  "effect.boleatte.defiant.ii": "Defiant II",
+
+  "advancements.boleatte.root.title": "Unworldly Harvest",
+  "advancements.boleatte.root.description": "Reach the Boleatte Dimension",
+  "advancements.boleatte.find_sterres.title": "Set Ablaze",
+  "advancements.boleatte.find_sterres.description": "Find Stérres' Old Dungeon",
+
+  "ambient.boleatte.hoot_hoot": "Ulular"
 }

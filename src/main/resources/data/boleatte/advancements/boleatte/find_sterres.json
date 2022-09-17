@@ -1,0 +1,41 @@
+{
+  "parent": "boleatte:boleatte/root",
+  "criteria": {
+    "sterres": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "boleatte:sterres_dungeon"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.boleatte.find_sterres.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "boleatte:scorched_rementio"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.boleatte.find_sterres.title"
+    }
+  },
+  "requirements": [
+    [
+      "sterres"
+    ]
+  ]
+}
