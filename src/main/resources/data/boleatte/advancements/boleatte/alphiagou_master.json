@@ -1,0 +1,55 @@
+{
+  "parent": "boleatte:boleatte/root",
+  "criteria": {
+    "alphiagou_master": {
+      "conditions": {
+        "item": {
+          "items": [
+            "boleatte:alphiagou",
+            "boleatte:alphiagou_cider",
+            "boleatte:mystical_alphiagou_cider",
+
+            "boleatte:blossoming_alphiagou",
+            "boleatte:blossoming_alphiagou_cider",
+
+            "boleatte:constructive_alphiagou",
+            "boleatte:constructive_alphiagou_cider",
+
+            "boleatte:ghost_alphiagou",
+            "boleatte:ghost_alphiagou_cider",
+
+            "boleatte:perfervid_alphiagou",
+            "boleatte:perfervid_alphiagou_cider",
+
+            "boleatte:phantasmal_alphiagou",
+            "boleatte:phantasmal_alphiagou_cider",
+
+            "boleatte:plentiful_alphiagou",
+            "boleatte:plentiful_alphiagou_cider"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.boleatte.alphiagou_master.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "boleatte:alphiagou"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.boleatte.alphiagou_master.title"
+    }
+  },
+  "requirements": [
+    [
+      "alphiagou_master"
+    ]
+  ]
+}

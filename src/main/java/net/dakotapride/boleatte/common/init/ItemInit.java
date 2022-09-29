@@ -239,6 +239,12 @@ public class ItemInit {
     public static AscunauticItem POLECEA = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.POLECEA).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem LEPHELUSA_STEW = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.LEPHELUSA_STEW).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
+    public static AscunauticItem BLOSSOMING_ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.BLOSSOMING_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
+    public static AscunauticItem CONSTRUCTIVE_ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.CONSTRUCTIVE_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
+    public static AscunauticItem GHOST_ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.GHOST_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
+    public static AscunauticItem PERFERVID_ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.PERFERVID_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
+    public static AscunauticItem PHANTASMAL_ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.PHANTASMAL_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
+    public static AscunauticItem PLENTIFUL_ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.PLENTIFUL_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
     public static AscunauticItem MYSTICAL_ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.MYSTICAL_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
 
     public static void init() {
@@ -277,6 +283,12 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "sataluk_substance"), SATALUK_SUBSTANCE);
         Registry.register(Registry.ITEM, new Identifier(ID, "lephelusa_stew"), LEPHELUSA_STEW);
         Registry.register(Registry.ITEM, new Identifier(ID, "alphiagou_cider"), ALPHIAGOU_CIDER);
+        Registry.register(Registry.ITEM, new Identifier(ID, "blossoming_alphiagou_cider"), BLOSSOMING_ALPHIAGOU_CIDER);
+        Registry.register(Registry.ITEM, new Identifier(ID, "constructive_alphiagou_cider"), CONSTRUCTIVE_ALPHIAGOU_CIDER);
+        Registry.register(Registry.ITEM, new Identifier(ID, "ghost_alphiagou_cider"), GHOST_ALPHIAGOU_CIDER);
+        Registry.register(Registry.ITEM, new Identifier(ID, "perfervid_alphiagou_cider"), PERFERVID_ALPHIAGOU_CIDER);
+        Registry.register(Registry.ITEM, new Identifier(ID, "phantasmal_alphiagou_cider"), PHANTASMAL_ALPHIAGOU_CIDER);
+        Registry.register(Registry.ITEM, new Identifier(ID, "plentiful_alphiagou_cider"), PLENTIFUL_ALPHIAGOU_CIDER);
         Registry.register(Registry.ITEM, new Identifier(ID, "mystical_alphiagou_cider"), MYSTICAL_ALPHIAGOU_CIDER);
 
         Registry.register(Registry.ITEM, new Identifier(ID, "dimatis"), DIMATIS);

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "boleatte:item/blossoming_alphiagou_cider"
+  }
+}

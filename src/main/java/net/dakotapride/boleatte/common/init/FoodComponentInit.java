@@ -52,6 +52,12 @@ public class FoodComponentInit {
     public static final FoodComponent POLECEA = new FoodComponent.Builder().hunger(2).saturationModifier(0.15F).build();
     public static final FoodComponent MELKIRSCH_PIE = new FoodComponent.Builder().hunger(8).saturationModifier(0.6F).build();
     public static final FoodComponent ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(7).saturationModifier(0.8F).build();
+    public static final FoodComponent BLOSSOMING_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).saturationModifier(0.9F).build();
+    public static final FoodComponent CONSTRUCTIVE_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).saturationModifier(0.9F).build();
+    public static final FoodComponent GHOST_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).saturationModifier(0.9F).build();
+    public static final FoodComponent PERFERVID_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).saturationModifier(0.9F).build();
+    public static final FoodComponent PHANTASMAL_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).saturationModifier(0.9F).build();
+    public static final FoodComponent PLENTIFUL_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).saturationModifier(0.9F).build();
     public static final FoodComponent MYSTICAL_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).saturationModifier(0.7F).build();
 
 }
