@@ -14,16 +14,17 @@ import net.minecraft.util.registry.RegistryEntryList;
 import net.minecraft.world.gen.ProbabilityConfig;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
-import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
-import net.minecraft.world.gen.foliage.BushFoliagePlacer;
-import net.minecraft.world.gen.foliage.RandomSpreadFoliagePlacer;
-import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
-import net.minecraft.world.gen.placementmodifier.*;
+import net.minecraft.world.gen.foliage.*;
+import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
+import net.minecraft.world.gen.placementmodifier.NoiseBasedCountPlacementModifier;
+import net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier;
+import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 import net.minecraft.world.gen.root.AboveRootPlacement;
 import net.minecraft.world.gen.root.MangroveRootPlacement;
 import net.minecraft.world.gen.root.MangroveRootPlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.treedecorator.BeehiveTreeDecorator;
+import net.minecraft.world.gen.trunk.GiantTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.minecraft.world.gen.trunk.UpwardsBranchingTrunkPlacer;
 
@@ -40,8 +41,12 @@ public class FeaturesInit {
     private static final BeehiveTreeDecorator BEES_005 = new BeehiveTreeDecorator(0.05F);
     private static final BeehiveTreeDecorator BEES = new BeehiveTreeDecorator(1.0F);
 
+
+    // Configured Features
+
     public static final Feature<ProbabilityConfig> ETTERAVE_BAMBOO =
             register(ID + ":etterave_bamboo", new EtteraveBambooFeature(ProbabilityConfig.CODEC));
+
     public static final RegistryEntry<ConfiguredFeature<ProbabilityConfig, ?>> ETTERAVE_BAMBOO_NORMAL =
             ConfiguredFeatures.register(ID + ":etterave_bamboo_normal", ETTERAVE_BAMBOO, new ProbabilityConfig(0.0F));
 
@@ -52,6 +57,13 @@ public class FeaturesInit {
             ConstantIntProvider.create(2), ConstantIntProvider.create(1), 2),
                     new TwoLayersFeatureSize(0, 0, 0))).build());
 
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> TALL_RASIORE =
+            ConfiguredFeatures.register(ID + ":tall_rasiore", Feature.TREE,
+                    (new TreeFeatureConfig.Builder(BlockStateProvider.of(BlockInit.RASIORE_LOG),
+                            new GiantTrunkPlacer(12, 3, 15), BlockStateProvider.of(BlockInit.RASIORE_LEAVES),
+                            new MegaPineFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0),
+                                    UniformIntProvider.create(13, 17)),
+                            new TwoLayersFeatureSize(1, 1, 2))).build());
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> ARBUNE =
             ConfiguredFeatures.register(ID + ":arbune", Feature.TREE,
@@ -62,7 +74,6 @@ public class FeaturesInit {
                             new TwoLayersFeatureSize(2, 0, 2)))
                             .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).ignoreVines().build());
 
-    // Configured Features
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> PATCH_QUANALLA_BUSH =
             ConfiguredFeatures.register(ID + ":patch_quanalla_bush", Feature.RANDOM_PATCH,
                     ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(
@@ -70,26 +81,6 @@ public class FeaturesInit {
                             .with(SweetBerryBushBlock.AGE, 3))),
 
             List.of(Blocks.RED_SAND)));
-
-    private static TreeFeatureConfig.Builder botakoa() {
-        return builder(BlockInit.BOTAKOA_LOG, BlockInit.BOTAKOA_LEAVES, 5, 2, 0, 2)
-                .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).ignoreVines();
-    }
-
-    private static TreeFeatureConfig.Builder rasiore() {
-        return builder(BlockInit.RASIORE_LOG, BlockInit.RASIORE_LEAVES, 5, 2, 0, 2)
-                .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).ignoreVines();
-    }
-
-    private static TreeFeatureConfig.Builder denticius() {
-        return builder(BlockInit.DENTICIUS_LOG, BlockInit.DENTICIUS_LEAVES, 7, 4, 0, 2)
-                .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).ignoreVines();
-    }
-
-    private static TreeFeatureConfig.Builder superbotakoa() {
-        return builder(BlockInit.BOTAKOA_LOG, BlockInit.BOTAKOA_LEAVES, 5, 2, 6, 2)
-                .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).ignoreVines();
-    }
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> BOTAKOA = 
             ConfiguredFeatures.register(ID + ":botokoa", Feature.TREE,
@@ -200,6 +191,28 @@ public class FeaturesInit {
 
     public static void init() {
         // Load This Class
+    }
+
+
+
+    private static TreeFeatureConfig.Builder botakoa() {
+        return builder(BlockInit.BOTAKOA_LOG, BlockInit.BOTAKOA_LEAVES, 5, 2, 0, 2)
+                .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).ignoreVines();
+    }
+
+    private static TreeFeatureConfig.Builder rasiore() {
+        return builder(BlockInit.RASIORE_LOG, BlockInit.RASIORE_LEAVES, 5, 2, 0, 2)
+                .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).ignoreVines();
+    }
+
+    private static TreeFeatureConfig.Builder denticius() {
+        return builder(BlockInit.DENTICIUS_LOG, BlockInit.DENTICIUS_LEAVES, 7, 4, 0, 2)
+                .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).ignoreVines();
+    }
+
+    private static TreeFeatureConfig.Builder superbotakoa() {
+        return builder(BlockInit.BOTAKOA_LOG, BlockInit.BOTAKOA_LEAVES, 5, 2, 6, 2)
+                .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).ignoreVines();
     }
 
 }

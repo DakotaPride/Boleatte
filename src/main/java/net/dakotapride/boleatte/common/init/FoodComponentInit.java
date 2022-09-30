@@ -24,7 +24,7 @@ public class FoodComponentInit {
     public static final FoodComponent ROASTED_BABURBEN = new FoodComponent.Builder().hunger(7).saturationModifier(0.9F).build();
     public static final FoodComponent ALPHIAGOU = new FoodComponent.Builder().hunger(5).saturationModifier(0.5F).build();
     public static final FoodComponent PERFERVID_ALPHIAGOU = new FoodComponent.Builder().statusEffect(new StatusEffectInstance
-                    (EffectInit.STERRES_GIFT, 240, 1), 1.0F).statusEffect(new StatusEffectInstance
+            (EffectInit.STERRES_GIFT, 240, 1), 1.0F).statusEffect(new StatusEffectInstance
             (StatusEffects.FIRE_RESISTANCE, 360, 0), 0.5f).hunger(5).saturationModifier(0.5F).build();
     public static final FoodComponent GHOST_ALPHIAGOU = new FoodComponent.Builder().statusEffect(new StatusEffectInstance
             (EffectInit.LAIDE_BLESSING, 240, 1), 1.0F).statusEffect(new StatusEffectInstance
@@ -52,12 +52,24 @@ public class FoodComponentInit {
     public static final FoodComponent POLECEA = new FoodComponent.Builder().hunger(2).saturationModifier(0.15F).build();
     public static final FoodComponent MELKIRSCH_PIE = new FoodComponent.Builder().hunger(8).saturationModifier(0.6F).build();
     public static final FoodComponent ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(7).saturationModifier(0.8F).build();
-    public static final FoodComponent BLOSSOMING_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).saturationModifier(0.9F).build();
-    public static final FoodComponent CONSTRUCTIVE_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).saturationModifier(0.9F).build();
-    public static final FoodComponent GHOST_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).saturationModifier(0.9F).build();
-    public static final FoodComponent PERFERVID_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).saturationModifier(0.9F).build();
-    public static final FoodComponent PHANTASMAL_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).saturationModifier(0.9F).build();
-    public static final FoodComponent PLENTIFUL_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).saturationModifier(0.9F).build();
+    public static final FoodComponent BLOSSOMING_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).statusEffect(new StatusEffectInstance
+            (EffectInit.BEUSERE_VIRTUE, 240, 1), 1.0F).statusEffect(new StatusEffectInstance
+            (StatusEffects.LUCK, 360, 0), 0.3f).saturationModifier(0.9F).build();
+    public static final FoodComponent CONSTRUCTIVE_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).statusEffect(new StatusEffectInstance
+            (EffectInit.ORITEM_PROFIT, 240, 1), 1.0F).statusEffect(new StatusEffectInstance
+            (StatusEffects.HASTE, 360, 0), 0.3f).saturationModifier(0.9F).build();
+    public static final FoodComponent GHOST_ALPHIAGOU_CIDER = new FoodComponent.Builder().statusEffect(new StatusEffectInstance
+            (EffectInit.LAIDE_BLESSING, 240, 1), 1.0F).statusEffect(new StatusEffectInstance
+            (StatusEffects.RESISTANCE, 360, 0), 0.3f).hunger(9).saturationModifier(0.9F).build();
+    public static final FoodComponent PERFERVID_ALPHIAGOU_CIDER = new FoodComponent.Builder().statusEffect(new StatusEffectInstance
+            (EffectInit.STERRES_GIFT, 240, 1), 1.0F).statusEffect(new StatusEffectInstance
+            (StatusEffects.FIRE_RESISTANCE, 360, 0), 0.3f).hunger(9).saturationModifier(0.9F).build();
+    public static final FoodComponent PHANTASMAL_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).statusEffect(new StatusEffectInstance
+            (EffectInit.GELA_BENEFIT, 240, 1), 1.0F).statusEffect(new StatusEffectInstance
+            (StatusEffects.INVISIBILITY, 360, 0), 0.3f).saturationModifier(0.9F).build();
+    public static final FoodComponent PLENTIFUL_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).statusEffect(new StatusEffectInstance
+            (EffectInit.VERET_FAVOUR, 240, 1), 1.0F).statusEffect(new StatusEffectInstance
+            (StatusEffects.REGENERATION, 360, 0), 0.3f).saturationModifier(0.9F).build();
     public static final FoodComponent MYSTICAL_ALPHIAGOU_CIDER = new FoodComponent.Builder().hunger(9).saturationModifier(0.7F).build();
 
 }
