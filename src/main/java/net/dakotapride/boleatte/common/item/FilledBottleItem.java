@@ -47,8 +47,8 @@ public class FilledBottleItem extends AscunauticItem {
             user.removeStatusEffect(StatusEffects.POISON);
         }
 
-        if (stack.isEmpty()) {
-            return new ItemStack(Items.GLASS_BOTTLE);
+        if (stack.isEmpty() && user instanceof PlayerEntity player) {
+            player.giveItemStack(new ItemStack(Items.GLASS_BOTTLE));
         } else {
             if (user instanceof PlayerEntity playerEntity && !((PlayerEntity)user).getAbilities().creativeMode) {
                 ItemStack itemStack = new ItemStack(Items.GLASS_BOTTLE);
@@ -57,8 +57,8 @@ public class FilledBottleItem extends AscunauticItem {
                 }
             }
 
-            return stack;
         }
+        return stack;
     }
 
     @Override

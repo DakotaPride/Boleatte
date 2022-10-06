@@ -1,8 +1,8 @@
 {
   "itemGroup.boleatte.boleatte_group": "Boleatte",
 
-  "death.attack.virulent": "%1$s was seen as a threat to the Ascunautic",
-  "death.attack.virulent.player": "%1$s was seen as a threat to the Ascunautic and was reported by %2$s",
+  "death.attack.virulent": "%1$s was slain by a source of virulence",
+  "death.attack.virulent.player": "%1$s was slain by a source of virulence activated by %2$s",
 
   "item.boleatte.citadel_eidolon": "Citadel Eidolon",
   "item.boleatte.veret_eidolon": "Verêt Eidolon",

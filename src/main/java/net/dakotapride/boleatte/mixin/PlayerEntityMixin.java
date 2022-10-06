@@ -21,7 +21,6 @@ public abstract class PlayerEntityMixin extends LivingEntity {
         super(entityType, world);
     }
 
-
     @Inject(method = "tick", at = @At("TAIL"))
     private void tick(CallbackInfo ci) {
         if (!(playerEntity.getOffHandStack().isIn(TagInit.SAFE_BOLEATTE))

@@ -12,7 +12,6 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
-import net.minecraft.state.property.Property;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
@@ -26,9 +25,9 @@ public class RasioreLeavesBlock extends LeavesBlock implements Fertilizable {
     public static final IntProperty AGE = Properties.AGE_3;
     public RasioreLeavesBlock(AbstractBlock.Settings settings) {
         super(settings);
-        setDefaultState(((BlockState)this.stateManager.getDefaultState()).with(AGE, Integer.valueOf(0)));
-        setDefaultState(((BlockState)this.stateManager.getDefaultState()).with(DISTANCE, Integer.valueOf(7))
-                .with(PERSISTENT, Boolean.valueOf(false)).with(WATERLOGGED, Boolean.valueOf(false)));
+        setDefaultState(this.stateManager.getDefaultState().with(AGE, 0));
+        setDefaultState(this.stateManager.getDefaultState().with(DISTANCE, 7)
+                .with(PERSISTENT, Boolean.FALSE).with(WATERLOGGED, Boolean.FALSE));
     }
 
 
@@ -40,7 +39,7 @@ public class RasioreLeavesBlock extends LeavesBlock implements Fertilizable {
     @Override
     public boolean hasRandomTicks(BlockState state) {
         if (state.get(AGE) > 3) {
-            return (((Integer)state.get(AGE)).intValue() < 3);
+            return (state.get(AGE) < 3);
         } else {
             super.hasRandomTicks(state);
         }
@@ -49,9 +48,9 @@ public class RasioreLeavesBlock extends LeavesBlock implements Fertilizable {
 
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        int i = ((Integer)state.get(AGE)).intValue();
+        int i = state.get(AGE);
         if (i < 3 && random.nextInt(5) == 0 && world.getBaseLightLevel(pos.up(), 0) >= 9) {
-            BlockState blockState = state.with(AGE, Integer.valueOf(i + 1));
+            BlockState blockState = state.with(AGE, i + 1);
             world.setBlockState(pos, blockState, 2);
             world.emitGameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Emitter.of(blockState));
         } else if (shouldDecay(state)) {
@@ -62,7 +61,7 @@ public class RasioreLeavesBlock extends LeavesBlock implements Fertilizable {
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        int i = ((Integer)state.get(AGE)).intValue();
+        int i = state.get(AGE);
         boolean bl = (i == 3);
 
         if (!bl && player.getStackInHand(hand).isOf(Items.BONE_MEAL)) {
@@ -72,8 +71,8 @@ public class RasioreLeavesBlock extends LeavesBlock implements Fertilizable {
         if (i > 1) {
             int j = 1 + world.random.nextInt(2);
             dropStack(world, pos, new ItemStack(ItemInit.RASIORE, j + (bl ? 1 : 0)));
-            world.playSound((PlayerEntity)null, pos, SoundEvents.BLOCK_SWEET_BERRY_BUSH_PICK_BERRIES, SoundCategory.BLOCKS, 1.0F, 0.8F + world.random.nextFloat() * 0.4F);
-            BlockState blockState = state.with(AGE, Integer.valueOf(1));
+            world.playSound(null, pos, SoundEvents.BLOCK_SWEET_BERRY_BUSH_PICK_BERRIES, SoundCategory.BLOCKS, 1.0F, 0.8F + world.random.nextFloat() * 0.4F);
+            BlockState blockState = state.with(AGE, 1);
             world.setBlockState(pos, blockState, 2);
             world.emitGameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Emitter.of(player, blockState));
             return ActionResult.success(world.isClient);
@@ -84,13 +83,13 @@ public class RasioreLeavesBlock extends LeavesBlock implements Fertilizable {
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add((Property<?>[])new Property[] { AGE });
-        builder.add((Property<?>[])new Property[] { DISTANCE, PERSISTENT, WATERLOGGED });
+        builder.add(AGE);
+        builder.add(DISTANCE, PERSISTENT, WATERLOGGED);
     }
 
     @Override
     public boolean isFertilizable(BlockView world, BlockPos pos, BlockState state, boolean isClient) {
-        return (((Integer)state.get(AGE)).intValue() < 3);
+        return (state.get(AGE) < 3);
     }
 
     @Override
@@ -100,8 +99,8 @@ public class RasioreLeavesBlock extends LeavesBlock implements Fertilizable {
 
     @Override
     public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
-        int i = Math.min(3, ((Integer)state.get(AGE)).intValue() + 1);
-        world.setBlockState(pos, state.with(AGE, Integer.valueOf(i)), 2);
+        int i = Math.min(3, state.get(AGE) + 1);
+        world.setBlockState(pos, state.with(AGE, i), 2);
     }
 
 
