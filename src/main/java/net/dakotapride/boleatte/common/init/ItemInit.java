@@ -170,6 +170,17 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.VETICOADE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.LEPHELUSA_VIOLES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.LEPHELUSA_CORAL_BLOCK.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.FLAMING_SETHIOL.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.VIOLET_SETHIOL.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.CRIMSON_BOTAKOA_LILY.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.BOTAKOA_LILY.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.ACUNILLUS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.MAUVE_EMERIO.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.VIOLET_TIPPED_EMERIO.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.UNSTAINED_EMERIO.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.ARBUNE_LILY.asItem()));
                 }).build();
     }
 

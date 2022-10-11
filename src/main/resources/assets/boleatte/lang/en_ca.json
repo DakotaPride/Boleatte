@@ -79,6 +79,11 @@
   "block.boleatte.melkirsch_stem": "Melkirsch Stem",
   "block.boleatte.attached_melkirsch_stem": "Attached Melkirsch Stem",
   "item.boleatte.melkirsch_seeds": "Melkirsch Seeds",
+  "block.boleatte.mauve_emerio": "Mauve Emerio",
+  "block.boleatte.violet_tipped_emerio": "Violet Tipped Emerio",
+  "block.boleatte.unstained_emerio": "Unstained Emerio",
+  "block.boleatte.acunillus": "Acunillus",
+  "block.boleatte.arbune_lily": "Arbune Lily",
 
   "block.boleatte.botakoa_log": "Botakoa Log",
   "block.boleatte.stripped_botakoa_log": "Stripped Botakoa Log",
@@ -211,5 +216,5 @@
   "advancements.boleatte.alphiagou_master.title": "Godlike?",
   "advancements.boleatte.alphiagou_master.description": "Consume All Alphiagou Types And Alphiagou Cider Types",
 
-  "ambient.boleatte.hoot_hoot": "Ulular"
+  "ambient.boleatte.hoot_hoot": "Mysterious Hooting"
 }
