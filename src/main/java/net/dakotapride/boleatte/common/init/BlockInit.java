@@ -67,6 +67,10 @@ public class BlockInit {
     public static PillarBlock STRIPPED_PROTOSTERM_WOOD = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD));
     public static Block PROTOSTERM_PLANKS = new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS));
     public static LeavesBlock PROTOSTERM_LEAVES = new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
+    public static TallBoleatteFlowerBlock HYPNOTIC_SETHIOL = new TallBoleatteFlowerBlock(FabricBlockSettings.copy(Blocks.LILAC));
+    public static TallBoleatteFlowerBlock TWISTING_SETHIOL = new TallBoleatteFlowerBlock(FabricBlockSettings.copy(Blocks.LILAC));
+    public static BoleatteFlowerBlock CYAN_STAR_SETHIOL = new BoleatteFlowerBlock(StatusEffects.RESISTANCE, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock IPALBA = new BoleatteFlowerBlock(StatusEffects.RESISTANCE, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
 
     public static BotakoaSaplingBlock BOTAKOA_SAPLING = new BotakoaSaplingBlock(new BotakoaSaplingGenerator(),
             FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
@@ -76,9 +80,9 @@ public class BlockInit {
     public static PillarBlock STRIPPED_BOTAKOA_WOOD = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD));
     public static Block BOTAKOA_PLANKS = new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS));
     public static LeavesBlock BOTAKOA_LEAVES = new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
-    public static BoleatteFlowerBlock VIOLET_SETHIOL = new BoleatteFlowerBlock(StatusEffects.ABSORPTION, 120, FabricBlockSettings.copy(Blocks.POPPY));
+    public static BoleatteFlowerBlock VIOLET_SETHIOL = new BoleatteFlowerBlock(StatusEffects.FIRE_RESISTANCE, 120, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
     public static BoleatteFlowerBlock CRIMSON_BOTAKOA_LILY = new BoleatteFlowerBlock(StatusEffects.FIRE_RESISTANCE, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
-    public static BoleatteFlowerBlock BOTAKOA_LILY = new BoleatteFlowerBlock(StatusEffects.RESISTANCE, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock BOTAKOA_LILY = new BoleatteFlowerBlock(StatusEffects.FIRE_RESISTANCE, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
     public static TallBoleatteFlowerBlock FLAMING_SETHIOL = new TallBoleatteFlowerBlock(FabricBlockSettings.copy(Blocks.LILAC));
 
     public static MelkirschBlock MELKIRSCH = new MelkirschBlock(FabricBlockSettings.copy(Blocks.PUMPKIN));
@@ -108,6 +112,8 @@ public class BlockInit {
     public static PillarBlock STRIPPED_RASIORE_WOOD = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD));
     public static Block RASIORE_PLANKS = new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS));
     public static RasioreLeavesBlock RASIORE_LEAVES = new RasioreLeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
+    public static BoleatteFlowerBlock INTOXICATING_MIENTIS = new BoleatteFlowerBlock(StatusEffects.POISON, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock GOLDEN_MIENTIS = new BoleatteFlowerBlock(StatusEffects.LUCK, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
 
     public static DenticiusSaplingBlock DENTICIUS_SAPLING = new DenticiusSaplingBlock(new DenticiusSaplingGenerator(),
             FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
@@ -152,6 +158,14 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "stripped_protosterm_wood"), new BlockItem(STRIPPED_PROTOSTERM_WOOD, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "protosterm_planks"), PROTOSTERM_PLANKS);
         Registry.register(Registry.ITEM, new Identifier(ID, "protosterm_planks"), new BlockItem(PROTOSTERM_PLANKS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "hypnotic_sethiol"), HYPNOTIC_SETHIOL);
+        Registry.register(Registry.ITEM, new Identifier(ID, "hypnotic_sethiol"), new BlockItem(HYPNOTIC_SETHIOL, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "twisting_sethiol"), TWISTING_SETHIOL);
+        Registry.register(Registry.ITEM, new Identifier(ID, "twisting_sethiol"), new BlockItem(TWISTING_SETHIOL, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "cyan_star_sethiol"), CYAN_STAR_SETHIOL);
+        Registry.register(Registry.ITEM, new Identifier(ID, "cyan_star_sethiol"), new BlockItem(CYAN_STAR_SETHIOL, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "ipalba"), IPALBA);
+        Registry.register(Registry.ITEM, new Identifier(ID, "ipalba"), new BlockItem(IPALBA, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "botakoa_sapling"), BOTAKOA_SAPLING);
         Registry.register(Registry.ITEM, new Identifier(ID, "botakoa_sapling"), new BlockItem(BOTAKOA_SAPLING, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
@@ -219,6 +233,10 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "stripped_rasiore_wood"), new BlockItem(STRIPPED_RASIORE_WOOD, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "rasiore_planks"), RASIORE_PLANKS);
         Registry.register(Registry.ITEM, new Identifier(ID, "rasiore_planks"), new BlockItem(RASIORE_PLANKS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "intoxicated_mientis"), INTOXICATING_MIENTIS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "intoxicated_mientis"), new BlockItem(INTOXICATING_MIENTIS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "golden_mientis"), GOLDEN_MIENTIS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "golden_mientis"), new BlockItem(GOLDEN_MIENTIS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "denticius_sapling"), DENTICIUS_SAPLING);
         Registry.register(Registry.ITEM, new Identifier(ID, "denticius_sapling"), new BlockItem(DENTICIUS_SAPLING, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));

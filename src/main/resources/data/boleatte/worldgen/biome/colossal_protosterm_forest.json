@@ -105,7 +105,8 @@
     ],
     [
       "minecraft:glow_lichen",
-      "boleatte:trees_colossal_protosterm"
+      "boleatte:trees_colossal_protosterm",
+      "boleatte:protosterm_forest_flowers"
     ],
     [
       "minecraft:freeze_top_layer"

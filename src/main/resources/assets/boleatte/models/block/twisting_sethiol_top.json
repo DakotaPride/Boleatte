@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "boleatte:block/twisting_sethiol_top"
+  }
+}

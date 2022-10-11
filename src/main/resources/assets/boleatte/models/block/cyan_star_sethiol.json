@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "boleatte:block/cyan_star_sethiol"
+  }
+}

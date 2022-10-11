@@ -54,6 +54,12 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(LEPHELUSA_STEW));
                     itemStacks.add(new ItemStack(DE_FEATIANTE));
                     itemStacks.add(new ItemStack(ALPHIAGOU_CIDER));
+                    itemStacks.add(new ItemStack(PERFERVID_ALPHIAGOU_CIDER));
+                    itemStacks.add(new ItemStack(GHOST_ALPHIAGOU_CIDER));
+                    itemStacks.add(new ItemStack(BLOSSOMING_ALPHIAGOU_CIDER));
+                    itemStacks.add(new ItemStack(PHANTASMAL_ALPHIAGOU_CIDER));
+                    itemStacks.add(new ItemStack(CONSTRUCTIVE_ALPHIAGOU_CIDER));
+                    itemStacks.add(new ItemStack(PLENTIFUL_ALPHIAGOU_CIDER));
                     itemStacks.add(new ItemStack(MYSTICAL_ALPHIAGOU_CIDER));
 
                     itemStacks.add(new ItemStack(OPAFEU_GEM));
@@ -185,6 +191,11 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.SPINED_FRITRIS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.NOCTURNAL_EYED_FRITRIS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.HANGING_BELL_FRITRIS.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.HYPNOTIC_SETHIOL.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.TWISTING_SETHIOL.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.CYAN_STAR_SETHIOL.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.IPALBA.asItem()));
                 }).build();
     }
 

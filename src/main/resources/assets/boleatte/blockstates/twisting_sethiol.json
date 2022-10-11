@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "boleatte:block/twisting_sethiol_bottom"
+    },
+    "half=upper": {
+      "model": "boleatte:block/twisting_sethiol_top"
+    }
+  }
+}

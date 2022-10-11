@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "boleatte:block/hypnotic_sethiol_bottom"
+    },
+    "half=upper": {
+      "model": "boleatte:block/hypnotic_sethiol_top"
+    }
+  }
+}
