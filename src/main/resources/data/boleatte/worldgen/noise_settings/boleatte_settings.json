@@ -586,7 +586,8 @@
         "if_true": {
           "type": "minecraft:biome",
           "biome_is": [
-            "boleatte:rasiore_forest"
+            "boleatte:rasiore_forest",
+            "boleatte:dense_rasiore_forest"
           ]
         },
         "then_run": {
@@ -749,10 +750,10 @@
             "boleatte:plentiful_arbune_plains",
             "boleatte:tall_arbune_forest",
             "boleatte:rasiore_forest",
+            "boleatte:dense_rasiore_forest",
             "boleatte:etterave_hills",
             "boleatte:etterave_forest",
-            "boleatte:denticius_forest",
-            "boleatte:open_denticius_forest"
+            "boleatte:denticius_forest"
           ]
         },
         "then_run": {
@@ -959,7 +960,8 @@
                   "if_true": {
                     "type": "minecraft:biome",
                     "biome_is": [
-                      "boleatte:rasiore_forest"
+                      "boleatte:rasiore_forest",
+                      "boleatte:dense_rasiore_forest"
                     ]
                   },
                   "then_run": {
