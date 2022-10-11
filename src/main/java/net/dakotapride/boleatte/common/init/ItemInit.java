@@ -181,6 +181,10 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.VIOLET_TIPPED_EMERIO.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.UNSTAINED_EMERIO.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_LILY.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.SPINED_FRITRIS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.NOCTURNAL_EYED_FRITRIS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.HANGING_BELL_FRITRIS.asItem()));
                 }).build();
     }
 

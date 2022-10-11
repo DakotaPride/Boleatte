@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "boleatte:block/hanging_bell_fritris"
+  }
+}

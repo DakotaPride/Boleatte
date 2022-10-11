@@ -120,6 +120,7 @@ public class BlockInit {
     public static Block BLOOMING_DENTICIUS_LEAVES = new Block(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
     public static BoleatteFlowerBlock SPINED_FRITRIS = new BoleatteFlowerBlock(StatusEffects.POISON, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
     public static BoleatteFlowerBlock NOCTURNAL_EYED_FRITRIS = new BoleatteFlowerBlock(StatusEffects.NIGHT_VISION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock HANGING_BELL_FRITRIS = new BoleatteFlowerBlock(StatusEffects.POISON, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
 
     public static QuanallaBushBlock QUANALLA_BUSH = new QuanallaBushBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH).ticksRandomly().nonOpaque());
     public static LeavesBlock DEAD_LEAVES = new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES));
@@ -239,6 +240,8 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "spined_fritris"), new BlockItem(SPINED_FRITRIS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "nocturnal_eyed_fritris"), NOCTURNAL_EYED_FRITRIS);
         Registry.register(Registry.ITEM, new Identifier(ID, "nocturnal_eyed_fritris"), new BlockItem(NOCTURNAL_EYED_FRITRIS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "hanging_bell_fritris"), HANGING_BELL_FRITRIS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "hanging_bell_fritris"), new BlockItem(HANGING_BELL_FRITRIS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "quanalla_bush"), QUANALLA_BUSH);
         Registry.register(Registry.BLOCK, new Identifier(ID, "dead_leaves"), DEAD_LEAVES);
