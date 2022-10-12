@@ -28,6 +28,7 @@ public class BlockInit {
 
     public static EtteraveBambooBlock ETTERAVE_BAMBOO = new EtteraveBambooBlock(FabricBlockSettings.of(Material.BAMBOO, MapColor.LAPIS_BLUE)
             .ticksRandomly().strength(1.0F).sounds(BlockSoundGroup.BAMBOO).nonOpaque());
+    public static BoleatteFlowerBlock PUSEIK = new BoleatteFlowerBlock(StatusEffects.LEVITATION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
 
     public static OreBlock REMENTIO_OPAFEU_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE).requiresTool(),
             UniformIntProvider.create(3, 7));
@@ -323,6 +324,8 @@ public class BlockInit {
         Registry.register(Registry.BLOCK, new Identifier(ID, "etterave_rementio"), ETTERAVE_REMENTIO);
         Registry.register(Registry.ITEM, new Identifier(ID, "etterave_rementio"), new BlockItem(ETTERAVE_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "etterave_bamboo"), ETTERAVE_BAMBOO);
+        Registry.register(Registry.BLOCK, new Identifier(ID, "puseik"), PUSEIK);
+        Registry.register(Registry.ITEM, new Identifier(ID, "puseik"), new BlockItem(PUSEIK, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "dark_rementio"), DARK_REMENTIO);
         Registry.register(Registry.ITEM, new Identifier(ID, "dark_rementio"), new BlockItem(DARK_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
