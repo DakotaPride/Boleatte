@@ -77,7 +77,7 @@
                   ]
                 }
               ]
-            },
+            },  ///
             {
               "type": "minecraft:item",
               "name": "boleatte:ramukai",
@@ -96,7 +96,7 @@
                   ]
                 }
               ]
-            }
+            }   ///
           ]
         }
       ]

@@ -133,7 +133,6 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_LEAVES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.RASIORE_LEAVES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.DENTICIUS_LEAVES.asItem()));
-                    itemStacks.add(new ItemStack(BlockInit.BLOOMING_DENTICIUS_LEAVES.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_SAPLING.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.BOTAKOA_SAPLING.asItem()));
