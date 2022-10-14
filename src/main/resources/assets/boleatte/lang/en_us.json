@@ -71,6 +71,12 @@
   "block.boleatte.twisting_sethiol": "Twisting Sethiol",
   "block.boleatte.cyan_star_sethiol": "Cyan Star Sethiol",
   "block.boleatte.ipalba": "Ipalba",
+  "block.boleatte.cupped_clerifta": "Cupped Clerifta",
+  "block.boleatte.spiked_clerifta": "Spiked Clerifta",
+  "block.boleatte.rhofeler": "Rhofeler",
+  "block.boleatte.lunar_naselz": "Lunar Naselz",
+  "block.boleatte.solafilil": "Solafilil",
+  "block.boleatte.ardevik": "Ardevik",
 
   "block.boleatte.arbune_log": "Arbune Log",
   "block.boleatte.stripped_arbune_log": "Stripped Arbune Log",
@@ -88,6 +94,7 @@
   "block.boleatte.unstained_emerio": "Unstained Emerio",
   "block.boleatte.acunillus": "Acunillus",
   "block.boleatte.arbune_lily": "Arbune Lily",
+  "block.boleatte.solar_naselz": "Solar Naselz",
 
   "block.boleatte.botakoa_log": "Botakoa Log",
   "block.boleatte.stripped_botakoa_log": "Stripped Botakoa Log",
@@ -105,6 +112,8 @@
   "block.boleatte.cotton_hylekta": "Cotton Hylekta",
   "block.boleatte.lesintocamptas": "Lesintocamptas",
   "block.boleatte.flowering_dahalsia": "Flowering Dahalsia",
+  "block.boleatte.red_calarto": "Red Calarto",
+  "block.boleatte.lavender_calarto": "Lavender Calarto",
 
   "block.boleatte.rasiore_log": "Rasiore Log",
   "block.boleatte.stripped_rasiore_log": "Stripped Rasiore Log",
@@ -214,6 +223,8 @@
 
   "block.boleatte.etterave_bamboo": "Etterave Bamboo",
   "block.boleatte.puseik": "Puseik",
+  "block.boleatte.sprouting_dahalsia": "Sprouting Dahalsia",
+  "block.boleatte.amber_dahalsia": "Amber Dahalsia",
 
   "effect.boleatte.defiant": "Defiant",
   "effect.boleatte.veret_favour": "Verêt's Favor",

@@ -53,25 +53,34 @@ public class FeaturesInit {
 
     public static final WeightedBlockStateProvider BOTAKOA_VEGETATION_PROVIDER = new WeightedBlockStateProvider
             (DataPool.<BlockState>builder()
-                    .add(BlockInit.BOTAKOA_LILY.getDefaultState(), 15)
-                    .add(BlockInit.CRIMSON_BOTAKOA_LILY.getDefaultState(), 15)
-                    .add(BlockInit.VIOLET_SETHIOL.getDefaultState(), 14)
-                    .add(BlockInit.CLAWED_HELITHEUS.getDefaultState(), 14)
-                    .add(BlockInit.FEATHERED_HELITHEUS.getDefaultState(), 14)
-                    .add(BlockInit.COTTON_HYLEKTA.getDefaultState(), 14)
-                    .add(BlockInit.FLOWERING_DAHALSIA.getDefaultState(), 14));
+                    .add(BlockInit.BOTAKOA_LILY.getDefaultState(), 14)
+                    .add(BlockInit.CRIMSON_BOTAKOA_LILY.getDefaultState(), 13)
+                    .add(BlockInit.VIOLET_SETHIOL.getDefaultState(), 12)
+                    .add(BlockInit.CLAWED_HELITHEUS.getDefaultState(), 10)
+                    .add(BlockInit.FEATHERED_HELITHEUS.getDefaultState(), 10)
+                    .add(BlockInit.COTTON_HYLEKTA.getDefaultState(), 11)
+                    .add(BlockInit.FLOWERING_DAHALSIA.getDefaultState(), 10)
+                    .add(BlockInit.RED_CALARTO.getDefaultState(), 10)
+                    .add(BlockInit.LAVENDER_CALARTO.getDefaultState(), 10));
 
     public static final WeightedBlockStateProvider ARBUNE_VEGETATION_PROVIDER = new WeightedBlockStateProvider
             (DataPool.<BlockState>builder()
-                    .add(BlockInit.ARBUNE_LILY.getDefaultState(), 25)
-                    .add(BlockInit.MAUVE_EMERIO.getDefaultState(), 25)
-                    .add(BlockInit.VIOLET_TIPPED_EMERIO.getDefaultState(), 25)
-                    .add(BlockInit.UNSTAINED_EMERIO.getDefaultState(), 25));
+                    .add(BlockInit.ARBUNE_LILY.getDefaultState(), 20)
+                    .add(BlockInit.MAUVE_EMERIO.getDefaultState(), 20)
+                    .add(BlockInit.VIOLET_TIPPED_EMERIO.getDefaultState(), 20)
+                    .add(BlockInit.UNSTAINED_EMERIO.getDefaultState(), 20)
+                    .add(BlockInit.SOLAR_NASELZ.getDefaultState(), 20));
 
     public static final WeightedBlockStateProvider PROTOSTERM_VEGETATION_PROVIDER = new WeightedBlockStateProvider
             (DataPool.<BlockState>builder()
-                    .add(BlockInit.CYAN_STAR_SETHIOL.getDefaultState(), 50)
-                    .add(BlockInit.IPALBA.getDefaultState(), 50));
+                    .add(BlockInit.CYAN_STAR_SETHIOL.getDefaultState(), 12)
+                    .add(BlockInit.IPALBA.getDefaultState(), 12)
+                    .add(BlockInit.CUPPED_CLERIFTA.getDefaultState(), 13)
+                    .add(BlockInit.SPIKED_CLERIFTA.getDefaultState(), 13)
+                    .add(BlockInit.RHOFELER.getDefaultState(), 13)
+                    .add(BlockInit.LUNAR_NASELZ.getDefaultState(), 12)
+                    .add(BlockInit.SOLAFILIL.getDefaultState(), 13)
+                    .add(BlockInit.ARDEVIK.getDefaultState(), 12));
 
     public static final WeightedBlockStateProvider RASIORE_VEGETATION_PROVIDER = new WeightedBlockStateProvider
             (DataPool.<BlockState>builder()
@@ -80,7 +89,9 @@ public class FeaturesInit {
 
     public static final WeightedBlockStateProvider ETTERAVE_VEGETATION_PROVIDER = new WeightedBlockStateProvider
             (DataPool.<BlockState>builder()
-                    .add(BlockInit.PUSEIK.getDefaultState(), 100));
+                    .add(BlockInit.PUSEIK.getDefaultState(), 33)
+                    .add(BlockInit.SPROUTING_DAHALSIA.getDefaultState(), 33)
+                    .add(BlockInit.AMBER_DAHALSIA.getDefaultState(), 34));
 
     public static final WeightedBlockStateProvider DENTICIUS_VEGETATION_PROVIDER = new WeightedBlockStateProvider
             (DataPool.<BlockState>builder()

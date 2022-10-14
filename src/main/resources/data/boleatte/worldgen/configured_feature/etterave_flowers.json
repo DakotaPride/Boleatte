@@ -21,6 +21,12 @@
             "states": [
               {
                 "Name": "boleatte:puseik"
+              },
+              {
+                "Name": "boleatte:sprouting_dahalsia"
+              },
+              {
+                "Name": "boleatte:amber_dahalsia"
               }
             ]
           }

@@ -29,6 +29,8 @@ public class BlockInit {
     public static EtteraveBambooBlock ETTERAVE_BAMBOO = new EtteraveBambooBlock(FabricBlockSettings.of(Material.BAMBOO, MapColor.LAPIS_BLUE)
             .ticksRandomly().strength(1.0F).sounds(BlockSoundGroup.BAMBOO).nonOpaque());
     public static BoleatteFlowerBlock PUSEIK = new BoleatteFlowerBlock(StatusEffects.LEVITATION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock SPROUTING_DAHALSIA = new BoleatteFlowerBlock(StatusEffects.LEVITATION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock AMBER_DAHALSIA = new BoleatteFlowerBlock(StatusEffects.LEVITATION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
 
     public static OreBlock REMENTIO_OPAFEU_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE).requiresTool(),
             UniformIntProvider.create(3, 7));
@@ -72,6 +74,12 @@ public class BlockInit {
     public static TallBoleatteFlowerBlock TWISTING_SETHIOL = new TallBoleatteFlowerBlock(FabricBlockSettings.copy(Blocks.LILAC));
     public static BoleatteFlowerBlock CYAN_STAR_SETHIOL = new BoleatteFlowerBlock(StatusEffects.RESISTANCE, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
     public static BoleatteFlowerBlock IPALBA = new BoleatteFlowerBlock(StatusEffects.RESISTANCE, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock CUPPED_CLERIFTA = new BoleatteFlowerBlock(StatusEffects.RESISTANCE, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock SPIKED_CLERIFTA = new BoleatteFlowerBlock(StatusEffects.RESISTANCE, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock RHOFELER = new BoleatteFlowerBlock(StatusEffects.RESISTANCE, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock LUNAR_NASELZ = new BoleatteFlowerBlock(StatusEffects.RESISTANCE, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock SOLAFILIL = new BoleatteFlowerBlock(StatusEffects.RESISTANCE, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock ARDEVIK = new BoleatteFlowerBlock(StatusEffects.RESISTANCE, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
 
     public static BotakoaSaplingBlock BOTAKOA_SAPLING = new BotakoaSaplingBlock(new BotakoaSaplingGenerator(),
             FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
@@ -90,6 +98,8 @@ public class BlockInit {
     public static BoleatteFlowerBlock COTTON_HYLEKTA = new BoleatteFlowerBlock(StatusEffects.FIRE_RESISTANCE, 60, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
     public static TallBoleatteFlowerBlock LESINTOCAMPTAS = new TallBoleatteFlowerBlock(FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
     public static BoleatteFlowerBlock FLOWERING_DAHALSIA = new BoleatteFlowerBlock(StatusEffects.FIRE_RESISTANCE, 60, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock RED_CALARTO = new BoleatteFlowerBlock(StatusEffects.FIRE_RESISTANCE, 60, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock LAVENDER_CALARTO = new BoleatteFlowerBlock(StatusEffects.FIRE_RESISTANCE, 60, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
 
     public static MelkirschBlock MELKIRSCH = new MelkirschBlock(FabricBlockSettings.copy(Blocks.PUMPKIN));
     public static AttachedStemBlock ATTACHED_MELKIRSCH_STEM = new AttachedStemBlock(MELKIRSCH, () -> ItemInit.MELKIRSCH_SEEDS,
@@ -109,6 +119,7 @@ public class BlockInit {
     public static BoleatteFlowerBlock MAUVE_EMERIO = new BoleatteFlowerBlock(StatusEffects.ABSORPTION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
     public static BoleatteFlowerBlock VIOLET_TIPPED_EMERIO = new BoleatteFlowerBlock(StatusEffects.ABSORPTION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
     public static BoleatteFlowerBlock UNSTAINED_EMERIO = new BoleatteFlowerBlock(StatusEffects.ABSORPTION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock SOLAR_NASELZ = new BoleatteFlowerBlock(StatusEffects.ABSORPTION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
 
     public static RasioreSaplingBlock RASIORE_SAPLING = new RasioreSaplingBlock(new RasioreSaplingGenerator(),
             FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
@@ -171,6 +182,18 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "cyan_star_sethiol"), new BlockItem(CYAN_STAR_SETHIOL, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "ipalba"), IPALBA);
         Registry.register(Registry.ITEM, new Identifier(ID, "ipalba"), new BlockItem(IPALBA, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "cupped_clerifta"), CUPPED_CLERIFTA);
+        Registry.register(Registry.ITEM, new Identifier(ID, "cupped_clerifta"), new BlockItem(CUPPED_CLERIFTA, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "spiked_clerifta"), SPIKED_CLERIFTA);
+        Registry.register(Registry.ITEM, new Identifier(ID, "spiked_clerifta"), new BlockItem(SPIKED_CLERIFTA, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "rhofeler"), RHOFELER);
+        Registry.register(Registry.ITEM, new Identifier(ID, "rhofeler"), new BlockItem(RHOFELER, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "lunar_naselz"), LUNAR_NASELZ);
+        Registry.register(Registry.ITEM, new Identifier(ID, "lunar_naselz"), new BlockItem(LUNAR_NASELZ, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "solafilil"), SOLAFILIL);
+        Registry.register(Registry.ITEM, new Identifier(ID, "solafilil"), new BlockItem(SOLAFILIL, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "ardevik"), ARDEVIK);
+        Registry.register(Registry.ITEM, new Identifier(ID, "ardevik"), new BlockItem(ARDEVIK, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "botakoa_sapling"), BOTAKOA_SAPLING);
         Registry.register(Registry.ITEM, new Identifier(ID, "botakoa_sapling"), new BlockItem(BOTAKOA_SAPLING, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
@@ -204,6 +227,10 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "lesintocamptas"), new BlockItem(LESINTOCAMPTAS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "flowering_dahalsia"), FLOWERING_DAHALSIA);
         Registry.register(Registry.ITEM, new Identifier(ID, "flowering_dahalsia"), new BlockItem(FLOWERING_DAHALSIA, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "red_calarto"), RED_CALARTO);
+        Registry.register(Registry.ITEM, new Identifier(ID, "red_calarto"), new BlockItem(RED_CALARTO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "lavender_calarto"), LAVENDER_CALARTO);
+        Registry.register(Registry.ITEM, new Identifier(ID, "lavender_calarto"), new BlockItem(LAVENDER_CALARTO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "arbune_sapling"), ARBUNE_SAPLING);
         Registry.register(Registry.ITEM, new Identifier(ID, "arbune_sapling"), new BlockItem(ARBUNE_SAPLING, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
@@ -233,6 +260,8 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "unstained_emerio"), new BlockItem(UNSTAINED_EMERIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "arbune_lily"), ARBUNE_LILY);
         Registry.register(Registry.ITEM, new Identifier(ID, "arbune_lily"), new BlockItem(ARBUNE_LILY, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "solar_naselz"), SOLAR_NASELZ);
+        Registry.register(Registry.ITEM, new Identifier(ID, "solar_naselz"), new BlockItem(SOLAR_NASELZ, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "rasiore_sapling"), RASIORE_SAPLING);
         Registry.register(Registry.ITEM, new Identifier(ID, "rasiore_sapling"), new BlockItem(RASIORE_SAPLING, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
@@ -338,6 +367,10 @@ public class BlockInit {
         Registry.register(Registry.BLOCK, new Identifier(ID, "etterave_bamboo"), ETTERAVE_BAMBOO);
         Registry.register(Registry.BLOCK, new Identifier(ID, "puseik"), PUSEIK);
         Registry.register(Registry.ITEM, new Identifier(ID, "puseik"), new BlockItem(PUSEIK, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "sprouting_dahalsia"), SPROUTING_DAHALSIA);
+        Registry.register(Registry.ITEM, new Identifier(ID, "sprouting_dahalsia"), new BlockItem(SPROUTING_DAHALSIA, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "amber_dahalsia"), AMBER_DAHALSIA);
+        Registry.register(Registry.ITEM, new Identifier(ID, "amber_dahalsia"), new BlockItem(AMBER_DAHALSIA, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "dark_rementio"), DARK_REMENTIO);
         Registry.register(Registry.ITEM, new Identifier(ID, "dark_rementio"), new BlockItem(DARK_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));

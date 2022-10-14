@@ -36,6 +36,24 @@
                 "Properties": {
                   "half": "lower"
                 }
+              },
+              {
+                "Name": "boleatte:cupped_clerifta"
+              },
+              {
+                "Name": "boleatte:spiked_clerifta"
+              },
+              {
+                "Name": "boleatte:rhofeler"
+              },
+              {
+                "Name": "boleatte:lunar_naselz"
+              },
+              {
+                "Name": "boleatte:solafilil"
+              },
+              {
+                "Name": "boleatte:ardevik"
               }
             ]
           }

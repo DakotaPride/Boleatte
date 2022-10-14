@@ -180,12 +180,20 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.VIOLET_SETHIOL.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.CRIMSON_BOTAKOA_LILY.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.BOTAKOA_LILY.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.CLAWED_HELITHEUS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.FEATHERED_HELITHEUS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.COTTON_HYLEKTA.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.LESINTOCAMPTAS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.FLOWERING_DAHALSIA.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.RED_CALARTO.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.LAVENDER_CALARTO.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.ACUNILLUS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.MAUVE_EMERIO.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.VIOLET_TIPPED_EMERIO.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.UNSTAINED_EMERIO.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_LILY.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.SOLAR_NASELZ.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.SPINED_FRITRIS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.NOCTURNAL_EYED_FRITRIS.asItem()));
@@ -195,6 +203,19 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.TWISTING_SETHIOL.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.CYAN_STAR_SETHIOL.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.IPALBA.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.CUPPED_CLERIFTA.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.SPIKED_CLERIFTA.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.RHOFELER.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.LUNAR_NASELZ.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.SOLAFILIL.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.ARDEVIK.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.INTOXICATING_MIENTIS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.GOLDEN_MIENTIS.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.PUSEIK.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.SPROUTING_DAHALSIA.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.AMBER_DAHALSIA.asItem()));
                 }).build();
     }
 
