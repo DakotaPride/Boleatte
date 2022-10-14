@@ -2,8 +2,12 @@
   "feature": "boleatte:rasiore_flowers",
   "placement": [
     {
+      "type": "minecraft:count",
+      "count": 3
+    },
+    {
       "type": "minecraft:rarity_filter",
-      "chance": 14
+      "chance": 2
     },
     {
       "type": "minecraft:in_square"
@@ -11,23 +15,6 @@
     {
       "type": "minecraft:heightmap",
       "heightmap": "MOTION_BLOCKING"
-    },
-    {
-      "type": "minecraft:count",
-      "count": {
-        "type": "minecraft:clamped",
-        "value": {
-          "min_inclusive": 0,
-          "max_inclusive": 3,
-          "source": {
-            "type": "minecraft:uniform",
-            "value": {
-              "min_inclusive": -1,
-              "max_inclusive": 3
-            }
-          }
-        }
-      }
     },
     {
       "type": "minecraft:biome"

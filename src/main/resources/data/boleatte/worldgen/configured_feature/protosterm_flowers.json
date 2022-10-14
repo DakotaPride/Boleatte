@@ -1,145 +1,55 @@
 {
-  "type": "minecraft:simple_random_selector",
+  "type": "minecraft:flower",
   "config": {
-    "features": [
-      {
-        "feature": {
-          "type": "minecraft:random_patch",
-          "config": {
-            "tries": 124,
-            "xz_spread": 7,
-            "y_spread": 3,
-            "feature": {
-              "feature": {
-                "type": "minecraft:simple_block",
-                "config": {
-                  "to_place": {
-                    "type": "minecraft:simple_state_provider",
-                    "state": {
-                      "Name": "boleatte:hypnotic_sethiol",
-                      "Properties": {
-                        "half": "lower"
-                      }
-                    }
-                  }
+    "tries": 96,
+    "xz_spread": 6,
+    "y_spread": 2,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:noise_provider",
+            "seed": 2345,
+            "noise": {
+              "firstOctave": 0,
+              "amplitudes": [
+                1
+              ]
+            },
+            "scale": 0.020833334,
+            "states": [
+              {
+                "Name": "boleatte:cyan_star_sethiol"
+              },
+              {
+                "Name": "boleatte:ipalba"
+              },
+              {
+                "Name": "boleatte:twisting_sethiol",
+                "Properties": {
+                  "half": "lower"
                 }
               },
-              "placement": [
-                {
-                  "type": "minecraft:block_predicate_filter",
-                  "predicate": {
-                    "type": "minecraft:matching_blocks",
-                    "blocks": "minecraft:air"
-                  }
+              {
+                "Name": "boleatte:hypnotic_sethiol",
+                "Properties": {
+                  "half": "lower"
                 }
-              ]
-            }
+              }
+            ]
           }
-        },
-        "placement": []
+        }
       },
-      {
-        "feature": {
-          "type": "minecraft:random_patch",
-          "config": {
-            "tries": 124,
-            "xz_spread": 7,
-            "y_spread": 3,
-            "feature": {
-              "feature": {
-                "type": "minecraft:simple_block",
-                "config": {
-                  "to_place": {
-                    "type": "minecraft:simple_state_provider",
-                    "state": {
-                      "Name": "boleatte:twisting_sethiol",
-                      "Properties": {
-                        "half": "lower"
-                      }
-                    }
-                  }
-                }
-              },
-              "placement": [
-                {
-                  "type": "minecraft:block_predicate_filter",
-                  "predicate": {
-                    "type": "minecraft:matching_blocks",
-                    "blocks": "minecraft:air"
-                  }
-                }
-              ]
-            }
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
           }
-        },
-        "placement": []
-      },
-      {
-        "feature": {
-          "type": "minecraft:random_patch",
-          "config": {
-            "tries": 124,
-            "xz_spread": 7,
-            "y_spread": 3,
-            "feature": {
-              "feature": {
-                "type": "minecraft:simple_block",
-                "config": {
-                  "to_place": {
-                    "type": "minecraft:simple_state_provider",
-                    "state": {
-                      "Name": "boleatte:cyan_star_sethiol"
-                    }
-                  }
-                }
-              },
-              "placement": [
-                {
-                  "type": "minecraft:block_predicate_filter",
-                  "predicate": {
-                    "type": "minecraft:matching_blocks",
-                    "blocks": "minecraft:air"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        "placement": []
-      },
-      {
-        "feature": {
-          "type": "minecraft:random_patch",
-          "config": {
-            "tries": 124,
-            "xz_spread": 7,
-            "y_spread": 3,
-            "feature": {
-              "feature": {
-                "type": "minecraft:simple_block",
-                "config": {
-                  "to_place": {
-                    "type": "minecraft:simple_state_provider",
-                    "state": {
-                      "Name": "boleatte:ipalba"
-                    }
-                  }
-                }
-              },
-              "placement": [
-                {
-                  "type": "minecraft:block_predicate_filter",
-                  "predicate": {
-                    "type": "minecraft:matching_blocks",
-                    "blocks": "minecraft:air"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        "placement": []
-      }
-    ]
+        }
+      ]
+    }
   }
 }

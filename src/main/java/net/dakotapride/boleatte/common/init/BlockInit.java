@@ -18,12 +18,12 @@ public class BlockInit {
 
     public static RementioBlock REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
     public static Block REMENTIO_BRICKS = new Block(FabricBlockSettings.copy(Blocks.STONE_BRICKS));
-    public static Block ARBUNE_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
-    public static Block BOTAKOA_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
-    public static Block RASIORE_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
-    public static Block PROTOSTERM_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
-    public static Block ETTERAVE_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
-    public static Block DENTICIUS_REMENTIO = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static RementioBlock ARBUNE_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static RementioBlock BOTAKOA_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static RementioBlock RASIORE_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static RementioBlock PROTOSTERM_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static RementioBlock ETTERAVE_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static RementioBlock DENTICIUS_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
     public static Block ORETESSE = new Block(FabricBlockSettings.copy(Blocks.STRIPPED_WARPED_HYPHAE).requiresTool());
 
     public static EtteraveBambooBlock ETTERAVE_BAMBOO = new EtteraveBambooBlock(FabricBlockSettings.of(Material.BAMBOO, MapColor.LAPIS_BLUE)
@@ -85,6 +85,11 @@ public class BlockInit {
     public static BoleatteFlowerBlock CRIMSON_BOTAKOA_LILY = new BoleatteFlowerBlock(StatusEffects.FIRE_RESISTANCE, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
     public static BoleatteFlowerBlock BOTAKOA_LILY = new BoleatteFlowerBlock(StatusEffects.FIRE_RESISTANCE, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
     public static TallBoleatteFlowerBlock FLAMING_SETHIOL = new TallBoleatteFlowerBlock(FabricBlockSettings.copy(Blocks.LILAC));
+    public static BoleatteFlowerBlock CLAWED_HELITHEUS = new BoleatteFlowerBlock(StatusEffects.FIRE_RESISTANCE, 100, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock FEATHERED_HELITHEUS = new BoleatteFlowerBlock(StatusEffects.FIRE_RESISTANCE, 60, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock COTTON_HYLEKTA = new BoleatteFlowerBlock(StatusEffects.FIRE_RESISTANCE, 60, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static TallBoleatteFlowerBlock LESINTOCAMPTAS = new TallBoleatteFlowerBlock(FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock FLOWERING_DAHALSIA = new BoleatteFlowerBlock(StatusEffects.FIRE_RESISTANCE, 60, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
 
     public static MelkirschBlock MELKIRSCH = new MelkirschBlock(FabricBlockSettings.copy(Blocks.PUMPKIN));
     public static AttachedStemBlock ATTACHED_MELKIRSCH_STEM = new AttachedStemBlock(MELKIRSCH, () -> ItemInit.MELKIRSCH_SEEDS,
@@ -189,6 +194,16 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "botakoa_lily"), new BlockItem(BOTAKOA_LILY, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "flaming_sethiol"), FLAMING_SETHIOL);
         Registry.register(Registry.ITEM, new Identifier(ID, "flaming_sethiol"), new BlockItem(FLAMING_SETHIOL, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "clawed_helitheus"), CLAWED_HELITHEUS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "clawed_helitheus"), new BlockItem(CLAWED_HELITHEUS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "feathered_helitheus"), FEATHERED_HELITHEUS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "feathered_helitheus"), new BlockItem(FEATHERED_HELITHEUS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "cotton_hylekta"), COTTON_HYLEKTA);
+        Registry.register(Registry.ITEM, new Identifier(ID, "cotton_hylekta"), new BlockItem(COTTON_HYLEKTA, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "lesintocamptas"), LESINTOCAMPTAS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "lesintocamptas"), new BlockItem(LESINTOCAMPTAS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "flowering_dahalsia"), FLOWERING_DAHALSIA);
+        Registry.register(Registry.ITEM, new Identifier(ID, "flowering_dahalsia"), new BlockItem(FLOWERING_DAHALSIA, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "arbune_sapling"), ARBUNE_SAPLING);
         Registry.register(Registry.ITEM, new Identifier(ID, "arbune_sapling"), new BlockItem(ARBUNE_SAPLING, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));

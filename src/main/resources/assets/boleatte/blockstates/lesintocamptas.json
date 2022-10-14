@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "boleatte:block/lesintocamptas_bottom"
+    },
+    "half=upper": {
+      "model": "boleatte:block/lesintocamptas_top"
+    }
+  }
+}

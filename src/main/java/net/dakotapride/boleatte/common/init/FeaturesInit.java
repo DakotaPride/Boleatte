@@ -1,11 +1,14 @@
 package net.dakotapride.boleatte.common.init;
 
 import com.google.common.collect.ImmutableList;
+import net.dakotapride.boleatte.common.gen.BoleatteVegetationFeature;
 import net.dakotapride.boleatte.common.gen.EtteraveBambooFeature;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.tag.BlockTags;
+import net.minecraft.util.collection.DataPool;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
@@ -23,6 +26,7 @@ import net.minecraft.world.gen.root.AboveRootPlacement;
 import net.minecraft.world.gen.root.MangroveRootPlacement;
 import net.minecraft.world.gen.root.MangroveRootPlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
 import net.minecraft.world.gen.treedecorator.BeehiveTreeDecorator;
 import net.minecraft.world.gen.trunk.GiantTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
@@ -43,6 +47,70 @@ public class FeaturesInit {
 
 
     // Configured Features
+
+    public static final Feature<NetherForestVegetationFeatureConfig> BOLEATTE_VEGETATION = register("boleatte_vegetation",
+            new BoleatteVegetationFeature(NetherForestVegetationFeatureConfig.VEGETATION_CODEC));
+
+    public static final WeightedBlockStateProvider BOTAKOA_VEGETATION_PROVIDER = new WeightedBlockStateProvider
+            (DataPool.<BlockState>builder()
+                    .add(BlockInit.BOTAKOA_LILY.getDefaultState(), 15)
+                    .add(BlockInit.CRIMSON_BOTAKOA_LILY.getDefaultState(), 15)
+                    .add(BlockInit.VIOLET_SETHIOL.getDefaultState(), 14)
+                    .add(BlockInit.CLAWED_HELITHEUS.getDefaultState(), 14)
+                    .add(BlockInit.FEATHERED_HELITHEUS.getDefaultState(), 14)
+                    .add(BlockInit.COTTON_HYLEKTA.getDefaultState(), 14)
+                    .add(BlockInit.FLOWERING_DAHALSIA.getDefaultState(), 14));
+
+    public static final WeightedBlockStateProvider ARBUNE_VEGETATION_PROVIDER = new WeightedBlockStateProvider
+            (DataPool.<BlockState>builder()
+                    .add(BlockInit.ARBUNE_LILY.getDefaultState(), 25)
+                    .add(BlockInit.MAUVE_EMERIO.getDefaultState(), 25)
+                    .add(BlockInit.VIOLET_TIPPED_EMERIO.getDefaultState(), 25)
+                    .add(BlockInit.UNSTAINED_EMERIO.getDefaultState(), 25));
+
+    public static final WeightedBlockStateProvider PROTOSTERM_VEGETATION_PROVIDER = new WeightedBlockStateProvider
+            (DataPool.<BlockState>builder()
+                    .add(BlockInit.CYAN_STAR_SETHIOL.getDefaultState(), 50)
+                    .add(BlockInit.IPALBA.getDefaultState(), 50));
+
+    public static final WeightedBlockStateProvider RASIORE_VEGETATION_PROVIDER = new WeightedBlockStateProvider
+            (DataPool.<BlockState>builder()
+                    .add(BlockInit.INTOXICATING_MIENTIS.getDefaultState(), 50)
+                    .add(BlockInit.GOLDEN_MIENTIS.getDefaultState(), 50));
+
+    public static final WeightedBlockStateProvider ETTERAVE_VEGETATION_PROVIDER = new WeightedBlockStateProvider
+            (DataPool.<BlockState>builder()
+                    .add(BlockInit.PUSEIK.getDefaultState(), 100));
+
+    public static final WeightedBlockStateProvider DENTICIUS_VEGETATION_PROVIDER = new WeightedBlockStateProvider
+            (DataPool.<BlockState>builder()
+                    .add(BlockInit.HANGING_BELL_FRITRIS.getDefaultState(), 33)
+                    .add(BlockInit.NOCTURNAL_EYED_FRITRIS.getDefaultState(), 33)
+                    .add(BlockInit.SPINED_FRITRIS.getDefaultState(), 34));
+
+    public static final RegistryEntry<ConfiguredFeature<NetherForestVegetationFeatureConfig, ?>> BOTAKOA_VEGETATION_BONEMEAL =
+            ConfiguredFeatures.register(ID + "botakoa_vegetation_bonemeal", BOLEATTE_VEGETATION,
+                    new NetherForestVegetationFeatureConfig(BOTAKOA_VEGETATION_PROVIDER, 3, 1));
+
+    public static final RegistryEntry<ConfiguredFeature<NetherForestVegetationFeatureConfig, ?>> ARBUNE_VEGETATION_BONEMEAL =
+            ConfiguredFeatures.register(ID + "arbune_vegetation_bonemeal", BOLEATTE_VEGETATION,
+                    new NetherForestVegetationFeatureConfig(ARBUNE_VEGETATION_PROVIDER, 3, 1));
+
+    public static final RegistryEntry<ConfiguredFeature<NetherForestVegetationFeatureConfig, ?>> PROTOSTERM_VEGETATION_BONEMEAL =
+            ConfiguredFeatures.register(ID + "protosterm_vegetation_bonemeal", BOLEATTE_VEGETATION,
+                    new NetherForestVegetationFeatureConfig(PROTOSTERM_VEGETATION_PROVIDER, 3, 1));
+
+    public static final RegistryEntry<ConfiguredFeature<NetherForestVegetationFeatureConfig, ?>> RASIORE_VEGETATION_BONEMEAL =
+            ConfiguredFeatures.register(ID + "rasiore_vegetation_bonemeal", BOLEATTE_VEGETATION,
+                    new NetherForestVegetationFeatureConfig(RASIORE_VEGETATION_PROVIDER, 3, 1));
+
+    public static final RegistryEntry<ConfiguredFeature<NetherForestVegetationFeatureConfig, ?>> ETTERAVE_VEGETATION_BONEMEAL =
+            ConfiguredFeatures.register(ID + "etterave_vegetation_bonemeal", BOLEATTE_VEGETATION,
+                    new NetherForestVegetationFeatureConfig(ETTERAVE_VEGETATION_PROVIDER, 3, 1));
+
+    public static final RegistryEntry<ConfiguredFeature<NetherForestVegetationFeatureConfig, ?>> DENTICIUS_VEGETATION_BONEMEAL =
+            ConfiguredFeatures.register(ID + "denticius_vegetation_bonemeal", BOLEATTE_VEGETATION,
+                    new NetherForestVegetationFeatureConfig(DENTICIUS_VEGETATION_PROVIDER, 3, 1));
 
     public static final Feature<ProbabilityConfig> ETTERAVE_BAMBOO =
             register(ID + ":etterave_bamboo", new EtteraveBambooFeature(ProbabilityConfig.CODEC));
