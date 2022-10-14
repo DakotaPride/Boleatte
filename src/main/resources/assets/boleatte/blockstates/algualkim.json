@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "boleatte:block/algualkim_bottom"
+    },
+    "half=upper": {
+      "model": "boleatte:block/algualkim_top"
+    }
+  }
+}

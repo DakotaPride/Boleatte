@@ -194,6 +194,7 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.UNSTAINED_EMERIO.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_LILY.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.SOLAR_NASELZ.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.OBSCURING_HELITHEUS.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.SPINED_FRITRIS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.NOCTURNAL_EYED_FRITRIS.asItem()));
@@ -216,6 +217,10 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.PUSEIK.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.SPROUTING_DAHALSIA.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.AMBER_DAHALSIA.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.PRANCING_BEQUALIT.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.WITHERING_BEQUALIT.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.ALGUALKIM.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.DEMALSIM.asItem()));
                 }).build();
     }
 

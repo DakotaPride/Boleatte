@@ -95,6 +95,7 @@
   "block.boleatte.acunillus": "Acunillus",
   "block.boleatte.arbune_lily": "Arbune Lily",
   "block.boleatte.solar_naselz": "Solar Naselz",
+  "block.boleatte.obscuring_helitheus": "Obscuring Helitheus",
 
   "block.boleatte.botakoa_log": "Botakoa Log",
   "block.boleatte.stripped_botakoa_log": "Stripped Botakoa Log",
@@ -225,6 +226,10 @@
   "block.boleatte.puseik": "Puseik",
   "block.boleatte.sprouting_dahalsia": "Sprouting Dahalsia",
   "block.boleatte.amber_dahalsia": "Amber Dahalsia",
+  "block.boleatte.prancing_bequalit": "Prancing Bequalit",
+  "block.boleatte.withering_bequalit": "Withering Bequalit",
+  "block.boleatte.algualkim": "Algualkim",
+  "block.boleatte.demalsim": "Demalsim",
 
   "effect.boleatte.defiant": "Defiant",
   "effect.boleatte.veret_favour": "Verêt's Favour",

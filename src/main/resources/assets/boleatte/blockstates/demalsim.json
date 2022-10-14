@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "boleatte:block/demalsim_bottom"
+    },
+    "half=upper": {
+      "model": "boleatte:block/demalsim_top"
+    }
+  }
+}

@@ -31,6 +31,10 @@ public class BlockInit {
     public static BoleatteFlowerBlock PUSEIK = new BoleatteFlowerBlock(StatusEffects.LEVITATION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
     public static BoleatteFlowerBlock SPROUTING_DAHALSIA = new BoleatteFlowerBlock(StatusEffects.LEVITATION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
     public static BoleatteFlowerBlock AMBER_DAHALSIA = new BoleatteFlowerBlock(StatusEffects.LEVITATION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock PRANCING_BEQUALIT = new BoleatteFlowerBlock(StatusEffects.LEVITATION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock WITHERING_BEQUALIT = new BoleatteFlowerBlock(StatusEffects.LEVITATION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static TallBoleatteFlowerBlock ALGUALKIM = new TallBoleatteFlowerBlock(FabricBlockSettings.copy(Blocks.LILAC));
+    public static TallBoleatteFlowerBlock DEMALSIM = new TallBoleatteFlowerBlock(FabricBlockSettings.copy(Blocks.LILAC));
 
     public static OreBlock REMENTIO_OPAFEU_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.DIAMOND_ORE).requiresTool(),
             UniformIntProvider.create(3, 7));
@@ -120,6 +124,7 @@ public class BlockInit {
     public static BoleatteFlowerBlock VIOLET_TIPPED_EMERIO = new BoleatteFlowerBlock(StatusEffects.ABSORPTION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
     public static BoleatteFlowerBlock UNSTAINED_EMERIO = new BoleatteFlowerBlock(StatusEffects.ABSORPTION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
     public static BoleatteFlowerBlock SOLAR_NASELZ = new BoleatteFlowerBlock(StatusEffects.ABSORPTION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock OBSCURING_HELITHEUS = new BoleatteFlowerBlock(StatusEffects.ABSORPTION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
 
     public static RasioreSaplingBlock RASIORE_SAPLING = new RasioreSaplingBlock(new RasioreSaplingGenerator(),
             FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
@@ -262,6 +267,8 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "arbune_lily"), new BlockItem(ARBUNE_LILY, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "solar_naselz"), SOLAR_NASELZ);
         Registry.register(Registry.ITEM, new Identifier(ID, "solar_naselz"), new BlockItem(SOLAR_NASELZ, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "obscuring_helitheus"), OBSCURING_HELITHEUS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "obscuring_helitheus"), new BlockItem(OBSCURING_HELITHEUS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "rasiore_sapling"), RASIORE_SAPLING);
         Registry.register(Registry.ITEM, new Identifier(ID, "rasiore_sapling"), new BlockItem(RASIORE_SAPLING, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
@@ -371,6 +378,14 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "sprouting_dahalsia"), new BlockItem(SPROUTING_DAHALSIA, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "amber_dahalsia"), AMBER_DAHALSIA);
         Registry.register(Registry.ITEM, new Identifier(ID, "amber_dahalsia"), new BlockItem(AMBER_DAHALSIA, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "prancing_bequalit"), PRANCING_BEQUALIT);
+        Registry.register(Registry.ITEM, new Identifier(ID, "prancing_bequalit"), new BlockItem(PRANCING_BEQUALIT, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "withering_bequalit"), WITHERING_BEQUALIT);
+        Registry.register(Registry.ITEM, new Identifier(ID, "withering_bequalit"), new BlockItem(WITHERING_BEQUALIT, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "algualkim"), ALGUALKIM);
+        Registry.register(Registry.ITEM, new Identifier(ID, "algualkim"), new BlockItem(ALGUALKIM, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "demalsim"), DEMALSIM);
+        Registry.register(Registry.ITEM, new Identifier(ID, "demalsim"), new BlockItem(DEMALSIM, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "dark_rementio"), DARK_REMENTIO);
         Registry.register(Registry.ITEM, new Identifier(ID, "dark_rementio"), new BlockItem(DARK_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));

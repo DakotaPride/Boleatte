@@ -65,11 +65,12 @@ public class FeaturesInit {
 
     public static final WeightedBlockStateProvider ARBUNE_VEGETATION_PROVIDER = new WeightedBlockStateProvider
             (DataPool.<BlockState>builder()
-                    .add(BlockInit.ARBUNE_LILY.getDefaultState(), 20)
-                    .add(BlockInit.MAUVE_EMERIO.getDefaultState(), 20)
-                    .add(BlockInit.VIOLET_TIPPED_EMERIO.getDefaultState(), 20)
-                    .add(BlockInit.UNSTAINED_EMERIO.getDefaultState(), 20)
-                    .add(BlockInit.SOLAR_NASELZ.getDefaultState(), 20));
+                    .add(BlockInit.ARBUNE_LILY.getDefaultState(), 16)
+                    .add(BlockInit.MAUVE_EMERIO.getDefaultState(), 16)
+                    .add(BlockInit.VIOLET_TIPPED_EMERIO.getDefaultState(), 17)
+                    .add(BlockInit.UNSTAINED_EMERIO.getDefaultState(), 17)
+                    .add(BlockInit.SOLAR_NASELZ.getDefaultState(), 17)
+                    .add(BlockInit.OBSCURING_HELITHEUS.getDefaultState(), 17));
 
     public static final WeightedBlockStateProvider PROTOSTERM_VEGETATION_PROVIDER = new WeightedBlockStateProvider
             (DataPool.<BlockState>builder()
@@ -89,9 +90,11 @@ public class FeaturesInit {
 
     public static final WeightedBlockStateProvider ETTERAVE_VEGETATION_PROVIDER = new WeightedBlockStateProvider
             (DataPool.<BlockState>builder()
-                    .add(BlockInit.PUSEIK.getDefaultState(), 33)
-                    .add(BlockInit.SPROUTING_DAHALSIA.getDefaultState(), 33)
-                    .add(BlockInit.AMBER_DAHALSIA.getDefaultState(), 34));
+                    .add(BlockInit.PUSEIK.getDefaultState(), 20)
+                    .add(BlockInit.SPROUTING_DAHALSIA.getDefaultState(), 20)
+                    .add(BlockInit.AMBER_DAHALSIA.getDefaultState(), 20)
+                    .add(BlockInit.PRANCING_BEQUALIT.getDefaultState(), 20)
+                    .add(BlockInit.WITHERING_BEQUALIT.getDefaultState(), 20));
 
     public static final WeightedBlockStateProvider DENTICIUS_VEGETATION_PROVIDER = new WeightedBlockStateProvider
             (DataPool.<BlockState>builder()
