@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "boleatte:block/inflamed_sethiol_bottom"
+    },
+    "half=upper": {
+      "model": "boleatte:block/inflamed_sethiol_top"
+    }
+  }
+}

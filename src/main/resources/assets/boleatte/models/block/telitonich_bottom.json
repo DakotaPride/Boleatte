@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "boleatte:block/telitonich_bottom"
+  }
+}

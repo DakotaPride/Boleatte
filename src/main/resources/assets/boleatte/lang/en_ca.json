@@ -125,6 +125,8 @@
   "block.boleatte.rasiore_planks": "Rasiore Planks",
   "block.boleatte.intoxicated_mientis": "Intoxicated Mientis",
   "block.boleatte.golden_mientis": "Golden Mientis",
+  "block.boleatte.vermensa": "Vermensa",
+  "block.boleatte.dwarf_risictula": "Dwarf Risictula",
 
   "block.boleatte.denticius_log": "Denticius Log",
   "block.boleatte.stripped_denticius_log": "Stripped Denticius Log",
@@ -137,10 +139,15 @@
   "block.boleatte.spined_fritris": "Spined Fritris",
   "block.boleatte.nocturnal_eyed_fritris": "Nocturnal Fritris",
   "block.boleatte.hanging_bell_fritris": "Hanging Bell Fritris",
+  "block.boleatte.raging_risictula": "Raging Risictula",
+  "block.boleatte.hissing_helitheus": "Hissing Helitheus",
+  "block.boleatte.anelostam": "Anelostam",
 
   "block.boleatte.quanalla_bush": "Quanalla",
   "block.boleatte.dead_leaves": "Dead Leaves",
   "block.boleatte.sakalou_roots": "Sakalou",
+  "block.boleatte.psylophonich": "Psylophonich",
+  "block.boleatte.inflamed_sethiol": "Inflamed Sethiol",
 
   "block.boleatte.oretesse": "Oretesse",
   "block.boleatte.rementio": "Rementio",
@@ -219,6 +226,7 @@
   "block.boleatte.veticoade": "Veticoade",
   "block.boleatte.lephelusa_violes": "Lephelusa Violes",
   "block.boleatte.baburben_roots": "Baburben",
+  "block.boleatte.telitonich": "Telitonich",
   "block.boleatte.lephelusa_block": "Lephelusa Coral Block",
   "item.boleatte.lephelusa_coral_shard": "Lephelusa Coral Shard",
 

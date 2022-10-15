@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "boleatte:block/inflaming_sethiol_top"
+  }
+}

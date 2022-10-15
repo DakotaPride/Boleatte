@@ -20,22 +20,10 @@
             "scale": 0.020833334,
             "states": [
               {
-                "Name": "boleatte:hanging_bell_fritris"
-              },
-              {
-                "Name": "boleatte:nocturnal_eyed_fritris"
-              },
-              {
-                "Name": "boleatte:spined_fritris"
-              },
-              {
-                "Name": "boleatte:raging_risictula"
-              },
-              {
-                "Name": "boleatte:hissing_helitheus"
-              },
-              {
-                "Name": "boleatte:anelostam"
+                "Name": "boleatte:telitonich",
+                "Properties": {
+                  "half": "lower"
+                }
               }
             ]
           }

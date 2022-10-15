@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "boleatte:block/telitonich_bottom"
+    },
+    "half=upper": {
+      "model": "boleatte:block/telitonich_top"
+    }
+  }
+}

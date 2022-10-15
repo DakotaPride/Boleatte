@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "boleatte:block/psylophonich_bottom"
+    },
+    "half=upper": {
+      "model": "boleatte:block/psylophonich_top"
+    }
+  }
+}

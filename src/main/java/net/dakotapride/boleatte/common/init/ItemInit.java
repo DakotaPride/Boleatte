@@ -199,6 +199,9 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.SPINED_FRITRIS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.NOCTURNAL_EYED_FRITRIS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.HANGING_BELL_FRITRIS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.RAGING_RISICTULA.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.HISSING_HELITHEUS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.ANELOSTAM.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.HYPNOTIC_SETHIOL.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.TWISTING_SETHIOL.asItem()));
@@ -213,6 +216,8 @@ public class ItemInit {
 
                     itemStacks.add(new ItemStack(BlockInit.INTOXICATING_MIENTIS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.GOLDEN_MIENTIS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.VERMENSA.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.DWARF_RISICTULA.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.PUSEIK.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.SPROUTING_DAHALSIA.asItem()));

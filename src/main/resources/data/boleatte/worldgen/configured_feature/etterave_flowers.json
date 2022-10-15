@@ -27,6 +27,24 @@
               },
               {
                 "Name": "boleatte:amber_dahalsia"
+              },
+              {
+                "Name": "boleatte:prancing_bequalit"
+              },
+              {
+                "Name": "boleatte:withering_bequalit"
+              },
+              {
+                "Name": "boleatte:algualkim",
+                "Properties": {
+                  "half": "lower"
+                }
+              },
+              {
+                "Name": "boleatte:demalsim",
+                "Properties": {
+                  "half": "lower"
+                }
               }
             ]
           }
