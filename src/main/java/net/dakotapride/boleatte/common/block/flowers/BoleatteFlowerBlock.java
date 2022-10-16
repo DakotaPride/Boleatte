@@ -1,4 +1,4 @@
-package net.dakotapride.boleatte.common.block;
+package net.dakotapride.boleatte.common.block.flowers;
 
 import net.dakotapride.boleatte.common.init.TagInit;
 import net.minecraft.block.BlockState;

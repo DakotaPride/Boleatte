@@ -24,6 +24,21 @@
                 "Properties": {
                   "half": "lower"
                 }
+              },
+              {
+                "Name": "boleatte:chilling_sethiol"
+              },
+              {
+                "Name": "boleatte:frigid_hylekta"
+              },
+              {
+                "Name": "boleatte:acolont"
+              },
+              {
+                "Name": "boleatte:lejelus"
+              },
+              {
+                "Name": "boleatte:croselotos"
               }
             ]
           }

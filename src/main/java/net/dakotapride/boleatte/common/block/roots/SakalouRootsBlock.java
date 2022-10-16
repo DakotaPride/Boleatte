@@ -1,6 +1,5 @@
-package net.dakotapride.boleatte.common.block;
+package net.dakotapride.boleatte.common.block.roots;
 
-import net.dakotapride.boleatte.common.init.BlockInit;
 import net.dakotapride.boleatte.common.init.ItemInit;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;

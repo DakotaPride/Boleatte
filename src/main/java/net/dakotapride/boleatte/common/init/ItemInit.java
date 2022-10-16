@@ -226,6 +226,16 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.WITHERING_BEQUALIT.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.ALGUALKIM.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.DEMALSIM.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.PSYLOPHONICH.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.INFLAMED_SETHIOL.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.TELITONICH.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.CHILLING_SETHIOL.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.FRIGID_HYLEKTA.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.ACOLONT.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.LEJELUS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.CROSELOTOS.asItem()));
                 }).build();
     }
 

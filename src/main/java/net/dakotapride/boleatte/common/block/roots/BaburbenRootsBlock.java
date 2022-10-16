@@ -1,9 +1,11 @@
-package net.dakotapride.boleatte.common.block;
+package net.dakotapride.boleatte.common.block.roots;
 
 import net.dakotapride.boleatte.common.init.BlockInit;
 import net.dakotapride.boleatte.common.init.ItemInit;
-import net.minecraft.block.*;
-import net.minecraft.entity.Entity;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.ShapeContext;
+import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;

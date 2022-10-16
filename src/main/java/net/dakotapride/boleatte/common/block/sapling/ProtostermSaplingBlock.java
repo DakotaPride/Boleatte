@@ -1,4 +1,4 @@
-package net.dakotapride.boleatte.common.block;
+package net.dakotapride.boleatte.common.block.sapling;
 
 import net.dakotapride.boleatte.common.init.BlockInit;
 import net.minecraft.block.BlockState;

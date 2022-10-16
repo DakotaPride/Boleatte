@@ -1,4 +1,4 @@
-package net.dakotapride.boleatte.common.block;
+package net.dakotapride.boleatte.common.block.roots;
 
 import net.dakotapride.boleatte.common.init.ItemInit;
 import net.minecraft.block.BlockState;

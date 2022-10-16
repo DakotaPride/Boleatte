@@ -1,4 +1,4 @@
-package net.dakotapride.boleatte.common.block;
+package net.dakotapride.boleatte.common.block.flowers.tall_flowers;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;

@@ -1,6 +1,15 @@
 package net.dakotapride.boleatte.common.init;
 
 import net.dakotapride.boleatte.common.block.*;
+import net.dakotapride.boleatte.common.block.flowers.BaburbenWastesFlowerBlock;
+import net.dakotapride.boleatte.common.block.flowers.BoleatteFlowerBlock;
+import net.dakotapride.boleatte.common.block.roots.BaburbenRootsBlock;
+import net.dakotapride.boleatte.common.block.roots.QuanallaBushBlock;
+import net.dakotapride.boleatte.common.block.roots.SakalouRootsBlock;
+import net.dakotapride.boleatte.common.block.sapling.*;
+import net.dakotapride.boleatte.common.block.flowers.tall_flowers.BaburbenWastesTallFlowerBlock;
+import net.dakotapride.boleatte.common.block.flowers.tall_flowers.QuantilaBarrensTallFlowerBlock;
+import net.dakotapride.boleatte.common.block.flowers.tall_flowers.TallBoleatteFlowerBlock;
 import net.dakotapride.boleatte.common.gen.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -166,6 +175,11 @@ public class BlockInit {
     public static Block LEPHELUSA_CORAL_BLOCK = new Block(FabricBlockSettings.copy(Blocks.BUBBLE_CORAL_BLOCK));
     public static BaburbenRootsBlock BABURBEN_ROOTS = new BaburbenRootsBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH).ticksRandomly().nonOpaque());
     public static BaburbenWastesTallFlowerBlock TELITONICH = new BaburbenWastesTallFlowerBlock(FabricBlockSettings.copy(Blocks.LILAC));
+    public static BaburbenWastesFlowerBlock CHILLING_SETHIOL = new BaburbenWastesFlowerBlock(StatusEffects.NIGHT_VISION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BaburbenWastesFlowerBlock FRIGID_HYLEKTA = new BaburbenWastesFlowerBlock(StatusEffects.NIGHT_VISION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BaburbenWastesFlowerBlock ACOLONT = new BaburbenWastesFlowerBlock(StatusEffects.NIGHT_VISION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BaburbenWastesFlowerBlock LEJELUS = new BaburbenWastesFlowerBlock(StatusEffects.NIGHT_VISION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BaburbenWastesFlowerBlock CROSELOTOS = new BaburbenWastesFlowerBlock(StatusEffects.NIGHT_VISION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
 
     public static Block DARK_REMENTIO = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing());
     public static Block DARK_REMENTIO_BRICKS = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing());
@@ -388,6 +402,16 @@ public class BlockInit {
         Registry.register(Registry.BLOCK, new Identifier(ID, "sakalou_roots"), SAKALOU_ROOTS);
         Registry.register(Registry.BLOCK, new Identifier(ID, "telitonich"), TELITONICH);
         Registry.register(Registry.ITEM, new Identifier(ID, "telitonich"), new BlockItem(TELITONICH, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "chilling_sethiol"), CHILLING_SETHIOL);
+        Registry.register(Registry.ITEM, new Identifier(ID, "chilling_sethiol"), new BlockItem(CHILLING_SETHIOL, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "frigid_hylekta"), FRIGID_HYLEKTA);
+        Registry.register(Registry.ITEM, new Identifier(ID, "frigid_hylekta"), new BlockItem(FRIGID_HYLEKTA, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "acolont"), ACOLONT);
+        Registry.register(Registry.ITEM, new Identifier(ID, "acolont"), new BlockItem(ACOLONT, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "lejelus"), LEJELUS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "lejelus"), new BlockItem(LEJELUS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "croselotos"), CROSELOTOS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "croselotos"), new BlockItem(CROSELOTOS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "psylophonich"), PSYLOPHONICH);
         Registry.register(Registry.ITEM, new Identifier(ID, "psylophonich"), new BlockItem(PSYLOPHONICH, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
@@ -423,7 +447,7 @@ public class BlockInit {
         Registry.register(Registry.BLOCK, new Identifier(ID, "rementio_bricks"), REMENTIO_BRICKS);
         Registry.register(Registry.ITEM, new Identifier(ID, "rementio_bricks"), new BlockItem(REMENTIO_BRICKS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "rementio_barrel"), REMENTIO_BARREL);
-        Registry.register(Registry.ITEM, new Identifier(ID, "rementio_barrel"), new BlockItem(REMENTIO_BARREL, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.ITEM, new Identifier(ID, "rementio_barrel"), new BlockItem(REMENTIO_BARREL, new FabricItemSettings()));
     }
 
 }
