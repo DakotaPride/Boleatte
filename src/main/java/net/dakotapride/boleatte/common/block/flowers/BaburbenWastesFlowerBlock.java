@@ -16,11 +16,11 @@ public class BaburbenWastesFlowerBlock extends FlowerBlock {
 
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-        return world.getBlockState(pos.down()).isOf(BlockInit.VIOLES);
+        return world.getBlockState(pos.down()).isOf(BlockInit.VIOLES) || world.getBlockState(pos.down()).isOf(BlockInit.LEPHELUSA_VIOLES);
     }
 
     @Override
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
-        return world.getBlockState(pos.down()).isOf(BlockInit.VIOLES);
+        return world.getBlockState(pos.down()).isOf(BlockInit.VIOLES) || world.getBlockState(pos.down()).isOf(BlockInit.LEPHELUSA_VIOLES);
     }
 }

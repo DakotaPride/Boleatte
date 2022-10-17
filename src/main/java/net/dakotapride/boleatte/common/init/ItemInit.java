@@ -236,6 +236,8 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.ACOLONT.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.LEJELUS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.CROSELOTOS.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.CORAL_HYLEKTA.asItem()));
                 }).build();
     }
 
