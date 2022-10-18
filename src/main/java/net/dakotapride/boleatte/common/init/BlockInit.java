@@ -75,8 +75,6 @@ public class BlockInit {
     public static OreBlock REMENTIO_EMERALD_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.EMERALD_ORE).requiresTool(),
             UniformIntProvider.create(3, 7));
 
-    public static RementioBarrelBlock REMENTIO_BARREL = new RementioBarrelBlock(FabricBlockSettings.copy(Blocks.BARREL).requiresTool());
-
     public static ProtostermSaplingBlock PROTOSTERM_SAPLING = new ProtostermSaplingBlock(new ProtostermSaplingGenerator(15),
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
     public static PillarBlock PROTOSTERM_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG));
@@ -461,8 +459,6 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "scorched_rementio_bricks"), new BlockItem(SCORCHED_REMENTIO_BRICKS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "rementio_bricks"), REMENTIO_BRICKS);
         Registry.register(Registry.ITEM, new Identifier(ID, "rementio_bricks"), new BlockItem(REMENTIO_BRICKS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
-        Registry.register(Registry.BLOCK, new Identifier(ID, "rementio_barrel"), REMENTIO_BARREL);
-        Registry.register(Registry.ITEM, new Identifier(ID, "rementio_barrel"), new BlockItem(REMENTIO_BARREL, new FabricItemSettings()));
     }
 
 }
