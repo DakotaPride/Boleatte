@@ -40,7 +40,7 @@ public class PerfervidAlphiagouItem extends AscunauticItem {
                         .getRegistryManager().get(Registry.STRUCTURE_KEY);
 
                 if (!(serverWorld.getStructureAccessor().getStructureAt
-                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.STERRES_DUNGEON)).hasChildren()) && !user.isCreative()) {
+                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.BARREN_LANDS)).hasChildren()) && !user.isCreative()) {
                     user.sendMessage(Text.translatable("text.boleatte.sterres.denial"), false);
                     user.getItemCooldownManager().set(this, 100);
                     return TypedActionResult.fail(user.getStackInHand(hand));
@@ -61,7 +61,7 @@ public class PerfervidAlphiagouItem extends AscunauticItem {
                         .getRegistryManager().get(Registry.STRUCTURE_KEY);
 
                 if (serverWorld.getStructureAccessor().getStructureAt
-                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.STERRES_DUNGEON)).hasChildren()) {
+                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.BARREN_LANDS)).hasChildren()) {
                     user.sendMessage(Text.translatable("text.boleatte.alphiagou.signalling.sterres"));
                 }
             }

@@ -40,7 +40,7 @@ public class PlentifulAlphiagouItem extends AscunauticItem {
                         .getRegistryManager().get(Registry.STRUCTURE_KEY);
 
                 if (!(serverWorld.getStructureAccessor().getStructureAt
-                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.VERET_DUNGEON)).hasChildren()) && !user.isCreative()) {
+                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.HARVESTING)).hasChildren()) && !user.isCreative()) {
                     user.sendMessage(Text.translatable("text.boleatte.veret.denial"), false);
                     user.getItemCooldownManager().set(this, 100);
                     return TypedActionResult.fail(user.getStackInHand(hand));
@@ -61,7 +61,7 @@ public class PlentifulAlphiagouItem extends AscunauticItem {
                         .getRegistryManager().get(Registry.STRUCTURE_KEY);
 
                 if (serverWorld.getStructureAccessor().getStructureAt
-                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.VERET_DUNGEON)).hasChildren()) {
+                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.HARVESTING)).hasChildren()) {
                     user.sendMessage(Text.translatable("text.boleatte.alphiagou.signalling.veret"));
                 }
             }

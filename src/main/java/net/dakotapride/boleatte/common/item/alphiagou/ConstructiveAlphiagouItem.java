@@ -40,7 +40,7 @@ public class ConstructiveAlphiagouItem extends AscunauticItem {
                         .getRegistryManager().get(Registry.STRUCTURE_KEY);
 
                 if (!(serverWorld.getStructureAccessor().getStructureAt
-                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.ORITEM_DUNGEON)).hasChildren()) && !user.isCreative()) {
+                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.MYSTICAL_CARVINGS)).hasChildren()) && !user.isCreative()) {
                     user.sendMessage(Text.translatable("text.boleatte.oritem.denial"), false);
                     user.getItemCooldownManager().set(this, 100);
                     return TypedActionResult.fail(user.getStackInHand(hand));
@@ -61,7 +61,7 @@ public class ConstructiveAlphiagouItem extends AscunauticItem {
                         .getRegistryManager().get(Registry.STRUCTURE_KEY);
 
                 if (serverWorld.getStructureAccessor().getStructureAt
-                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.ORITEM_DUNGEON)).hasChildren()) {
+                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.MYSTICAL_CARVINGS)).hasChildren()) {
                     user.sendMessage(Text.translatable("text.boleatte.alphiagou.signalling.oritem"));
                 }
             }

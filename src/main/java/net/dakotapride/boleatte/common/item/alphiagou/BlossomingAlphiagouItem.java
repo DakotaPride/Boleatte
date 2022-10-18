@@ -40,7 +40,7 @@ public class BlossomingAlphiagouItem extends AscunauticItem {
                         .getRegistryManager().get(Registry.STRUCTURE_KEY);
 
                 if (!(serverWorld.getStructureAccessor().getStructureAt
-                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.BEUSERE_DUNGEON)).hasChildren()) && !user.isCreative()) {
+                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.OVERGROWN_RAGE)).hasChildren()) && !user.isCreative()) {
                     user.sendMessage(Text.translatable("text.boleatte.beusere.denial"), false);
                     user.getItemCooldownManager().set(this, 100);
                     return TypedActionResult.fail(user.getStackInHand(hand));
@@ -61,7 +61,7 @@ public class BlossomingAlphiagouItem extends AscunauticItem {
                         .getRegistryManager().get(Registry.STRUCTURE_KEY);
 
                 if (serverWorld.getStructureAccessor().getStructureAt
-                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.BEUSERE_DUNGEON)).hasChildren()) {
+                        (user.getBlockPos(), getStructureKey.get(StructureKeyInit.OVERGROWN_RAGE)).hasChildren()) {
                     user.sendMessage(Text.translatable("text.boleatte.alphiagou.signalling.beusere"));
                 }
             }
