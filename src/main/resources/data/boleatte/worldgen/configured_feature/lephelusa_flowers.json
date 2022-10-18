@@ -20,28 +20,13 @@
             "scale": 0.020833334,
             "states": [
               {
-                "Name": "boleatte:mauve_emerio"
+                "Name": "boleatte:coral_hylekta"
               },
               {
-                "Name": "boleatte:violet_tipped_emerio"
+                "Name": "boleatte:crystallized_risictula"
               },
               {
-                "Name": "boleatte:unstained_emerio"
-              },
-              {
-                "Name": "boleatte:acunillus",
-                "Properties": {
-                  "half": "lower"
-                }
-              },
-              {
-                "Name": "boleatte:arbune_lily"
-              },
-              {
-                "Name": "boleatte:solar_naselz"
-              },
-              {
-                "Name": "boleatte:ardevik"
+                "Name": "boleatte:lepelot"
               }
             ]
           }

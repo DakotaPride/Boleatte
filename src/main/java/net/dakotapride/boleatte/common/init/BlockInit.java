@@ -181,7 +181,9 @@ public class BlockInit {
     public static BaburbenWastesFlowerBlock LEJELUS = new BaburbenWastesFlowerBlock(StatusEffects.NIGHT_VISION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
     public static BaburbenWastesFlowerBlock CROSELOTOS = new BaburbenWastesFlowerBlock(StatusEffects.NIGHT_VISION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
 
-    public static BaburbenWastesFlowerBlock CORAL_HYLEKTA = new BaburbenWastesFlowerBlock(StatusEffects.NIGHT_VISION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BaburbenWastesFlowerBlock CORAL_HYLEKTA = new BaburbenWastesFlowerBlock(StatusEffects.LEVITATION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BaburbenWastesFlowerBlock CRYSTALLIZED_RISICTULA = new BaburbenWastesFlowerBlock(StatusEffects.LEVITATION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BaburbenWastesFlowerBlock LEPELOT = new BaburbenWastesFlowerBlock(StatusEffects.LEVITATION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
 
     public static Block DARK_REMENTIO = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing());
     public static Block DARK_REMENTIO_BRICKS = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing());
@@ -417,6 +419,10 @@ public class BlockInit {
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "coral_hylekta"), CORAL_HYLEKTA);
         Registry.register(Registry.ITEM, new Identifier(ID, "coral_hylekta"), new BlockItem(CORAL_HYLEKTA, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "crystallized_risictula"), CRYSTALLIZED_RISICTULA);
+        Registry.register(Registry.ITEM, new Identifier(ID, "crystallized_risictula"), new BlockItem(CRYSTALLIZED_RISICTULA, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "lepelot"), LEPELOT);
+        Registry.register(Registry.ITEM, new Identifier(ID, "lepelot"), new BlockItem(LEPELOT, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "psylophonich"), PSYLOPHONICH);
         Registry.register(Registry.ITEM, new Identifier(ID, "psylophonich"), new BlockItem(PSYLOPHONICH, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));

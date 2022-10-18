@@ -238,6 +238,8 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.CROSELOTOS.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.CORAL_HYLEKTA.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.CRYSTALLIZED_RISICTULA.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.LEPELOT.asItem()));
                 }).build();
     }
 
