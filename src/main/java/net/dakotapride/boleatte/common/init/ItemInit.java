@@ -99,6 +99,8 @@ public class ItemInit {
 
                     itemStacks.add(new ItemStack(BlockInit.ORETESSE.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.ADENTISK.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.MELITEMF.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.REMENTIO_BRICKS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.DARK_REMENTIO.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.DARK_REMENTIO_BRICKS.asItem()));

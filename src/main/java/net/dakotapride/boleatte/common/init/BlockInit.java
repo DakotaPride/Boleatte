@@ -26,6 +26,8 @@ import static net.dakotapride.boleatte.common.BoleatteMain.ID;
 public class BlockInit {
 
     public static RementioBlock REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static Block ADENTISK = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static Block MELITEMF = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
     public static Block REMENTIO_BRICKS = new Block(FabricBlockSettings.copy(Blocks.STONE_BRICKS));
     public static RementioBlock ARBUNE_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
     public static RementioBlock BOTAKOA_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
@@ -353,8 +355,10 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "oretesse"), new BlockItem(ORETESSE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "rementio"), REMENTIO);
         Registry.register(Registry.ITEM, new Identifier(ID, "rementio"), new BlockItem(REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
-        Registry.register(Registry.BLOCK, new Identifier(ID, "arbune_rementio"), ARBUNE_REMENTIO);
-        Registry.register(Registry.ITEM, new Identifier(ID, "arbune_rementio"), new BlockItem(ARBUNE_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "adentisk"), ADENTISK);
+        Registry.register(Registry.ITEM, new Identifier(ID, "adentisk"), new BlockItem(ADENTISK, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "melitemf"), MELITEMF);
+        Registry.register(Registry.ITEM, new Identifier(ID, "melitemf"), new BlockItem(MELITEMF, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "rasiore_rementio"), RASIORE_REMENTIO);
         Registry.register(Registry.ITEM, new Identifier(ID, "rasiore_rementio"), new BlockItem(RASIORE_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "botakoa_rementio"), BOTAKOA_REMENTIO);
