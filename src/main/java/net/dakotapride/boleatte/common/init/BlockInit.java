@@ -357,6 +357,8 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "adentisk"), new BlockItem(ADENTISK, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "melitemf"), MELITEMF);
         Registry.register(Registry.ITEM, new Identifier(ID, "melitemf"), new BlockItem(MELITEMF, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "arbune_rementio"), ARBUNE_REMENTIO);
+        Registry.register(Registry.ITEM, new Identifier(ID, "arbune_rementio"), new BlockItem(ARBUNE_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "rasiore_rementio"), RASIORE_REMENTIO);
         Registry.register(Registry.ITEM, new Identifier(ID, "rasiore_rementio"), new BlockItem(RASIORE_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "botakoa_rementio"), BOTAKOA_REMENTIO);
