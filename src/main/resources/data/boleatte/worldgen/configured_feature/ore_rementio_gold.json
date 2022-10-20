@@ -6,8 +6,8 @@
     "targets": [
       {
         "target": {
-          "predicate_type": "minecraft:block_match",
-          "block": "boleatte:rementio"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "boleatte:rementio_replaceables"
         },
         "state": {
           "Name": "boleatte:rementio_gold_ore"

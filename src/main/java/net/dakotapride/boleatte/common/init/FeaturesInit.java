@@ -7,6 +7,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SweetBerryBushBlock;
+import net.minecraft.structure.rule.BlockMatchRuleTest;
+import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.util.collection.DataPool;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
@@ -15,13 +17,11 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.util.registry.RegistryEntryList;
 import net.minecraft.world.gen.ProbabilityConfig;
+import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.*;
-import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
-import net.minecraft.world.gen.placementmodifier.NoiseBasedCountPlacementModifier;
-import net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier;
-import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
+import net.minecraft.world.gen.placementmodifier.*;
 import net.minecraft.world.gen.root.AboveRootPlacement;
 import net.minecraft.world.gen.root.MangroveRootPlacement;
 import net.minecraft.world.gen.root.MangroveRootPlacer;
@@ -45,8 +45,23 @@ public class FeaturesInit {
     private static final BeehiveTreeDecorator BEES_005 = new BeehiveTreeDecorator(0.05F);
     private static final BeehiveTreeDecorator BEES = new BeehiveTreeDecorator(1.0F);
 
+    // Rule Tests
+    private static final RuleTest REMENTIO_REPLACEABLES = new BlockMatchRuleTest(BlockInit.REMENTIO);
+
 
     // Configured Features
+
+    public static final List<OreFeatureConfig.Target> BOLEATTE_ADENTISK = List.of(
+            OreFeatureConfig.createTarget(REMENTIO_REPLACEABLES, BlockInit.ADENTISK.getDefaultState()));
+    public static final List<OreFeatureConfig.Target> BOLEATTE_MELITEMF = List.of(
+            OreFeatureConfig.createTarget(REMENTIO_REPLACEABLES, BlockInit.MELITEMF.getDefaultState()));
+
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> ADENTISK =
+            ConfiguredFeatures.register(ID + "adentisk", Feature.ORE, new OreFeatureConfig(BOLEATTE_ADENTISK, 64));
+
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> MELITEMF =
+            ConfiguredFeatures.register(ID + "melitemf", Feature.ORE, new OreFeatureConfig(BOLEATTE_MELITEMF, 64));
+
 
     public static final Feature<NetherForestVegetationFeatureConfig> BOLEATTE_VEGETATION = register("boleatte_vegetation",
             new BoleatteVegetationFeature(NetherForestVegetationFeatureConfig.VEGETATION_CODEC));
@@ -256,6 +271,14 @@ public class FeaturesInit {
                     NoiseBasedCountPlacementModifier.of(160, 80.0D, 0.3D),
                     SquarePlacementModifier.of(), PlacedFeatures.WORLD_SURFACE_WG_HEIGHTMAP, BiomePlacementModifier.of());
 
+    public static final RegistryEntry<PlacedFeature> ADENTISK_PLACED = PlacedFeatures.register(ID + "adentisk_placed",
+             ADENTISK, modifiersWithCount(8,
+                    HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))));
+
+    public static final RegistryEntry<PlacedFeature> MELITEMF_PLACED = PlacedFeatures.register(ID + "melitemf_placed",
+             MELITEMF, modifiersWithCount(8,
+                    HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))));
+
 
 
     private static TreeFeatureConfig.Builder builder(Block log, Block leaves, int baseHeight, int firstRandomHeight, int secondRandomHeight, int radius) {
@@ -268,6 +291,16 @@ public class FeaturesInit {
 
     private static <C extends FeatureConfig, F extends Feature<C>> F register(String name, F feature) {
         return (F) Registry.register(Registry.FEATURE, name, feature);
+    }
+
+    private static List<PlacementModifier> modifiers(PlacementModifier countModifier, PlacementModifier heightModifier) {
+        return List.of(countModifier, SquarePlacementModifier.of(), heightModifier, BiomePlacementModifier.of());
+    }
+    private static List<PlacementModifier> modifiersWithCount(int count, PlacementModifier heightModifier) {
+        return modifiers(CountPlacementModifier.of(count), heightModifier);
+    }
+    private static List<PlacementModifier> modifiersWithRarity(int chance, PlacementModifier heightModifier) {
+        return modifiers(RarityFilterPlacementModifier.of(chance), heightModifier);
     }
 
 

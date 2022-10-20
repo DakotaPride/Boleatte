@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "#boleatte:is_arbune_forest",
+    "#boleatte:is_arbune_plains",
+    "#boleatte:is_baburben_wastes",
+    "#boleatte:is_botakoa_forest",
+    "#boleatte:is_denticius_forest",
+    "#boleatte:is_etterave_forest",
+    "#boleatte:is_protosterm_forest",
+    "#boleatte:is_quantila_barrens",
+    "#boleatte:is_rasiore_forest"
+  ]
+}
