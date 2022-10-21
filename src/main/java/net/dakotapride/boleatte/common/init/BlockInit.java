@@ -37,6 +37,8 @@ public class BlockInit {
     public static RementioBlock DENTICIUS_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
     public static Block ORETESSE = new Block(FabricBlockSettings.copy(Blocks.STRIPPED_WARPED_HYPHAE).requiresTool());
 
+    public static RementioBlock PATH_REMENTIO = new RementioBlock(FabricBlockSettings.copy(ARBUNE_REMENTIO).requiresTool());
+
     public static EtteraveBambooBlock ETTERAVE_BAMBOO = new EtteraveBambooBlock(FabricBlockSettings.of(Material.BAMBOO, MapColor.LAPIS_BLUE)
             .ticksRandomly().strength(1.0F).sounds(BlockSoundGroup.BAMBOO).nonOpaque());
     public static BoleatteFlowerBlock PUSEIK = new BoleatteFlowerBlock(StatusEffects.LEVITATION, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
@@ -367,6 +369,8 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "protosterm_rementio"), new BlockItem(PROTOSTERM_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "denticius_rementio"), DENTICIUS_REMENTIO);
         Registry.register(Registry.ITEM, new Identifier(ID, "denticius_rementio"), new BlockItem(DENTICIUS_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "rementio_path"), PATH_REMENTIO);
+        Registry.register(Registry.ITEM, new Identifier(ID, "rementio_path"), new BlockItem(PATH_REMENTIO, new FabricItemSettings()));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "opafeu_ore"), REMENTIO_OPAFEU_ORE);
         Registry.register(Registry.ITEM, new Identifier(ID, "opafeu_ore"), new BlockItem(REMENTIO_OPAFEU_ORE, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
