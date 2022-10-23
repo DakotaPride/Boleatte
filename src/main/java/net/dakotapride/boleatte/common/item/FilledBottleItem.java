@@ -21,7 +21,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class FilledBottleItem extends AscunauticItem {
+public class FilledBottleItem extends Item {
     private static final int MAX_USE_TIME = 40;
 
     public FilledBottleItem(Item.Settings settings) {

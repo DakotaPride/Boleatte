@@ -242,6 +242,9 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.CORAL_HYLEKTA.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.CRYSTALLIZED_RISICTULA.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.LEPELOT.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.LAVENDER_CYLONETHIUS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.SCARLET_CYLONETHIUS.asItem()));
                 }).build();
     }
 
@@ -277,23 +280,23 @@ public class ItemInit {
     public static DimatisItem PROTOSTERM_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
     public static DimatisItem RASIORE_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
     public static DimatisItem QUANTILA_DIMATIS = new DimatisItem(new FabricItemSettings().maxCount(1).maxDamage(61).group(BoleatteItemGroup.BOLEATTE));
-    public static AliasedBlockItem MELKIRSCH_SEEDS = new AliasedBlockItem(BlockInit.MELKIRSCH_STEM, new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticBlockItem QUANALLA = new AscunauticBlockItem(BlockInit.QUANALLA_BUSH, new FabricItemSettings().food(FoodComponentInit.QUANALLA).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem BASOLOTE = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.BASOLOTE).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem RAMUKAI = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.RAMUKAI).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem NIKOTA_TU = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.NIKOTA_TU).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem MIERIRE = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.MIERIRE).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem PAIORE = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.PAIORE).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem PAIEUX = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.PAIEUX).group(BoleatteItemGroup.BOLEATTE));
+    public static MelkirschSeedsBlockItem MELKIRSCH_SEEDS = new MelkirschSeedsBlockItem(BlockInit.MELKIRSCH_STEM, new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
+    public static BlockItem QUANALLA = new BlockItem(BlockInit.QUANALLA_BUSH, new FabricItemSettings().food(FoodComponentInit.QUANALLA).group(BoleatteItemGroup.BOLEATTE));
+    public static Item BASOLOTE = new Item(new FabricItemSettings().food(FoodComponentInit.BASOLOTE).group(BoleatteItemGroup.BOLEATTE));
+    public static Item RAMUKAI = new Item(new FabricItemSettings().food(FoodComponentInit.RAMUKAI).group(BoleatteItemGroup.BOLEATTE));
+    public static Item NIKOTA_TU = new Item(new FabricItemSettings().food(FoodComponentInit.NIKOTA_TU).group(BoleatteItemGroup.BOLEATTE));
+    public static Item MIERIRE = new Item(new FabricItemSettings().food(FoodComponentInit.MIERIRE).group(BoleatteItemGroup.BOLEATTE));
+    public static Item PAIORE = new Item(new FabricItemSettings().food(FoodComponentInit.PAIORE).group(BoleatteItemGroup.BOLEATTE));
+    public static Item PAIEUX = new Item(new FabricItemSettings().food(FoodComponentInit.PAIEUX).group(BoleatteItemGroup.BOLEATTE));
     public static Item PAIEUX_DOUGH = new Item(new FabricItemSettings().group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem DE_FEATIANTE = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.DE_FEATIANTE).group(BoleatteItemGroup.BOLEATTE));
+    public static Item DE_FEATIANTE = new Item(new FabricItemSettings().food(FoodComponentInit.DE_FEATIANTE).group(BoleatteItemGroup.BOLEATTE));
     public static FilledBottleItem RAMOLITE_HONEY = new FilledBottleItem(new FabricItemSettings().maxCount(16).food(FoodComponentInit.RAMOLITE_HONEY).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticBlockItem SAKALOU = new AscunauticBlockItem(BlockInit.SAKALOU_ROOTS, new FabricItemSettings().food(FoodComponentInit.SAKALOU).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem RASIORE = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.RASIORE).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem ROASTED_RASIORE = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.ROASTED_RASIORE).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticBlockItem BABURBEN = new AscunauticBlockItem(BlockInit.BABURBEN_ROOTS, new FabricItemSettings().food(FoodComponentInit.BABURBEN).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem ROASTED_BABURBEN = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.ROASTED_BABURBEN).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem ALPHIAGOU = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
+    public static BlockItem SAKALOU = new BlockItem(BlockInit.SAKALOU_ROOTS, new FabricItemSettings().food(FoodComponentInit.SAKALOU).group(BoleatteItemGroup.BOLEATTE));
+    public static Item RASIORE = new Item(new FabricItemSettings().food(FoodComponentInit.RASIORE).group(BoleatteItemGroup.BOLEATTE));
+    public static Item ROASTED_RASIORE = new Item(new FabricItemSettings().food(FoodComponentInit.ROASTED_RASIORE).group(BoleatteItemGroup.BOLEATTE));
+    public static BlockItem BABURBEN = new BlockItem(BlockInit.BABURBEN_ROOTS, new FabricItemSettings().food(FoodComponentInit.BABURBEN).group(BoleatteItemGroup.BOLEATTE));
+    public static Item ROASTED_BABURBEN = new Item(new FabricItemSettings().food(FoodComponentInit.ROASTED_BABURBEN).group(BoleatteItemGroup.BOLEATTE));
+    public static Item ALPHIAGOU = new Item(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
     public static PerfervidAlphiagouItem PERFERVID_ALPHIAGOU = new PerfervidAlphiagouItem(new FabricItemSettings().food(FoodComponentInit.PERFERVID_ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
     public static GhostAlphiagouItem GHOST_ALPHIAGOU = new GhostAlphiagouItem(new FabricItemSettings().food(FoodComponentInit.GHOST_ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
     public static BlossomingAlphiagouItem BLOSSOMING_ALPHIAGOU = new BlossomingAlphiagouItem(new FabricItemSettings().food(FoodComponentInit.BLOSSOMING_ALPHIAGOU).group(BoleatteItemGroup.BOLEATTE));
@@ -304,20 +307,20 @@ public class ItemInit {
     public static FilledBottleItem LEMENTRIO_SUBSTANCE = new FilledBottleItem(new FabricItemSettings().food(FoodComponentInit.LEMENTRIO_SUBSTANCE).group(BoleatteItemGroup.BOLEATTE));
     public static FilledBottleItem PYETSIT_SUBSTANCE = new FilledBottleItem(new FabricItemSettings().food(FoodComponentInit.PYETSIT_SUBSTANCE).group(BoleatteItemGroup.BOLEATTE));
     public static FilledBottleItem SATALUK_SUBSTANCE = new FilledBottleItem(new FabricItemSettings().food(FoodComponentInit.SATALUK_SUBSTANCE).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem MELKIRSCH_PIE = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.MELKIRSCH_PIE).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticBlockItem ETTERAVE_BAMBOO = new AscunauticBlockItem(BlockInit.ETTERAVE_BAMBOO, new FabricItemSettings().food(FoodComponentInit.ETTERAVE_BAMBOO).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem CENTILOPIK = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.CENTILOPIK).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem QUESTEAR = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.QUESTEAR).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem POLECEA = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.POLECEA).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem LEPHELUSA_STEW = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.LEPHELUSA_STEW).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem BLOSSOMING_ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.BLOSSOMING_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem CONSTRUCTIVE_ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.CONSTRUCTIVE_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem GHOST_ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.GHOST_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem PERFERVID_ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.PERFERVID_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem PHANTASMAL_ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.PHANTASMAL_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem PLENTIFUL_ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.PLENTIFUL_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
-    public static AscunauticItem MYSTICAL_ALPHIAGOU_CIDER = new AscunauticItem(new FabricItemSettings().food(FoodComponentInit.MYSTICAL_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
+    public static Item MELKIRSCH_PIE = new Item(new FabricItemSettings().food(FoodComponentInit.MELKIRSCH_PIE).group(BoleatteItemGroup.BOLEATTE));
+    public static BlockItem ETTERAVE_BAMBOO = new BlockItem(BlockInit.ETTERAVE_BAMBOO, new FabricItemSettings().food(FoodComponentInit.ETTERAVE_BAMBOO).group(BoleatteItemGroup.BOLEATTE));
+    public static Item CENTILOPIK = new Item(new FabricItemSettings().food(FoodComponentInit.CENTILOPIK).group(BoleatteItemGroup.BOLEATTE));
+    public static Item QUESTEAR = new Item(new FabricItemSettings().food(FoodComponentInit.QUESTEAR).group(BoleatteItemGroup.BOLEATTE));
+    public static Item POLECEA = new Item(new FabricItemSettings().food(FoodComponentInit.POLECEA).group(BoleatteItemGroup.BOLEATTE));
+    public static Item LEPHELUSA_STEW = new Item(new FabricItemSettings().food(FoodComponentInit.LEPHELUSA_STEW).group(BoleatteItemGroup.BOLEATTE));
+    public static Item ALPHIAGOU_CIDER = new Item(new FabricItemSettings().food(FoodComponentInit.ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
+    public static Item BLOSSOMING_ALPHIAGOU_CIDER = new Item(new FabricItemSettings().food(FoodComponentInit.BLOSSOMING_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
+    public static Item CONSTRUCTIVE_ALPHIAGOU_CIDER = new Item(new FabricItemSettings().food(FoodComponentInit.CONSTRUCTIVE_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
+    public static Item GHOST_ALPHIAGOU_CIDER = new Item(new FabricItemSettings().food(FoodComponentInit.GHOST_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
+    public static Item PERFERVID_ALPHIAGOU_CIDER = new Item(new FabricItemSettings().food(FoodComponentInit.PERFERVID_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
+    public static Item PHANTASMAL_ALPHIAGOU_CIDER = new Item(new FabricItemSettings().food(FoodComponentInit.PHANTASMAL_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
+    public static Item PLENTIFUL_ALPHIAGOU_CIDER = new Item(new FabricItemSettings().food(FoodComponentInit.PLENTIFUL_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
+    public static Item MYSTICAL_ALPHIAGOU_CIDER = new Item(new FabricItemSettings().food(FoodComponentInit.MYSTICAL_ALPHIAGOU_CIDER).group(BoleatteItemGroup.BOLEATTE));
 
     public static void init() {
         Registry.register(Registry.ITEM, new Identifier(ID, "quanalla"), QUANALLA);

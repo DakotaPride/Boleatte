@@ -6,6 +6,7 @@ import net.dakotapride.boleatte.common.item.dimatis_use.Eidolon;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.Hand;
@@ -13,7 +14,7 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class EidolonItem extends AscunauticItem implements Eidolon {
+public class EidolonItem extends Item implements Eidolon {
     public EidolonItem(Settings settings) {
         super(settings);
     }

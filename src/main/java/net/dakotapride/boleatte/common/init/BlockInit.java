@@ -192,6 +192,9 @@ public class BlockInit {
     public static Block SCORCHED_REMENTIO_BRICKS = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing());
     public static Block SCORCHED_REMENTIO = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing());
 
+    public static BoleatteFlowerBlock LAVENDER_CYLONETHIUS = new BoleatteFlowerBlock(StatusEffects.BLINDNESS, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+    public static BoleatteFlowerBlock SCARLET_CYLONETHIUS = new BoleatteFlowerBlock(StatusEffects.BLINDNESS, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
+
     public static void init() {
         Registry.register(Registry.BLOCK, new Identifier(ID, "protosterm_sapling"), PROTOSTERM_SAPLING);
         Registry.register(Registry.ITEM, new Identifier(ID, "protosterm_sapling"), new BlockItem(PROTOSTERM_SAPLING, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
@@ -454,6 +457,11 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "algualkim"), new BlockItem(ALGUALKIM, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "demalsim"), DEMALSIM);
         Registry.register(Registry.ITEM, new Identifier(ID, "demalsim"), new BlockItem(DEMALSIM, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+
+        Registry.register(Registry.BLOCK, new Identifier(ID, "lavender_cylonethius"), LAVENDER_CYLONETHIUS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "lavender_cylonethius"), new BlockItem(LAVENDER_CYLONETHIUS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "scarlet_cylonethius"), SCARLET_CYLONETHIUS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "scarlet_cylonethius"), new BlockItem(SCARLET_CYLONETHIUS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
         Registry.register(Registry.BLOCK, new Identifier(ID, "dark_rementio"), DARK_REMENTIO);
         Registry.register(Registry.ITEM, new Identifier(ID, "dark_rementio"), new BlockItem(DARK_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
