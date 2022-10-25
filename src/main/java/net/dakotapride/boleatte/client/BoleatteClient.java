@@ -88,6 +88,8 @@ public class BoleatteClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.ALGUALKIM, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.DEMALSIM, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.SANTIFICT_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.SANTIFICT_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.LAVENDER_CYLONETHIUS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.SCARLET_CYLONETHIUS, RenderLayer.getCutout());
     }

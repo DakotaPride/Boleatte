@@ -52,6 +52,7 @@ public class RementioBlock extends Block
             boolean bl4 = false;
             boolean bl5 = false;
             boolean bl6 = false;
+            boolean bl7 = false;
             for (BlockPos blockPos : BlockPos.iterate(pos.add(-1, -1, -1), pos.add(1, 1, 1))) {
                 BlockState blockState = world.getBlockState(blockPos);
                 if (blockState.isOf(BlockInit.ARBUNE_REMENTIO)) {
@@ -78,13 +79,17 @@ public class RementioBlock extends Block
                     bl6 = true;
                 }
 
-                if (bl && bl2 && bl3 && bl4 && bl5 && bl6) {
+                if (blockState.isOf(BlockInit.SANTIFICT_REMENTIO)) {
+                    bl7 = true;
+                }
+
+                if (bl && bl2 && bl3 && bl4 && bl5 && bl6 && bl7) {
                     break;
                 }
             }
 
             if (bl && bl2 && bl3 && bl4 && bl5 && bl6) {
-                float randomValue = random.nextFloat() * 60;
+                float randomValue = random.nextFloat() * 70;
 
                 if (randomValue <= 10) {
                     world.setBlockState(pos, BlockInit.ARBUNE_REMENTIO.getDefaultState());
@@ -98,6 +103,8 @@ public class RementioBlock extends Block
                     world.setBlockState(pos, BlockInit.ETTERAVE_REMENTIO.getDefaultState());
                 } else if (randomValue > 50 && randomValue <= 60) {
                     world.setBlockState(pos, BlockInit.ETTERAVE_REMENTIO.getDefaultState());
+                } else if (randomValue > 60 && randomValue <= 70) {
+                    world.setBlockState(pos, BlockInit.SANTIFICT_REMENTIO.getDefaultState());
                 }
             } else if (bl) {
                 world.setBlockState(pos, BlockInit.ARBUNE_REMENTIO.getDefaultState(), 3);
@@ -111,6 +118,8 @@ public class RementioBlock extends Block
                 world.setBlockState(pos, BlockInit.ETTERAVE_REMENTIO.getDefaultState(), 3);
             } else if (bl6) {
                 world.setBlockState(pos, BlockInit.DENTICIUS_REMENTIO.getDefaultState(), 3);
+            } else if (bl7) {
+                world.setBlockState(pos, BlockInit.SANTIFICT_REMENTIO.getDefaultState(), 3);
             }
         } else if (state.isIn(TagInit.MOSSY_REMENTIO)) {
             BlockState blockState = world.getBlockState(pos);
@@ -128,6 +137,8 @@ public class RementioBlock extends Block
                 FeaturesInit.ETTERAVE_VEGETATION_BONEMEAL.value().generate(world, chunkGenerator, random, blockPos);
             } else if (blockState.isOf(BlockInit.DENTICIUS_REMENTIO)) {
                 FeaturesInit.DENTICIUS_VEGETATION_BONEMEAL.value().generate(world, chunkGenerator, random, blockPos);
+            } else if (blockState.isOf(BlockInit.SANTIFICT_REMENTIO)) {
+                FeaturesInit.SANTIFICT_VEGETATION_BONEMEAL.value().generate(world, chunkGenerator, random, blockPos);
             }
         }
     }

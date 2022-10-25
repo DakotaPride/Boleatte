@@ -35,6 +35,7 @@ public class BlockInit {
     public static RementioBlock PROTOSTERM_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
     public static RementioBlock ETTERAVE_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
     public static RementioBlock DENTICIUS_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static RementioBlock SANTIFICT_REMENTIO = new RementioBlock(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
     public static Block ORETESSE = new Block(FabricBlockSettings.copy(Blocks.STRIPPED_WARPED_HYPHAE).requiresTool());
 
     public static RementioBlock PATH_REMENTIO = new RementioBlock(FabricBlockSettings.copy(ARBUNE_REMENTIO).requiresTool());
@@ -192,6 +193,14 @@ public class BlockInit {
     public static Block SCORCHED_REMENTIO_BRICKS = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing());
     public static Block SCORCHED_REMENTIO = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing());
 
+    public static DenticiusSaplingBlock SANTIFICT_SAPLING = new DenticiusSaplingBlock(new SantifictSaplingGenerator(),
+            FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
+    public static PillarBlock SANTIFICT_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG));
+    public static PillarBlock STRIPPED_SANTIFICT_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG));
+    public static PillarBlock SANTIFICT_WOOD = new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_WOOD));
+    public static PillarBlock STRIPPED_SANTIFICT_WOOD = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD));
+    public static Block SANTIFICT_PLANKS = new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS));
+    public static LeavesBlock SANTIFICT_LEAVES = new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).ticksRandomly().nonOpaque());
     public static BoleatteFlowerBlock LAVENDER_CYLONETHIUS = new BoleatteFlowerBlock(StatusEffects.BLINDNESS, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
     public static BoleatteFlowerBlock SCARLET_CYLONETHIUS = new BoleatteFlowerBlock(StatusEffects.BLINDNESS, 180, FabricBlockSettings.copy(Blocks.LILY_OF_THE_VALLEY));
 

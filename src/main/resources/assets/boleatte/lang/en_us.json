@@ -165,6 +165,7 @@
   "block.boleatte.protosterm_rementio": "Protosterm Rementio",
   "block.boleatte.etterave_rementio": "Etterave Rementio",
   "block.boleatte.denticius_rementio": "Denticius Rementio",
+  "block.boleatte.santifict_rementio": "Santifict Rementio",
   "block.boleatte.opafeu_ore": "Opafeu Ore",
   "block.boleatte.kutunite_ore": "Kutunite Ore",
   "block.boleatte.nemoral_ore": "Nemoral Ore",
@@ -249,6 +250,13 @@
   "block.boleatte.algualkim": "Algualkim",
   "block.boleatte.demalsim": "Demalsim",
 
+  "block.boleatte.santifict_log": "Santifict Log",
+  "block.boleatte.stripped_santifict_log": "Stripped Santifict Log",
+  "block.boleatte.santifict_wood": "Rasiore Wood",
+  "block.boleatte.stripped_santifict_wood": "Stripped Santifict Wood",
+  "block.boleatte.santifict_leaves": "Santifict Leaves",
+  "block.boleatte.santifict_sapling": "Santifict Sapling",
+  "block.boleatte.santifict_planks": "Santifict Planks",
   "block.boleatte.lavender_cylonethius": "Lavender Cylonethius",
   "block.boleatte.scarlet_cylonethius": "Scarlet Cylonethius",
 

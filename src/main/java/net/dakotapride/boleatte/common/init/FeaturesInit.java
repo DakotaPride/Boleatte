@@ -103,6 +103,11 @@ public class FeaturesInit {
                     .add(BlockInit.INTOXICATING_MIENTIS.getDefaultState(), 50)
                     .add(BlockInit.GOLDEN_MIENTIS.getDefaultState(), 50));
 
+    public static final WeightedBlockStateProvider SANTIFICT_VEGETATION_PROVIDER = new WeightedBlockStateProvider
+            (DataPool.<BlockState>builder()
+                    .add(BlockInit.LAVENDER_CYLONETHIUS.getDefaultState(), 50)
+                    .add(BlockInit.SCARLET_CYLONETHIUS.getDefaultState(), 50));
+
     public static final WeightedBlockStateProvider ETTERAVE_VEGETATION_PROVIDER = new WeightedBlockStateProvider
             (DataPool.<BlockState>builder()
                     .add(BlockInit.PUSEIK.getDefaultState(), 20)
@@ -118,7 +123,7 @@ public class FeaturesInit {
                     .add(BlockInit.SPINED_FRITRIS.getDefaultState(), 34));
 
     public static final RegistryEntry<ConfiguredFeature<NetherForestVegetationFeatureConfig, ?>> BOTAKOA_VEGETATION_BONEMEAL =
-            ConfiguredFeatures.register(ID + "botakoa_vegetation_bonemeal", BOLEATTE_VEGETATION,
+            ConfiguredFeatures.register(ID + ":botakoa_vegetation_bonemeal", BOLEATTE_VEGETATION,
                     new NetherForestVegetationFeatureConfig(BOTAKOA_VEGETATION_PROVIDER, 3, 1));
 
     public static final RegistryEntry<ConfiguredFeature<NetherForestVegetationFeatureConfig, ?>> ARBUNE_VEGETATION_BONEMEAL =
@@ -126,19 +131,23 @@ public class FeaturesInit {
                     new NetherForestVegetationFeatureConfig(ARBUNE_VEGETATION_PROVIDER, 3, 1));
 
     public static final RegistryEntry<ConfiguredFeature<NetherForestVegetationFeatureConfig, ?>> PROTOSTERM_VEGETATION_BONEMEAL =
-            ConfiguredFeatures.register(ID + "protosterm_vegetation_bonemeal", BOLEATTE_VEGETATION,
+            ConfiguredFeatures.register(ID + "::protosterm_vegetation_bonemeal", BOLEATTE_VEGETATION,
                     new NetherForestVegetationFeatureConfig(PROTOSTERM_VEGETATION_PROVIDER, 3, 1));
 
     public static final RegistryEntry<ConfiguredFeature<NetherForestVegetationFeatureConfig, ?>> RASIORE_VEGETATION_BONEMEAL =
-            ConfiguredFeatures.register(ID + "rasiore_vegetation_bonemeal", BOLEATTE_VEGETATION,
+            ConfiguredFeatures.register(ID + ":rasiore_vegetation_bonemeal", BOLEATTE_VEGETATION,
                     new NetherForestVegetationFeatureConfig(RASIORE_VEGETATION_PROVIDER, 3, 1));
 
     public static final RegistryEntry<ConfiguredFeature<NetherForestVegetationFeatureConfig, ?>> ETTERAVE_VEGETATION_BONEMEAL =
-            ConfiguredFeatures.register(ID + "etterave_vegetation_bonemeal", BOLEATTE_VEGETATION,
+            ConfiguredFeatures.register(ID + ":etterave_vegetation_bonemeal", BOLEATTE_VEGETATION,
                     new NetherForestVegetationFeatureConfig(ETTERAVE_VEGETATION_PROVIDER, 3, 1));
 
     public static final RegistryEntry<ConfiguredFeature<NetherForestVegetationFeatureConfig, ?>> DENTICIUS_VEGETATION_BONEMEAL =
-            ConfiguredFeatures.register(ID + "denticius_vegetation_bonemeal", BOLEATTE_VEGETATION,
+            ConfiguredFeatures.register(ID + ":denticius_vegetation_bonemeal", BOLEATTE_VEGETATION,
+                    new NetherForestVegetationFeatureConfig(DENTICIUS_VEGETATION_PROVIDER, 3, 1));
+
+    public static final RegistryEntry<ConfiguredFeature<NetherForestVegetationFeatureConfig, ?>> SANTIFICT_VEGETATION_BONEMEAL =
+            ConfiguredFeatures.register(ID + ":santifict_vegetation_bonemeal", BOLEATTE_VEGETATION,
                     new NetherForestVegetationFeatureConfig(DENTICIUS_VEGETATION_PROVIDER, 3, 1));
 
     public static final Feature<ProbabilityConfig> ETTERAVE_BAMBOO =
@@ -166,6 +175,15 @@ public class FeaturesInit {
             ConfiguredFeatures.register(ID + ":arbune", Feature.TREE,
                     (new TreeFeatureConfig.Builder(BlockStateProvider.of(BlockInit.ARBUNE_LOG),
                             new StraightTrunkPlacer(5, 2, 1), BlockStateProvider.of(BlockInit.ARBUNE_LEAVES),
+                            new SpruceFoliagePlacer(UniformIntProvider.create(2, 3), UniformIntProvider.create(0, 2),
+                                    UniformIntProvider.create(1, 2)),
+                            new TwoLayersFeatureSize(2, 0, 2)))
+                            .dirtProvider(BlockStateProvider.of(BlockInit.REMENTIO.getDefaultState())).ignoreVines().build());
+
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> SANTIFICT =
+            ConfiguredFeatures.register(ID + ":santifict", Feature.TREE,
+                    (new TreeFeatureConfig.Builder(BlockStateProvider.of(BlockInit.SANTIFICT_LOG),
+                            new StraightTrunkPlacer(5, 2, 1), BlockStateProvider.of(BlockInit.SANTIFICT_LEAVES),
                             new SpruceFoliagePlacer(UniformIntProvider.create(2, 3), UniformIntProvider.create(0, 2),
                                     UniformIntProvider.create(1, 2)),
                             new TwoLayersFeatureSize(2, 0, 2)))
