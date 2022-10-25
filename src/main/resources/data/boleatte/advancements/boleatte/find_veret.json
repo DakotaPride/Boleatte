@@ -1,5 +1,5 @@
 {
-  "parent": "boleatte:boleatte/root",
+  "parent": "boleatte:boleatte/exploration",
   "criteria": {
     "veret": {
       "conditions": {
