@@ -1,0 +1,41 @@
+{
+  "parent": "boleatte:boleatte/root",
+  "criteria": {
+    "veret": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "boleatte:veret_dungeon"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.boleatte.find_veret.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "boleatte:arbune_log"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.boleatte.find_veret.title"
+    }
+  },
+  "requirements": [
+    [
+      "veret"
+    ]
+  ]
+}

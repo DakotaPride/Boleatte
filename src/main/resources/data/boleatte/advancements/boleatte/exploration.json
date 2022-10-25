@@ -1,0 +1,348 @@
+{
+  "parent": "boleatte:boleatte/root",
+  "criteria": {
+    "boleatte:arbune_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "boleatte:arbune_forest"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "boleatte:arbune_plains": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "boleatte:arbune_plains"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "boleatte:baburben_wastes": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "boleatte:baburben_wastes"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "boleatte:botakoa_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "boleatte:botakoa_forest"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "boleatte:colossal_protosterm_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "boleatte:colossal_protosterm_forest"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "boleatte:compact_protosterm_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "boleatte:compact_protosterm_forest"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "boleatte:dense_rasiore_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "boleatte:dense_rasiore_forest"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "boleatte:denticius_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "boleatte:denticius_forest"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "boleatte:etterave_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "boleatte:etterave_forest"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "boleatte:etterave_hills": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "boleatte:etterave_hills"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "boleatte:lephelusa_wastes": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "boleatte:lephelusa_wastes"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "boleatte:plentiful_arbune_plains": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "boleatte:plentiful_arbune_plains"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "boleatte:protosterm_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "boleatte:protosterm_forest"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "boleatte:quantila_barrens": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "boleatte:quantila_barrens"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "boleatte:rasiore_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "boleatte:rasiore_forest"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "boleatte:santifict_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "boleatte:santifict_forest"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "boleatte:tall_arbune_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "boleatte:tall_arbune_forest"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "boleatte:mientif"
+    },
+    "title": {
+      "translate": "advancements.boleatte.exploration.title"
+    },
+    "description": {
+      "translate": "advancements.boleatte.exploration.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "boleatte:arbune_forest"
+    ],
+    [
+      "boleatte:arbune_plains"
+    ],
+    [
+      "boleatte:baburben_wastes"
+    ],
+    [
+      "boleatte:botakoa_forest"
+    ],
+    [
+      "boleatte:colossal_protosterm_forest"
+    ],
+    [
+      "boleatte:compact_protosterm_forest"
+    ],
+    [
+      "boleatte:dense_rasiore_forest"
+    ],
+    [
+      "boleatte:denticius_forest"
+    ],
+    [
+      "boleatte:etterave_forest"
+    ],
+    [
+      "boleatte:etterave_hills"
+    ],
+    [
+      "boleatte:lephelusa_wastes"
+    ],
+    [
+      "boleatte:plentiful_arbune_plains"
+    ],
+    [
+      "boleatte:protosterm_forest"
+    ],
+    [
+      "boleatte:quantila_barrens"
+    ],
+    [
+      "boleatte:rasiore_forest"
+    ],
+    [
+      "boleatte:santifict_forest"
+    ],
+    [
+      "boleatte:tall_arbune_forest"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  }
+}
