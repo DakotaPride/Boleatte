@@ -193,7 +193,7 @@ public class BlockInit {
     public static Block SCORCHED_REMENTIO_BRICKS = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing());
     public static Block SCORCHED_REMENTIO = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing());
 
-    public static DenticiusSaplingBlock SANTIFICT_SAPLING = new DenticiusSaplingBlock(new SantifictSaplingGenerator(),
+    public static SantifictSaplingBlock SANTIFICT_SAPLING = new SantifictSaplingBlock(new SantifictSaplingGenerator(),
             FabricBlockSettings.copy(Blocks.OAK_SAPLING).ticksRandomly().nonOpaque());
     public static PillarBlock SANTIFICT_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG));
     public static PillarBlock STRIPPED_SANTIFICT_LOG = new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG));
@@ -381,6 +381,8 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(ID, "protosterm_rementio"), new BlockItem(PROTOSTERM_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "denticius_rementio"), DENTICIUS_REMENTIO);
         Registry.register(Registry.ITEM, new Identifier(ID, "denticius_rementio"), new BlockItem(DENTICIUS_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "santifict_rementio"), SANTIFICT_REMENTIO);
+        Registry.register(Registry.ITEM, new Identifier(ID, "santifict_rementio"), new BlockItem(SANTIFICT_REMENTIO, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "rementio_path"), PATH_REMENTIO);
         Registry.register(Registry.ITEM, new Identifier(ID, "rementio_path"), new BlockItem(PATH_REMENTIO, new FabricItemSettings()));
 
@@ -467,6 +469,20 @@ public class BlockInit {
         Registry.register(Registry.BLOCK, new Identifier(ID, "demalsim"), DEMALSIM);
         Registry.register(Registry.ITEM, new Identifier(ID, "demalsim"), new BlockItem(DEMALSIM, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
 
+        Registry.register(Registry.BLOCK, new Identifier(ID, "santifict_sapling"), SANTIFICT_SAPLING);
+        Registry.register(Registry.ITEM, new Identifier(ID, "santifict_sapling"), new BlockItem(SANTIFICT_SAPLING, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "santifict_log"), SANTIFICT_LOG);
+        Registry.register(Registry.ITEM, new Identifier(ID, "santifict_log"), new BlockItem(SANTIFICT_LOG, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "santifict_leaves"), SANTIFICT_LEAVES);
+        Registry.register(Registry.ITEM, new Identifier(ID, "santifict_leaves"), new BlockItem(SANTIFICT_LEAVES, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "stripped_santifict_log"), STRIPPED_SANTIFICT_LOG);
+        Registry.register(Registry.ITEM, new Identifier(ID, "stripped_santifict_log"), new BlockItem(STRIPPED_SANTIFICT_LOG, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "santifict_wood"), SANTIFICT_WOOD);
+        Registry.register(Registry.ITEM, new Identifier(ID, "santifict_wood"), new BlockItem(SANTIFICT_WOOD, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "stripped_santifict_wood"), STRIPPED_SANTIFICT_WOOD);
+        Registry.register(Registry.ITEM, new Identifier(ID, "stripped_santifict_wood"), new BlockItem(STRIPPED_SANTIFICT_WOOD, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
+        Registry.register(Registry.BLOCK, new Identifier(ID, "santifict_planks"), SANTIFICT_PLANKS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "santifict_planks"), new BlockItem(SANTIFICT_PLANKS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "lavender_cylonethius"), LAVENDER_CYLONETHIUS);
         Registry.register(Registry.ITEM, new Identifier(ID, "lavender_cylonethius"), new BlockItem(LAVENDER_CYLONETHIUS, new FabricItemSettings().group(ItemInit.BoleatteItemGroup.BOLEATTE)));
         Registry.register(Registry.BLOCK, new Identifier(ID, "scarlet_cylonethius"), SCARLET_CYLONETHIUS);

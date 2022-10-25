@@ -20,6 +20,7 @@ public class TagInit {
     public static final TagKey<Biome> IS_BABURBEN_WASTES = TagKey.of(Registry.BIOME_KEY, new Identifier(ID, "is_baburben_wastes"));
     public static final TagKey<Biome> IS_ETTERAVE_FOREST = TagKey.of(Registry.BIOME_KEY, new Identifier(ID, "is_etterave_forest"));
     public static final TagKey<Biome> IS_ARBUNE_PLAINS = TagKey.of(Registry.BIOME_KEY, new Identifier(ID, "is_arbune_plains"));
+    public static final TagKey<Biome> IS_SANTIFICT_FOREST = TagKey.of(Registry.BIOME_KEY, new Identifier(ID, "is_santifict_forest"));
     public static final TagKey<Biome> IS_BOLEATTE_DIM = TagKey.of(Registry.BIOME_KEY, new Identifier(ID, "is_boleatte"));
 
     public static final TagKey<Item> SAFE_BOLEATTE = TagKey.of(Registry.ITEM_KEY, new Identifier(ID, "safe_boleatte"));

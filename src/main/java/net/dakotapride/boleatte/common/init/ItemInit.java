@@ -128,6 +128,7 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.RASIORE_REMENTIO.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.ETTERAVE_REMENTIO.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.DENTICIUS_REMENTIO.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.SANTIFICT_REMENTIO.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.DEAD_LEAVES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_LEAVES.asItem()));
@@ -135,18 +136,21 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_LEAVES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.RASIORE_LEAVES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.DENTICIUS_LEAVES.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.SANTIFICT_LEAVES.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_SAPLING.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.BOTAKOA_SAPLING.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_SAPLING.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.RASIORE_SAPLING.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.DENTICIUS_SAPLING.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.SANTIFICT_SAPLING.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_PLANKS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.BOTAKOA_PLANKS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.ARBUNE_PLANKS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.RASIORE_PLANKS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.DENTICIUS_PLANKS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.SANTIFICT_PLANKS.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_LOG.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_WOOD.asItem()));
@@ -172,6 +176,11 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.DENTICIUS_WOOD.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.STRIPPED_DENTICIUS_LOG.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.STRIPPED_DENTICIUS_WOOD.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.SANTIFICT_LOG.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.SANTIFICT_WOOD.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.STRIPPED_SANTIFICT_LOG.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.STRIPPED_SANTIFICT_WOOD.asItem()));
 
                     itemStacks.add(new ItemStack(BlockInit.VIOLES.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.VETICOADE.asItem()));

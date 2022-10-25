@@ -648,8 +648,7 @@
         "if_true": {
           "type": "minecraft:biome",
           "biome_is": [
-            "boleatte:denticius_forest",
-            "boleatte:open_denticius_forest"
+            "boleatte:denticius_forest"
           ]
         },
         "then_run": {
@@ -668,6 +667,36 @@
                 "type": "minecraft:block",
                 "result_state": {
                   "Name": "boleatte:denticius_rementio"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": [
+            "boleatte:santifict_forest"
+          ]
+        },
+        "then_run": {
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "offset": 0,
+                "surface_type": "floor",
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "boleatte:santifict_rementio"
                 }
               }
             }
@@ -753,7 +782,8 @@
             "boleatte:dense_rasiore_forest",
             "boleatte:etterave_hills",
             "boleatte:etterave_forest",
-            "boleatte:denticius_forest"
+            "boleatte:denticius_forest",
+            "boleatte:santifict_forest"
           ]
         },
         "then_run": {
@@ -849,8 +879,7 @@
                   "if_true": {
                     "type": "minecraft:biome",
                     "biome_is": [
-                      "boleatte:denticius_forest",
-                      "boleatte:open_denticius_forest"
+                      "boleatte:denticius_forest"
                     ]
                   },
                   "then_run": {
@@ -962,6 +991,32 @@
                     "biome_is": [
                       "boleatte:rasiore_forest",
                       "boleatte:dense_rasiore_forest"
+                    ]
+                  },
+                  "then_run": {
+                    "type": "minecraft:sequence",
+                    "sequence": [
+                      {
+                        "type": "minecraft:block",
+                        "result_state": {
+                          "Name": "boleatte:rementio"
+                        }
+                      },
+                      {
+                        "type": "minecraft:block",
+                        "result_state": {
+                          "Name": "boleatte:rementio"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:biome",
+                    "biome_is": [
+                      "boleatte:santifict_forest"
                     ]
                   },
                   "then_run": {

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "boleatte:block/santifict_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "boleatte:block/santifict_log"
+    },
+    "axis=z": {
+      "model": "boleatte:block/santifict_log_horizontal",
+      "x": 90
+    }
+  }
+}

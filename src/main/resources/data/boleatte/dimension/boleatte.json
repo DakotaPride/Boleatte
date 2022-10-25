@@ -198,6 +198,18 @@
             "continentalness": [-0.15, 0.1]
           },
           "biome": "boleatte:denticius_forest"
+        },
+        {
+          "parameters": {
+            "erosion": [-0.334, -0.015],
+            "depth": 0.0,
+            "weirdness": [-0.879, -0.6554],
+            "offset": 0.0,
+            "temperature": [-0.2, 0.2],
+            "humidity": [-1.0, -0.35],
+            "continentalness": [-0.05, 0.05]
+          },
+          "biome": "boleatte:santifict_forest"
         }
       ]
     }

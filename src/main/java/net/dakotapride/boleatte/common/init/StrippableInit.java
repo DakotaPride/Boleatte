@@ -18,5 +18,8 @@ public class StrippableInit {
 
         StrippableBlockRegistry.register(BlockInit.DENTICIUS_LOG, BlockInit.STRIPPED_DENTICIUS_LOG);
         StrippableBlockRegistry.register(BlockInit.DENTICIUS_WOOD, BlockInit.STRIPPED_DENTICIUS_WOOD);
+
+        StrippableBlockRegistry.register(BlockInit.SANTIFICT_LOG, BlockInit.STRIPPED_SANTIFICT_LOG);
+        StrippableBlockRegistry.register(BlockInit.SANTIFICT_WOOD, BlockInit.STRIPPED_SANTIFICT_WOOD);
     }
 }

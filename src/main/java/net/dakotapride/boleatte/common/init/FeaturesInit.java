@@ -131,7 +131,7 @@ public class FeaturesInit {
                     new NetherForestVegetationFeatureConfig(ARBUNE_VEGETATION_PROVIDER, 3, 1));
 
     public static final RegistryEntry<ConfiguredFeature<NetherForestVegetationFeatureConfig, ?>> PROTOSTERM_VEGETATION_BONEMEAL =
-            ConfiguredFeatures.register(ID + "::protosterm_vegetation_bonemeal", BOLEATTE_VEGETATION,
+            ConfiguredFeatures.register(ID + ":protosterm_vegetation_bonemeal", BOLEATTE_VEGETATION,
                     new NetherForestVegetationFeatureConfig(PROTOSTERM_VEGETATION_PROVIDER, 3, 1));
 
     public static final RegistryEntry<ConfiguredFeature<NetherForestVegetationFeatureConfig, ?>> RASIORE_VEGETATION_BONEMEAL =
