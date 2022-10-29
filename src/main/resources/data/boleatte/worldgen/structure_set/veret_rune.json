@@ -1,16 +1,16 @@
 {
   "structures": [
     {
-      "structure": "boleatte:veret_dungeon",
+      "structure": "boleatte:veret_rune",
       "weight": 1
     }
   ],
   "placement": {
-    "salt": 13,
+    "salt": 14,
 
-    "spacing": 16,
+    "spacing": 24,
 
-    "separation": 6,
+    "separation": 12,
 
     "type": "minecraft:random_spread"
   }
