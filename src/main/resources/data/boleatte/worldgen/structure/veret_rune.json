@@ -9,12 +9,12 @@
 
   "project_start_to_heightmap": "WORLD_SURFACE_WG",
 
-  "biomes": "#boleatte:is_arbune_forest",
+  "biomes": "#boleatte:is_arbune_plains",
 
   "step": "surface_structures",
 
   "start_height": {
-    "absolute": -8
+    "absolute": -1
   },
 
   "use_expansion_hack": false,
