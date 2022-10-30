@@ -12,6 +12,12 @@
     "#boleatte:denticius_logs",
     "boleatte:denticius_planks",
     "#boleatte:santifict_logs",
-    "boleatte:santifict_planks"
+    "boleatte:santifict_planks",
+    "#minecraft:fences",
+    "#minecraft:fence_gates",
+    "#minecraft:doors",
+    "#minecraft:trapdoors",
+    "#minecraft:slabs",
+    "#minecraft:stairs"
   ]
 }

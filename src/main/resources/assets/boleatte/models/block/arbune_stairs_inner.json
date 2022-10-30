@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "boleatte:block/arbune_planks",
+    "side": "boleatte:block/arbune_planks",
+    "top": "boleatte:block/arbune_planks"
+  }
+}

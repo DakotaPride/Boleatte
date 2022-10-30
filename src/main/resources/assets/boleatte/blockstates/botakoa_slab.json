@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "boleatte:block/botakoa_slab"
+    },
+    "type=double": {
+      "model": "boleatte:block/botakoa_planks"
+    },
+    "type=top": {
+      "model": "boleatte:block/botakoa_slab_top"
+    }
+  }
+}

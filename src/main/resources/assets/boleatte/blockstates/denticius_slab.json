@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "boleatte:block/denticius_slab"
+    },
+    "type=double": {
+      "model": "boleatte:block/denticius_planks"
+    },
+    "type=top": {
+      "model": "boleatte:block/denticius_slab_top"
+    }
+  }
+}

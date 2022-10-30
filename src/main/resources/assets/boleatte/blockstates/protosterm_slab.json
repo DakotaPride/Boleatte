@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "boleatte:block/protosterm_slab"
+    },
+    "type=double": {
+      "model": "boleatte:block/protosterm_planks"
+    },
+    "type=top": {
+      "model": "boleatte:block/protosterm_slab_top"
+    }
+  }
+}

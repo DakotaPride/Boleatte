@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "boleatte:block/arbune_slab"
+    },
+    "type=double": {
+      "model": "boleatte:block/arbune_planks"
+    },
+    "type=top": {
+      "model": "boleatte:block/arbune_slab_top"
+    }
+  }
+}

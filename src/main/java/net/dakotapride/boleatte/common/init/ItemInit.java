@@ -152,6 +152,48 @@ public class ItemInit {
                     itemStacks.add(new ItemStack(BlockInit.DENTICIUS_PLANKS.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.SANTIFICT_PLANKS.asItem()));
 
+                    itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_DOOR.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.BOTAKOA_DOOR.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.ARBUNE_DOOR.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.RASIORE_DOOR.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.DENTICIUS_DOOR.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.SANTIFICT_DOOR.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_TRAPDOOR.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.BOTAKOA_TRAPDOOR.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.ARBUNE_TRAPDOOR.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.RASIORE_TRAPDOOR.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.DENTICIUS_TRAPDOOR.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.SANTIFICT_TRAPDOOR.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_STAIRS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.BOTAKOA_STAIRS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.ARBUNE_STAIRS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.RASIORE_STAIRS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.DENTICIUS_STAIRS.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.SANTIFICT_STAIRS.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_SLAB.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.BOTAKOA_SLAB.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.ARBUNE_SLAB.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.RASIORE_SLAB.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.DENTICIUS_SLAB.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.SANTIFICT_SLAB.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_FENCE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.BOTAKOA_FENCE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.ARBUNE_FENCE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.RASIORE_FENCE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.DENTICIUS_FENCE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.SANTIFICT_FENCE.asItem()));
+
+                    itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_FENCE_GATE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.BOTAKOA_FENCE_GATE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.ARBUNE_FENCE_GATE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.RASIORE_FENCE_GATE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.DENTICIUS_FENCE_GATE.asItem()));
+                    itemStacks.add(new ItemStack(BlockInit.SANTIFICT_FENCE_GATE.asItem()));
+
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_LOG.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.PROTOSTERM_WOOD.asItem()));
                     itemStacks.add(new ItemStack(BlockInit.STRIPPED_PROTOSTERM_LOG.asItem()));

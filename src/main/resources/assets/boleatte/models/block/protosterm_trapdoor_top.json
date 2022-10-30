@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_orientable_trapdoor_top",
+  "textures": {
+    "texture": "boleatte:block/protosterm_trapdoor"
+  }
+}

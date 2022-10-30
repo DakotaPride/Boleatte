@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "boleatte:block/rasiore_planks",
+    "side": "boleatte:block/rasiore_planks",
+    "top": "boleatte:block/rasiore_planks"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "boleatte:block/botakoa_planks",
+    "side": "boleatte:block/botakoa_planks",
+    "top": "boleatte:block/botakoa_planks"
+  }
+}

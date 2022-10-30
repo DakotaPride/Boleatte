@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "boleatte:block/rasiore_slab"
+    },
+    "type=double": {
+      "model": "boleatte:block/rasiore_planks"
+    },
+    "type=top": {
+      "model": "boleatte:block/rasiore_slab_top"
+    }
+  }
+}
