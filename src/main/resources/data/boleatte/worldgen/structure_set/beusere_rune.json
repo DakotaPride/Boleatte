@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "boleatte:beusere_rune",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 14,
+
+    "spacing": 24,
+
+    "separation": 12,
+
+    "type": "minecraft:random_spread"
+  }
+}
