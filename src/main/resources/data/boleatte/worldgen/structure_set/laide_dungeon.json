@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "boleatte:laide_dungeon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 13,
+
+    "spacing": 32,
+
+    "separation": 8,
+
+    "type": "minecraft:random_spread"
+  }
+}
