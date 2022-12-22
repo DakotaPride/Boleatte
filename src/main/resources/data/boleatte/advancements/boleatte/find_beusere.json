@@ -1,0 +1,41 @@
+{
+  "parent": "boleatte:boleatte/exploration",
+  "criteria": {
+    "beusere": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "boleatte:beusere_dungeon"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.boleatte.find_beusere.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "boleatte:botakoa_log"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.boleatte.find_beusere.title"
+    }
+  },
+  "requirements": [
+    [
+      "beusere"
+    ]
+  ]
+}

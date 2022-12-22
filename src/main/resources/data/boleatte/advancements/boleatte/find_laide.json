@@ -1,0 +1,41 @@
+{
+  "parent": "boleatte:boleatte/exploration",
+  "criteria": {
+    "laide": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "boleatte:laide_dungeon"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.boleatte.find_laide.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "boleatte:lephelusa_block"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.boleatte.find_laide.title"
+    }
+  },
+  "requirements": [
+    [
+      "laide"
+    ]
+  ]
+}

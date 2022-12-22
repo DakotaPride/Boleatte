@@ -1,0 +1,41 @@
+{
+  "parent": "boleatte:boleatte/exploration",
+  "criteria": {
+    "oritem": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "boleatte:oritem_dungeon"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.boleatte.find_oritem.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "boleatte:protosterm_log"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.boleatte.find_oritem.title"
+    }
+  },
+  "requirements": [
+    [
+      "oritem"
+    ]
+  ]
+}
