@@ -79,6 +79,7 @@
           "type": "minecraft:tag",
           "weight": 15,
           "name": "boleatte:flower/botakoa",
+          "expand": false,
           "functions": [
             {
               "function": "minecraft:set_count",
