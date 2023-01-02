@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "boleatte:latzeck"
+    },
+    "X": {
+      "item": "boleatte:alphiagou"
+    }
+  },
+  "result": {
+    "item": "boleatte:blossoming_alphiagou"
+  }
+}
